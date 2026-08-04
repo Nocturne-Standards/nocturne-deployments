@@ -17,12 +17,52 @@
 // JSON shape a function expects before writing a real call:
 //   node scripts/encode-contract-args.mjs <dd-wasm-path> --schema
 
-import { readFile } from "node:fs/promises";
+import { readFile, access } from "node:fs/promises";
+import { constants as fsConstants } from "node:fs";
 import { fileURLToPath } from "node:url";
 import path from "node:path";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const driverModulePath = path.join(__dirname, "../references/repos/connect/dist/driver.js");
+
+async function resolveDriverModulePath() {
+  const candidates = [];
+
+  if (process.env.DUSK_CONNECT_DRIVER) {
+    candidates.push(process.env.DUSK_CONNECT_DRIVER);
+  }
+
+  if (process.env.CALLER_REPO_ROOT) {
+    candidates.push(
+      path.join(process.env.CALLER_REPO_ROOT, "references/repos/connect/dist/driver.js"),
+    );
+  }
+
+  candidates.push(
+    path.join(__dirname, "../../sme_platform/references/repos/connect/dist/driver.js"),
+  );
+  candidates.push(path.join(__dirname, "../references/repos/connect/dist/driver.js"));
+
+  for (const candidate of candidates) {
+    try {
+      await access(candidate, fsConstants.R_OK);
+      return candidate;
+    } catch {
+      // try next candidate
+    }
+  }
+
+  console.error("error: could not find @dusk/connect driver module");
+  console.error("Tried:");
+  for (const candidate of candidates) {
+    console.error(`  - ${candidate}`);
+  }
+  console.error(
+    "(expected a built dist/ — run 'npm run build' in references/repos/connect if missing)",
+  );
+  process.exit(1);
+}
+
+const driverModulePath = await resolveDriverModulePath();
 
 function usage() {
   console.error("Usage: encode-contract-args.mjs <dd-wasm-path> <fnName> <json-args>");
