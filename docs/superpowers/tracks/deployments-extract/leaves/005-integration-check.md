@@ -1,7 +1,7 @@
 ---
 id: 5
 slug: integration-check
-status: TODO
+status: DONE
 owner: task-5-worker
 deps:
   - 1
@@ -17,7 +17,7 @@ acceptance:
   - No live on-chain redeploy unless operator explicitly asks
   - STATUS rollup marks all leaves DONE
 acceptanceDone:
-  - false
+  - true
 ---
 # Integration check (no surprise live redeploy)
 
