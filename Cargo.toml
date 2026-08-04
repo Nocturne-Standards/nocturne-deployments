@@ -1,0 +1,8 @@
+[workspace]
+resolver = "2"
+members = ["crates/nocturne-deployments"]
+
+[workspace.package]
+edition = "2024"
+rust-version = "1.85"
+license = "Apache-2.0"
