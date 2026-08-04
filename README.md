@@ -15,13 +15,39 @@ GitHub: [`aichbindas/nocturne-deployments`](https://github.com/aichbindas/noctur
 2. Walk up: `<dir>/deployments/testnet.json` or `<dir>/nocturne-deployments/testnet.json`
 3. Sibling of each ancestor: same two names under `<parent>/`
 
-## Redeploy record
+## Scripts
 
-From `sme_platform` (scripts still live there):
+`scripts/deploy-contract.sh` and `scripts/wire-contract.sh` are the SSOT
+implementations.
+
+Env:
+
+| Var | Role |
+|-----|------|
+| `CALLER_REPO_ROOT` | Product repo (`.env.testnet`, gas-limits) — required |
+| `DEPLOYMENTS_FILE` | Primary pin file (default: this repo `testnet.json`) |
+| `DEPLOYMENTS_MIRROR_FILE` | Optional second pin write (sme wrappers set this) |
+| `NOCTURNE_DEPLOYMENTS_ROOT` | Used by product wrappers to find this checkout |
+| `NOCTURNE_GAS_LIMITS` | Optional path to `gas-limits.json` |
+
+From sme_platform (recommended):
 
 ```bash
-export DEPLOYMENTS_FILE=/Users/leonidas/dev/aichbindas/nocturne-deployments/testnet.json
-./scripts/deploy-contract.sh /path/to/knot/crates/multisig-registry
+./scripts/deploy-contract.sh /path/to/contract   # wrapper → dual-write
+```
+
+From knot directly:
+
+```bash
+export CALLER_REPO_ROOT=/path/to/knot
+export NOCTURNE_DEPLOYMENTS_ROOT=/path/to/nocturne-deployments
+$NOCTURNE_DEPLOYMENTS_ROOT/scripts/deploy-contract.sh crates/multisig-registry -y
+```
+
+Override primary pin only (advanced):
+
+```bash
+export DEPLOYMENTS_FILE=/path/to/custom/testnet.json
 ```
 
 ## Knot / product wiring
