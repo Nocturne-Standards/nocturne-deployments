@@ -22,25 +22,21 @@ product tools (Knot Lab, etc.) agree on which bytecode is “current” on testn
 Example for Knot:
 
 ```bash
-export NOCTURNE_DEPLOYMENTS=/path/to/nocturne-deployments   # dir or testnet.json
-# or, from a knot checkout sibling layout:
+export NOCTURNE_DEPLOYMENTS=/path/to/nocturne-deployments
+# or sibling symlink from a knot checkout:
 ln -sfn ../nocturne-deployments deployments
 ```
 
 `knot-tool` loads pins via `NOCTURNE_DEPLOYMENTS` / walk-up (no git dependency).
 
-## Operator deploy / wire scripts
+## Operator deploy / wire
 
-`scripts/deploy-contract.sh` and `scripts/wire-contract.sh` live in this checkout
-**for now** (org operators). They do **not** embed wallet seeds; they require
-`RUSK_WALLET_PWD` and a product `CALLER_REPO_ROOT` with `.env.testnet`.
-
-Before this repo goes public, those scripts should move to private operator
-home (see `nocturne-working` or keep wrappers only in private product repos).
-Do not treat them as a supported public API yet.
+Deploy and wire live in private **`nocturne-working/ops/`** (not this repo).
+Thin redirects under `scripts/deploy-contract.sh` and `scripts/wire-contract.sh`
+exec those if a sibling `nocturne-working` checkout (or `NOCTURNE_WORKING_ROOT`)
+is present.
 
 ## Pin keys (Knot)
 
-Current Knot-related keys in `testnet.json` use deployment pin names
-`multisig-registry` / `multisig-proposals` (stable external keys; product crates
-are named `knot-*`).
+`multisig-registry` / `multisig-proposals` (stable pin JSON keys; product crates
+are `knot-*`).
