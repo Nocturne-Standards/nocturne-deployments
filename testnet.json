@@ -1,5 +1,5 @@
 {
-  "multisig-registry": {
+  "knot-registry": {
     "current": {
       "version": "0.1.6",
       "contract_id": "119c9c8268294f9b806623bd6d934555b32bdfac62392bd780af8892cdbf44e3",
@@ -80,7 +80,7 @@
       }
     ]
   },
-  "multisig-proposals": {
+  "knot-proposals": {
     "current": {
       "version": "0.3.3",
       "contract_id": "979bd97d9d1ace7df68f29858caddb3f8efc739af3f185d470e79803fb8f1502",
