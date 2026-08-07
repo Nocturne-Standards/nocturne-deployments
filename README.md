@@ -41,5 +41,5 @@ file + their own deploy path.
 
 ## Pin keys (Knot)
 
-`multisig-registry` / `multisig-proposals` (stable pin JSON keys; product crates
-are `knot-*`).
+`knot-registry` / `knot-proposals` (match product crate names and
+`knot-tool` `json_key`). No legacy `multisig-*` dual-read.
