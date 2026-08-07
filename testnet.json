@@ -2,16 +2,27 @@
   "knot-registry": {
     "current": {
       "version": "0.1.6",
-      "contract_id": "119c9c8268294f9b806623bd6d934555b32bdfac62392bd780af8892cdbf44e3",
-      "tx_id": "cd03c72a1d2c20e4cb0d14dd85aa69b0506208801611f8aa7c1e463d44abe205",
+      "contract_id": "db2c8229285f525cb717a4c8feeb4b0e270102735a164ca93f40452f2095f00f",
+      "tx_id": "d58976a1f5e6438776c88905ebf386a3076f9cdd49caf07987bdb85d016aaf1e",
       "wasm_path": null,
       "dd_wasm_path": null,
-      "wasm_sha256": "11a4ce01b0fa1e8bb1e3573d8d6539c9936774bd4e37c3265fd4a64c2ddc2d80",
-      "deploy_nonce": 1785866624,
+      "wasm_sha256": "48c786d697fbcc69c2e4677b53691e5ab1aa7b9266e245d1eba293e85e92acb6",
+      "deploy_nonce": 1786113036,
       "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-      "deployed_at": "2026-08-04T18:04:07Z"
+      "deployed_at": "2026-08-07T14:30:53Z"
     },
     "history": [
+      {
+        "version": "0.1.6",
+        "contract_id": "119c9c8268294f9b806623bd6d934555b32bdfac62392bd780af8892cdbf44e3",
+        "tx_id": "cd03c72a1d2c20e4cb0d14dd85aa69b0506208801611f8aa7c1e463d44abe205",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "11a4ce01b0fa1e8bb1e3573d8d6539c9936774bd4e37c3265fd4a64c2ddc2d80",
+        "deploy_nonce": 1785866624,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-08-04T18:04:07Z"
+      },
       {
         "version": "0.1.5",
         "contract_id": "3e3c5be563e8b085d4e66b048b4794457382cf3f578699a55e5c4a9fe9c94045",
@@ -83,16 +94,27 @@
   "knot-proposals": {
     "current": {
       "version": "0.3.3",
-      "contract_id": "979bd97d9d1ace7df68f29858caddb3f8efc739af3f185d470e79803fb8f1502",
-      "tx_id": "806f89ad8b1932d6f31f9ab9737572b537bbac5fdd6f15103919e0322db27616",
+      "contract_id": "01df43581335297c32312738300c1371aeecc49dee1e3cbcca6924d635529537",
+      "tx_id": "14fc4d3afc17981808f4db195905e6d5e2fdcdb158a641e13dedcb1dcc31f700",
       "wasm_path": null,
       "dd_wasm_path": null,
-      "wasm_sha256": "3c195c4cc2ab667adfc6ec812c5474f84adccd045f2b0b05b645da9830ae009e",
-      "deploy_nonce": 1785866697,
+      "wasm_sha256": "db548f2979b01e8cc3f7df81368f85f29ee51bc9bb0bf5986a90bca14486b8ae",
+      "deploy_nonce": 1786113085,
       "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-      "deployed_at": "2026-08-04T18:05:16Z"
+      "deployed_at": "2026-08-07T14:31:45Z"
     },
     "history": [
+      {
+        "version": "0.3.3",
+        "contract_id": "979bd97d9d1ace7df68f29858caddb3f8efc739af3f185d470e79803fb8f1502",
+        "tx_id": "806f89ad8b1932d6f31f9ab9737572b537bbac5fdd6f15103919e0322db27616",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "3c195c4cc2ab667adfc6ec812c5474f84adccd045f2b0b05b645da9830ae009e",
+        "deploy_nonce": 1785866697,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-08-04T18:05:16Z"
+      },
       {
         "version": "0.3.2",
         "contract_id": "cc3dec84edce7a685bf5799a671dba7d927b6b9214e501108f6fa9fa382749b6",
@@ -149,5 +171,19 @@
         "deployed_at": "2026-07-22T22:00:10Z"
       }
     ]
+  },
+  "wiring": {
+    "knot-proposals.init_registry": {
+      "current": {
+        "target_contract_id": "01df43581335297c32312738300c1371aeecc49dee1e3cbcca6924d635529537",
+        "fn_name": "init_registry",
+        "args": "\"db2c8229285f525cb717a4c8feeb4b0e270102735a164ca93f40452f2095f00f\"",
+        "fn_args_hex": "db2c8229285f525cb717a4c8feeb4b0e270102735a164ca93f40452f2095f00f",
+        "tx_id": "a3de4131b5890516864fdb2b0a61a9c0fb655362a1b8b821138bd310c6d52263",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-07T14:33:03Z"
+      },
+      "history": []
+    }
   }
 }
