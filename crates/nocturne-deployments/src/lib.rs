@@ -63,6 +63,10 @@ pub struct ContractRecord {
 /// Full pin file (`testnet.json` object keyed by contract name).
 #[derive(Debug, Clone, Deserialize)]
 pub struct DeploymentsFile {
+    /// Ops `wire-contract.sh` records; ignored by pin lookups.
+    #[serde(default)]
+    #[allow(dead_code)]
+    wiring: Option<serde_json::Value>,
     #[serde(flatten)]
     pub contracts: HashMap<String, ContractRecord>,
     #[serde(skip)]
