@@ -1,10 +1,11 @@
-//! Thin reader for nocturne `deployments/testnet.json` pin files.
+//! Thin reader for nocturne pin files (flat `testnet.json` and enveloped layouts).
 
 use std::collections::HashMap;
 use std::env;
 use std::fs;
 use std::path::{Path, PathBuf};
 
+use serde::de::Error as _;
 use serde::Deserialize;
 
 /// Errors loading or querying a deployments pin file.
@@ -30,10 +31,30 @@ pub enum Error {
 
 pub type Result<T> = std::result::Result<T, Error>;
 
+/// Catalog of pin files under a repo root (`index.json`).
+#[derive(Debug, Clone, Deserialize)]
+pub struct PinIndex {
+    pub schema: String,
+    pub files: Vec<PinIndexEntry>,
+}
+
+/// One pin file entry in the catalog.
+#[derive(Debug, Clone, Deserialize)]
+pub struct PinIndexEntry {
+    pub layer: String,
+    pub network: String,
+    pub path: String,
+    #[serde(default)]
+    pub chain_id: Option<u64>,
+    #[serde(default)]
+    pub public: bool,
+}
+
 /// One recorded deployment (current or history row).
 #[derive(Debug, Clone, Deserialize)]
 pub struct DeploymentEntry {
-    pub contract_id: String,
+    #[serde(default)]
+    pub contract_id: Option<String>,
     #[serde(default)]
     pub version: Option<String>,
     #[serde(default)]
@@ -49,6 +70,10 @@ pub struct DeploymentEntry {
     #[serde(default)]
     pub address: Option<String>,
     #[serde(default)]
+    pub proxy: Option<String>,
+    #[serde(default)]
+    pub implementation: Option<String>,
+    #[serde(default)]
     pub deployed_at: Option<String>,
 }
 
@@ -60,17 +85,59 @@ pub struct ContractRecord {
     pub history: Vec<DeploymentEntry>,
 }
 
-/// Full pin file (`testnet.json` object keyed by contract name).
-#[derive(Debug, Clone, Deserialize)]
+/// Full pin file (contracts keyed by name, optional envelope metadata).
+#[derive(Debug, Clone)]
 pub struct DeploymentsFile {
     /// Ops `wire-contract.sh` records; ignored by pin lookups.
-    #[serde(default)]
     #[allow(dead_code)]
     wiring: Option<serde_json::Value>,
-    #[serde(flatten)]
+    aliases: HashMap<String, String>,
     pub contracts: HashMap<String, ContractRecord>,
-    #[serde(skip)]
     path: PathBuf,
+}
+
+const ENVELOPE_KEYS: &[&str] = &[
+    "schema", "layer", "network", "rpc", "explorer", "aliases", "wiring", "chain_id", "contracts",
+];
+
+fn is_envelope_key(key: &str) -> bool {
+    ENVELOPE_KEYS.contains(&key)
+}
+
+fn parse_deployments_value(
+    value: serde_json::Value,
+) -> std::result::Result<
+    (
+        HashMap<String, ContractRecord>,
+        HashMap<String, String>,
+        Option<serde_json::Value>,
+    ),
+    serde_json::Error,
+> {
+    let obj = value
+        .as_object()
+        .ok_or_else(|| serde_json::Error::custom("expected JSON object"))?;
+
+    let aliases: HashMap<String, String> = match obj.get("aliases") {
+        Some(v) => serde_json::from_value(v.clone())?,
+        None => HashMap::new(),
+    };
+
+    let wiring = obj.get("wiring").cloned();
+
+    let contracts = if let Some(contracts_val) = obj.get("contracts") {
+        serde_json::from_value(contracts_val.clone())?
+    } else {
+        let mut contracts: HashMap<String, ContractRecord> = HashMap::new();
+        for (key, val) in obj {
+            if !is_envelope_key(key) {
+                contracts.insert(key.clone(), serde_json::from_value(val.clone())?);
+            }
+        }
+        contracts
+    };
+
+    Ok((contracts, aliases, wiring))
 }
 
 impl DeploymentsFile {
@@ -79,21 +146,68 @@ impl DeploymentsFile {
         &self.path
     }
 
-    /// `current` entry for `key`, or error.
-    pub fn current(&self, key: &str) -> Result<&DeploymentEntry> {
+    /// Canonical contract name for `key` (resolves aliases, no chains).
+    pub fn resolve_key(&self, key: &str) -> Result<&str> {
+        let canonical = self.aliases.get(key).map(|s| s.as_str()).unwrap_or(key);
         self.contracts
-            .get(key)
-            .map(|r| &r.current)
+            .get_key_value(canonical)
+            .map(|(name, _)| name.as_str())
             .ok_or_else(|| Error::MissingContractId {
                 key: key.to_string(),
                 path: self.path.clone(),
             })
     }
 
-    /// `current.contract_id` for `key`.
-    pub fn contract_id(&self, key: &str) -> Result<&str> {
-        Ok(self.current(key)?.contract_id.as_str())
+    /// `current` entry for `key`, or error.
+    pub fn current(&self, key: &str) -> Result<&DeploymentEntry> {
+        let canonical = self.resolve_key(key)?;
+        Ok(&self.contracts.get(canonical).unwrap().current)
     }
+
+    /// Native `contract_id`, else `address`, else `proxy`.
+    pub fn contract_id(&self, key: &str) -> Result<&str> {
+        let entry = self.current(key)?;
+        entry
+            .contract_id
+            .as_deref()
+            .or(entry.address.as_deref())
+            .or(entry.proxy.as_deref())
+            .ok_or_else(|| Error::MissingContractId {
+                key: key.to_string(),
+                path: self.path.clone(),
+            })
+    }
+}
+
+/// Resolve pin file path for a layer/network (does not read).
+fn resolve_layer_path(root: &Path, layer: &str, network: &str) -> Result<PathBuf> {
+    let index_path = root.join("index.json");
+    if index_path.is_file() {
+        if let Ok(index) = load_index(root) {
+            if let Some(entry) = index
+                .files
+                .iter()
+                .find(|e| e.layer == layer && e.network == network)
+            {
+                let path = root.join(&entry.path);
+                if path.is_file() {
+                    return Ok(path);
+                }
+            }
+        }
+    }
+
+    let layered = root.join(layer).join(format!("{network}.json"));
+    if layered.is_file() {
+        return Ok(layered);
+    }
+
+    let fallback = root.join("testnet.json");
+    if fallback.is_file() {
+        return Ok(fallback);
+    }
+
+    Err(Error::NotFound)
 }
 
 /// Resolve pin file path (does not read).
@@ -103,6 +217,9 @@ pub fn resolve_path(start: &Path) -> Result<PathBuf> {
     if let Ok(raw) = env::var("NOCTURNE_DEPLOYMENTS") {
         let p = PathBuf::from(raw);
         if p.is_dir() {
+            if p.join("index.json").is_file() {
+                return resolve_layer_path(&p, "duskds", "testnet");
+            }
             let file = p.join("testnet.json");
             if file.is_file() {
                 return Ok(file);
@@ -136,6 +253,26 @@ pub fn resolve_path(start: &Path) -> Result<PathBuf> {
     Err(Error::NotFound)
 }
 
+/// Load pin catalog from `{root}/index.json`.
+pub fn load_index(root: impl AsRef<Path>) -> Result<PinIndex> {
+    let root = root.as_ref();
+    let path = root.join("index.json");
+    let raw = fs::read_to_string(&path).map_err(|source| Error::Io {
+        path: path.clone(),
+        source,
+    })?;
+    serde_json::from_str(&raw).map_err(|source| Error::Parse { path, source })
+}
+
+/// Load pin file for `layer`/`network` under `root`.
+pub fn load_layer(
+    root: impl AsRef<Path>,
+    layer: &str,
+    network: &str,
+) -> Result<DeploymentsFile> {
+    load(resolve_layer_path(root.as_ref(), layer, network)?)
+}
+
 /// Load pin file from an explicit path.
 pub fn load(path: impl AsRef<Path>) -> Result<DeploymentsFile> {
     let path = path.as_ref().to_path_buf();
@@ -143,12 +280,21 @@ pub fn load(path: impl AsRef<Path>) -> Result<DeploymentsFile> {
         path: path.clone(),
         source,
     })?;
-    let mut file: DeploymentsFile = serde_json::from_str(&raw).map_err(|source| Error::Parse {
+    let value: serde_json::Value = serde_json::from_str(&raw).map_err(|source| Error::Parse {
         path: path.clone(),
         source,
     })?;
-    file.path = path;
-    Ok(file)
+    let (contracts, aliases, wiring) =
+        parse_deployments_value(value).map_err(|source| Error::Parse {
+            path: path.clone(),
+            source,
+        })?;
+    Ok(DeploymentsFile {
+        contracts,
+        aliases,
+        wiring,
+        path,
+    })
 }
 
 /// Resolve then load, walking from `start`.
@@ -252,5 +398,81 @@ mod tests {
         let got = load_default().unwrap();
         unsafe { env::remove_var("NOCTURNE_DEPLOYMENTS") };
         assert_eq!(got.contract_id("x").unwrap(), "from-env");
+    }
+
+    #[test]
+    fn alias_multisig_registry() {
+        let dir = tempfile::tempdir().unwrap();
+        let path = dir.path().join("duskds.json");
+        fs::write(
+            &path,
+            r#"{
+              "schema": "nocturne.pins.v1",
+              "aliases": { "multisig-registry": "knot-registry" },
+              "contracts": {
+                "knot-registry": { "current": { "contract_id": "abc123" } }
+              }
+            }"#,
+        )
+        .unwrap();
+        let file = load(&path).unwrap();
+        assert_eq!(file.contract_id("knot-registry").unwrap(), "abc123");
+        assert_eq!(file.contract_id("multisig-registry").unwrap(), "abc123");
+        assert_eq!(
+            file.resolve_key("multisig-registry").unwrap(),
+            "knot-registry"
+        );
+    }
+
+    #[test]
+    fn legacy_flat_root_still_loads() {
+        let dir = tempfile::tempdir().unwrap();
+        let path = dir.path().join("testnet.json");
+        fs::write(
+            &path,
+            r#"{"knot-registry":{"current":{"contract_id":"id1"}}}"#,
+        )
+        .unwrap();
+        assert_eq!(
+            load(&path).unwrap().contract_id("knot-registry").unwrap(),
+            "id1"
+        );
+    }
+
+    #[test]
+    fn evm_proxy_as_contract_id() {
+        let dir = tempfile::tempdir().unwrap();
+        let path = dir.path().join("evm.json");
+        fs::write(
+            &path,
+            r#"{
+              "contracts": {
+                "loan-register": {
+                  "current": {
+                    "proxy": "0xD624d003221446D8a5D4B4AA9b8DAAFE50227858",
+                    "implementation": "0x66665c5f2f41122E3E3C51da8b614E55B36B98B2",
+                    "address": "0xD624d003221446D8a5D4B4AA9b8DAAFE50227858"
+                  }
+                }
+              }
+            }"#,
+        )
+        .unwrap();
+        assert_eq!(
+            load(&path).unwrap().contract_id("loan-register").unwrap(),
+            "0xD624d003221446D8a5D4B4AA9b8DAAFE50227858"
+        );
+    }
+
+    #[test]
+    fn load_layer_falls_back_to_root_testnet_json() {
+        let root = tempfile::tempdir().unwrap();
+        fs::write(
+            root.path().join("testnet.json"),
+            r#"{"knot-registry":{"current":{"contract_id":"from-root"}}}"#,
+        )
+        .unwrap();
+        let file = load_layer(root.path(), "duskds", "testnet").unwrap();
+        assert_eq!(file.contract_id("knot-registry").unwrap(), "from-root");
     }
 }

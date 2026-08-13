@@ -1,0 +1,16 @@
+{
+  "schema": "nocturne.pins.v1",
+  "layer": "duskds",
+  "network": "testnet",
+  "aliases": {
+    "multisig-registry": "knot-registry"
+  },
+  "contracts": {
+    "knot-registry": {
+      "current": {
+        "contract_id": "fixture-id",
+        "version": "0.0.1"
+      }
+    }
+  }
+}
