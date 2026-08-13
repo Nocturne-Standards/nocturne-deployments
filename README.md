@@ -8,7 +8,7 @@ GitHub: [`aichbindas/nocturne-deployments`](https://github.com/aichbindas/noctur
 
 - `index.json` — catalog of layer/network pin files (`nocturne.pins.v1`)
 - `duskds/testnet.json` — Dusk native (DS) contract pins + wiring envelope
-- `duskevm/testnet.json` — Dusk EVM contract pins (stub until live addresses)
+- `duskevm/testnet.json` — Dusk EVM contract pins (live chain-745 public pins)
 - `testnet.json` — legacy flat pin file (unchanged during migration)
 - `crates/nocturne-deployments` — thin Rust reader for that JSON
 
@@ -56,7 +56,7 @@ file + their own deploy path.
 |------|------|
 | `index.json` | Catalog: layer, network, path, `public`, optional `chain_id` |
 | `duskds/testnet.json` | DS pins: `contracts`, `wiring`, `aliases` |
-| `duskevm/testnet.json` | EVM pins: `contracts`, `aliases` (stub) |
+| `duskevm/testnet.json` | EVM pins: `contracts`, `aliases` (live chain-745 public pins) |
 
 Run `python3 scripts/check-aliases.py` to verify alias targets exist in each
 pin file's `contracts` map (skipped when `contracts` is `{}`).
