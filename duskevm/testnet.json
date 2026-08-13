@@ -12,7 +12,67 @@
     "MockCrossDomainMessenger": "mock-cross-domain-messenger",
     "ProtocolAdapter": "protocol-adapter",
     "RiscZeroVerifierRouter": "risc-zero-verifier-router",
-    "RiscZeroGroth16Verifier": "risc-zero-groth16-verifier"
+    "RiscZeroGroth16Verifier": "risc-zero-groth16-verifier",
+    "LoanRegisterForwarder": "loan-register-forwarder",
+    "ComplianceGateForwarder": "compliance-gate-forwarder",
+    "ServicingContractForwarder": "servicing-contract-forwarder"
   },
-  "contracts": {}
+  "contracts": {
+    "loan-register": {
+      "current": {
+        "address": "0xD624d003221446D8a5D4B4AA9b8DAAFE50227858",
+        "proxy": "0xD624d003221446D8a5D4B4AA9b8DAAFE50227858",
+        "implementation": "0x66665c5f2f41122E3E3C51da8b614E55B36B98B2"
+      }
+    },
+    "compliance-gate-evm": {
+      "current": {
+        "address": "0xCD68441408Fe814Cc24d1DBA8424487Ca924d221",
+        "proxy": "0xCD68441408Fe814Cc24d1DBA8424487Ca924d221",
+        "implementation": "0x58A0151Ae52d5FCfe6bBF5Bd64E9af333a307CBa"
+      }
+    },
+    "servicing-contract": {
+      "current": {
+        "address": "0x4Fa77d7e8d3346DC3EFa7A4a86d517CAa5B27f7F",
+        "proxy": "0x4Fa77d7e8d3346DC3EFa7A4a86d517CAa5B27f7F",
+        "implementation": "0x27C88dd7c0bC119FbBb2e299b633849Ee12FD7a4"
+      }
+    },
+    "mock-cross-domain-messenger": {
+      "current": {
+        "address": "0x39639c6C592E9e77388d944c756d1Bed7cAE317a"
+      }
+    },
+    "protocol-adapter": {
+      "current": {
+        "address": "0xDC954041131BB73A3EeDAB8e6b818aECE6dE2B47"
+      }
+    },
+    "risc-zero-verifier-router": {
+      "current": {
+        "address": "0x3E82D6c99A19b87f5730D0b0c75E552B147CFcdE"
+      }
+    },
+    "risc-zero-groth16-verifier": {
+      "current": {
+        "address": "0x87CAA6E1a829aBd39Bbd3310Fef06de3ee2030CA"
+      }
+    },
+    "loan-register-forwarder": {
+      "current": {
+        "address": "0x4Be169D130bB40190E1f1ea154B8D95fA14321Da"
+      }
+    },
+    "compliance-gate-forwarder": {
+      "current": {
+        "address": "0xED9f91452b462E15E6ca6ED40B51E443f773E781"
+      }
+    },
+    "servicing-contract-forwarder": {
+      "current": {
+        "address": "0x85F9b8Cb87830716F4690dF30bEF6E88B43e2be4"
+      }
+    }
+  }
 }
