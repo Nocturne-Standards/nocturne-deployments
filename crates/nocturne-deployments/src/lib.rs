@@ -183,16 +183,15 @@ impl DeploymentsFile {
 fn resolve_layer_path(root: &Path, layer: &str, network: &str) -> Result<PathBuf> {
     let index_path = root.join("index.json");
     if index_path.is_file() {
-        if let Ok(index) = load_index(root) {
-            if let Some(entry) = index
-                .files
-                .iter()
-                .find(|e| e.layer == layer && e.network == network)
-            {
-                let path = root.join(&entry.path);
-                if path.is_file() {
-                    return Ok(path);
-                }
+        let index = load_index(root)?;
+        if let Some(entry) = index
+            .files
+            .iter()
+            .find(|e| e.layer == layer && e.network == network)
+        {
+            let path = root.join(&entry.path);
+            if path.is_file() {
+                return Ok(path);
             }
         }
     }
@@ -203,7 +202,7 @@ fn resolve_layer_path(root: &Path, layer: &str, network: &str) -> Result<PathBuf
     }
 
     let fallback = root.join("testnet.json");
-    if fallback.is_file() {
+    if fallback.is_file() && layer == "duskds" && network == "testnet" {
         return Ok(fallback);
     }
 
@@ -474,5 +473,17 @@ mod tests {
         .unwrap();
         let file = load_layer(root.path(), "duskds", "testnet").unwrap();
         assert_eq!(file.contract_id("knot-registry").unwrap(), "from-root");
+    }
+
+    #[test]
+    fn load_layer_does_not_fall_back_for_other_layer_network() {
+        let root = tempfile::tempdir().unwrap();
+        fs::write(
+            root.path().join("testnet.json"),
+            r#"{"knot-registry":{"current":{"contract_id":"from-root"}}}"#,
+        )
+        .unwrap();
+        let err = load_layer(root.path(), "duskevm", "mainnet").unwrap_err();
+        assert!(matches!(err, Error::NotFound));
     }
 }
