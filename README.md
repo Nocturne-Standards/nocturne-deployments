@@ -1,12 +1,15 @@
 # nocturne-deployments
 
-Shared **pin home** for live contract IDs (`testnet.json`).
+Shared **pin home** for live contract IDs on Dusk testnet.
 
 GitHub: [`aichbindas/nocturne-deployments`](https://github.com/aichbindas/nocturne-deployments)
 
 ## What this repo is
 
-- `testnet.json` — keyed by contract name; each entry has `current` (+ optional `history`)
+- `index.json` — catalog of layer/network pin files (`nocturne.pins.v1`)
+- `duskds/testnet.json` — Dusk native (DS) contract pins + wiring envelope
+- `duskevm/testnet.json` — Dusk EVM contract pins (stub until live addresses)
+- `testnet.json` — legacy flat pin file (unchanged during migration)
 - `crates/nocturne-deployments` — thin Rust reader for that JSON
 
 Contract IDs are on-chain public data. This repo is the **shared pin file** so
@@ -17,7 +20,8 @@ Local machine paths are **not** part of the public pin record (`wasm_path` /
 
 ## Resolve path (reader order)
 
-1. `NOCTURNE_DEPLOYMENTS` — file path, or directory containing `testnet.json`
+1. `NOCTURNE_DEPLOYMENTS` — pin **repo root** (directory containing `index.json`
+   and layer pin files), or a file path to `testnet.json`
 2. Walk up from the caller: `<dir>/deployments/testnet.json` or
    `<dir>/nocturne-deployments/testnet.json`
 3. Sibling of each ancestor: same two names under `<parent>/`
@@ -42,4 +46,17 @@ file + their own deploy path.
 ## Pin keys (Knot)
 
 `knot-registry` / `knot-proposals` (match product crate names and
-`knot-tool` `json_key`). No legacy `multisig-*` dual-read.
+`knot-tool` `json_key`). Legacy `multisig-*` names are aliased in-file
+(`multisig-registry` → `knot-registry`, `multisig-proposals` →
+`knot-proposals` in `duskds/testnet.json`).
+
+## Layout
+
+| Path | Role |
+|------|------|
+| `index.json` | Catalog: layer, network, path, `public`, optional `chain_id` |
+| `duskds/testnet.json` | DS pins: `contracts`, `wiring`, `aliases` |
+| `duskevm/testnet.json` | EVM pins: `contracts`, `aliases` (stub) |
+
+Run `python3 scripts/check-aliases.py` to verify alias targets exist in each
+pin file's `contracts` map (skipped when `contracts` is `{}`).

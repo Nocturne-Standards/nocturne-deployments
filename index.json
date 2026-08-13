@@ -1,0 +1,18 @@
+{
+  "schema": "nocturne.pins.v1",
+  "files": [
+    {
+      "layer": "duskds",
+      "network": "testnet",
+      "path": "duskds/testnet.json",
+      "public": true
+    },
+    {
+      "layer": "duskevm",
+      "network": "testnet",
+      "path": "duskevm/testnet.json",
+      "chain_id": 745,
+      "public": true
+    }
+  ]
+}
