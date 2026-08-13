@@ -9,14 +9,17 @@ GitHub: [`aichbindas/nocturne-deployments`](https://github.com/aichbindas/noctur
 - `index.json` — catalog of layer/network pin files (`nocturne.pins.v1`)
 - `duskds/testnet.json` — Dusk native (DS) contract pins + wiring envelope
 - `duskevm/testnet.json` — Dusk EVM contract pins (live chain-745 public pins)
-- `testnet.json` — legacy flat pin file (unchanged during migration)
+- `testnet.json` — flat compat projection of `duskds/testnet.json` (`contracts` + `wiring`)
 - `crates/nocturne-deployments` — thin Rust reader for that JSON
 
 Contract IDs are on-chain public data. This repo is the **shared pin file** so
-product tools (Knot Lab, etc.) agree on which bytecode is “current” on testnet.
+product tools (Knot Lab, etc.) agree on which bytecode is "current" on testnet.
 
 Local machine paths are **not** part of the public pin record (`wasm_path` /
 `dd_wasm_path` may be null); use `contract_id`, `wasm_sha256`, and `tx_id`.
+
+This tree holds pin JSON and the reader crate. Specs and plans live in private
+`nocturne-working/deployments/superpowers/`.
 
 ## Resolve path (reader order)
 
@@ -47,7 +50,7 @@ file + their own deploy path.
 
 `knot-registry` / `knot-proposals` (match product crate names and
 `knot-tool` `json_key`). Legacy `multisig-*` names are aliased in-file
-(`multisig-registry` → `knot-registry`, `multisig-proposals` →
+(`multisig-registry` to `knot-registry`, `multisig-proposals` to
 `knot-proposals` in `duskds/testnet.json`).
 
 ## Layout
@@ -57,6 +60,7 @@ file + their own deploy path.
 | `index.json` | Catalog: layer, network, path, `public`, optional `chain_id` |
 | `duskds/testnet.json` | DS pins: `contracts`, `wiring`, `aliases` |
 | `duskevm/testnet.json` | EVM pins: `contracts`, `aliases` (live chain-745 public pins) |
+| `testnet.json` | Flat compat: duskds `contracts` keys at top level plus `wiring` |
 
 Run `python3 scripts/check-aliases.py` to verify alias targets exist in each
 pin file's `contracts` map (skipped when `contracts` is `{}`).
