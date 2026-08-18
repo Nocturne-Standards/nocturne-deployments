@@ -1,0 +1,33 @@
+{
+  "product": "prediction-market",
+  "network": "testnet",
+  "status": "live",
+  "atlas": {
+    "contract_id": "490b5b2e41cb1d5a7dad9ca7aabdc375b4ca799564541227d8a0f91d7e844a0c",
+    "version": "0.1.1"
+  },
+  "treasury_data": {
+    "contract_id": "500ad9968976df54df846238734a1acc97e353b52903fcd68fba259b66111e7c",
+    "version": "0.1.3"
+  },
+  "treasury_logic": {
+    "contract_id": "133fd91d27937361589bd374501fa1eb14ad651c00d4b9d6384b787e2039fbe3",
+    "version": "0.1.2"
+  },
+  "prediction_market_data": {
+    "contract_id": "c96191d213a4c5cd409575ce07b642e0051993854f37495753897fd754b3b42a",
+    "version": "0.3.1"
+  },
+  "prediction_market_logic": {
+    "contract_id": "d106ec6330a88c32cfb5822917a37ac9de172caa79ab8b207cf93d5cdd7dd883",
+    "version": "0.3.3"
+  },
+  "atlas_services": {
+    "treasury": "133fd91d27937361589bd374501fa1eb14ad651c00d4b9d6384b787e2039fbe3",
+    "prediction-market": "d106ec6330a88c32cfb5822917a37ac9de172caa79ab8b207cf93d5cdd7dd883"
+  },
+  "legacy_monolith": {
+    "key": "prediction-market",
+    "note": "frozen; do not deploy for cutover"
+  }
+}

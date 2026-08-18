@@ -417,6 +417,375 @@
           "deployed_at": "2026-08-08T20:46:01Z"
         }
       ]
+    },
+    "prediction-market": {
+      "current": {
+        "version": "0.3.1",
+        "contract_id": "1c095ae2c34031fa4e38daab61afd0b129ff211d0b08e39548528d7785c43b1c",
+        "tx_id": "09757e7116b5103ec1d89a8137b9195ed3d67e5d578dae0be1fcf94d246d7e03",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "80ed395b6f0debc80a65d99b226349082db610d05e45f3962e69a1991da63206",
+        "deploy_nonce": 1784902687,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-07-24T14:18:20Z"
+      },
+      "history": [
+        {
+          "version": "0.3.0",
+          "contract_id": "3e9a19dd856b173e6f138df28fe43c76ca716b8b39bea1debd6fa67fda4ff758",
+          "tx_id": "681b183c53752a0a25ccf960e3be59a613693b258ab102d0835f94d71cce6d47",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "9fb16762ae89214ea00f19e361e2aa9119280446b019454b542dec8b83bc2274",
+          "deploy_nonce": 1784238569,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-07-16T21:49:49Z"
+        },
+        {
+          "version": "0.2.0",
+          "contract_id": "0b6d957cda54e71f8d48ef44b1fbf50d642e4a785aba2aa7ea09bb2fb1deeb4b",
+          "tx_id": "45583e1d45ec4e8dbf49448b04a2a74fc9ec7bad603e00b9e122e83c2e32e708",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "fd82bf50732c421de8b0b4fea8174dd618a63c17876925e43dd5f57a757f756d",
+          "deploy_nonce": 1784220169,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-07-16T16:43:10Z"
+        },
+        {
+          "version": "0.1.1",
+          "contract_id": "66c827cb1ddb51c1737088d072be9c7f77d5e4e81abdb5f49b937c4485869299",
+          "tx_id": "46c9ab4a062d6fdf470d435ebb58d256f6c346d7cb97cd6ef4be155c2fe8ee58",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "838b44f42a693aabbde82823650d6d540f149371a9f2099f6b36e22d9c896971",
+          "deploy_nonce": 1784202392,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-07-16T11:46:50Z"
+        },
+        {
+          "version": "0.1.0",
+          "contract_id": "cdfc3c54bc2ad95fc6cf51a0543bd6acfbf81f953369deb2119648aee0c84da0",
+          "tx_id": "f633bc45a1cf9aa53aeaaa3e125f8accdab907cf27bb3a3063ba91e191c4a226",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "2ac2537824b83d5eadf4e9894991d1805d5ac72fe20c1d2b919effef0d3b4c2b",
+          "deploy_nonce": 1784200248,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-07-16T11:11:09Z"
+        }
+      ]
+    },
+    "prediction-market-atlas": {
+      "current": {
+        "version": "0.1.1",
+        "contract_id": "490b5b2e41cb1d5a7dad9ca7aabdc375b4ca799564541227d8a0f91d7e844a0c",
+        "tx_id": "e8850d6074c95a797266805827b2dfdb273698695e92c388bc469926cb837138",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "26076b566609c5e2e456f1e212dfe9b469c98a9a4a75a0920e0e1cea03fc48f6",
+        "deploy_nonce": 1785776106,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-08-03T16:55:27Z"
+      },
+      "history": [
+        {
+          "version": "0.1.0",
+          "contract_id": "ddf5f25a5d847835611918ef48d6b8c9cb0404156f55df047a69fc35254f16ea",
+          "tx_id": "aa1f722da9c034e486924e7fc440554d5825e20d4810f29f30313be4c2ed884d",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "232b35f12b34d894b89f40d413848d03cba9d38cf266cc4d449760350ba69b9c",
+          "deploy_nonce": 1784998543,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-07-25T16:56:04Z"
+        }
+      ]
+    },
+    "prediction-market-treasury-data": {
+      "current": {
+        "version": "0.1.3",
+        "contract_id": "500ad9968976df54df846238734a1acc97e353b52903fcd68fba259b66111e7c",
+        "tx_id": "d7aaf7cf346adae74b4c6f5639d67098a60a5eef07a8aebe800c032d60873803",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "e32821834e1a6714dc2335695599fb3b8755303b95b984bedccdc55c2727b49d",
+        "deploy_nonce": 1787006411,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-08-17T22:40:31Z"
+      },
+      "history": [
+        {
+          "version": "0.1.2",
+          "contract_id": "02005dc1dcd4ece4b208dbbf2fcbd6e3b560223f39caad7cb5c44d4d3585906b",
+          "tx_id": "569ada979c7944da80aaf6373d87702d78de7037a055891794e53fd0188d640a",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "140f5f09a93f98185e0d4fdf55afb928036df54eb9c7648e231f2e7ea9ebd525",
+          "deploy_nonce": 1787006060,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-08-17T22:34:40Z"
+        },
+        {
+          "version": "0.1.1",
+          "contract_id": "31c63c3bfdb2c0b4b744cf1c2c7a78ac1595b6dfc952d2610c91ae0414a80b59",
+          "tx_id": "357e97c34484f76a043ea251f96ecbb6891dacb233137d052cf81bd3a8814e26",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "a70428c23898e6bbc4582a7613b44a31dd4ee4aeca8e5a8cb083dcdf1bf239bb",
+          "deploy_nonce": 1784998598,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-07-25T16:56:54Z"
+        }
+      ]
+    },
+    "prediction-market-treasury-logic": {
+      "current": {
+        "version": "0.1.2",
+        "contract_id": "133fd91d27937361589bd374501fa1eb14ad651c00d4b9d6384b787e2039fbe3",
+        "tx_id": "877ac16de34628987db57514b6e4a6570ff9dc54aa03d8d29927256c056d642c",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "5d63a517ff9a11ca4d6c8d6c67640ddf0536714b249429b71416d6932f4ecb2d",
+        "deploy_nonce": 1787006478,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-08-17T22:41:31Z"
+      },
+      "history": [
+        {
+          "version": "0.1.1",
+          "contract_id": "7faf38b7a739a05edd9b23df7e108c81769adaee37495886eb538bce201387b1",
+          "tx_id": "1789b08b2bfa6923eb7ac66529e54cdf3b2266e88ee683a1901d960bee74ba22",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "1d4b5aa8282cebc1ef66677def9f30dd3ef9aa9967364e04bdd3d65917921f54",
+          "deploy_nonce": 1787006097,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-08-17T22:35:11Z"
+        },
+        {
+          "version": "0.1.0",
+          "contract_id": "8f7156f3f23d4d6b8db2104309aa195ae177739cf18eae31eed22b3abdf933dc",
+          "tx_id": "3c559af3ec648a7253fbcb92e889ba5a221faa591ebc2e47487604e69657455c",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "64f77105da62d6532f9511dd04e1d65dc41c37c314190b8d6b41ef32ce8d9aed",
+          "deploy_nonce": 1784998616,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-07-25T16:57:14Z"
+        }
+      ]
+    },
+    "prediction-market-data": {
+      "current": {
+        "version": "0.3.1",
+        "contract_id": "c96191d213a4c5cd409575ce07b642e0051993854f37495753897fd754b3b42a",
+        "tx_id": "3009afc89979db4f4d59bd973d9d4469c45333f7b71c680ad68cc3c2ed728368",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "ebb6b4567935a7fa437d6a62ac45ab44a90670c7772b339fee891909dbab3a04",
+        "deploy_nonce": 1787006552,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-08-17T22:42:51Z"
+      },
+      "history": [
+        {
+          "version": "0.3.0",
+          "contract_id": "4a57c38a965b9d84ed8d7efcd1916f5678feae56b2df887213f21335c0bc4705",
+          "tx_id": "3a48734543dcafdcc3b2cdad942f83748aa12227bf2e9170184c48ce2d18e73d",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "147806a3ff21af16f5a90d0f11408be570c44f6df482a43f6d8773c00c9a264e",
+          "deploy_nonce": 1787006211,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-08-17T22:37:10Z"
+        },
+        {
+          "version": "0.2.0",
+          "contract_id": "37c09def84641043a2e0544881fc973060bcc210507e5ac310c9165151d3f40a",
+          "tx_id": "753dc9462401eb1cd70997e0a2784eddf2c4d552086e21c37e7327a1f476fe36",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "8f884a3088049ee30b989d1410222339a56cad3de5c10979ffc75b64e018f963",
+          "deploy_nonce": 1785502014,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-07-31T12:47:10Z"
+        },
+        {
+          "version": "0.1.0",
+          "contract_id": "b1cb1d0184841fdd9d6a99515d07cd49720288c75e728583aaba910e666acfad",
+          "tx_id": "f7419bdc439d02f44549268d530646b9667c478e117c2bade2a6c90bf30ee25c",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "7aaf54a9b493b065a1fc8b2a62a7edc9920499ad50db2a025f71d21f8a1f312e",
+          "deploy_nonce": 1784998677,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-07-25T16:58:14Z",
+          "ops_note": "TEMP live pin 2026-07-30 for finishing markets on pre-Phase-2 deploy. Phase G rights/bond wired on b7543a2b only \u2014 Create/has_right may be unavailable here."
+        },
+        {
+          "version": "0.1.1",
+          "contract_id": "ea48859ccefd20d6f64a948e74e1ed27986985dbd15f66bfe217a3aca2c4bd2b",
+          "tx_id": "667b30712572e9216a08de9b54b008944f1c61eda81897ab7c303f926dc9940d",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "3dcb339f181cd3d4a696bffc7deb4fd2d38a5b53ae866ede806a884a27fe0a17",
+          "deploy_nonce": 1785279401,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-07-28T22:56:55Z",
+          "ops_note": "Temporarily demoted 2026-07-30: live stack repointed to e0c4c22c to finish participant markets before next beta. Restore b7543a2b + ea48859c for Phase G relaunch."
+        }
+      ]
+    },
+    "prediction-market-logic": {
+      "current": {
+        "version": "0.3.3",
+        "contract_id": "d106ec6330a88c32cfb5822917a37ac9de172caa79ab8b207cf93d5cdd7dd883",
+        "tx_id": "3fb5b3a7d4bced9cdb8d1bf07434b6cb3870b04dc22eb69f5cd49a482ad3435f",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "f0f1b9352f461ce1ad5de49a19aba43f55362b5fbd48a439ccc506a3b939c45b",
+        "deploy_nonce": 1787006582,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-08-17T22:43:20Z"
+      },
+      "history": [
+        {
+          "version": "0.3.2",
+          "contract_id": "ee08acf54dbf85f74eded9efd9dbf79daa178169bde280a4009b94db1ecd80ba",
+          "tx_id": "cc8d8eafba546f9882f34d91b46e35d88cd2f6ca0f5d77cb1a0b8ae04ee41526",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "97c9d07094910a45c44888d1e7e05132a137931cbad335bb0ca2dd75f693402c",
+          "deploy_nonce": 1787006305,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-08-17T22:38:51Z"
+        },
+        {
+          "version": "0.3.1",
+          "contract_id": "572b6e6ec91a35b707cb375776c58d48a0008693c3d704841d3e5469e34b21bf",
+          "tx_id": "5509a9cff9cd5a059ed400eb19bf01c762db558865e12ced2a880c6fb1f03922",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "094dbe9bb42be60f98935dc15cb83326de02b0ead3a10636a223964d1183990f",
+          "deploy_nonce": 1785785921,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-08-03T19:38:56Z"
+        },
+        {
+          "version": "0.3.0",
+          "contract_id": "3bdae4a02727350a9874c3509afcdd4741d5deccbd42e4f2e0cc6276f2db9e4c",
+          "tx_id": "acfe2844b1eb34fb8bfeb7dff07ab01f55bff3abb99a8574d8f4d908eb62621d",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "001e34195018248f845bbf334df5a1a5da724177c47225e0782741acfc74a5d6",
+          "deploy_nonce": 1785502103,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-07-31T12:48:40Z"
+        },
+        {
+          "version": "0.1.1",
+          "contract_id": "e0c4c22c9f7aff26a7d1f842b6e5ffef528bd7faefe7272fed851871651f0466",
+          "tx_id": "9661c68b15cd94389cdb64de9b215b23f04647d67eb2278713322f6d62440b66",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "1367c8fdaabc49a420b3ea67be9959cc406a07e3fc69611dc566f3fbbf88bac8",
+          "deploy_nonce": 1784998700,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-07-25T16:58:34Z",
+          "ops_note": "TEMP live pin 2026-07-30 for finishing markets on pre-Phase-2 deploy. Phase G rights/bond wired on b7543a2b only \u2014 Create/has_right may be unavailable here."
+        },
+        {
+          "version": "0.2.0",
+          "contract_id": "b7543a2b3dc43a7b0e3b072281c34045bb2489d81c02578562afce4ad83452fe",
+          "tx_id": "1f2cc1179fbd069b9ef14c4c97c8774fcb80449c4f075f5c9d0af232502cbb0a",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "479f983e8e610557ba0ff070f7f80a44bfd8dfadabc5d94aa20eb485e1b8caca",
+          "deploy_nonce": 1785279422,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-07-28T22:57:15Z",
+          "ops_note": "Temporarily demoted 2026-07-30: live stack repointed to e0c4c22c to finish participant markets before next beta. Restore b7543a2b + ea48859c for Phase G relaunch."
+        }
+      ]
+    },
+    "achievement-nft": {
+      "current": {
+        "version": "0.1.1",
+        "contract_id": "3b6c3a0a9d0e1c4f1e5be7c948631aa0b0de04a23966a43aff2aa1dc4ff8cfbc",
+        "tx_id": "120b4b966c188e186776268bca654c054aca47738355aad3e3ca167bb6be7335",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "907b788b7e287b5c797c72ac6a62da1633e665926f36330e61666797510e17f4",
+        "deploy_nonce": 1785334198,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-07-29T14:10:20Z"
+      },
+      "history": [
+        {
+          "version": "0.1.0",
+          "contract_id": "a74a0dc8a08e839a5c26c7aad4a67b21f5a2105652ae2c48e74b21b5c08e7c1a",
+          "tx_id": "6ae1ec9ade01f8211ee9a8c9d504b06288a4b3c90047405399c175d1a62ffa31",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "35613777e8000dc2bef74b13cbcdf7f607e44f755b0fa439152e606b248e5197",
+          "deploy_nonce": 1785315253,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-07-29T08:54:30Z"
+        }
+      ]
+    },
+    "rights-registry": {
+      "current": {
+        "version": "0.1.0",
+        "contract_id": "d3a9911f9b98e87d979c956e242d0574a16ee87ba3102342fb3f6ca63a0180a7",
+        "tx_id": "26a67c2103e1d093893165f809ad9e131373fa41d4dde1d9610ffd742352410c",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "1523852ce18c41234bb528954506fd1cf98e10c020f944dbf01f2810c47812bf",
+        "deploy_nonce": 1785315280,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-07-29T08:55:00Z"
+      },
+      "history": []
+    },
+    "agent-pm-settlement": {
+      "current": {
+        "version": "0.1.2",
+        "contract_id": "97c87012b427eb4227f050477061a986474438534155615be5832eec099ec734",
+        "tx_id": "88a44f59a59d4ede605928b04c299ed2cdcee5ace50a656802c97d546ec70319",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "8e6d3d13cb7c04559eed2176774ca23db98cf211aa46cd4df82e1e48e4104763",
+        "deploy_nonce": 1787006753,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-08-17T22:46:10Z"
+      },
+      "history": [
+        {
+          "version": "0.1.1",
+          "contract_id": "695ba3804fbbdd5fee4415b48ff511a8d3f46769da8d8dbc26ea1db3446ae097",
+          "tx_id": "f7ba9479fa0f0851f881d19b3731f2e9b84dc80fb7b8f262893b0154695f2f60",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "c16a339656feb95febef58c7ce73101ec518a676cb0296c50fa2ed8d2e0f1b6c",
+          "deploy_nonce": 1785786021,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-08-03T19:40:37Z"
+        },
+        {
+          "version": "0.1.0",
+          "contract_id": "685b44bb9472dd1b1f9b6a62841f122696ce7370fe5b7367578617a2e4863760",
+          "tx_id": "26e3cd98548d3318755dce57f167be2f7829a8b55b32988aaaabb1d10c11ca3d",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "d52388e47b156e67bf4686488a3a4d09d1659c7dc914ca49c3b31bfcad16925a",
+          "deploy_nonce": 1785503086,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-07-31T13:05:10Z"
+        }
+      ]
     }
   },
   "wiring": {
@@ -954,6 +1323,1088 @@
           "called_at": "2026-08-08T22:36:20Z"
         }
       ]
+    },
+    "prediction-market.init_dispute_council": {
+      "current": {
+        "target_contract_id": "1c095ae2c34031fa4e38daab61afd0b129ff211d0b08e39548528d7785c43b1c",
+        "fn_name": "init_dispute_council",
+        "args": "[\"4e24b59d8f6a43985aaf438f622db905b04574e35aca22999d8cd2305c6b567d\", 0]",
+        "fn_args_hex": "4e24b59d8f6a43985aaf438f622db905b04574e35aca22999d8cd2305c6b567d0000000000000000",
+        "tx_id": "9d08d62364530e3d2a96128b805bacc96e5a1f4e8fafb0b4f9ab0581934f3a35",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-07-28T22:17:53Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "1c095ae2c34031fa4e38daab61afd0b129ff211d0b08e39548528d7785c43b1c",
+          "fn_name": "init_dispute_council",
+          "args": "[\"66d763b2db3861f924e19f40630f3aedc1892dbb0477824c60790d1c968783c6\", 0]",
+          "fn_args_hex": "66d763b2db3861f924e19f40630f3aedc1892dbb0477824c60790d1c968783c60000000000000000",
+          "tx_id": "b7f02c0c66450befb29be935c7d0e9d0115119a304ff8246ad75c9103fd2ad6f",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-24T15:02:39Z"
+        },
+        {
+          "target_contract_id": "3e9a19dd856b173e6f138df28fe43c76ca716b8b39bea1debd6fa67fda4ff758",
+          "fn_name": "init_dispute_council",
+          "args": "[[\"zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX\"], 1]",
+          "fn_args_hex": "e1b15bf20d8e4599b8097e10a8d794b0af55d5b797ee39587bcab88b4a596dd4d45c93e94995b0e359d770c03e47e80d88ca9e033c4cbaa4109aa69c4b20a5ad8e1c5f064066e6a5fcf2634b64582218dab4fefc276cecd17dcb9527b827b9025741653d4e889d72d97117ab7d7efd59e5965bf0ddd15317872aca6ce0822f96dfadffe9357c9c831e84fdc194d776012a877150a700d062d8e08a18658332c6ca54132559e071a818cdc4e85a2ba2801414bacb700c799a0175f98c3daed417000000000000000038ffffff0100000001000000",
+          "tx_id": "8e3cf94bfc96e5b9f17631cf17f30c19c47bb8234524506ed97fb3cffa949529",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-16T21:56:49Z"
+        },
+        {
+          "target_contract_id": "0b6d957cda54e71f8d48ef44b1fbf50d642e4a785aba2aa7ea09bb2fb1deeb4b",
+          "fn_name": "init_dispute_council",
+          "args": "[[\"zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX\"], 1]",
+          "fn_args_hex": "e1b15bf20d8e4599b8097e10a8d794b0af55d5b797ee39587bcab88b4a596dd4d45c93e94995b0e359d770c03e47e80d88ca9e033c4cbaa4109aa69c4b20a5ad8e1c5f064066e6a5fcf2634b64582218dab4fefc276cecd17dcb9527b827b9025741653d4e889d72d97117ab7d7efd59e5965bf0ddd15317872aca6ce0822f96dfadffe9357c9c831e84fdc194d776012a877150a700d062d8e08a18658332c6ca54132559e071a818cdc4e85a2ba2801414bacb700c799a0175f98c3daed417000000000000000038ffffff0100000001000000",
+          "tx_id": "dbf2d6a12d4bcec62c44571905702958b034f264892fd30a9c07f3942adba239",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-16T16:43:39Z"
+        },
+        {
+          "target_contract_id": "66c827cb1ddb51c1737088d072be9c7f77d5e4e81abdb5f49b937c4485869299",
+          "fn_name": "init_dispute_council",
+          "args": "[[\"zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX\"], 1]",
+          "fn_args_hex": "e1b15bf20d8e4599b8097e10a8d794b0af55d5b797ee39587bcab88b4a596dd4d45c93e94995b0e359d770c03e47e80d88ca9e033c4cbaa4109aa69c4b20a5ad8e1c5f064066e6a5fcf2634b64582218dab4fefc276cecd17dcb9527b827b9025741653d4e889d72d97117ab7d7efd59e5965bf0ddd15317872aca6ce0822f96dfadffe9357c9c831e84fdc194d776012a877150a700d062d8e08a18658332c6ca54132559e071a818cdc4e85a2ba2801414bacb700c799a0175f98c3daed417000000000000000038ffffff0100000001000000",
+          "tx_id": "1dcb2ef6290990b196d5196e173f679b3f2ed94b35c95c924cd757b4035bfa68",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-16T11:47:39Z"
+        },
+        {
+          "target_contract_id": "cdfc3c54bc2ad95fc6cf51a0543bd6acfbf81f953369deb2119648aee0c84da0",
+          "fn_name": "init_dispute_council",
+          "args": "[[\"zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX\"], 1]",
+          "fn_args_hex": "e1b15bf20d8e4599b8097e10a8d794b0af55d5b797ee39587bcab88b4a596dd4d45c93e94995b0e359d770c03e47e80d88ca9e033c4cbaa4109aa69c4b20a5ad8e1c5f064066e6a5fcf2634b64582218dab4fefc276cecd17dcb9527b827b9025741653d4e889d72d97117ab7d7efd59e5965bf0ddd15317872aca6ce0822f96dfadffe9357c9c831e84fdc194d776012a877150a700d062d8e08a18658332c6ca54132559e071a818cdc4e85a2ba2801414bacb700c799a0175f98c3daed417000000000000000038ffffff0100000001000000",
+          "tx_id": "dd39dfb4a11a6887d3ff5b5fc6160ca2b79936d4d6c7266b47d70c3766539824",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-16T11:12:20Z"
+        }
+      ]
+    },
+    "prediction-market.create_market": {
+      "current": {
+        "target_contract_id": "3e9a19dd856b173e6f138df28fe43c76ca716b8b39bea1debd6fa67fda4ff758",
+        "fn_name": "create_market",
+        "args": "{\"question_hash\":[68,216,42,216,147,140,131,118,210,58,111,45,242,120,111,232,121,23,74,160,132,60,90,125,0,89,120,206,130,124,97,181],\"content_cid\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"close_block\":5000000,\"challenge_window_blocks\":1,\"review_window_blocks\":1,\"initial_liquidity\":1000000000,\"min_bond\":100000000,\"kyc_override\":null}",
+        "fn_args_hex": "44d82ad8938c8376d23a6f2df2786fe879174aa0843c5a7d005978ce827c61b50000000000000000000000000000000000000000000000000000000000000000404b4c00000000000100000000000000010000000000000000ca9a3b0000000000e1f505000000000000000000000000",
+        "tx_id": "58fa087aacc20ba668641716159d07776ed07e9bad88435e21a3db2031d87433",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-07-20T16:53:39Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "3e9a19dd856b173e6f138df28fe43c76ca716b8b39bea1debd6fa67fda4ff758",
+          "fn_name": "create_market",
+          "args": "{\n  \"question_hash\": [\n    56,\n    73,\n    61,\n    247,\n    185,\n    196,\n    229,\n    169,\n    244,\n    237,\n    37,\n    177,\n    217,\n    198,\n    7,\n    177,\n    9,\n    126,\n    153,\n    195,\n    178,\n    94,\n    38,\n    210,\n    23,\n    119,\n    59,\n    9,\n    37,\n    126,\n    63,\n    102\n  ],\n  \"content_cid\": [\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0\n  ],\n  \"close_block\": 5000000,\n  \"challenge_window_blocks\": 500,\n  \"review_window_blocks\": 200,\n  \"initial_liquidity\": 1000000000,\n  \"min_bond\": 100000000,\n  \"kyc_override\": null\n}",
+          "fn_args_hex": "38493df7b9c4e5a9f4ed25b1d9c607b1097e99c3b25e26d217773b09257e3f660000000000000000000000000000000000000000000000000000000000000000404b4c0000000000f401000000000000c80000000000000000ca9a3b0000000000e1f505000000000000000000000000",
+          "tx_id": "3c330e29e52be99f7b0f6d718611e3e76c1d19b2c99af6ed0af225e13b10b124",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-20T16:46:09Z"
+        },
+        {
+          "target_contract_id": "3e9a19dd856b173e6f138df28fe43c76ca716b8b39bea1debd6fa67fda4ff758",
+          "fn_name": "create_market",
+          "args": "{\n  \"question_hash\": [\n    181,\n    182,\n    252,\n    142,\n    15,\n    22,\n    203,\n    152,\n    167,\n    75,\n    56,\n    190,\n    191,\n    245,\n    10,\n    8,\n    38,\n    68,\n    178,\n    59,\n    241,\n    17,\n    226,\n    194,\n    73,\n    29,\n    135,\n    18,\n    177,\n    196,\n    143,\n    231\n  ],\n  \"content_cid\": [\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0\n  ],\n  \"close_block\": 5090000,\n  \"challenge_window_blocks\": 500,\n  \"review_window_blocks\": 200,\n  \"initial_liquidity\": 1000000000,\n  \"min_bond\": 100000000,\n  \"kyc_override\": null\n}",
+          "fn_args_hex": "b5b6fc8e0f16cb98a74b38bebff50a082644b23bf111e2c2491d8712b1c48fe70000000000000000000000000000000000000000000000000000000000000000d0aa4d0000000000f401000000000000c80000000000000000ca9a3b0000000000e1f505000000000000000000000000",
+          "tx_id": "36d8c148d69a8f4863f0c1858c59259fc9c047c8d621c31118e1eae276b8f055",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-17T22:52:08Z"
+        },
+        {
+          "target_contract_id": "3e9a19dd856b173e6f138df28fe43c76ca716b8b39bea1debd6fa67fda4ff758",
+          "fn_name": "create_market",
+          "args": "{\n  \"question_hash\": [\n    119,\n    65,\n    109,\n    84,\n    129,\n    76,\n    3,\n    122,\n    225,\n    49,\n    42,\n    205,\n    105,\n    56,\n    187,\n    139,\n    11,\n    163,\n    12,\n    165,\n    134,\n    208,\n    32,\n    51,\n    29,\n    24,\n    135,\n    183,\n    26,\n    99,\n    229,\n    132\n  ],\n  \"content_cid\": [\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0\n  ],\n  \"close_block\": 5100000,\n  \"challenge_window_blocks\": 500,\n  \"review_window_blocks\": 200,\n  \"initial_liquidity\": 1000000000,\n  \"min_bond\": 100000000,\n  \"kyc_override\": null\n}",
+          "fn_args_hex": "77416d54814c037ae1312acd6938bb8b0ba30ca586d020331d1887b71a63e5840000000000000000000000000000000000000000000000000000000000000000e0d14d0000000000f401000000000000c80000000000000000ca9a3b0000000000e1f505000000000000000000000000",
+          "tx_id": "87f4a88c9ed0deeff92903c1fbf666c476c6e323b4d9a924dae67d631d9e980b",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-17T22:51:39Z"
+        },
+        {
+          "target_contract_id": "3e9a19dd856b173e6f138df28fe43c76ca716b8b39bea1debd6fa67fda4ff758",
+          "fn_name": "create_market",
+          "args": "{\n  \"question_hash\": [\n    103,\n    30,\n    181,\n    56,\n    201,\n    88,\n    141,\n    252,\n    17,\n    196,\n    148,\n    42,\n    13,\n    13,\n    47,\n    253,\n    125,\n    148,\n    19,\n    21,\n    105,\n    107,\n    38,\n    178,\n    139,\n    226,\n    147,\n    23,\n    181,\n    187,\n    22,\n    40\n  ],\n  \"content_cid\": [\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0\n  ],\n  \"close_block\": 5000000,\n  \"challenge_window_blocks\": 500,\n  \"review_window_blocks\": 200,\n  \"initial_liquidity\": 1000000000,\n  \"min_bond\": 100000000,\n  \"kyc_override\": null\n}",
+          "fn_args_hex": "671eb538c9588dfc11c4942a0d0d2ffd7d941315696b26b28be29317b5bb16280000000000000000000000000000000000000000000000000000000000000000404b4c0000000000f401000000000000c80000000000000000ca9a3b0000000000e1f505000000000000000000000000",
+          "tx_id": "f38fad820c0db1cf686339acb21aa415ed4795df990df9d2cb108b41703fec56",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-17T22:51:09Z"
+        },
+        {
+          "target_contract_id": "3e9a19dd856b173e6f138df28fe43c76ca716b8b39bea1debd6fa67fda4ff758",
+          "fn_name": "create_market",
+          "args": "{\n  \"question_hash\": [\n    187,\n    252,\n    226,\n    213,\n    124,\n    247,\n    135,\n    255,\n    3,\n    81,\n    164,\n    61,\n    212,\n    231,\n    190,\n    189,\n    184,\n    232,\n    50,\n    233,\n    100,\n    157,\n    242,\n    77,\n    151,\n    193,\n    253,\n    57,\n    176,\n    154,\n    91,\n    47\n  ],\n  \"content_cid\": [\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0\n  ],\n  \"close_block\": 5000000,\n  \"challenge_window_blocks\": 500,\n  \"review_window_blocks\": 200,\n  \"initial_liquidity\": 1000000000,\n  \"min_bond\": 100000000,\n  \"kyc_override\": null\n}",
+          "fn_args_hex": "bbfce2d57cf787ff0351a43dd4e7bebdb8e832e9649df24d97c1fd39b09a5b2f0000000000000000000000000000000000000000000000000000000000000000404b4c0000000000f401000000000000c80000000000000000ca9a3b0000000000e1f505000000000000000000000000",
+          "tx_id": "96cf3551909329bb4243c5891b35bbcafee23f992c304ff286f1824a83426b43",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-16T21:51:29Z"
+        },
+        {
+          "target_contract_id": "0b6d957cda54e71f8d48ef44b1fbf50d642e4a785aba2aa7ea09bb2fb1deeb4b",
+          "fn_name": "create_market",
+          "args": "{\n  \"question_hash\": [\n    101,\n    88,\n    62,\n    54,\n    153,\n    56,\n    9,\n    60,\n    154,\n    32,\n    84,\n    171,\n    145,\n    204,\n    166,\n    24,\n    167,\n    41,\n    161,\n    247,\n    69,\n    11,\n    204,\n    226,\n    197,\n    218,\n    60,\n    214,\n    170,\n    135,\n    144,\n    29\n  ],\n  \"content_cid\": [\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0\n  ],\n  \"close_block\": 3911292,\n  \"challenge_window_blocks\": 500,\n  \"review_window_blocks\": 200,\n  \"initial_liquidity\": 1000000000,\n  \"min_bond\": 100000000,\n  \"kyc_override\": null\n}",
+          "fn_args_hex": "65583e369938093c9a2054ab91cca618a729a1f7450bcce2c5da3cd6aa87901d00000000000000000000000000000000000000000000000000000000000000007cae3b0000000000f401000000000000c80000000000000000ca9a3b0000000000e1f505000000000000000000000000",
+          "tx_id": "5e407b93f7f16015cfd866f7403a21ea7d2ee6b9f2ea8905fbe21178e1f3ff6c",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-16T16:43:59Z"
+        },
+        {
+          "target_contract_id": "66c827cb1ddb51c1737088d072be9c7f77d5e4e81abdb5f49b937c4485869299",
+          "fn_name": "create_market",
+          "args": "{\n  \"question_hash\": [\n    233,\n    167,\n    135,\n    47,\n    240,\n    123,\n    228,\n    218,\n    178,\n    85,\n    65,\n    238,\n    8,\n    215,\n    68,\n    202,\n    161,\n    242,\n    34,\n    72,\n    149,\n    108,\n    89,\n    194,\n    196,\n    149,\n    15,\n    12,\n    132,\n    216,\n    130,\n    100\n  ],\n  \"content_cid\": [\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0\n  ],\n  \"close_block\": 5000000,\n  \"challenge_window_blocks\": 500,\n  \"resolution_attestors\": [\n    \"zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX\"\n  ],\n  \"threshold\": 1,\n  \"initial_liquidity\": 1000000000,\n  \"min_bond\": 100000000,\n  \"kyc_override\": null\n}",
+          "fn_args_hex": "e1b15bf20d8e4599b8097e10a8d794b0af55d5b797ee39587bcab88b4a596dd4d45c93e94995b0e359d770c03e47e80d88ca9e033c4cbaa4109aa69c4b20a5ad8e1c5f064066e6a5fcf2634b64582218dab4fefc276cecd17dcb9527b827b9025741653d4e889d72d97117ab7d7efd59e5965bf0ddd15317872aca6ce0822f96dfadffe9357c9c831e84fdc194d776012a877150a700d062d8e08a18658332c6ca54132559e071a818cdc4e85a2ba2801414bacb700c799a0175f98c3daed4170000000000000000e9a7872ff07be4dab25541ee08d744caa1f22248956c59c2c4950f0c84d882640000000000000000000000000000000000000000000000000000000000000000404b4c0000000000f401000000000000e8feffff0100000000ca9a3b0000000000e1f505000000000100000000000000",
+          "tx_id": "2ff6bf6dec28db0293b452270fe1e8459d876190784ffec264500bc21c886e28",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-16T13:40:39Z"
+        },
+        {
+          "target_contract_id": "66c827cb1ddb51c1737088d072be9c7f77d5e4e81abdb5f49b937c4485869299",
+          "fn_name": "create_market",
+          "args": "{\n  \"question_hash\": [\n    127,\n    166,\n    22,\n    2,\n    153,\n    130,\n    46,\n    252,\n    136,\n    151,\n    235,\n    203,\n    206,\n    34,\n    212,\n    64,\n    153,\n    6,\n    78,\n    55,\n    195,\n    192,\n    214,\n    218,\n    39,\n    217,\n    194,\n    248,\n    74,\n    46,\n    95,\n    188\n  ],\n  \"content_cid\": [\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0,\n    0\n  ],\n  \"close_block\": 5000000,\n  \"challenge_window_blocks\": 500,\n  \"resolution_attestors\": [\n    \"zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX\"\n  ],\n  \"threshold\": 1,\n  \"initial_liquidity\": 1000000000,\n  \"min_bond\": 100000000,\n  \"kyc_override\": null\n}",
+          "fn_args_hex": "e1b15bf20d8e4599b8097e10a8d794b0af55d5b797ee39587bcab88b4a596dd4d45c93e94995b0e359d770c03e47e80d88ca9e033c4cbaa4109aa69c4b20a5ad8e1c5f064066e6a5fcf2634b64582218dab4fefc276cecd17dcb9527b827b9025741653d4e889d72d97117ab7d7efd59e5965bf0ddd15317872aca6ce0822f96dfadffe9357c9c831e84fdc194d776012a877150a700d062d8e08a18658332c6ca54132559e071a818cdc4e85a2ba2801414bacb700c799a0175f98c3daed41700000000000000007fa6160299822efc8897ebcbce22d44099064e37c3c0d6da27d9c2f84a2e5fbc0000000000000000000000000000000000000000000000000000000000000000404b4c0000000000f401000000000000e8feffff0100000000ca9a3b0000000000e1f505000000000100000000000000",
+          "tx_id": "b263443f94dd2751d2d63abcacfe1c5bd4b9aa3256b644f9343d02005b374263",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-16T12:00:19Z"
+        },
+        {
+          "target_contract_id": "cdfc3c54bc2ad95fc6cf51a0543bd6acfbf81f953369deb2119648aee0c84da0",
+          "fn_name": "create_market",
+          "args": "{\"question_hash\":[1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"close_block\":5000000,\"challenge_window_blocks\":500,\"resolution_attestors\":[\"zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX\"],\"threshold\":1,\"initial_liquidity\":1000000000,\"min_bond\":100000000,\"kyc_override\":null}",
+          "fn_args_hex": "e1b15bf20d8e4599b8097e10a8d794b0af55d5b797ee39587bcab88b4a596dd4d45c93e94995b0e359d770c03e47e80d88ca9e033c4cbaa4109aa69c4b20a5ad8e1c5f064066e6a5fcf2634b64582218dab4fefc276cecd17dcb9527b827b9025741653d4e889d72d97117ab7d7efd59e5965bf0ddd15317872aca6ce0822f96dfadffe9357c9c831e84fdc194d776012a877150a700d062d8e08a18658332c6ca54132559e071a818cdc4e85a2ba2801414bacb700c799a0175f98c3daed41700000000000000000100000000000000000000000000000000000000000000000000000000000000404b4c0000000000f40100000000000008ffffff0100000000ca9a3b0000000000e1f505000000000100000000000000",
+          "tx_id": "530ccacbea1599361034daf966f29cf2aa445dfd8d78fe4bf47df77ac1169d53",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-16T11:24:39Z"
+        }
+      ]
+    },
+    "prediction-market.deposit_collateral": {
+      "current": {
+        "target_contract_id": "3e9a19dd856b173e6f138df28fe43c76ca716b8b39bea1debd6fa67fda4ff758",
+        "fn_name": "deposit_collateral",
+        "args": "{\"auth\": {\"trading_pk\": \"23QhqhNxzX4zttJ1uqAjTEEH3xmTRZbfLq5t2E2ft9e27fg6aBJUDqknQ9jYz89rbGiAnw25vGcZ53viC5ZsoGwNNhsSSgvjTCbxY66aLp8PR8kR3bBBZCeovyPkxcKyF3YN\", \"nonce\": 0, \"signature\": \"6wRSkb3ffLSD8rTgHN19dtVzwFxyJvC7VFEr8Bi4EX8B4tELpVe9hCCLtwudHeFm9C\"}, \"amount\": 2000000000}",
+        "fn_args_hex": "6f809cac34b590c5c81d231b074e3671b24b47b31916b16a038f64fc16eb0a67ee88c71bea3ba476e92a344c50654606eb80fc3f71d297106bb3533502fdbc5579cd9f5cbe06e77235ba89aefbcd3bff1d44405011760766df45470385ad05153e3750c05e3b5b196d82e52bb5a5b6290139db4d26b0eb74250c88640d89b80a0dc1e80622eec3bfbb512366d5083b03a2fbca4c33ece9ab4e098af4122d141e15f0bede23ba6d16397d03e902595e2d227d6e5fdfd65e478393672a7729ae0200000000000000000000000000000000d30857817b35054fa8c6111e03cf45e23ea8efb0d9d872cfb569d1fc8cbace54fcf33456f5a312bdf36b00407ca3710dfc07ab77878ea5360ea29b67291df57352e7b0d53fe48832880aaa8bc0afea5da0780d3333a7b0af429c11283b6dbb0100000000000000000094357700000000",
+        "tx_id": "f0c9907b0a4b675bea0a824248f97e9584a30a1bfe4dd90159edd04dba358a4a",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-07-20T16:30:50Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "66c827cb1ddb51c1737088d072be9c7f77d5e4e81abdb5f49b937c4485869299",
+          "fn_name": "deposit_collateral",
+          "args": "{\"auth\":{\"trading_pk\":\"ttfgHX3ArR3y753w6Wzno5XLTa3bMuFsvCuJWr18bh38uwJJWNLbfQhysRLke1qZ1BEAUfftSy8queRGFb3bVNm44fuipkRX5jMSv5Zff58zNAFUX7RPQ7QMytt54rQ8AzZ\",\"nonce\":0,\"signature\":\"7Xgh6dYkHUxef1sMqNMRU2wTcuqh7KMkZscVErVCe5LmKdU4gFfe78MNU5X8tELUvp\"},\"amount\":100000000}",
+          "fn_args_hex": "39ee2324d1f4150a4de92f37e89cc516da6679b65704e518229ff42672013310b344d35e7c883c3743bfbe48e72fa5149cd4ccbd97854d99473823fa96202513fc8026941ac83037c99974db267cac4c55f00909d0de947a5471cede955dec15214193da3fa58e61e69b506fdca79b843e49b59b9d6676f3ba86ecde19c1efb82a92f00cecc178f9b5305e015d49fd0f37c02c3810a45d17a211646636adf955b9744bd989a8077a1c68350825e0013cbacfaf9ea01515b8ca9430a862dcdb190000000000000000000000000000000004a8690bee4e09648b260b8dcb457971c25c9cd28277db2fa975a712d7954e84b1e34e2c02d3ddf56efa8913903f201686663c48e4c477d522a33256e7cf0edd2d329c3caab724c9416dbbc908bcc4d09abbc0c5cdff73f7ebc54ec430891f0c000000000000000000e1f50500000000",
+          "tx_id": "6e677d370b377bef1b56f917765fcdb30a164d7bca0cdd2fc9de5803f0578217",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-16T12:09:59Z"
+        },
+        {
+          "target_contract_id": "66c827cb1ddb51c1737088d072be9c7f77d5e4e81abdb5f49b937c4485869299",
+          "fn_name": "deposit_collateral",
+          "args": "{\"auth\":{\"trading_pk\":\"24JgiiUdY3FiRQ3KsJgYnYzuYDZ5kx1LeLVypWNgELL5y5xUibttT4V55V1VCjVCq6HbQnSpHVbjivwBj1gAhYYE1HyngWbuMeSGM1AGMKAvajNbwh54VNEwqDpAwcFeqmFa\",\"nonce\":0,\"signature\":\"7g7kVbR3ARSrdqC7kt9YfkP1hjXLCPVnAzhnAvGDPxtVkdpQth2Nde7g1ZcfhgYG57\"},\"amount\":100000000}",
+          "fn_args_hex": "a5fc630e98abf727ae8649781303af3f4854bc80065b23b89bc503c2c9413aa8c3ce3965b0bdc45c03297529e1d47b007821a83c84bf27812c162148596e682669be7991e0065efef98d41eed12fc87da0f3a32389c1247fc891adc386443604b51dcf7476732a86c1715282b89da02aaa1bea01571fd90de76875161ff0fbda1ad9bb1963a5b8f46cfc7b1be0c68c07e4499b7af8742e52a3bd53fe4be95db800626653f5cbf32ea6855debbd01be29f2bcd56db5732e09cf0e21152a8c7f150000000000000000000000000000000031663692c71019055535b1318cfde15d7f9a1e80260ac7b57b651e0f165a51f4c41f45b91c47e4cdfde0fdb4f8dbda027ad1b4cbd321dfd2ea49531cc331c661350af9425fd0f8060bc190274478eb4098eba2f20fa1ebb86c27e9cac45f5a05000000000000000000e1f50500000000",
+          "tx_id": "917ea19c5df41b44393284ee7164ca72402f5920b36d32343a1649600ca0142f",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-16T12:08:00Z"
+        }
+      ]
+    },
+    "prediction-market.trade": {
+      "current": {
+        "target_contract_id": "3e9a19dd856b173e6f138df28fe43c76ca716b8b39bea1debd6fa67fda4ff758",
+        "fn_name": "trade",
+        "args": "{\"auth\": {\"trading_pk\": \"23QhqhNxzX4zttJ1uqAjTEEH3xmTRZbfLq5t2E2ft9e27fg6aBJUDqknQ9jYz89rbGiAnw25vGcZ53viC5ZsoGwNNhsSSgvjTCbxY66aLp8PR8kR3bBBZCeovyPkxcKyF3YN\", \"nonce\": 5, \"signature\": \"6x5px83gcFypY85STdHE1Rp9XudNHKF1c5vEdRfwDPxPynrhKbbsuKM7sH9AMH3oYa\"}, \"market_id\": 12, \"outcome\": 0, \"is_buy\": true, \"amount\": 200000000}",
+        "fn_args_hex": "6f809cac34b590c5c81d231b074e3671b24b47b31916b16a038f64fc16eb0a67ee88c71bea3ba476e92a344c50654606eb80fc3f71d297106bb3533502fdbc5579cd9f5cbe06e77235ba89aefbcd3bff1d44405011760766df45470385ad05153e3750c05e3b5b196d82e52bb5a5b6290139db4d26b0eb74250c88640d89b80a0dc1e80622eec3bfbb512366d5083b03a2fbca4c33ece9ab4e098af4122d141e15f0bede23ba6d16397d03e902595e2d227d6e5fdfd65e478393672a7729ae0200000000000000000500000000000000bc9a0c97a828968b22e71ba686c9db919a17a860d0bd319e7e5a689f670f9414852f5c6e9ab8940d5f1fd438fd1f75177c9582b5bb0d00ad53b8236f540cc8348bc9dd86f6b8ec3b00b2d31bd06c1ed957e92cc24e8cf933c96970ca8dac791500000000000000000c0000000000000000c2eb0b000000000001000000000000",
+        "tx_id": "b63bf0df052c5784d24fdb7027b704e303c34712ee816151de19122ba680a51f",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-07-20T16:56:09Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "3e9a19dd856b173e6f138df28fe43c76ca716b8b39bea1debd6fa67fda4ff758",
+          "fn_name": "trade",
+          "args": "{\"auth\": {\"trading_pk\": \"23QhqhNxzX4zttJ1uqAjTEEH3xmTRZbfLq5t2E2ft9e27fg6aBJUDqknQ9jYz89rbGiAnw25vGcZ53viC5ZsoGwNNhsSSgvjTCbxY66aLp8PR8kR3bBBZCeovyPkxcKyF3YN\", \"nonce\": 4, \"signature\": \"6FJitt37opkn7XUKapAycKm9dNtBkCh3rQ67JhvKmVa8qeTxpGw9iJs3ka8ENLH3EV\"}, \"market_id\": 11, \"outcome\": 0, \"is_buy\": true, \"amount\": 200000000}",
+          "fn_args_hex": "6f809cac34b590c5c81d231b074e3671b24b47b31916b16a038f64fc16eb0a67ee88c71bea3ba476e92a344c50654606eb80fc3f71d297106bb3533502fdbc5579cd9f5cbe06e77235ba89aefbcd3bff1d44405011760766df45470385ad05153e3750c05e3b5b196d82e52bb5a5b6290139db4d26b0eb74250c88640d89b80a0dc1e80622eec3bfbb512366d5083b03a2fbca4c33ece9ab4e098af4122d141e15f0bede23ba6d16397d03e902595e2d227d6e5fdfd65e478393672a7729ae0200000000000000000400000000000000b9b2d4165b5c50a66be67644640e05f8759be5d3be427316c3bc003e0a01a7aff5e69f01ed78dd9073af64c6e7754718a3f079ae1a5b167993af0df6caf217c013f35ee640fe6b4864d56b45a86b43ba9c65cdfcc73673539088e0148260151600000000000000000b0000000000000000c2eb0b000000000001000000000000",
+          "tx_id": "99df3cd66f54ab58511a7ab464730773531f8b204f8efe830efb6c0f5213fb1a",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-20T16:54:10Z"
+        },
+        {
+          "target_contract_id": "3e9a19dd856b173e6f138df28fe43c76ca716b8b39bea1debd6fa67fda4ff758",
+          "fn_name": "trade",
+          "args": "{\"auth\": {\"trading_pk\": \"23QhqhNxzX4zttJ1uqAjTEEH3xmTRZbfLq5t2E2ft9e27fg6aBJUDqknQ9jYz89rbGiAnw25vGcZ53viC5ZsoGwNNhsSSgvjTCbxY66aLp8PR8kR3bBBZCeovyPkxcKyF3YN\", \"nonce\": 2, \"signature\": \"7d3ypim9K7ns9D2RvuSRp5GmjBh6Wx4hLZq3CKa38rQrzJSSAY7W1itDAByFnNRgqm\"}, \"market_id\": 11, \"outcome\": 0, \"is_buy\": false, \"amount\": 400000000}",
+          "fn_args_hex": "6f809cac34b590c5c81d231b074e3671b24b47b31916b16a038f64fc16eb0a67ee88c71bea3ba476e92a344c50654606eb80fc3f71d297106bb3533502fdbc5579cd9f5cbe06e77235ba89aefbcd3bff1d44405011760766df45470385ad05153e3750c05e3b5b196d82e52bb5a5b6290139db4d26b0eb74250c88640d89b80a0dc1e80622eec3bfbb512366d5083b03a2fbca4c33ece9ab4e098af4122d141e15f0bede23ba6d16397d03e902595e2d227d6e5fdfd65e478393672a7729ae0200000000000000000200000000000000ee9ce3622c2ca39fbf50582c94650bc34972549124b2116b5f4d3e278b00b7d8132b8ae530c1e53467ec6a044f99e2155212c61da3a5fc16d8f82d42fba39476e64c322a640ceca508010dc1989f676fe3b5ac6888f98131c807ee3a2883810200000000000000000b000000000000000084d717000000000000000000000000",
+          "tx_id": "fd246b414178774242acad9bd1b2b2c87acba26a78d6c876fa59418a065e8c65",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-20T16:48:09Z"
+        },
+        {
+          "target_contract_id": "3e9a19dd856b173e6f138df28fe43c76ca716b8b39bea1debd6fa67fda4ff758",
+          "fn_name": "trade",
+          "args": "{\"auth\": {\"trading_pk\": \"23QhqhNxzX4zttJ1uqAjTEEH3xmTRZbfLq5t2E2ft9e27fg6aBJUDqknQ9jYz89rbGiAnw25vGcZ53viC5ZsoGwNNhsSSgvjTCbxY66aLp8PR8kR3bBBZCeovyPkxcKyF3YN\", \"nonce\": 1, \"signature\": \"7my8VuiMvEgQJmGVz813ppdwiSb39Q71vDb6HLc31kkiaSvqMrhPrtJ5PhuQC37Ybg\"}, \"market_id\": 11, \"outcome\": 0, \"is_buy\": true, \"amount\": 500000000}",
+          "fn_args_hex": "6f809cac34b590c5c81d231b074e3671b24b47b31916b16a038f64fc16eb0a67ee88c71bea3ba476e92a344c50654606eb80fc3f71d297106bb3533502fdbc5579cd9f5cbe06e77235ba89aefbcd3bff1d44405011760766df45470385ad05153e3750c05e3b5b196d82e52bb5a5b6290139db4d26b0eb74250c88640d89b80a0dc1e80622eec3bfbb512366d5083b03a2fbca4c33ece9ab4e098af4122d141e15f0bede23ba6d16397d03e902595e2d227d6e5fdfd65e478393672a7729ae02000000000000000001000000000000009210e8b3e4658236c00ddf05259ef7730949a6dc6bda4e58656bb7fd9181a60f70b143a2a858b2070059e23cc01f070e7699744e0869c631aa72cb8e175e3bf9c7d6036f25340d56ca7358163f6f5787f67f5d0ea31aba38961698214187af0a00000000000000000b000000000000000065cd1d000000000001000000000000",
+          "tx_id": "cd311dad09e5c5fcc1d7725dcdd96e83ee5875a6a01e1c9193c95716d70f8729",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-20T16:47:19Z"
+        },
+        {
+          "target_contract_id": "66c827cb1ddb51c1737088d072be9c7f77d5e4e81abdb5f49b937c4485869299",
+          "fn_name": "trade",
+          "args": "{\"auth\":{\"trading_pk\":\"ttfgHX3ArR3y753w6Wzno5XLTa3bMuFsvCuJWr18bh38uwJJWNLbfQhysRLke1qZ1BEAUfftSy8queRGFb3bVNm44fuipkRX5jMSv5Zff58zNAFUX7RPQ7QMytt54rQ8AzZ\",\"nonce\":1,\"signature\":\"7Cp8SskjfeQMwJfymV9UBuUqn2VKLM94kL5cGQmWw8rRzNByqoM73gdTYuuEfWNBow\"},\"market_id\":0,\"outcome\":0,\"is_buy\":true,\"amount\":50000000}",
+          "fn_args_hex": "39ee2324d1f4150a4de92f37e89cc516da6679b65704e518229ff42672013310b344d35e7c883c3743bfbe48e72fa5149cd4ccbd97854d99473823fa96202513fc8026941ac83037c99974db267cac4c55f00909d0de947a5471cede955dec15214193da3fa58e61e69b506fdca79b843e49b59b9d6676f3ba86ecde19c1efb82a92f00cecc178f9b5305e015d49fd0f37c02c3810a45d17a211646636adf955b9744bd989a8077a1c68350825e0013cbacfaf9ea01515b8ca9430a862dcdb19000000000000000001000000000000004ba41031bf32fdfdabd43fe370f5f547e41199df7f9b4e7ac02d4782c8ce7016567dc698214a02557825eca13ff07003a0a0289ea5c01c158e6cdca237d96a2df814ffdd91b775dff1f101512bcc3412ff74ed82d0d1ef22130507ca0d4c160e0000000000000000000000000000000080f0fa02000000000001000000000000",
+          "tx_id": "bd2298e25973bdc3ae1c86326fdfa851382c0b2bd7d70327b406c04a9b25b01b",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-16T12:10:19Z"
+        }
+      ]
+    },
+    "prediction-market.init_treasury": {
+      "current": {
+        "target_contract_id": "1c095ae2c34031fa4e38daab61afd0b129ff211d0b08e39548528d7785c43b1c",
+        "fn_name": "init_treasury",
+        "args": "\"de6a54464592fe6473afb278f6fe0607f8bd2f023000becc452fa624e5de5c53\"",
+        "fn_args_hex": "de6a54464592fe6473afb278f6fe0607f8bd2f023000becc452fa624e5de5c53",
+        "tx_id": "f9cddb5730170d7726efc05ffecdc5f5e71259996eca08c27e6c7ab3d525aa64",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-07-24T14:18:59Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "3e9a19dd856b173e6f138df28fe43c76ca716b8b39bea1debd6fa67fda4ff758",
+          "fn_name": "init_treasury",
+          "args": "\"de6a54464592fe6473afb278f6fe0607f8bd2f023000becc452fa624e5de5c53\"",
+          "fn_args_hex": "de6a54464592fe6473afb278f6fe0607f8bd2f023000becc452fa624e5de5c53",
+          "tx_id": "e9430876a8433144ef404176ef8e47ca0e2387c880b8a1ea9101301957c74262",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-16T21:50:50Z"
+        }
+      ]
+    },
+    "prediction-market.withdraw_collateral": {
+      "current": {
+        "target_contract_id": "3e9a19dd856b173e6f138df28fe43c76ca716b8b39bea1debd6fa67fda4ff758",
+        "fn_name": "withdraw_collateral",
+        "args": "{\"auth\": {\"trading_pk\": \"23QhqhNxzX4zttJ1uqAjTEEH3xmTRZbfLq5t2E2ft9e27fg6aBJUDqknQ9jYz89rbGiAnw25vGcZ53viC5ZsoGwNNhsSSgvjTCbxY66aLp8PR8kR3bBBZCeovyPkxcKyF3YN\", \"nonce\": 3, \"signature\": \"6Pc8dSMuLup2We9GJ3BZKymqywvnnuYpTweZY71jXw3uF6UP13ctq8aGELBqLeihYc\"}, \"amount\": 1000000000, \"recipient\": \"zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX\"}",
+        "fn_args_hex": "6f809cac34b590c5c81d231b074e3671b24b47b31916b16a038f64fc16eb0a67ee88c71bea3ba476e92a344c50654606eb80fc3f71d297106bb3533502fdbc5579cd9f5cbe06e77235ba89aefbcd3bff1d44405011760766df45470385ad05153e3750c05e3b5b196d82e52bb5a5b6290139db4d26b0eb74250c88640d89b80a0dc1e80622eec3bfbb512366d5083b03a2fbca4c33ece9ab4e098af4122d141e15f0bede23ba6d16397d03e902595e2d227d6e5fdfd65e478393672a7729ae02000000000000000003000000000000005105a20e17975736434f08f66e8c86b9784d0db887e1fcdb78be71f0a5c42f031c1625c7aa037fb6d2a2c0a288ed63012e6729d54950388496be29dd23a3a997be46c1c909afe772118c733268d83a1dbb9dcbaaa7e7286c1d78b2c7309acc19000000000000000000ca9a3b00000000e1b15bf20d8e4599b8097e10a8d794b0af55d5b797ee39587bcab88b4a596dd4d45c93e94995b0e359d770c03e47e80d88ca9e033c4cbaa4109aa69c4b20a5ad8e1c5f064066e6a5fcf2634b64582218dab4fefc276cecd17dcb9527b827b9025741653d4e889d72d97117ab7d7efd59e5965bf0ddd15317872aca6ce0822f96dfadffe9357c9c831e84fdc194d776012a877150a700d062d8e08a18658332c6ca54132559e071a818cdc4e85a2ba2801414bacb700c799a0175f98c3daed4170000000000000000",
+        "tx_id": "4b35c6baf23924e8498d42ed0878631fa6e334b6cc0037c20f672a73abf1854c",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-07-20T16:48:39Z"
+      },
+      "history": []
+    },
+    "prediction-market.assert_yes": {
+      "current": {
+        "target_contract_id": "3e9a19dd856b173e6f138df28fe43c76ca716b8b39bea1debd6fa67fda4ff758",
+        "fn_name": "assert_yes",
+        "args": "12",
+        "fn_args_hex": "0c00000000000000",
+        "tx_id": "c0f49fa3da614102c5bcab2e0b580a3627f0031c5c842735fce879bb471cc45a",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-07-20T16:56:29Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "3e9a19dd856b173e6f138df28fe43c76ca716b8b39bea1debd6fa67fda4ff758",
+          "fn_name": "assert_yes",
+          "args": "11",
+          "fn_args_hex": "0b00000000000000",
+          "tx_id": "7505e929449bcfebfce0b1341ba48f236635bac56430f2d0bb6547716f554773",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-20T16:54:29Z"
+        }
+      ]
+    },
+    "prediction-market.finalize_resolution": {
+      "current": {
+        "target_contract_id": "3e9a19dd856b173e6f138df28fe43c76ca716b8b39bea1debd6fa67fda4ff758",
+        "fn_name": "finalize_resolution",
+        "args": "12",
+        "fn_args_hex": "0c00000000000000",
+        "tx_id": "fb4add81190ef3077b75784d76077233a21e80403945e25e93f88d363edd7741",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-07-20T16:58:19Z"
+      },
+      "history": []
+    },
+    "prediction-market.claim_payout": {
+      "current": {
+        "target_contract_id": "3e9a19dd856b173e6f138df28fe43c76ca716b8b39bea1debd6fa67fda4ff758",
+        "fn_name": "claim_payout",
+        "args": "{\"auth\": {\"trading_pk\": \"23QhqhNxzX4zttJ1uqAjTEEH3xmTRZbfLq5t2E2ft9e27fg6aBJUDqknQ9jYz89rbGiAnw25vGcZ53viC5ZsoGwNNhsSSgvjTCbxY66aLp8PR8kR3bBBZCeovyPkxcKyF3YN\", \"nonce\": 6, \"signature\": \"7QcpNv6Zi9EtG8GmvP7wuCWTsoCWGkschRBQ7mfKRDocnZdxUZ5xdQpuuz6rHWu5ME\"}, \"market_id\": 12}",
+        "fn_args_hex": "6f809cac34b590c5c81d231b074e3671b24b47b31916b16a038f64fc16eb0a67ee88c71bea3ba476e92a344c50654606eb80fc3f71d297106bb3533502fdbc5579cd9f5cbe06e77235ba89aefbcd3bff1d44405011760766df45470385ad05153e3750c05e3b5b196d82e52bb5a5b6290139db4d26b0eb74250c88640d89b80a0dc1e80622eec3bfbb512366d5083b03a2fbca4c33ece9ab4e098af4122d141e15f0bede23ba6d16397d03e902595e2d227d6e5fdfd65e478393672a7729ae0200000000000000000600000000000000f89ac637c912a7e95d66d0e4e733655ecb2cc152a5b0b319f7a27b0120840b75a48cb87b07d7550f6dddeee3de082f13ee03282644e751a8a05958532dd4005900842954168db33b1bf34693b84d3244c08d92c7cd3f63bfa228f55162862a1100000000000000000c00000000000000",
+        "tx_id": "a29ba4c8811cb7b11453356f5ada37b2f4b082d07b45eb35444727640046df5e",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-07-20T17:04:58Z"
+      },
+      "history": []
+    },
+    "prediction-market-atlas.init_operator": {
+      "current": {
+        "target_contract_id": "490b5b2e41cb1d5a7dad9ca7aabdc375b4ca799564541227d8a0f91d7e844a0c",
+        "fn_name": "init_operator",
+        "args": "\"zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX\"",
+        "fn_args_hex": "e1b15bf20d8e4599b8097e10a8d794b0af55d5b797ee39587bcab88b4a596dd4d45c93e94995b0e359d770c03e47e80d88ca9e033c4cbaa4109aa69c4b20a5ad8e1c5f064066e6a5fcf2634b64582218dab4fefc276cecd17dcb9527b827b9025741653d4e889d72d97117ab7d7efd59e5965bf0ddd15317872aca6ce0822f96dfadffe9357c9c831e84fdc194d776012a877150a700d062d8e08a18658332c6ca54132559e071a818cdc4e85a2ba2801414bacb700c799a0175f98c3daed4170000000000000000",
+        "tx_id": "e5886c09e09dd2e9b345a03c25fbf5db357be2fb231136defd357a6d53ee6402",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-17T22:31:19Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "ddf5f25a5d847835611918ef48d6b8c9cb0404156f55df047a69fc35254f16ea",
+          "fn_name": "init_operator",
+          "args": "\"zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX\"",
+          "fn_args_hex": "e1b15bf20d8e4599b8097e10a8d794b0af55d5b797ee39587bcab88b4a596dd4d45c93e94995b0e359d770c03e47e80d88ca9e033c4cbaa4109aa69c4b20a5ad8e1c5f064066e6a5fcf2634b64582218dab4fefc276cecd17dcb9527b827b9025741653d4e889d72d97117ab7d7efd59e5965bf0ddd15317872aca6ce0822f96dfadffe9357c9c831e84fdc194d776012a877150a700d062d8e08a18658332c6ca54132559e071a818cdc4e85a2ba2801414bacb700c799a0175f98c3daed4170000000000000000",
+          "tx_id": "a017a32f074113c735e2d4c1fc16483271b147c1d4e32a67a473c2b3decacb26",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-25T16:56:34Z"
+        }
+      ]
+    },
+    "prediction-market-treasury-logic.init_data": {
+      "current": {
+        "target_contract_id": "133fd91d27937361589bd374501fa1eb14ad651c00d4b9d6384b787e2039fbe3",
+        "fn_name": "init_data",
+        "args": "\"500ad9968976df54df846238734a1acc97e353b52903fcd68fba259b66111e7c\"",
+        "fn_args_hex": "500ad9968976df54df846238734a1acc97e353b52903fcd68fba259b66111e7c",
+        "tx_id": "a51d7964979b0205a64148589c122bd88a37745a73445cd6af9b844d08525300",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-17T22:41:50Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "7faf38b7a739a05edd9b23df7e108c81769adaee37495886eb538bce201387b1",
+          "fn_name": "init_data",
+          "args": "\"02005dc1dcd4ece4b208dbbf2fcbd6e3b560223f39caad7cb5c44d4d3585906b\"",
+          "fn_args_hex": "02005dc1dcd4ece4b208dbbf2fcbd6e3b560223f39caad7cb5c44d4d3585906b",
+          "tx_id": "0881632e654dc033705e2db4ddaf2cb17e291f80ac83e14f44f43d1610df7e3c",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-17T22:35:50Z"
+        },
+        {
+          "target_contract_id": "8f7156f3f23d4d6b8db2104309aa195ae177739cf18eae31eed22b3abdf933dc",
+          "fn_name": "init_data",
+          "args": "\"31c63c3bfdb2c0b4b744cf1c2c7a78ac1595b6dfc952d2610c91ae0414a80b59\"",
+          "fn_args_hex": "31c63c3bfdb2c0b4b744cf1c2c7a78ac1595b6dfc952d2610c91ae0414a80b59",
+          "tx_id": "0ea90b1fccf7ce0b0c1df93897aeda32bf63271fd0e5b2d36bff36b6e841c80d",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-25T16:57:34Z"
+        }
+      ]
+    },
+    "prediction-market-atlas.set_service": {
+      "current": {
+        "target_contract_id": "490b5b2e41cb1d5a7dad9ca7aabdc375b4ca799564541227d8a0f91d7e844a0c",
+        "fn_name": "set_service",
+        "args": "{\"name\":\"prediction-market\",\"id\":\"d106ec6330a88c32cfb5822917a37ac9de172caa79ab8b207cf93d5cdd7dd883\"}",
+        "fn_args_hex": "70726564696374696f6e2d6d61726b657400000011000000ecffffffd106ec6330a88c32cfb5822917a37ac9de172caa79ab8b207cf93d5cdd7dd883",
+        "tx_id": "76ff367bd65679a33a9169909eca08440954b980a3c179586e5526da623ddb4a",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-17T22:45:31Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "490b5b2e41cb1d5a7dad9ca7aabdc375b4ca799564541227d8a0f91d7e844a0c",
+          "fn_name": "set_service",
+          "args": "{\"name\":\"treasury\",\"id\":\"133fd91d27937361589bd374501fa1eb14ad651c00d4b9d6384b787e2039fbe3\"}",
+          "fn_args_hex": "747265617375727908000000f8ffffff133fd91d27937361589bd374501fa1eb14ad651c00d4b9d6384b787e2039fbe3",
+          "tx_id": "49f9b7f620cb22c99456770b6850536c3883b29fd1d9e1436539aff0d8bc1e65",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-17T22:42:11Z"
+        },
+        {
+          "target_contract_id": "490b5b2e41cb1d5a7dad9ca7aabdc375b4ca799564541227d8a0f91d7e844a0c",
+          "fn_name": "set_service",
+          "args": "{\"name\":\"treasury\",\"id\":\"7faf38b7a739a05edd9b23df7e108c81769adaee37495886eb538bce201387b1\"}",
+          "fn_args_hex": "747265617375727908000000f8ffffff7faf38b7a739a05edd9b23df7e108c81769adaee37495886eb538bce201387b1",
+          "tx_id": "db415b5a2a6092918f82213de3716397120a61e8e56af716ea9699d45f95d930",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-17T22:36:11Z"
+        },
+        {
+          "target_contract_id": "ddf5f25a5d847835611918ef48d6b8c9cb0404156f55df047a69fc35254f16ea",
+          "fn_name": "set_service",
+          "args": "{\"name\":\"prediction-market\",\"id\":\"3bdae4a02727350a9874c3509afcdd4741d5deccbd42e4f2e0cc6276f2db9e4c\"}",
+          "fn_args_hex": "70726564696374696f6e2d6d61726b65740000003bdae4a02727350a9874c3509afcdd4741d5deccbd42e4f2e0cc6276f2db9e4c11000000ccffffff",
+          "tx_id": "f0eb998e4e5f8fd0815aa1d758e83be4e8126038611b263dbfb3b4f60ba2695e",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-31T13:04:40Z"
+        },
+        {
+          "target_contract_id": "ddf5f25a5d847835611918ef48d6b8c9cb0404156f55df047a69fc35254f16ea",
+          "fn_name": "set_service",
+          "args": "{\"name\":\"prediction-market\",\"id\":\"e0c4c22c9f7aff26a7d1f842b6e5ffef528bd7faefe7272fed851871651f0466\"}",
+          "fn_args_hex": "70726564696374696f6e2d6d61726b6574000000e0c4c22c9f7aff26a7d1f842b6e5ffef528bd7faefe7272fed851871651f046611000000ccffffff",
+          "tx_id": "5cc8efdd8738421fd7620879b5d0521af2840ee92b949fb93e73199b51882738",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-30T11:27:18Z"
+        },
+        {
+          "target_contract_id": "ddf5f25a5d847835611918ef48d6b8c9cb0404156f55df047a69fc35254f16ea",
+          "fn_name": "set_service",
+          "args": "{\"name\":\"prediction-market\",\"id\":\"b7543a2b3dc43a7b0e3b072281c34045bb2489d81c02578562afce4ad83452fe\"}",
+          "fn_args_hex": "70726564696374696f6e2d6d61726b6574000000b7543a2b3dc43a7b0e3b072281c34045bb2489d81c02578562afce4ad83452fe11000000ccffffff",
+          "tx_id": "e06b73013bd9422b8aac4971fc5f06dd360b92f065fdf048243b4ae24a43772b",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-28T22:58:04Z"
+        },
+        {
+          "target_contract_id": "ddf5f25a5d847835611918ef48d6b8c9cb0404156f55df047a69fc35254f16ea",
+          "fn_name": "set_service",
+          "args": "{\"name\":\"prediction-market\",\"id\":\"e0c4c22c9f7aff26a7d1f842b6e5ffef528bd7faefe7272fed851871651f0466\"}",
+          "fn_args_hex": "70726564696374696f6e2d6d61726b6574000000e0c4c22c9f7aff26a7d1f842b6e5ffef528bd7faefe7272fed851871651f046611000000ccffffff",
+          "tx_id": "77f5528c9ea6a7650f925601a5c4a41ad7d635b05185807b0ded5b24d6a10a32",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-25T16:59:13Z"
+        },
+        {
+          "target_contract_id": "ddf5f25a5d847835611918ef48d6b8c9cb0404156f55df047a69fc35254f16ea",
+          "fn_name": "set_service",
+          "args": "{\"name\":\"treasury\",\"id\":\"8f7156f3f23d4d6b8db2104309aa195ae177739cf18eae31eed22b3abdf933dc\"}",
+          "fn_args_hex": "74726561737572798f7156f3f23d4d6b8db2104309aa195ae177739cf18eae31eed22b3abdf933dc08000000d8ffffff",
+          "tx_id": "e2de5f713381f2d4e63e56aa3c5395a2418a7fc77fa3bc74e5c36c5697115639",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-25T16:57:54Z"
+        }
+      ]
+    },
+    "prediction-market-logic.init_data": {
+      "current": {
+        "target_contract_id": "d106ec6330a88c32cfb5822917a37ac9de172caa79ab8b207cf93d5cdd7dd883",
+        "fn_name": "init_data",
+        "args": "\"c96191d213a4c5cd409575ce07b642e0051993854f37495753897fd754b3b42a\"",
+        "fn_args_hex": "c96191d213a4c5cd409575ce07b642e0051993854f37495753897fd754b3b42a",
+        "tx_id": "08e52272aa8553ac2679064e787fbd8cb55307f83e0b2dbed66f8d51a9d63661",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-17T22:43:50Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "3bdae4a02727350a9874c3509afcdd4741d5deccbd42e4f2e0cc6276f2db9e4c",
+          "fn_name": "init_data",
+          "args": "\"37c09def84641043a2e0544881fc973060bcc210507e5ac310c9165151d3f40a\"",
+          "fn_args_hex": "37c09def84641043a2e0544881fc973060bcc210507e5ac310c9165151d3f40a",
+          "tx_id": "ce7a3aa18b3e1f79f953215800e5178383fa9507e246afaf58718734a24e8923",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-31T13:00:11Z"
+        },
+        {
+          "target_contract_id": "3bdae4a02727350a9874c3509afcdd4741d5deccbd42e4f2e0cc6276f2db9e4c",
+          "fn_name": "init_data",
+          "args": "\"37c09def84641043a2e0544881fc973060bcc210507e5ac310c9165151d3f40a\"",
+          "fn_args_hex": "37c09def84641043a2e0544881fc973060bcc210507e5ac310c9165151d3f40a",
+          "tx_id": "ccb9af59c655178f484c9e175cdda3d2011763775abe5271290a3efc89798c25",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-31T12:59:40Z"
+        },
+        {
+          "target_contract_id": "b7543a2b3dc43a7b0e3b072281c34045bb2489d81c02578562afce4ad83452fe",
+          "fn_name": "init_data",
+          "args": "\"ea48859ccefd20d6f64a948e74e1ed27986985dbd15f66bfe217a3aca2c4bd2b\"",
+          "fn_args_hex": "ea48859ccefd20d6f64a948e74e1ed27986985dbd15f66bfe217a3aca2c4bd2b",
+          "tx_id": "d758c1e034faf686ba986f5761d728351ef98aee08e00df245c93e8cbc801d01",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-28T22:57:44Z"
+        },
+        {
+          "target_contract_id": "e0c4c22c9f7aff26a7d1f842b6e5ffef528bd7faefe7272fed851871651f0466",
+          "fn_name": "init_data",
+          "args": "\"b1cb1d0184841fdd9d6a99515d07cd49720288c75e728583aaba910e666acfad\"",
+          "fn_args_hex": "b1cb1d0184841fdd9d6a99515d07cd49720288c75e728583aaba910e666acfad",
+          "tx_id": "6e7d2d3265f1ed4ab311520e8f5ad8ccf63213cbecc57331c0a2c9c380f64138",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-25T16:58:53Z"
+        }
+      ]
+    },
+    "prediction-market-logic.init_dispute_council": {
+      "current": {
+        "target_contract_id": "d106ec6330a88c32cfb5822917a37ac9de172caa79ab8b207cf93d5cdd7dd883",
+        "fn_name": "init_dispute_council",
+        "args": "[\"4e24b59d8f6a43985aaf438f622db905b04574e35aca22999d8cd2305c6b567d\", 0]",
+        "fn_args_hex": "4e24b59d8f6a43985aaf438f622db905b04574e35aca22999d8cd2305c6b567d0000000000000000",
+        "tx_id": "11fa1e2eb27b05174e0350d367dc309226b2e5af85940116244ff4e74515c820",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-17T22:44:10Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "3bdae4a02727350a9874c3509afcdd4741d5deccbd42e4f2e0cc6276f2db9e4c",
+          "fn_name": "init_dispute_council",
+          "args": "[\"4e24b59d8f6a43985aaf438f622db905b04574e35aca22999d8cd2305c6b567d\", 0]",
+          "fn_args_hex": "4e24b59d8f6a43985aaf438f622db905b04574e35aca22999d8cd2305c6b567d0000000000000000",
+          "tx_id": "087b9919fdaf2eefc3eaf8b2c42abe89bb6baa2cf4ec25939be6fd88f1e90418",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-31T13:03:20Z"
+        },
+        {
+          "target_contract_id": "b7543a2b3dc43a7b0e3b072281c34045bb2489d81c02578562afce4ad83452fe",
+          "fn_name": "init_dispute_council",
+          "args": "[\"4e24b59d8f6a43985aaf438f622db905b04574e35aca22999d8cd2305c6b567d\", 0]",
+          "fn_args_hex": "4e24b59d8f6a43985aaf438f622db905b04574e35aca22999d8cd2305c6b567d0000000000000000",
+          "tx_id": "ca561cefe078f765bec61f7826f479c20423b24d53394af9c42060cd1f930834",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-28T22:58:24Z"
+        },
+        {
+          "target_contract_id": "e0c4c22c9f7aff26a7d1f842b6e5ffef528bd7faefe7272fed851871651f0466",
+          "fn_name": "init_dispute_council",
+          "args": "[\"4e24b59d8f6a43985aaf438f622db905b04574e35aca22999d8cd2305c6b567d\", 0]",
+          "fn_args_hex": "4e24b59d8f6a43985aaf438f622db905b04574e35aca22999d8cd2305c6b567d0000000000000000",
+          "tx_id": "28dbd9a8140df24e219cdc52fe6cfe04f2ed6780b58bedf85a89d807d60ec352",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-28T22:17:35Z"
+        },
+        {
+          "target_contract_id": "e0c4c22c9f7aff26a7d1f842b6e5ffef528bd7faefe7272fed851871651f0466",
+          "fn_name": "init_dispute_council",
+          "args": "[\"66d763b2db3861f924e19f40630f3aedc1892dbb0477824c60790d1c968783c6\", 1]",
+          "fn_args_hex": "66d763b2db3861f924e19f40630f3aedc1892dbb0477824c60790d1c968783c60100000000000000",
+          "tx_id": "fd8455a8e1bfc3870fdcce29d6b13243b130a38c760bc10fa9b7f2735ff4b731",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-27T21:28:54Z"
+        }
+      ]
+    },
+    "prediction-market-logic.init_compliance_gate": {
+      "current": {
+        "target_contract_id": "d106ec6330a88c32cfb5822917a37ac9de172caa79ab8b207cf93d5cdd7dd883",
+        "fn_name": "init_compliance_gate",
+        "args": "\"922dd6f316f72e302185266138be68b7383fbc4718c5d76b60aab37c950af9b3\"",
+        "fn_args_hex": "922dd6f316f72e302185266138be68b7383fbc4718c5d76b60aab37c950af9b3",
+        "tx_id": "64beb222440c174718bf675f02947d0ea746331fd42dd1873c0f678f8bc5593d",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-17T22:44:30Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "3bdae4a02727350a9874c3509afcdd4741d5deccbd42e4f2e0cc6276f2db9e4c",
+          "fn_name": "init_compliance_gate",
+          "args": "\"922dd6f316f72e302185266138be68b7383fbc4718c5d76b60aab37c950af9b3\"",
+          "fn_args_hex": "922dd6f316f72e302185266138be68b7383fbc4718c5d76b60aab37c950af9b3",
+          "tx_id": "891474de3394e3769fccf507552a54403f4d2861fa797c04146bf481f8d96543",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-31T13:03:40Z"
+        },
+        {
+          "target_contract_id": "b7543a2b3dc43a7b0e3b072281c34045bb2489d81c02578562afce4ad83452fe",
+          "fn_name": "init_compliance_gate",
+          "args": "\"922dd6f316f72e302185266138be68b7383fbc4718c5d76b60aab37c950af9b3\"",
+          "fn_args_hex": "922dd6f316f72e302185266138be68b7383fbc4718c5d76b60aab37c950af9b3",
+          "tx_id": "be550474cb54c825a7f3d37e3cf52226a7471a2e8d8c29ba21ae1a46d361515b",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-28T22:58:45Z"
+        }
+      ]
+    },
+    "prediction-market-logic.init_create_admin": {
+      "current": {
+        "target_contract_id": "d106ec6330a88c32cfb5822917a37ac9de172caa79ab8b207cf93d5cdd7dd883",
+        "fn_name": "init_create_admin",
+        "args": "\"21GoApmSeVWdynnmVSz8Z8pyWHwjkJKcfAQS9J1cCb6MCNSFWseLyJQK22xYtALsymZoXTwVKphBVp6wwWZGZSxvKArwFz5e7L6yWhmM1RRD2YggqQFb9fGkTFpGDoDmYryF\"",
+        "fn_args_hex": "2f7cf0f5f93409f267af40428b4b4893e9da9877f9fc681d9a758cfac8cebde09b355bf860a8eed1af43c7aab5d10d0c8b3a8dc6d804c9cd40b0b48e1eaa605edddf8026d41e7c46b309b8d96544394d4d85855ef27aa77add2255564c03830072b5e8eaf40a2b9db0f7783d71115abbb3a0322f2e8505fc81a3706c4b6e39d38d91bb5ecfdac4985d78d3406e88800a7ab09f651303abf013665e1359982aee3a42b268b46e2c9c38b31e50ef4d78a46816025bf143b8e9f8e9682afec2b9080000000000000000",
+        "tx_id": "4986850791efdc1413e4e81a663ff64fdabb9bb1b7ba07b0637d318597a1bc48",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-17T22:44:50Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "3bdae4a02727350a9874c3509afcdd4741d5deccbd42e4f2e0cc6276f2db9e4c",
+          "fn_name": "init_create_admin",
+          "args": "\"21GoApmSeVWdynnmVSz8Z8pyWHwjkJKcfAQS9J1cCb6MCNSFWseLyJQK22xYtALsymZoXTwVKphBVp6wwWZGZSxvKArwFz5e7L6yWhmM1RRD2YggqQFb9fGkTFpGDoDmYryF\"",
+          "fn_args_hex": "2f7cf0f5f93409f267af40428b4b4893e9da9877f9fc681d9a758cfac8cebde09b355bf860a8eed1af43c7aab5d10d0c8b3a8dc6d804c9cd40b0b48e1eaa605edddf8026d41e7c46b309b8d96544394d4d85855ef27aa77add2255564c03830072b5e8eaf40a2b9db0f7783d71115abbb3a0322f2e8505fc81a3706c4b6e39d38d91bb5ecfdac4985d78d3406e88800a7ab09f651303abf013665e1359982aee3a42b268b46e2c9c38b31e50ef4d78a46816025bf143b8e9f8e9682afec2b9080000000000000000",
+          "tx_id": "9cb2098087ec17877849a302e7cfa7ff16eec4996e7f39842312f8dcdab78f14",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-31T13:03:58Z"
+        },
+        {
+          "target_contract_id": "b7543a2b3dc43a7b0e3b072281c34045bb2489d81c02578562afce4ad83452fe",
+          "fn_name": "init_create_admin",
+          "args": "\"21GoApmSeVWdynnmVSz8Z8pyWHwjkJKcfAQS9J1cCb6MCNSFWseLyJQK22xYtALsymZoXTwVKphBVp6wwWZGZSxvKArwFz5e7L6yWhmM1RRD2YggqQFb9fGkTFpGDoDmYryF\"",
+          "fn_args_hex": "2f7cf0f5f93409f267af40428b4b4893e9da9877f9fc681d9a758cfac8cebde09b355bf860a8eed1af43c7aab5d10d0c8b3a8dc6d804c9cd40b0b48e1eaa605edddf8026d41e7c46b309b8d96544394d4d85855ef27aa77add2255564c03830072b5e8eaf40a2b9db0f7783d71115abbb3a0322f2e8505fc81a3706c4b6e39d38d91bb5ecfdac4985d78d3406e88800a7ab09f651303abf013665e1359982aee3a42b268b46e2c9c38b31e50ef4d78a46816025bf143b8e9f8e9682afec2b9080000000000000000",
+          "tx_id": "f84fc7ef204d7764e1262f46050a32ce0639f2433b69e2470c37aa61056a2861",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-28T22:59:04Z"
+        }
+      ]
+    },
+    "achievement-nft.init_operator": {
+      "current": {
+        "target_contract_id": "3b6c3a0a9d0e1c4f1e5be7c948631aa0b0de04a23966a43aff2aa1dc4ff8cfbc",
+        "fn_name": "init_operator",
+        "args": "\"przWPPqkdbR2rGTGncMMHc1KDoFHfHzqxZREQji7bCkmsFM5ENBs1dCrCEzMTyC6i1Yta3tu6D1GMpQLw4ChBSyAk12BgnxUvaE7YBmoSnesmPRgvFSPJKcECq79wxYyzFv\"",
+        "fn_args_hex": "2d6991fd00a36c335b1459f9cccc1110b6d3683573a88e96859eb38d01bf6b871a1009e327f15575188ed0355e552300d272fd45f03e587e7051d9b57f512ef24948b01027034a9504b9dfdec6d8136b83cc2fa1ea1be6fe95103a078b1a65150d70874cd05cd5bac72cb3324a5f55f156fe0a4085a4af29bd02c33f4b06b68062ec91f50b52d0946e29bd9179d81807ec6a8a4909982a42fc155a664380e9c64aaaaddd2416c18623abe7b2902bb2b63b66da6e729e9da10ce9a9692a401d080000000000000000",
+        "tx_id": "0e8f78d50475c3ee523a49cc9e2a99360bfdd099610443ecc7fe40028c95535d",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-07-29T14:10:49Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "a74a0dc8a08e839a5c26c7aad4a67b21f5a2105652ae2c48e74b21b5c08e7c1a",
+          "fn_name": "init_operator",
+          "args": "\"przWPPqkdbR2rGTGncMMHc1KDoFHfHzqxZREQji7bCkmsFM5ENBs1dCrCEzMTyC6i1Yta3tu6D1GMpQLw4ChBSyAk12BgnxUvaE7YBmoSnesmPRgvFSPJKcECq79wxYyzFv\"",
+          "fn_args_hex": "2d6991fd00a36c335b1459f9cccc1110b6d3683573a88e96859eb38d01bf6b871a1009e327f15575188ed0355e552300d272fd45f03e587e7051d9b57f512ef24948b01027034a9504b9dfdec6d8136b83cc2fa1ea1be6fe95103a078b1a65150d70874cd05cd5bac72cb3324a5f55f156fe0a4085a4af29bd02c33f4b06b68062ec91f50b52d0946e29bd9179d81807ec6a8a4909982a42fc155a664380e9c64aaaaddd2416c18623abe7b2902bb2b63b66da6e729e9da10ce9a9692a401d080000000000000000",
+          "tx_id": "fec333484952ced9818ade2e891b380b2885ab742bb63a2b844c289f49600a04",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-29T08:55:30Z"
+        }
+      ]
+    },
+    "rights-registry.init_rights_manager": {
+      "current": {
+        "target_contract_id": "d3a9911f9b98e87d979c956e242d0574a16ee87ba3102342fb3f6ca63a0180a7",
+        "fn_name": "init_rights_manager",
+        "args": "\"mLKjNCktVdwo27JbgSgSCnRnCfLieo6feiKeGQpK7XD81Hu2zvcgSJYRDGJ6tKinqZEWsbNTafHMpv4iTGhMreEoWKsrPuVK98HQk3onmB4KXcrLpAfTVeJjEpateEhFiyy\"",
+        "fn_args_hex": "db55486fe6353e62d7e45d047093417c75ba22d7aebcafcc600d41efc703fee49a4b5a371848d6b45856e8b460078e12d3505b591b6e3a7e179fc643658b5d293a0f32bdb95eb59f920338217d0d7131569ff5dd95bbbd2fde7267a4d57d25062c4b68ef205f8c5053ef5061297e36edde997249e21c7a240c861801dd96e31e704124ce0cc1dadf400b0df248ccaf0f49e3f77b90adfe55eb49157d31e19972dd9768a75d090cef61c451bcdcb238c3845f7646b390949a10dae72ad1204d140000000000000000",
+        "tx_id": "e9c2e20187a977f6ecea7ae427955be42ffef40b6eef4af40213cbfcbc1b180a",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-07-29T08:55:49Z"
+      },
+      "history": []
+    },
+    "prediction-market-logic.init_rights_registry": {
+      "current": {
+        "target_contract_id": "d106ec6330a88c32cfb5822917a37ac9de172caa79ab8b207cf93d5cdd7dd883",
+        "fn_name": "init_rights_registry",
+        "args": "\"d3a9911f9b98e87d979c956e242d0574a16ee87ba3102342fb3f6ca63a0180a7\"",
+        "fn_args_hex": "d3a9911f9b98e87d979c956e242d0574a16ee87ba3102342fb3f6ca63a0180a7",
+        "tx_id": "3eefae3332711e1f0cf47cfd08518dee1f2a75ad3b3ac9f46f6a00e2f6429254",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-17T22:45:10Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "3bdae4a02727350a9874c3509afcdd4741d5deccbd42e4f2e0cc6276f2db9e4c",
+          "fn_name": "init_rights_registry",
+          "args": "\"d3a9911f9b98e87d979c956e242d0574a16ee87ba3102342fb3f6ca63a0180a7\"",
+          "fn_args_hex": "d3a9911f9b98e87d979c956e242d0574a16ee87ba3102342fb3f6ca63a0180a7",
+          "tx_id": "5cc48a522f51200f69ac531d7e103c60ce8046bd4fbeb81ff790640dc6b9be5d",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-31T13:04:18Z"
+        },
+        {
+          "target_contract_id": "b7543a2b3dc43a7b0e3b072281c34045bb2489d81c02578562afce4ad83452fe",
+          "fn_name": "init_rights_registry",
+          "args": "\"d3a9911f9b98e87d979c956e242d0574a16ee87ba3102342fb3f6ca63a0180a7\"",
+          "fn_args_hex": "d3a9911f9b98e87d979c956e242d0574a16ee87ba3102342fb3f6ca63a0180a7",
+          "tx_id": "d3740dac83446eda43bec1e3c9271e739b9597198955d4183271fbdb46f60360",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-29T08:56:10Z"
+        }
+      ]
+    },
+    "achievement-nft.enable_achievement_type": {
+      "current": {
+        "target_contract_id": "3b6c3a0a9d0e1c4f1e5be7c948631aa0b0de04a23966a43aff2aa1dc4ff8cfbc",
+        "fn_name": "enable_achievement_type",
+        "args": "[8, 1]",
+        "fn_args_hex": "08000000000000000100000000000000",
+        "tx_id": "c65cd91ab4433c7a0ff5dee2fa0588962dd0f927da1a1a36b7875e98deafe24a",
+        "address": "przWPPqkdbR2rGTGncMMHc1KDoFHfHzqxZREQji7bCkmsFM5ENBs1dCrCEzMTyC6i1Yta3tu6D1GMpQLw4ChBSyAk12BgnxUvaE7YBmoSnesmPRgvFSPJKcECq79wxYyzFv",
+        "called_at": "2026-07-29T14:14:08Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "3b6c3a0a9d0e1c4f1e5be7c948631aa0b0de04a23966a43aff2aa1dc4ff8cfbc",
+          "fn_name": "enable_achievement_type",
+          "args": "[1, 3]",
+          "fn_args_hex": "01000000000000000300000000000000",
+          "tx_id": "470408d9e423385e33b165ac977eb38ee1c2dd551493f612dcedef38dfcd5715",
+          "address": "przWPPqkdbR2rGTGncMMHc1KDoFHfHzqxZREQji7bCkmsFM5ENBs1dCrCEzMTyC6i1Yta3tu6D1GMpQLw4ChBSyAk12BgnxUvaE7YBmoSnesmPRgvFSPJKcECq79wxYyzFv",
+          "called_at": "2026-07-29T14:13:49Z"
+        },
+        {
+          "target_contract_id": "a74a0dc8a08e839a5c26c7aad4a67b21f5a2105652ae2c48e74b21b5c08e7c1a",
+          "fn_name": "enable_achievement_type",
+          "args": "[1, 3]",
+          "fn_args_hex": "01000000000000000300000000000000",
+          "tx_id": "69325058201d0f1687c37d2aaf98bb09f24c68d6b2a49bbb7ce2f995ab14dd45",
+          "address": "przWPPqkdbR2rGTGncMMHc1KDoFHfHzqxZREQji7bCkmsFM5ENBs1dCrCEzMTyC6i1Yta3tu6D1GMpQLw4ChBSyAk12BgnxUvaE7YBmoSnesmPRgvFSPJKcECq79wxYyzFv",
+          "called_at": "2026-07-29T08:56:49Z"
+        }
+      ]
+    },
+    "rights-registry.init_nft_collection_for_right": {
+      "current": {
+        "target_contract_id": "d3a9911f9b98e87d979c956e242d0574a16ee87ba3102342fb3f6ca63a0180a7",
+        "fn_name": "init_nft_collection_for_right",
+        "args": "[1, \"3b6c3a0a9d0e1c4f1e5be7c948631aa0b0de04a23966a43aff2aa1dc4ff8cfbc\"]",
+        "fn_args_hex": "01000000000000003b6c3a0a9d0e1c4f1e5be7c948631aa0b0de04a23966a43aff2aa1dc4ff8cfbc",
+        "tx_id": "fefc82d2fbea888e1c2c681b4cfacec6c1172dcd0d44aecc01b756650c305239",
+        "address": "mLKjNCktVdwo27JbgSgSCnRnCfLieo6feiKeGQpK7XD81Hu2zvcgSJYRDGJ6tKinqZEWsbNTafHMpv4iTGhMreEoWKsrPuVK98HQk3onmB4KXcrLpAfTVeJjEpateEhFiyy",
+        "called_at": "2026-07-29T14:14:40Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "d3a9911f9b98e87d979c956e242d0574a16ee87ba3102342fb3f6ca63a0180a7",
+          "fn_name": "init_nft_collection_for_right",
+          "args": "[1, \"a74a0dc8a08e839a5c26c7aad4a67b21f5a2105652ae2c48e74b21b5c08e7c1a\"]",
+          "fn_args_hex": "0100000000000000a74a0dc8a08e839a5c26c7aad4a67b21f5a2105652ae2c48e74b21b5c08e7c1a",
+          "tx_id": "6f5349078bc35755a3517a8904c736729ab2ad61356d402f22d881022b0df51d",
+          "address": "mLKjNCktVdwo27JbgSgSCnRnCfLieo6feiKeGQpK7XD81Hu2zvcgSJYRDGJ6tKinqZEWsbNTafHMpv4iTGhMreEoWKsrPuVK98HQk3onmB4KXcrLpAfTVeJjEpateEhFiyy",
+          "called_at": "2026-07-29T08:57:09Z"
+        }
+      ]
+    },
+    "rights-registry.set_right_achievement_type": {
+      "current": {
+        "target_contract_id": "d3a9911f9b98e87d979c956e242d0574a16ee87ba3102342fb3f6ca63a0180a7",
+        "fn_name": "set_right_achievement_type",
+        "args": "[1, 1, 1]",
+        "fn_args_hex": "010000000000000001000000000000000100000000000000",
+        "tx_id": "9119e5ae96bf4e6d77e513e3774314d4bc3674a322eac011c9c754fcaa1c7452",
+        "address": "mLKjNCktVdwo27JbgSgSCnRnCfLieo6feiKeGQpK7XD81Hu2zvcgSJYRDGJ6tKinqZEWsbNTafHMpv4iTGhMreEoWKsrPuVK98HQk3onmB4KXcrLpAfTVeJjEpateEhFiyy",
+        "called_at": "2026-07-29T14:14:59Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "d3a9911f9b98e87d979c956e242d0574a16ee87ba3102342fb3f6ca63a0180a7",
+          "fn_name": "set_right_achievement_type",
+          "args": "[1, 1, 1]",
+          "fn_args_hex": "010000000000000001000000000000000100000000000000",
+          "tx_id": "601d2e7dd4af39b957f810e3e5c0ad73a087c6052b576707af01eb20b2e76b66",
+          "address": "mLKjNCktVdwo27JbgSgSCnRnCfLieo6feiKeGQpK7XD81Hu2zvcgSJYRDGJ6tKinqZEWsbNTafHMpv4iTGhMreEoWKsrPuVK98HQk3onmB4KXcrLpAfTVeJjEpateEhFiyy",
+          "called_at": "2026-07-29T08:57:30Z"
+        }
+      ]
+    },
+    "prediction-market-logic.deposit_collateral": {
+      "current": {
+        "target_contract_id": "d106ec6330a88c32cfb5822917a37ac9de172caa79ab8b207cf93d5cdd7dd883",
+        "fn_name": "deposit_collateral",
+        "args": "{\"auth\": {\"trading_pk\": \"23f4ATQGZtqr3r5HCZ9UxMwBfeafbM3naodqjvAa6wjbirY9ooMryXjGvdihjiPandSPyCMoUiU45npwogmqbL4jJ4DAU12ax7pmrsstyCwy7Y3W17GCNCkp6wjv8e263Gqn\", \"nonce\": 0, \"signature\": \"7NDV3zEh5BPiZT3VNhbRmZJgCQg5kxrbTrPmnFZG1Pu2r8JwWRyGgREiUt6YjHqoLV\"}, \"amount\": 1000000000}",
+        "fn_args_hex": "2bfc9e1b8cd33ce7d31d1547911cf144a3162d7b818ed5e8d53063fe59f2eda7c751b6a28f2320eed906286b83daa812d66eebe85e868754a4b991cd8c0d6326c9900d0e8610b46539e29bc69d2b5577cef61600b230c166647090a17b2b1a0c1120cd6f7415bf50907beac892ced3f9c495949c9b0a72efd7c0e634d7a28073d18ae75c59e8017e47ce39e4617c97027d7eaaadc36d3486df31c1207f4282a59d614bd472755e332b09feaf151a9ab14ca278394fe92baa796ed364e8997409000000000000000000000000000000003c378be8da5b07c83c1a452a4255886fddace04cad3ac324dd55ca85dc99719dd28f0b9b07dd83898f88069183568d0409427e06014fca4fd289e9f8534afb45f5f599f9e757e504cb809e48a78ae22253ff535f5abb5b946b0b48952a602d07000000000000000000ca9a3b00000000",
+        "tx_id": "ff7fd797fd5f9381d207dd3c4e66f204d77a0020def37bc44feff48afbb6b91f",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-18T08:57:58Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "e0c4c22c9f7aff26a7d1f842b6e5ffef528bd7faefe7272fed851871651f0466",
+          "fn_name": "deposit_collateral",
+          "args": "{\"auth\": {\"trading_pk\": \"22LZEjRLV8LjUW3LVXNXUc42BWfT855oc5n5BYmFx5Py1RXpUJGtNVoTh2FPq3TfnqBYTPAT9co7Ye3RkZMR3o1yMp6bdwnxyJnhMjNTRskyA385UCPaeCJtLtbZ7StxfVoi\", \"nonce\": 0, \"signature\": \"7j52SJadvfgvKFVKHkpdAhQnk7GmS9dpwQDT86MSQb47Y7u2yjhBhBDAWgvzQrxYKs\"}, \"amount\": 2000000000}",
+          "fn_args_hex": "e71f2f4d2dd4688f604d05093f97ff5dfbe5e3b9ef42a53aab4b8d5e79285283908541ae657913dca77206a4360fe4140683122e5cd904a896624cabdc2a93328f40dfe92b25365b91c5926204edcacc162e25a5b4563cd36dee30549232c908fdc7b89c2a1f0adea49a409bb026c34e04429e39e81672244d82e6f16f690d166b9531147cd5a6c435fb199f04627013b972f19e5e226d59eef34bfa80579340f50e78e553d433839a4c294ea6982849010528d30519ec229794ff2c88b8940300000000000000000000000000000000a494c7f99dc23ec2695d46e874a3417aa53ed3b8c1d4191dd8fe8993777c7011cbef58be1ecb0090b3a65fb745a94512538b04626b77a81be1218c062873e0a9e62af82f317b16082303be47af69ca2c060ffc4021497f50d294febb4539bc0400000000000000000094357700000000",
+          "tx_id": "6510e4c657ae7c203edf71d3fe192b7447e4ec8fa1dfdb3e1d405d78b5c4d419",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-31T08:40:40Z"
+        },
+        {
+          "target_contract_id": "b7543a2b3dc43a7b0e3b072281c34045bb2489d81c02578562afce4ad83452fe",
+          "fn_name": "deposit_collateral",
+          "args": "{\"auth\": {\"trading_pk\": \"22LZEjRLV8LjUW3LVXNXUc42BWfT855oc5n5BYmFx5Py1RXpUJGtNVoTh2FPq3TfnqBYTPAT9co7Ye3RkZMR3o1yMp6bdwnxyJnhMjNTRskyA385UCPaeCJtLtbZ7StxfVoi\", \"nonce\": 1, \"signature\": \"6wzEEZT2zKtpsrKL1kvBW8p4W8yUfFqH1exnK2oZ4HbsMPM5JaX8TjwpVjLTpHbTNC\"}, \"amount\": 5000000000}",
+          "fn_args_hex": "e71f2f4d2dd4688f604d05093f97ff5dfbe5e3b9ef42a53aab4b8d5e79285283908541ae657913dca77206a4360fe4140683122e5cd904a896624cabdc2a93328f40dfe92b25365b91c5926204edcacc162e25a5b4563cd36dee30549232c908fdc7b89c2a1f0adea49a409bb026c34e04429e39e81672244d82e6f16f690d166b9531147cd5a6c435fb199f04627013b972f19e5e226d59eef34bfa80579340f50e78e553d433839a4c294ea6982849010528d30519ec229794ff2c88b89403000000000000000001000000000000001dde01ee26777528a91ff4bf7f4a5a73835b70f84958b84c8a613d52d9917299652a05666c7dd2419632b0952da30a0e3e0740e93b3ca0fd854225a24ba317aa482841de2ec79a07423e4d23a1fc2c96ee05cee1ab12b3e6dcc798244063e90e000000000000000000f2052a01000000",
+          "tx_id": "b78ae9e69c9feafe36d44ca10b775511d2d8680b9da9c4d23e3aa9787227fb03",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-30T02:43:59Z"
+        }
+      ]
+    },
+    "prediction-market-logic.create_market": {
+      "current": {
+        "target_contract_id": "d106ec6330a88c32cfb5822917a37ac9de172caa79ab8b207cf93d5cdd7dd883",
+        "fn_name": "create_market",
+        "args": "{\"question_hash\":[155,39,174,252,78,184,17,109,212,189,141,171,111,28,193,115,246,90,83,6,139,160,200,247,186,149,150,16,44,109,41,60],\"content_cid\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"close_block\":4143613,\"challenge_window_blocks\":1,\"review_window_blocks\":1,\"initial_liquidity\":1000000000,\"min_bond\":100000000,\"kyc_override\":null,\"fee_bps\":100,\"category\":0}",
+        "fn_args_hex": "9b27aefc4eb8116dd4bd8dab6f1cc173f65a53068ba0c8f7ba9596102c6d293c0000000000000000000000000000000000000000000000000000000000000000fd393f00000000000100000000000000010000000000000000ca9a3b0000000000e1f505000000000000000064000000",
+        "tx_id": "66f5992816b0baff91afbfb1ad1250de93043ddbc403ad8d4cb08aea3b371c05",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-18T08:57:38Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "3bdae4a02727350a9874c3509afcdd4741d5deccbd42e4f2e0cc6276f2db9e4c",
+          "fn_name": "create_market",
+          "args": "{\"question_hash\":[63,248,244,199,100,168,68,8,97,30,222,18,246,34,224,188,55,221,26,56,87,50,221,151,208,235,202,55,146,124,17,154],\"content_cid\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"close_block\":9000000,\"challenge_window_blocks\":1,\"review_window_blocks\":1,\"initial_liquidity\":1000000000,\"min_bond\":100000000,\"kyc_override\":null,\"fee_bps\":0,\"category\":0}",
+          "fn_args_hex": "3ff8f4c764a84408611ede12f622e0bc37dd1a385732dd97d0ebca37927c119a000000000000000000000000000000000000000000000000000000000000000040548900000000000100000000000000010000000000000000ca9a3b0000000000e1f505000000000000000000000000",
+          "tx_id": "0697d08986857b4bc73233f35c24e0b3830c2fedf34eefa43b6f74cec077bd36",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-31T13:40:19Z"
+        },
+        {
+          "target_contract_id": "b7543a2b3dc43a7b0e3b072281c34045bb2489d81c02578562afce4ad83452fe",
+          "fn_name": "create_market",
+          "args": "{\"question_hash\":[42,241,238,132,113,171,74,115,236,207,142,184,180,165,241,185,236,99,47,164,40,31,43,78,107,190,66,80,7,196,93,212],\"content_cid\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"close_block\":9000000,\"challenge_window_blocks\":1,\"review_window_blocks\":1,\"initial_liquidity\":1000000000,\"min_bond\":100000000,\"kyc_override\":null,\"fee_bps\":0,\"category\":0}",
+          "fn_args_hex": "2af1ee8471ab4a73eccf8eb8b4a5f1b9ec632fa4281f2b4e6bbe425007c45dd4000000000000000000000000000000000000000000000000000000000000000040548900000000000100000000000000010000000000000000ca9a3b0000000000e1f505000000000000000000000000",
+          "tx_id": "09d354d344301dbb29a018305167750262886e42859f8eef8718aa7d1eb4e90e",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-30T02:48:19Z"
+        },
+        {
+          "target_contract_id": "b7543a2b3dc43a7b0e3b072281c34045bb2489d81c02578562afce4ad83452fe",
+          "fn_name": "create_market",
+          "args": "{\"question_hash\":[156,133,35,46,29,139,115,218,2,190,93,171,142,209,180,216,37,153,145,110,67,199,181,65,196,135,156,6,23,145,58,135],\"content_cid\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"close_block\":9000000,\"challenge_window_blocks\":1,\"review_window_blocks\":1,\"initial_liquidity\":1000000000,\"min_bond\":100000000,\"kyc_override\":null,\"fee_bps\":0,\"category\":0}",
+          "fn_args_hex": "9c85232e1d8b73da02be5dab8ed1b4d82599916e43c7b541c4879c0617913a87000000000000000000000000000000000000000000000000000000000000000040548900000000000100000000000000010000000000000000ca9a3b0000000000e1f505000000000000000000000000",
+          "tx_id": "4e22907215e6a7baf06b6e54ab4a97b1ad2baba42039b982e050c440954fa43c",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-30T02:46:19Z"
+        },
+        {
+          "target_contract_id": "b7543a2b3dc43a7b0e3b072281c34045bb2489d81c02578562afce4ad83452fe",
+          "fn_name": "create_market",
+          "args": "{\"question_hash\":[92,206,122,35,90,233,247,246,242,196,212,41,149,249,204,207,200,60,174,89,27,251,22,195,65,179,57,109,16,74,170,6],\"content_cid\":[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],\"close_block\":9000000,\"challenge_window_blocks\":1,\"review_window_blocks\":1,\"initial_liquidity\":1000000000,\"min_bond\":100000000,\"kyc_override\":null,\"fee_bps\":0,\"category\":0}",
+          "fn_args_hex": "5cce7a235ae9f7f6f2c4d42995f9cccfc83cae591bfb16c341b3396d104aaa06000000000000000000000000000000000000000000000000000000000000000040548900000000000100000000000000010000000000000000ca9a3b0000000000e1f505000000000000000000000000",
+          "tx_id": "df52c148946c2db119b55c6b422d07d8920271023bc5546d7ce43b3e68131a2b",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-30T02:44:19Z"
+        }
+      ]
+    },
+    "prediction-market-logic.trade": {
+      "current": {
+        "target_contract_id": "d106ec6330a88c32cfb5822917a37ac9de172caa79ab8b207cf93d5cdd7dd883",
+        "fn_name": "trade",
+        "args": "{\"auth\": {\"trading_pk\": \"23f4ATQGZtqr3r5HCZ9UxMwBfeafbM3naodqjvAa6wjbirY9ooMryXjGvdihjiPandSPyCMoUiU45npwogmqbL4jJ4DAU12ax7pmrsstyCwy7Y3W17GCNCkp6wjv8e263Gqn\", \"nonce\": 1, \"signature\": \"5rAE2pW67bGfPrjJ2DbnzUg2LA7JMPcXFeTtcqUjHFrnJ79u1Q4aAZWBYPW2vFrQdj\"}, \"market_id\": 0, \"outcome\": 0, \"is_buy\": true, \"amount\": 200000000}",
+        "fn_args_hex": "2bfc9e1b8cd33ce7d31d1547911cf144a3162d7b818ed5e8d53063fe59f2eda7c751b6a28f2320eed906286b83daa812d66eebe85e868754a4b991cd8c0d6326c9900d0e8610b46539e29bc69d2b5577cef61600b230c166647090a17b2b1a0c1120cd6f7415bf50907beac892ced3f9c495949c9b0a72efd7c0e634d7a28073d18ae75c59e8017e47ce39e4617c97027d7eaaadc36d3486df31c1207f4282a59d614bd472755e332b09feaf151a9ab14ca278394fe92baa796ed364e899740900000000000000000100000000000000edab14000bfc8c81718934362bf1083340ee892d24d1d3e1a37506fc45cb19f1d9a9eecaa9955cf177d838c5af621c0d1f8e4bde2239b6e8952e42a7b0d2ee26f90604bd6928109784326ce67a10f2e2c18f9e27a300e2d2c07ad742b020900000000000000000000000000000000000000100000000000000c2eb0b00000000",
+        "tx_id": "6217a88265d28a7d200f1e5a52155ea8b264761df329b1e6a7e84d2a4e9f5a20",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-18T08:58:18Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "e0c4c22c9f7aff26a7d1f842b6e5ffef528bd7faefe7272fed851871651f0466",
+          "fn_name": "trade",
+          "args": "{\"auth\": {\"trading_pk\": \"22LZEjRLV8LjUW3LVXNXUc42BWfT855oc5n5BYmFx5Py1RXpUJGtNVoTh2FPq3TfnqBYTPAT9co7Ye3RkZMR3o1yMp6bdwnxyJnhMjNTRskyA385UCPaeCJtLtbZ7StxfVoi\", \"nonce\": 3, \"signature\": \"7jsrcqydy73eJgtcYD8zrj5pfS1aUw4AhGokVChV14Lvz8LaRRCEuSewpDgz5NWX8A\"}, \"market_id\": 1, \"outcome\": 0, \"is_buy\": true, \"amount\": 50000000}",
+          "fn_args_hex": "e71f2f4d2dd4688f604d05093f97ff5dfbe5e3b9ef42a53aab4b8d5e79285283908541ae657913dca77206a4360fe4140683122e5cd904a896624cabdc2a93328f40dfe92b25365b91c5926204edcacc162e25a5b4563cd36dee30549232c908fdc7b89c2a1f0adea49a409bb026c34e04429e39e81672244d82e6f16f690d166b9531147cd5a6c435fb199f04627013b972f19e5e226d59eef34bfa80579340f50e78e553d433839a4c294ea6982849010528d30519ec229794ff2c88b89403000000000000000003000000000000000b326388e494a88058515dad42f224c9357247b36a7703fb5944a5e637d15d30f17fd569a0f5f44db92f24c8d260f70ab1b7a3545066336f1471c4d42873241ae44e95c4369e45488a92e1e1684ca56ee724b377dc3dafb1a03c89f9050c7e150000000000000000010000000000000080f0fa02000000000001000000000000",
+          "tx_id": "243612d2720782aae127930f5727eed842143f9acf49a969e6dfc7a002b5d911",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-31T09:15:59Z"
+        },
+        {
+          "target_contract_id": "e0c4c22c9f7aff26a7d1f842b6e5ffef528bd7faefe7272fed851871651f0466",
+          "fn_name": "trade",
+          "args": "{\"auth\": {\"trading_pk\": \"22LZEjRLV8LjUW3LVXNXUc42BWfT855oc5n5BYmFx5Py1RXpUJGtNVoTh2FPq3TfnqBYTPAT9co7Ye3RkZMR3o1yMp6bdwnxyJnhMjNTRskyA385UCPaeCJtLtbZ7StxfVoi\", \"nonce\": 2, \"signature\": \"7RhPdKW7NHmd9PTHnqfaTvqPkoMZkGZwhixrUdqgLQEvDMLUp4EzFXrqgv3ZP1DccP\"}, \"market_id\": 1, \"outcome\": 0, \"is_buy\": true, \"amount\": 50000000}",
+          "fn_args_hex": "e71f2f4d2dd4688f604d05093f97ff5dfbe5e3b9ef42a53aab4b8d5e79285283908541ae657913dca77206a4360fe4140683122e5cd904a896624cabdc2a93328f40dfe92b25365b91c5926204edcacc162e25a5b4563cd36dee30549232c908fdc7b89c2a1f0adea49a409bb026c34e04429e39e81672244d82e6f16f690d166b9531147cd5a6c435fb199f04627013b972f19e5e226d59eef34bfa80579340f50e78e553d433839a4c294ea6982849010528d30519ec229794ff2c88b89403000000000000000002000000000000002c91dc711f40011c641b2deeb9c247fca0d4fdf363bb1b2c546520f5d0c2aeb90509bde1ec148b017369fef7d6a13a0b73e75fa33d60b1688597a5e623e17777d846c6a5396e0c67dbd63daf015bad2d0c4b9bfb1db1a230f785eb98c55610110000000000000000010000000000000080f0fa02000000000001000000000000",
+          "tx_id": "bbafa6d4db0bc4d0dd6457d523119aadcc54b0f934cbbb147c7f5018b4004618",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-31T09:14:29Z"
+        },
+        {
+          "target_contract_id": "e0c4c22c9f7aff26a7d1f842b6e5ffef528bd7faefe7272fed851871651f0466",
+          "fn_name": "trade",
+          "args": "{\"auth\": {\"trading_pk\": \"22LZEjRLV8LjUW3LVXNXUc42BWfT855oc5n5BYmFx5Py1RXpUJGtNVoTh2FPq3TfnqBYTPAT9co7Ye3RkZMR3o1yMp6bdwnxyJnhMjNTRskyA385UCPaeCJtLtbZ7StxfVoi\", \"nonce\": 1, \"signature\": \"7cKpEid2SAMNch251iYh6yEPkdCR5JQEHgEczK7vmsszdp6uwVs2jmpPtQBFpC7teJ\"}, \"market_id\": 1, \"outcome\": 0, \"is_buy\": true, \"amount\": 50000000}",
+          "fn_args_hex": "e71f2f4d2dd4688f604d05093f97ff5dfbe5e3b9ef42a53aab4b8d5e79285283908541ae657913dca77206a4360fe4140683122e5cd904a896624cabdc2a93328f40dfe92b25365b91c5926204edcacc162e25a5b4563cd36dee30549232c908fdc7b89c2a1f0adea49a409bb026c34e04429e39e81672244d82e6f16f690d166b9531147cd5a6c435fb199f04627013b972f19e5e226d59eef34bfa80579340f50e78e553d433839a4c294ea6982849010528d30519ec229794ff2c88b89403000000000000000001000000000000008a405322cc01e5ccfc8fa7ad6a3f7f3b59a4e087d65a747e53c1597ed0e056515ff170451408ebf41032f09b8c6f9e08e80c1c91aea1076f9433fdf14041e67e0c4920195c6bc2746100a565ec6812be34a58a19b74bff5d84f235c5fbc1aa080000000000000000010000000000000080f0fa02000000000001000000000000",
+          "tx_id": "01e216827b482635187489f38860f91a225b38b5529b58065f4088b63564d85e",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-31T09:00:59Z"
+        },
+        {
+          "target_contract_id": "b7543a2b3dc43a7b0e3b072281c34045bb2489d81c02578562afce4ad83452fe",
+          "fn_name": "trade",
+          "args": "{\"auth\": {\"trading_pk\": \"22LZEjRLV8LjUW3LVXNXUc42BWfT855oc5n5BYmFx5Py1RXpUJGtNVoTh2FPq3TfnqBYTPAT9co7Ye3RkZMR3o1yMp6bdwnxyJnhMjNTRskyA385UCPaeCJtLtbZ7StxfVoi\", \"nonce\": 4, \"signature\": \"7JASjzrSHqpz6ZzJsuZ9Nn1VD3AU8ETnEuZZ95Y3YRfRMfSs54CNgoZy3oZHkoKfCF\"}, \"market_id\": 3, \"outcome\": 0, \"is_buy\": true, \"amount\": 200000000}",
+          "fn_args_hex": "e71f2f4d2dd4688f604d05093f97ff5dfbe5e3b9ef42a53aab4b8d5e79285283908541ae657913dca77206a4360fe4140683122e5cd904a896624cabdc2a93328f40dfe92b25365b91c5926204edcacc162e25a5b4563cd36dee30549232c908fdc7b89c2a1f0adea49a409bb026c34e04429e39e81672244d82e6f16f690d166b9531147cd5a6c435fb199f04627013b972f19e5e226d59eef34bfa80579340f50e78e553d433839a4c294ea6982849010528d30519ec229794ff2c88b894030000000000000000040000000000000090e12c4c77862b546f54289e98d9bd411b952d86b8b357a8241d1d10e58bb911079f565884bb0b1a9130f0512bf4c604c981c7009702f4469101c364d448a6b8395744a859bcaf12e034e322e976d86043a371dd7ad9fd0d90c4c47017cca8060000000000000000030000000000000000c2eb0b000000000001000000000000",
+          "tx_id": "09c23a2fc90cefb2f8b5747145dfb2989eaf61d674bd236fc8efc5c50cebee36",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-30T02:48:49Z"
+        },
+        {
+          "target_contract_id": "b7543a2b3dc43a7b0e3b072281c34045bb2489d81c02578562afce4ad83452fe",
+          "fn_name": "trade",
+          "args": "{\"auth\": {\"trading_pk\": \"22LZEjRLV8LjUW3LVXNXUc42BWfT855oc5n5BYmFx5Py1RXpUJGtNVoTh2FPq3TfnqBYTPAT9co7Ye3RkZMR3o1yMp6bdwnxyJnhMjNTRskyA385UCPaeCJtLtbZ7StxfVoi\", \"nonce\": 3, \"signature\": \"7AESY6UtdD5mPJxWviXtBzjz3tcggQAyVx56yjq5PXaRqVRA6cAV1Qqe1fbLbSCr95\"}, \"market_id\": 2, \"outcome\": 0, \"is_buy\": true, \"amount\": 200000000}",
+          "fn_args_hex": "e71f2f4d2dd4688f604d05093f97ff5dfbe5e3b9ef42a53aab4b8d5e79285283908541ae657913dca77206a4360fe4140683122e5cd904a896624cabdc2a93328f40dfe92b25365b91c5926204edcacc162e25a5b4563cd36dee30549232c908fdc7b89c2a1f0adea49a409bb026c34e04429e39e81672244d82e6f16f690d166b9531147cd5a6c435fb199f04627013b972f19e5e226d59eef34bfa80579340f50e78e553d433839a4c294ea6982849010528d30519ec229794ff2c88b8940300000000000000000300000000000000d7a57eaaf23bdd1516ae49b3c6d631c86572bbc9f857ffd123950eb41d3873bb7d908c59d36092130191cbf44d6dd118b785683d244c08cdcfd90016d2db5306b10b78a7ccee89875914c755f5b0c06b8d16a129c500027c27ce9625a1c50c140000000000000000020000000000000000c2eb0b000000000001000000000000",
+          "tx_id": "93a1a4640514d0d42b30d1ebf4ce042b8c85afabb647401340d62988651a5437",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-30T02:46:49Z"
+        },
+        {
+          "target_contract_id": "b7543a2b3dc43a7b0e3b072281c34045bb2489d81c02578562afce4ad83452fe",
+          "fn_name": "trade",
+          "args": "{\"auth\": {\"trading_pk\": \"22LZEjRLV8LjUW3LVXNXUc42BWfT855oc5n5BYmFx5Py1RXpUJGtNVoTh2FPq3TfnqBYTPAT9co7Ye3RkZMR3o1yMp6bdwnxyJnhMjNTRskyA385UCPaeCJtLtbZ7StxfVoi\", \"nonce\": 2, \"signature\": \"6vvycqium98kx5fXekG59n4tUqwEZytew6quGZHQCCmYvVMSom5JwpqodUJL1ozvTd\"}, \"market_id\": 1, \"outcome\": 0, \"is_buy\": true, \"amount\": 200000000}",
+          "fn_args_hex": "e71f2f4d2dd4688f604d05093f97ff5dfbe5e3b9ef42a53aab4b8d5e79285283908541ae657913dca77206a4360fe4140683122e5cd904a896624cabdc2a93328f40dfe92b25365b91c5926204edcacc162e25a5b4563cd36dee30549232c908fdc7b89c2a1f0adea49a409bb026c34e04429e39e81672244d82e6f16f690d166b9531147cd5a6c435fb199f04627013b972f19e5e226d59eef34bfa80579340f50e78e553d433839a4c294ea6982849010528d30519ec229794ff2c88b894030000000000000000020000000000000015de8e4bdea159f6406f5129659815ff2d5c6d1a364599bc52459c04e2f8652e02b91aa7d8cea5625c341f943899f90f373ad7566163632a83b6ad8e061bc49a8711a509ffec60f9a7491a932979002e82efdb3e0193fa98df9cf601bd41aa0f0000000000000000010000000000000000c2eb0b000000000001000000000000",
+          "tx_id": "711a3cbc5a669caf37740ec8e163fafd12a510daabe79fc056319fd5aba44e63",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-30T02:44:49Z"
+        }
+      ]
+    },
+    "prediction-market-logic.assert_yes": {
+      "current": {
+        "target_contract_id": "d106ec6330a88c32cfb5822917a37ac9de172caa79ab8b207cf93d5cdd7dd883",
+        "fn_name": "assert_yes",
+        "args": "0",
+        "fn_args_hex": "0000000000000000",
+        "tx_id": "88450ef7517058db5aee633a4f241fe3a92f04e115df7c2e067d82fe03d97963",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-18T08:58:38Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "b7543a2b3dc43a7b0e3b072281c34045bb2489d81c02578562afce4ad83452fe",
+          "fn_name": "assert_yes",
+          "args": "3",
+          "fn_args_hex": "0300000000000000",
+          "tx_id": "18ce0c02f73e226bd2966b44eb170547147f5cdde941d760ffb22c3cf77d8420",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-30T02:49:09Z"
+        },
+        {
+          "target_contract_id": "b7543a2b3dc43a7b0e3b072281c34045bb2489d81c02578562afce4ad83452fe",
+          "fn_name": "assert_yes",
+          "args": "2",
+          "fn_args_hex": "0200000000000000",
+          "tx_id": "914ae9c45bf72ca54a105ccc1f77339e25b6c9f9b0dc5fed5b7bc1d247f08263",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-30T02:47:10Z"
+        },
+        {
+          "target_contract_id": "b7543a2b3dc43a7b0e3b072281c34045bb2489d81c02578562afce4ad83452fe",
+          "fn_name": "assert_yes",
+          "args": "1",
+          "fn_args_hex": "0100000000000000",
+          "tx_id": "219f35fa7c9216e7931dc09538c2e6a19835ff4cee783cd75509b163a50e6026",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-30T02:45:09Z"
+        }
+      ]
+    },
+    "prediction-market-logic.finalize_resolution": {
+      "current": {
+        "target_contract_id": "d106ec6330a88c32cfb5822917a37ac9de172caa79ab8b207cf93d5cdd7dd883",
+        "fn_name": "finalize_resolution",
+        "args": "0",
+        "fn_args_hex": "0000000000000000",
+        "tx_id": "dc999456885203094f15fe3cc21cf9ee1aa9aeb3f44968f2b7494027a50f0854",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-18T08:58:58Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "b7543a2b3dc43a7b0e3b072281c34045bb2489d81c02578562afce4ad83452fe",
+          "fn_name": "finalize_resolution",
+          "args": "3",
+          "fn_args_hex": "0300000000000000",
+          "tx_id": "fa1d87b8e7f44c19c08d0b56a91ce7df376a6141d7d59887f286f5a77da3ab0f",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-30T02:49:49Z"
+        },
+        {
+          "target_contract_id": "b7543a2b3dc43a7b0e3b072281c34045bb2489d81c02578562afce4ad83452fe",
+          "fn_name": "finalize_resolution",
+          "args": "2",
+          "fn_args_hex": "0200000000000000",
+          "tx_id": "c1b1d350a053b5b31a4883fb81e21691addacbe82c78166cc460a0b4067eb406",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-30T02:47:49Z"
+        },
+        {
+          "target_contract_id": "b7543a2b3dc43a7b0e3b072281c34045bb2489d81c02578562afce4ad83452fe",
+          "fn_name": "finalize_resolution",
+          "args": "1",
+          "fn_args_hex": "0100000000000000",
+          "tx_id": "9172958c9f0cf4901112f74299f3e39d02cf55ade68a75e5cde29722d570122b",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-30T02:45:49Z"
+        }
+      ]
+    },
+    "agent-pm-settlement.init_gate": {
+      "current": {
+        "target_contract_id": "97c87012b427eb4227f050477061a986474438534155615be5832eec099ec734",
+        "fn_name": "init_gate",
+        "args": "\"807b06302f4a24d94de2539ef92526e69be6eb83806656df45ad9d00772d7e6b\"",
+        "fn_args_hex": "807b06302f4a24d94de2539ef92526e69be6eb83806656df45ad9d00772d7e6b",
+        "tx_id": "a1ce4c22b83c7381e210760866e6bd414d1e81d2975f875053c5ca595918ae72",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-17T23:23:35Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "685b44bb9472dd1b1f9b6a62841f122696ce7370fe5b7367578617a2e4863760",
+          "fn_name": "init_gate",
+          "args": "\"807b06302f4a24d94de2539ef92526e69be6eb83806656df45ad9d00772d7e6b\"",
+          "fn_args_hex": "807b06302f4a24d94de2539ef92526e69be6eb83806656df45ad9d00772d7e6b",
+          "tx_id": "9d71b6826cd3f268018df7231603ea4123ca286b1a55d6767bf1be12b033d04b",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-31T13:05:29Z"
+        }
+      ]
+    },
+    "agent-pm-settlement.init_pm": {
+      "current": {
+        "target_contract_id": "97c87012b427eb4227f050477061a986474438534155615be5832eec099ec734",
+        "fn_name": "init_pm",
+        "args": "\"d106ec6330a88c32cfb5822917a37ac9de172caa79ab8b207cf93d5cdd7dd883\"",
+        "fn_args_hex": "d106ec6330a88c32cfb5822917a37ac9de172caa79ab8b207cf93d5cdd7dd883",
+        "tx_id": "fcd2fb99838549cde4f5855d4cec1daac81b74d807becbd06f65b773a4cd895d",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-17T23:23:35Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "685b44bb9472dd1b1f9b6a62841f122696ce7370fe5b7367578617a2e4863760",
+          "fn_name": "init_pm",
+          "args": "\"3bdae4a02727350a9874c3509afcdd4741d5deccbd42e4f2e0cc6276f2db9e4c\"",
+          "fn_args_hex": "3bdae4a02727350a9874c3509afcdd4741d5deccbd42e4f2e0cc6276f2db9e4c",
+          "tx_id": "2745bbbe0512fa8c0a143a9c8ae021275ec517d6ed142f7bdeed7a8508541935",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-31T13:05:49Z"
+        }
+      ]
+    },
+    "prediction-market-logic.init_agent_wrapper": {
+      "current": {
+        "target_contract_id": "d106ec6330a88c32cfb5822917a37ac9de172caa79ab8b207cf93d5cdd7dd883",
+        "fn_name": "init_agent_wrapper",
+        "args": "\"97c87012b427eb4227f050477061a986474438534155615be5832eec099ec734\"",
+        "fn_args_hex": "97c87012b427eb4227f050477061a986474438534155615be5832eec099ec734",
+        "tx_id": "74d74bc2bf023a096f61d448e428aedf361f6a97f9b887a25eb9a49ca38bba23",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-17T23:10:30Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "3bdae4a02727350a9874c3509afcdd4741d5deccbd42e4f2e0cc6276f2db9e4c",
+          "fn_name": "init_agent_wrapper",
+          "args": "\"685b44bb9472dd1b1f9b6a62841f122696ce7370fe5b7367578617a2e4863760\"",
+          "fn_args_hex": "685b44bb9472dd1b1f9b6a62841f122696ce7370fe5b7367578617a2e4863760",
+          "tx_id": "27b8e84d24752378ced29b804836aa21342a16853d343bf3b2ad92a0446afe4a",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-31T13:06:09Z"
+        }
+      ]
+    },
+    "agent-pm-settlement.agent_deposit": {
+      "current": {
+        "target_contract_id": "685b44bb9472dd1b1f9b6a62841f122696ce7370fe5b7367578617a2e4863760",
+        "fn_name": "agent_deposit",
+        "args": "{\"session_id\": {\"id\": \"613ff70fcca135a34ea07ede6c04b6d94b324484e824d97e8dbfb4ff69dd3900\"}, \"scope\": [115, 118, 99, 45, 100, 101, 109, 111, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], \"settle_addr\": [186, 65, 32, 250, 170, 237, 183, 229, 75, 162, 195, 163, 250, 119, 74, 98, 235, 31, 254, 225, 254, 73, 243, 153, 143, 249, 204, 160, 253, 4, 133, 173], \"value\": 1000000000, \"auth\": {\"trading_pk\": \"25zEdaMCAd86cLMTVCW3itX3JsuFk6rYzZFcVjDMrV66xG5jFoGQVZwSLyAzqbR88hqjjCsCwXk8byjThMfAFmpd3kVNDSKocij98jpG8Zc4xAUvD8D95Z4t8BhTvmN5vyHz\", \"nonce\": 0, \"signature\": \"6ajVJ1MaAc5cH9ABZL7UW1nZTPN2GKB5az7tvD9g1hyeTT5DAoP2X5hoJM468cFG6u\"}}",
+        "fn_args_hex": "ee5e1f6a91575d3ea5c1153ca0a23753445dac3960b2d9faf33d9355ab4a56297376632d64656d6f000000000000000000000000000000000000000000000000ba4120faaaedb7e54ba2c3a3fa774a62eb1ffee1fe49f3998ff9cca0fd0485ad00ca9a3b00000000c8db89228e0ff25187414fbee2caca4834df15fb6900b7800b191042dd9fc9e81e0660400a7fe83e9b8ddcd80e972a1954b358abe6a984f24e11bb1f2d127434c9fc803d157cb1c3c7859cdd08e4d3a74d7a1d335e8ceb242c66f0b12e22d211947f81b5b09b62306e1b6c44e371e39a97b70f92dc4ae6ed7d986bda3a7ec0d6726d93037ad5cd6c81e5895cfe502a0e10881dd3b2cedd1e02e0e73486bec2fc0747b6017ec9c5612b91b24bc57fd208efd1b409b171889719cd33f9f216180c00000000000000000000000000000000b5562de8609f6dcc81e95b87991319253f6e2e9c84c4bb510ba2c93d0d4d274598b591ab555219685f0547eaa2f4910da40bc4c464fa6335bc1ba85d9dc12b0150706af7afc0f104f09efd56ab8125a00b6f1cb2e7d93ead973c1de402a0080b0000000000000000",
+        "tx_id": "3c57005a0dbcb22465262ff770ac872d499330d2973d651576db7a4d6dc0c221",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-07-31T13:40:59Z"
+      },
+      "history": []
+    },
+    "agent-pm-settlement.agent_trade": {
+      "current": {
+        "target_contract_id": "685b44bb9472dd1b1f9b6a62841f122696ce7370fe5b7367578617a2e4863760",
+        "fn_name": "agent_trade",
+        "args": "{\"session_id\": {\"id\": \"613ff70fcca135a34ea07ede6c04b6d94b324484e824d97e8dbfb4ff69dd3900\"}, \"scope\": [115, 118, 99, 45, 100, 101, 109, 111, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], \"settle_addr\": [186, 65, 32, 250, 170, 237, 183, 229, 75, 162, 195, 163, 250, 119, 74, 98, 235, 31, 254, 225, 254, 73, 243, 153, 143, 249, 204, 160, 253, 4, 133, 173], \"trade\": {\"auth\": {\"trading_pk\": \"25zEdaMCAd86cLMTVCW3itX3JsuFk6rYzZFcVjDMrV66xG5jFoGQVZwSLyAzqbR88hqjjCsCwXk8byjThMfAFmpd3kVNDSKocij98jpG8Zc4xAUvD8D95Z4t8BhTvmN5vyHz\", \"nonce\": 1, \"signature\": \"6NXYhqo2ms8sWzZVTxLL4UXK9WQA34JGLBk5PcR8qvSbfSvoA8Sa6hLhkKuEooM2CR\"}, \"market_id\": 0, \"outcome\": 0, \"is_buy\": true, \"amount\": 200000000}}",
+        "fn_args_hex": "ee5e1f6a91575d3ea5c1153ca0a23753445dac3960b2d9faf33d9355ab4a56297376632d64656d6f000000000000000000000000000000000000000000000000ba4120faaaedb7e54ba2c3a3fa774a62eb1ffee1fe49f3998ff9cca0fd0485adc8db89228e0ff25187414fbee2caca4834df15fb6900b7800b191042dd9fc9e81e0660400a7fe83e9b8ddcd80e972a1954b358abe6a984f24e11bb1f2d127434c9fc803d157cb1c3c7859cdd08e4d3a74d7a1d335e8ceb242c66f0b12e22d211947f81b5b09b62306e1b6c44e371e39a97b70f92dc4ae6ed7d986bda3a7ec0d6726d93037ad5cd6c81e5895cfe502a0e10881dd3b2cedd1e02e0e73486bec2fc0747b6017ec9c5612b91b24bc57fd208efd1b409b171889719cd33f9f216180c000000000000000001000000000000000b02b6ec6a42f06cf75bdb85a7baaf27025e21635de34d27b6acac9eb61c708fc5893d0d1edbd3a7b5457a7232f7c30e575e0ce5994f635870cdcd0a0cdce924c628e71d37b71e6a2aae336456e4fd22dd67b9e67850d369d862d1ca762380070000000000000000000000000000000000c2eb0b000000000001000000000000",
+        "tx_id": "20573c18f321279eeedec9a9606f75ec3c047c68f30e44eac56a8e438f9bbf4a",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-07-31T13:41:19Z"
+      },
+      "history": []
+    },
+    "prediction-market-logic.claim_payout": {
+      "current": {
+        "target_contract_id": "d106ec6330a88c32cfb5822917a37ac9de172caa79ab8b207cf93d5cdd7dd883",
+        "fn_name": "claim_payout",
+        "args": "{\"auth\": {\"trading_pk\": \"23f4ATQGZtqr3r5HCZ9UxMwBfeafbM3naodqjvAa6wjbirY9ooMryXjGvdihjiPandSPyCMoUiU45npwogmqbL4jJ4DAU12ax7pmrsstyCwy7Y3W17GCNCkp6wjv8e263Gqn\", \"nonce\": 2, \"signature\": \"6MvdRJF8MsX2euw8MbrNhUF2zLDgywaXTw4ZC8215rYjDCU6QhGP61KiCdfkznM9o2\"}, \"market_id\": 0}",
+        "fn_args_hex": "2bfc9e1b8cd33ce7d31d1547911cf144a3162d7b818ed5e8d53063fe59f2eda7c751b6a28f2320eed906286b83daa812d66eebe85e868754a4b991cd8c0d6326c9900d0e8610b46539e29bc69d2b5577cef61600b230c166647090a17b2b1a0c1120cd6f7415bf50907beac892ced3f9c495949c9b0a72efd7c0e634d7a28073d18ae75c59e8017e47ce39e4617c97027d7eaaadc36d3486df31c1207f4282a59d614bd472755e332b09feaf151a9ab14ca278394fe92baa796ed364e899740900000000000000000200000000000000e6fb3d32e64c059696d5ad2a30baf363975eaa4f7adcb8334ba4f04cc020b669871521465f98a1f7677af133e3a2dc1316f7c2a08f9bdfcbd119f5365da1bdae31f57f5faeb69a3a887252976b57bf043da557dd840fa0a1bd5e90bbe1ad561000000000000000000000000000000000",
+        "tx_id": "b7c897bc383ee319f5bf4b55fa1bdfdc4a4f2796ca65ebb654eefa1399197064",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-18T08:59:18Z"
+      },
+      "history": []
+    },
+    "prediction-market-logic.claim_lp_fees": {
+      "current": {
+        "target_contract_id": "d106ec6330a88c32cfb5822917a37ac9de172caa79ab8b207cf93d5cdd7dd883",
+        "fn_name": "claim_lp_fees",
+        "args": "0",
+        "fn_args_hex": "0000000000000000",
+        "tx_id": "dcb73f85e5f9a76d3548a22901d03c857e2a45e2870a4bc2b96823e842727825",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-18T08:59:38Z"
+      },
+      "history": []
     }
   }
 }
