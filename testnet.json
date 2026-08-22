@@ -612,7 +612,7 @@
         "deploy_nonce": 1784998677,
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
         "deployed_at": "2026-07-25T16:58:14Z",
-        "ops_note": "TEMP live pin 2026-07-30 for finishing markets on pre-Phase-2 deploy. Phase G rights/bond wired on b7543a2b only \u2014 Create/has_right may be unavailable here."
+        "ops_note": "TEMP live pin 2026-07-30 for finishing markets on pre-Phase-2 deploy. Phase G rights/bond wired on b7543a2b only — Create/has_right may be unavailable here."
       },
       {
         "version": "0.1.1",
@@ -684,7 +684,7 @@
         "deploy_nonce": 1784998700,
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
         "deployed_at": "2026-07-25T16:58:34Z",
-        "ops_note": "TEMP live pin 2026-07-30 for finishing markets on pre-Phase-2 deploy. Phase G rights/bond wired on b7543a2b only \u2014 Create/has_right may be unavailable here."
+        "ops_note": "TEMP live pin 2026-07-30 for finishing markets on pre-Phase-2 deploy. Phase G rights/bond wired on b7543a2b only — Create/has_right may be unavailable here."
       },
       {
         "version": "0.2.0",
@@ -2445,6 +2445,118 @@
         "called_at": "2026-08-18T08:59:38Z"
       },
       "history": []
+    },
+    "compliance-gate.init_l1_messenger_contract": {
+      "current": {
+        "target_contract_id": "d5beb88a4fe99147e601bc9e144fe99f9832b12bb3abb48634e6d0132a630b24",
+        "fn_name": "init_l1_messenger_contract",
+        "args": "\"63cd2c93016296b2ec357e31fd44b716cf2cda3b31217d45087f17ccc6440530\"",
+        "fn_args_hex": "63cd2c93016296b2ec357e31fd44b716cf2cda3b31217d45087f17ccc6440530",
+        "tx_id": "7d835d3648c80a7073fe246efa7c729994acd3830a3103268b74168fdc934960",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-22T15:10:30Z"
+      },
+      "history": []
+    },
+    "compliance-gate.init_evm_compliance_gate": {
+      "current": {
+        "target_contract_id": "d5beb88a4fe99147e601bc9e144fe99f9832b12bb3abb48634e6d0132a630b24",
+        "fn_name": "init_evm_compliance_gate",
+        "args": "[134,181,176,170,97,199,183,122,255,33,215,174,81,148,172,187,14,232,142,34]",
+        "fn_args_hex": "86b5b0aa61c7b77aff21d7ae5194acbb0ee88e22",
+        "tx_id": "0997aebf4f0fa6c5ec2fec39a6380acf60e1d9d631b0bb27a6ca0e0950af8171",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-22T15:10:50Z"
+      },
+      "history": []
+    },
+    "compliance-gate.init_min_gas_limit": {
+      "current": {
+        "target_contract_id": "d5beb88a4fe99147e601bc9e144fe99f9832b12bb3abb48634e6d0132a630b24",
+        "fn_name": "init_min_gas_limit",
+        "args": "250000",
+        "fn_args_hex": "90d00300",
+        "tx_id": "628fc05a0038cff4dee1a9ef98d45d0f9ca612a419e92a239a60bcc84a43ae35",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-22T15:11:10Z"
+      },
+      "history": []
+    },
+    "compliance-gate.push_attestation": {
+      "current": {
+        "target_contract_id": "d5beb88a4fe99147e601bc9e144fe99f9832b12bb3abb48634e6d0132a630b24",
+        "fn_name": "push_attestation",
+        "args": "[[137, 77, 217, 114, 144, 47, 197, 34, 144, 83, 208, 254, 84, 33, 132, 253, 57, 168, 84, 216, 21, 251, 246, 141, 124, 40, 143, 41, 6, 65, 46, 160], true, [97, 116, 116, 101, 115, 116, 45, 114, 101, 102, 45, 118, 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]",
+        "fn_args_hex": "01894dd972902fc5229053d0fe542184fd39a854d815fbf68d7c288f2906412ea06174746573742d7265662d763100000000000000000000000000000000000000",
+        "tx_id": "2e288856f47780faf4259ae0921dcb1ec0e8804ecf7993d32b166a58e15f5803",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-22T15:12:00Z"
+      },
+      "history": []
+    },
+    "address-link-registry.init_l1_messenger_contract": {
+      "current": {
+        "target_contract_id": "bdacdcb7c576afff7692c15cb17d51365767f6113836ea29a1a5d556d7b377a9",
+        "fn_name": "init_l1_messenger_contract",
+        "args": "\"63cd2c93016296b2ec357e31fd44b716cf2cda3b31217d45087f17ccc6440530\"",
+        "fn_args_hex": "63cd2c93016296b2ec357e31fd44b716cf2cda3b31217d45087f17ccc6440530",
+        "tx_id": "dc6d020bf4f68268c0e666add080205841ec4f302b421ec6d84851fe53354937",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-22T17:20:11Z"
+      },
+      "history": []
+    },
+    "address-link-registry.init_evm_compliance_gate": {
+      "current": {
+        "target_contract_id": "bdacdcb7c576afff7692c15cb17d51365767f6113836ea29a1a5d556d7b377a9",
+        "fn_name": "init_evm_compliance_gate",
+        "args": "[207,91,239,151,37,69,71,139,185,70,1,234,230,123,116,207,201,178,161,208]",
+        "fn_args_hex": "cf5bef972545478bb94601eae67b74cfc9b2a1d0",
+        "tx_id": "d23ad2ebe2bf86e5cce9230cbe021e8770267d6525daa68959ad007a9ec3f244",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-22T17:20:30Z"
+      },
+      "history": []
+    },
+    "address-link-registry.init_min_gas_limit": {
+      "current": {
+        "target_contract_id": "bdacdcb7c576afff7692c15cb17d51365767f6113836ea29a1a5d556d7b377a9",
+        "fn_name": "init_min_gas_limit",
+        "args": "250000",
+        "fn_args_hex": "90d00300",
+        "tx_id": "8f49dc58086aaccba3a074a797a96bfa24dd41b4e6e7f1e5a5b0a18db5cdee43",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-22T17:20:50Z"
+      },
+      "history": []
     }
+  },
+  "compliance-gate": {
+    "current": {
+      "version": "0.1.3",
+      "contract_id": "d5beb88a4fe99147e601bc9e144fe99f9832b12bb3abb48634e6d0132a630b24",
+      "tx_id": "7fabea19a7da8d5b39af3a9a2777c4fa6efc6f8a6801957bf78528bbaff06925",
+      "wasm_path": "/Users/leonidas/dev/aichbindas/latch/.worktrees/xdm-attestation-push/target/contract/wasm32-unknown-unknown/release/compliance_gate.wasm",
+      "dd_wasm_path": "/Users/leonidas/dev/aichbindas/latch/.worktrees/xdm-attestation-push/target/data-driver/wasm32-unknown-unknown/release/compliance_gate.wasm",
+      "wasm_sha256": "650b75af939d3ced8fd0e6cde97a623c49430b17051f7d3cede88b4a307a7d43",
+      "deploy_nonce": 1787411382,
+      "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+      "deployed_at": "2026-08-22T15:10:00Z"
+    },
+    "history": []
+  },
+  "address-link-registry": {
+    "current": {
+      "version": "0.1.1",
+      "contract_id": "bdacdcb7c576afff7692c15cb17d51365767f6113836ea29a1a5d556d7b377a9",
+      "tx_id": "c0cafe8b0dea3e997f846894795334b26efe43d4c9b230c56cc9853826656c02",
+      "wasm_path": "/Users/leonidas/dev/aichbindas/latch/.worktrees/xdm-link-status-push/target/contract/wasm32-unknown-unknown/release/address_link_registry.wasm",
+      "dd_wasm_path": "/Users/leonidas/dev/aichbindas/latch/.worktrees/xdm-link-status-push/target/data-driver/wasm32-unknown-unknown/release/address_link_registry.wasm",
+      "wasm_sha256": "f06baae5b121a6a6c5d622a6703ab6885b019bc76ac4fe837807bd3adfd298e8",
+      "deploy_nonce": 1787419166,
+      "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+      "deployed_at": "2026-08-22T17:19:41Z"
+    },
+    "history": []
   }
 }
