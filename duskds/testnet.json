@@ -3225,13 +3225,22 @@
       "current": {
         "target_contract_id": "09e12d5d0af3935ea0c93f4b4eef3a88a24b0de28cd89fd54114c9fb85ef7fdb",
         "fn_name": "push_link_status",
-        "args": "[[211, 162, 207, 128, 115, 53, 74, 165, 98, 184, 38, 159, 240, 62, 239, 201, 227, 168, 136, 177, 77, 16, 78, 161, 193, 117, 170, 237, 233, 160, 108, 163], 1]",
-        "fn_args_hex": "d3a2cf8073354aa562b8269ff03eefc9e3a888b14d104ea1c175aaede9a06ca301",
-        "tx_id": "1d3cb32e48bd1745e8ddcdfd0b81a465db54ad1c49de34217af5239061c64642",
+        "args": "[[215, 75, 90, 253, 92, 58, 10, 155, 60, 154, 153, 160, 100, 207, 194, 214, 203, 222, 199, 119, 3, 114, 74, 57, 160, 242, 109, 116, 138, 3, 221, 93], 1]",
+        "fn_args_hex": "d74b5afd5c3a0a9b3c9a99a064cfc2d6cbdec77703724a39a0f26d748a03dd5d01",
+        "tx_id": "49be7b9ff8fad5489bd6d4bf69e217771c91cb4ca253a572d9e6df1f8191b45f",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-23T09:51:00Z"
+        "called_at": "2026-08-23T10:29:21Z"
       },
       "history": [
+        {
+          "target_contract_id": "09e12d5d0af3935ea0c93f4b4eef3a88a24b0de28cd89fd54114c9fb85ef7fdb",
+          "fn_name": "push_link_status",
+          "args": "[[211, 162, 207, 128, 115, 53, 74, 165, 98, 184, 38, 159, 240, 62, 239, 201, 227, 168, 136, 177, 77, 16, 78, 161, 193, 117, 170, 237, 233, 160, 108, 163], 1]",
+          "fn_args_hex": "d3a2cf8073354aa562b8269ff03eefc9e3a888b14d104ea1c175aaede9a06ca301",
+          "tx_id": "1d3cb32e48bd1745e8ddcdfd0b81a465db54ad1c49de34217af5239061c64642",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-23T09:51:00Z"
+        },
         {
           "target_contract_id": "bdacdcb7c576afff7692c15cb17d51365767f6113836ea29a1a5d556d7b377a9",
           "fn_name": "push_link_status",
