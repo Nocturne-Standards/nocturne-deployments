@@ -2448,27 +2448,100 @@
     },
     "compliance-gate.init_l1_messenger_contract": {
       "current": {
-        "target_contract_id": "d5beb88a4fe99147e601bc9e144fe99f9832b12bb3abb48634e6d0132a630b24",
+        "target_contract_id": "c1a58b62dd972aeca268e067001763455ad8e23dc8cdef34f9cf768ab60df024",
         "fn_name": "init_l1_messenger_contract",
         "args": "\"63cd2c93016296b2ec357e31fd44b716cf2cda3b31217d45087f17ccc6440530\"",
         "fn_args_hex": "63cd2c93016296b2ec357e31fd44b716cf2cda3b31217d45087f17ccc6440530",
-        "tx_id": "7d835d3648c80a7073fe246efa7c729994acd3830a3103268b74168fdc934960",
+        "tx_id": "bbf8b8364411be7579117324b6dd2444471d830c3732efe524464b0a40be0503",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-22T15:10:30Z"
+        "called_at": "2026-08-25T06:52:40Z"
       },
-      "history": []
+      "history": [
+        {
+          "target_contract_id": "d5beb88a4fe99147e601bc9e144fe99f9832b12bb3abb48634e6d0132a630b24",
+          "fn_name": "init_l1_messenger_contract",
+          "args": "\"63cd2c93016296b2ec357e31fd44b716cf2cda3b31217d45087f17ccc6440530\"",
+          "fn_args_hex": "63cd2c93016296b2ec357e31fd44b716cf2cda3b31217d45087f17ccc6440530",
+          "tx_id": "7d835d3648c80a7073fe246efa7c729994acd3830a3103268b74168fdc934960",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-22T15:10:30Z"
+        }
+      ]
     },
     "compliance-gate.init_evm_compliance_gate": {
       "current": {
-        "target_contract_id": "d5beb88a4fe99147e601bc9e144fe99f9832b12bb3abb48634e6d0132a630b24",
+        "target_contract_id": "c1a58b62dd972aeca268e067001763455ad8e23dc8cdef34f9cf768ab60df024",
         "fn_name": "init_evm_compliance_gate",
-        "args": "[207, 91, 239, 151, 37, 69, 71, 139, 185, 70, 1, 234, 230, 123, 116, 207, 201, 178, 161, 208]",
-        "fn_args_hex": "cf5bef972545478bb94601eae67b74cfc9b2a1d0",
-        "tx_id": "f211acc2bbfe000a3894e7dd3d56712c5cc394b07f23dfe47d08ba4a728b3d0f",
+        "args": "[166, 252, 209, 18, 246, 189, 23, 35, 254, 63, 159, 234, 80, 201, 174, 117, 83, 186, 115, 45]",
+        "fn_args_hex": "a6fcd112f6bd1723fe3f9fea50c9ae7553ba732d",
+        "tx_id": "8ec952e55b1e0faa62330f3aef4c08ca7b2fcdee47d5bedf6a4b000e17c70e27",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-22T19:48:50Z"
+        "called_at": "2026-08-25T06:53:00Z"
       },
       "history": [
+        {
+          "target_contract_id": "d5beb88a4fe99147e601bc9e144fe99f9832b12bb3abb48634e6d0132a630b24",
+          "fn_name": "init_evm_compliance_gate",
+          "args": "[166, 252, 209, 18, 246, 189, 23, 35, 254, 63, 159, 234, 80, 201, 174, 117, 83, 186, 115, 45]",
+          "fn_args_hex": "a6fcd112f6bd1723fe3f9fea50c9ae7553ba732d",
+          "tx_id": "02ee78b920306f7eeeee62a9b14c4e7881bb7d396ff5d21fb8b0fea6f7b55901",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-25T06:46:41Z"
+        },
+        {
+          "target_contract_id": "d5beb88a4fe99147e601bc9e144fe99f9832b12bb3abb48634e6d0132a630b24",
+          "fn_name": "init_evm_compliance_gate",
+          "args": "[42, 178, 216, 79, 159, 200, 172, 242, 24, 115, 178, 208, 150, 13, 222, 217, 50, 49, 106, 136]",
+          "fn_args_hex": "2ab2d84f9fc8acf21873b2d0960dded932316a88",
+          "tx_id": "99aa437a45d1a17fe0570c91835c970dadf02abc4f6a78f3b1ac80061f939f33",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-24T18:55:00Z"
+        },
+        {
+          "target_contract_id": "d5beb88a4fe99147e601bc9e144fe99f9832b12bb3abb48634e6d0132a630b24",
+          "fn_name": "init_evm_compliance_gate",
+          "args": "[42, 178, 216, 79, 159, 200, 172, 242, 24, 115, 178, 208, 150, 13, 222, 217, 50, 49, 106, 136]",
+          "fn_args_hex": "2ab2d84f9fc8acf21873b2d0960dded932316a88",
+          "tx_id": "8667fa6c7072554391cb43858735829f52a5324446ef14e1e4398e5ca7292f2c",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-24T18:22:31Z"
+        },
+        {
+          "target_contract_id": "d5beb88a4fe99147e601bc9e144fe99f9832b12bb3abb48634e6d0132a630b24",
+          "fn_name": "init_evm_compliance_gate",
+          "args": "[0,161,168,182,111,69,38,88,51,61,193,103,199,75,96,92,239,154,84,62]",
+          "fn_args_hex": "00a1a8b66f452658333dc167c74b605cef9a543e",
+          "tx_id": "c6d9da2d33b30498c542d3cf6480a15b3edaadba5c7d5671304873924d206f04",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-23T18:44:29Z"
+        },
+        {
+          "target_contract_id": "d5beb88a4fe99147e601bc9e144fe99f9832b12bb3abb48634e6d0132a630b24",
+          "fn_name": "init_evm_compliance_gate",
+          "args": "[157,53,188,180,198,186,5,129,250,159,31,248,43,248,102,207,194,133,148,246]",
+          "fn_args_hex": "9d35bcb4c6ba0581fa9f1ff82bf866cfc28594f6",
+          "tx_id": "916461c9e99fab4cd81edbe76428f17d29982d71670fd3f5c729e9e53d74b413",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-23T18:34:11Z"
+        },
+        {
+          "target_contract_id": "d5beb88a4fe99147e601bc9e144fe99f9832b12bb3abb48634e6d0132a630b24",
+          "fn_name": "init_evm_compliance_gate",
+          "args": "[0, 161, 168, 182, 111, 69, 38, 88, 51, 61, 193, 103, 199, 75, 96, 92, 239, 154, 84, 62]",
+          "fn_args_hex": "00a1a8b66f452658333dc167c74b605cef9a543e",
+          "tx_id": "581a75f4f3cdecd0dd66cd463967f0efbe91ce590f2446b9835d0db788231214",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-23T18:27:20Z"
+        },
+        {
+          "target_contract_id": "d5beb88a4fe99147e601bc9e144fe99f9832b12bb3abb48634e6d0132a630b24",
+          "fn_name": "init_evm_compliance_gate",
+          "args": "[207, 91, 239, 151, 37, 69, 71, 139, 185, 70, 1, 234, 230, 123, 116, 207, 201, 178, 161, 208]",
+          "fn_args_hex": "cf5bef972545478bb94601eae67b74cfc9b2a1d0",
+          "tx_id": "f211acc2bbfe000a3894e7dd3d56712c5cc394b07f23dfe47d08ba4a728b3d0f",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-22T19:48:50Z"
+        },
         {
           "target_contract_id": "d5beb88a4fe99147e601bc9e144fe99f9832b12bb3abb48634e6d0132a630b24",
           "fn_name": "init_evm_compliance_gate",
@@ -2482,27 +2555,64 @@
     },
     "compliance-gate.init_min_gas_limit": {
       "current": {
-        "target_contract_id": "d5beb88a4fe99147e601bc9e144fe99f9832b12bb3abb48634e6d0132a630b24",
+        "target_contract_id": "c1a58b62dd972aeca268e067001763455ad8e23dc8cdef34f9cf768ab60df024",
         "fn_name": "init_min_gas_limit",
         "args": "250000",
         "fn_args_hex": "90d00300",
-        "tx_id": "628fc05a0038cff4dee1a9ef98d45d0f9ca612a419e92a239a60bcc84a43ae35",
+        "tx_id": "cc77c3f6a25719cef168ec9cf34c7ca15b6fd4b3f26fd6fb362a98b2591e405f",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-22T15:11:10Z"
+        "called_at": "2026-08-25T06:53:20Z"
       },
-      "history": []
+      "history": [
+        {
+          "target_contract_id": "d5beb88a4fe99147e601bc9e144fe99f9832b12bb3abb48634e6d0132a630b24",
+          "fn_name": "init_min_gas_limit",
+          "args": "250000",
+          "fn_args_hex": "90d00300",
+          "tx_id": "628fc05a0038cff4dee1a9ef98d45d0f9ca612a419e92a239a60bcc84a43ae35",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-22T15:11:10Z"
+        }
+      ]
     },
     "compliance-gate.push_attestation": {
       "current": {
         "target_contract_id": "d5beb88a4fe99147e601bc9e144fe99f9832b12bb3abb48634e6d0132a630b24",
         "fn_name": "push_attestation",
-        "args": "[[42, 1, 246, 43, 117, 28, 50, 247, 28, 212, 250, 192, 13, 220, 48, 67, 125, 159, 29, 74, 72, 191, 199, 246, 69, 122, 158, 207, 184, 34, 117, 143], true, [97, 116, 116, 101, 115, 116, 45, 114, 101, 102, 45, 118, 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]",
-        "fn_args_hex": "012a01f62b751c32f71cd4fac00ddc30437d9f1d4a48bfc7f6457a9ecfb822758f6174746573742d7265662d763100000000000000000000000000000000000000",
-        "tx_id": "c574adacdd7da8b10aa9e2f42a0bdd92e47846b5451e1d03bdf63fa2d2b8595d",
+        "args": "[[99, 45, 18, 234, 59, 131, 13, 52, 111, 16, 205, 175, 27, 34, 183, 212, 36, 242, 58, 238, 52, 6, 81, 188, 205, 99, 126, 251, 61, 29, 35, 48], true, [97, 116, 116, 101, 115, 116, 45, 114, 101, 102, 45, 118, 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]",
+        "fn_args_hex": "01632d12ea3b830d346f10cdaf1b22b7d424f23aee340651bccd637efb3d1d23306174746573742d7265662d763100000000000000000000000000000000000000",
+        "tx_id": "0486bbb4508d320c536b6adbb0f4cc132200e3b6096d839eb681d5a38d4dd15c",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-22T20:14:20Z"
+        "called_at": "2026-08-25T06:49:20Z"
       },
       "history": [
+        {
+          "target_contract_id": "d5beb88a4fe99147e601bc9e144fe99f9832b12bb3abb48634e6d0132a630b24",
+          "fn_name": "push_attestation",
+          "args": "[[12, 85, 233, 152, 150, 145, 188, 179, 229, 60, 172, 2, 236, 103, 244, 15, 151, 81, 189, 238, 81, 215, 200, 36, 19, 98, 22, 162, 106, 156, 174, 16], true, [97, 116, 116, 101, 115, 116, 45, 114, 101, 102, 45, 118, 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]",
+          "fn_args_hex": "010c55e9989691bcb3e53cac02ec67f40f9751bdee51d7c824136216a26a9cae106174746573742d7265662d763100000000000000000000000000000000000000",
+          "tx_id": "20a15cd62f410753e387bdd348103bee3284d50982f80cdad59ba47f748acd0c",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-24T18:57:40Z"
+        },
+        {
+          "target_contract_id": "d5beb88a4fe99147e601bc9e144fe99f9832b12bb3abb48634e6d0132a630b24",
+          "fn_name": "push_attestation",
+          "args": "[[82, 83, 247, 220, 106, 1, 115, 145, 128, 163, 207, 214, 28, 134, 249, 150, 240, 90, 224, 106, 22, 120, 141, 98, 91, 120, 194, 248, 232, 175, 23, 148], true, [97,116,116,101,115,116,45,114,101,102,45,118,49,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]]",
+          "fn_args_hex": "015253f7dc6a01739180a3cfd61c86f996f05ae06a16788d625b78c2f8e8af17946174746573742d7265662d763100000000000000000000000000000000000000",
+          "tx_id": "698771891252bc1055b2d5fb73721ecc1a7c1425628e06b17865d86d1ade581f",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-23T18:47:20Z"
+        },
+        {
+          "target_contract_id": "d5beb88a4fe99147e601bc9e144fe99f9832b12bb3abb48634e6d0132a630b24",
+          "fn_name": "push_attestation",
+          "args": "[[42, 1, 246, 43, 117, 28, 50, 247, 28, 212, 250, 192, 13, 220, 48, 67, 125, 159, 29, 74, 72, 191, 199, 246, 69, 122, 158, 207, 184, 34, 117, 143], true, [97, 116, 116, 101, 115, 116, 45, 114, 101, 102, 45, 118, 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]",
+          "fn_args_hex": "012a01f62b751c32f71cd4fac00ddc30437d9f1d4a48bfc7f6457a9ecfb822758f6174746573742d7265662d763100000000000000000000000000000000000000",
+          "tx_id": "c574adacdd7da8b10aa9e2f42a0bdd92e47846b5451e1d03bdf63fa2d2b8595d",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-22T20:14:20Z"
+        },
         {
           "target_contract_id": "d5beb88a4fe99147e601bc9e144fe99f9832b12bb3abb48634e6d0132a630b24",
           "fn_name": "push_attestation",
@@ -2549,13 +2659,58 @@
       "current": {
         "target_contract_id": "09e12d5d0af3935ea0c93f4b4eef3a88a24b0de28cd89fd54114c9fb85ef7fdb",
         "fn_name": "init_evm_compliance_gate",
-        "args": "[207,91,239,151,37,69,71,139,185,70,1,234,230,123,116,207,201,178,161,208]",
-        "fn_args_hex": "cf5bef972545478bb94601eae67b74cfc9b2a1d0",
-        "tx_id": "dac68423ade378e661974cb73353244ffa0ab46d7a1384dddc2ea9cb6c93734e",
+        "args": "[166, 252, 209, 18, 246, 189, 23, 35, 254, 63, 159, 234, 80, 201, 174, 117, 83, 186, 115, 45]",
+        "fn_args_hex": "a6fcd112f6bd1723fe3f9fea50c9ae7553ba732d",
+        "tx_id": "18c49bd0967da615b5dc12117b8ece5f5ff362730889ad1f8458856555861702",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-23T09:39:20Z"
+        "called_at": "2026-08-25T06:46:59Z"
       },
       "history": [
+        {
+          "target_contract_id": "09e12d5d0af3935ea0c93f4b4eef3a88a24b0de28cd89fd54114c9fb85ef7fdb",
+          "fn_name": "init_evm_compliance_gate",
+          "args": "[42, 178, 216, 79, 159, 200, 172, 242, 24, 115, 178, 208, 150, 13, 222, 217, 50, 49, 106, 136]",
+          "fn_args_hex": "2ab2d84f9fc8acf21873b2d0960dded932316a88",
+          "tx_id": "8ae77487454f69c4205f16f76fb5ff0b0a2f1a5be27abab023bd65302491773b",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-24T18:55:20Z"
+        },
+        {
+          "target_contract_id": "09e12d5d0af3935ea0c93f4b4eef3a88a24b0de28cd89fd54114c9fb85ef7fdb",
+          "fn_name": "init_evm_compliance_gate",
+          "args": "[42, 178, 216, 79, 159, 200, 172, 242, 24, 115, 178, 208, 150, 13, 222, 217, 50, 49, 106, 136]",
+          "fn_args_hex": "2ab2d84f9fc8acf21873b2d0960dded932316a88",
+          "tx_id": "102ba2c263479353e084dc339fd953bf1c7e286492e99eb6bda169a4633b2f0f",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-24T18:22:51Z"
+        },
+        {
+          "target_contract_id": "09e12d5d0af3935ea0c93f4b4eef3a88a24b0de28cd89fd54114c9fb85ef7fdb",
+          "fn_name": "init_evm_compliance_gate",
+          "args": "[0,161,168,182,111,69,38,88,51,61,193,103,199,75,96,92,239,154,84,62]",
+          "fn_args_hex": "00a1a8b66f452658333dc167c74b605cef9a543e",
+          "tx_id": "26b545d663778b19c1850bd528b108a1f38a4d61e14aa04f0e84ab7e75fc1b70",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-23T18:44:50Z"
+        },
+        {
+          "target_contract_id": "09e12d5d0af3935ea0c93f4b4eef3a88a24b0de28cd89fd54114c9fb85ef7fdb",
+          "fn_name": "init_evm_compliance_gate",
+          "args": "[157,53,188,180,198,186,5,129,250,159,31,248,43,248,102,207,194,133,148,246]",
+          "fn_args_hex": "9d35bcb4c6ba0581fa9f1ff82bf866cfc28594f6",
+          "tx_id": "244212714ae8b7852752f0b7c8604558648ca368ecbf06bcbea443d884ed162a",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-23T18:34:31Z"
+        },
+        {
+          "target_contract_id": "09e12d5d0af3935ea0c93f4b4eef3a88a24b0de28cd89fd54114c9fb85ef7fdb",
+          "fn_name": "init_evm_compliance_gate",
+          "args": "[207,91,239,151,37,69,71,139,185,70,1,234,230,123,116,207,201,178,161,208]",
+          "fn_args_hex": "cf5bef972545478bb94601eae67b74cfc9b2a1d0",
+          "tx_id": "dac68423ade378e661974cb73353244ffa0ab46d7a1384dddc2ea9cb6c93734e",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-23T09:39:20Z"
+        },
         {
           "target_contract_id": "bdacdcb7c576afff7692c15cb17d51365767f6113836ea29a1a5d556d7b377a9",
           "fn_name": "init_evm_compliance_gate",
@@ -2593,13 +2748,76 @@
       "current": {
         "target_contract_id": "09e12d5d0af3935ea0c93f4b4eef3a88a24b0de28cd89fd54114c9fb85ef7fdb",
         "fn_name": "push_link_status",
-        "args": "[[215, 75, 90, 253, 92, 58, 10, 155, 60, 154, 153, 160, 100, 207, 194, 214, 203, 222, 199, 119, 3, 114, 74, 57, 160, 242, 109, 116, 138, 3, 221, 93], 1]",
-        "fn_args_hex": "d74b5afd5c3a0a9b3c9a99a064cfc2d6cbdec77703724a39a0f26d748a03dd5d01",
-        "tx_id": "49be7b9ff8fad5489bd6d4bf69e217771c91cb4ca253a572d9e6df1f8191b45f",
+        "args": "[[99, 45, 18, 234, 59, 131, 13, 52, 111, 16, 205, 175, 27, 34, 183, 212, 36, 242, 58, 238, 52, 6, 81, 188, 205, 99, 126, 251, 61, 29, 35, 48], 2]",
+        "fn_args_hex": "632d12ea3b830d346f10cdaf1b22b7d424f23aee340651bccd637efb3d1d233002",
+        "tx_id": "356f380fa3815ec58c9d49071f3ef3c286d68e92ff783e757f7ff02a6114104c",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-23T10:29:21Z"
+        "called_at": "2026-08-25T06:48:40Z"
       },
       "history": [
+        {
+          "target_contract_id": "09e12d5d0af3935ea0c93f4b4eef3a88a24b0de28cd89fd54114c9fb85ef7fdb",
+          "fn_name": "push_link_status",
+          "args": "[[99, 45, 18, 234, 59, 131, 13, 52, 111, 16, 205, 175, 27, 34, 183, 212, 36, 242, 58, 238, 52, 6, 81, 188, 205, 99, 126, 251, 61, 29, 35, 48], 1]",
+          "fn_args_hex": "632d12ea3b830d346f10cdaf1b22b7d424f23aee340651bccd637efb3d1d233001",
+          "tx_id": "547aedf4a9970fa17f345e3ed6b636ef2eedb9adf21bc2f54110be0b405f8f07",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-25T06:47:40Z"
+        },
+        {
+          "target_contract_id": "09e12d5d0af3935ea0c93f4b4eef3a88a24b0de28cd89fd54114c9fb85ef7fdb",
+          "fn_name": "push_link_status",
+          "args": "[[12, 85, 233, 152, 150, 145, 188, 179, 229, 60, 172, 2, 236, 103, 244, 15, 151, 81, 189, 238, 81, 215, 200, 36, 19, 98, 22, 162, 106, 156, 174, 16], 2]",
+          "fn_args_hex": "0c55e9989691bcb3e53cac02ec67f40f9751bdee51d7c824136216a26a9cae1002",
+          "tx_id": "41ade15ac474840ac621fa2f32da10a444575070c38deb0170b57e2e4f556552",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-24T18:57:00Z"
+        },
+        {
+          "target_contract_id": "09e12d5d0af3935ea0c93f4b4eef3a88a24b0de28cd89fd54114c9fb85ef7fdb",
+          "fn_name": "push_link_status",
+          "args": "[[12, 85, 233, 152, 150, 145, 188, 179, 229, 60, 172, 2, 236, 103, 244, 15, 151, 81, 189, 238, 81, 215, 200, 36, 19, 98, 22, 162, 106, 156, 174, 16], 1]",
+          "fn_args_hex": "0c55e9989691bcb3e53cac02ec67f40f9751bdee51d7c824136216a26a9cae1001",
+          "tx_id": "0e90ca8ebbb4ab2535705705128a5b36efbbe8c9c79169326358f5e0f5411436",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-24T18:56:00Z"
+        },
+        {
+          "target_contract_id": "09e12d5d0af3935ea0c93f4b4eef3a88a24b0de28cd89fd54114c9fb85ef7fdb",
+          "fn_name": "push_link_status",
+          "args": "[[82, 83, 247, 220, 106, 1, 115, 145, 128, 163, 207, 214, 28, 134, 249, 150, 240, 90, 224, 106, 22, 120, 141, 98, 91, 120, 194, 248, 232, 175, 23, 148], 2]",
+          "fn_args_hex": "5253f7dc6a01739180a3cfd61c86f996f05ae06a16788d625b78c2f8e8af179402",
+          "tx_id": "cb2e8590f7f6f0011686adaeb5ba3b58ac34116829d00fb75fb6d7f0651e6e27",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-23T18:47:00Z"
+        },
+        {
+          "target_contract_id": "09e12d5d0af3935ea0c93f4b4eef3a88a24b0de28cd89fd54114c9fb85ef7fdb",
+          "fn_name": "push_link_status",
+          "args": "[[82, 83, 247, 220, 106, 1, 115, 145, 128, 163, 207, 214, 28, 134, 249, 150, 240, 90, 224, 106, 22, 120, 141, 98, 91, 120, 194, 248, 232, 175, 23, 148], 1]",
+          "fn_args_hex": "5253f7dc6a01739180a3cfd61c86f996f05ae06a16788d625b78c2f8e8af179401",
+          "tx_id": "c1d458cdbead20e9d114d0a843ee6c483655b206eba26f39ffebee3c1b76af58",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-23T18:46:00Z"
+        },
+        {
+          "target_contract_id": "09e12d5d0af3935ea0c93f4b4eef3a88a24b0de28cd89fd54114c9fb85ef7fdb",
+          "fn_name": "push_link_status",
+          "args": "[[37, 233, 241, 44, 189, 205, 31, 199, 47, 225, 25, 201, 168, 52, 128, 219, 227, 177, 182, 216, 93, 117, 178, 29, 157, 233, 239, 253, 13, 168, 153, 5], 1]",
+          "fn_args_hex": "25e9f12cbdcd1fc72fe119c9a83480dbe3b1b6d85d75b21d9de9effd0da8990501",
+          "tx_id": "9f41d1658cdb118034b5573cfb683c31d238115dd6c071752e4cf955f5184a5b",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-23T18:39:50Z"
+        },
+        {
+          "target_contract_id": "09e12d5d0af3935ea0c93f4b4eef3a88a24b0de28cd89fd54114c9fb85ef7fdb",
+          "fn_name": "push_link_status",
+          "args": "[[215, 75, 90, 253, 92, 58, 10, 155, 60, 154, 153, 160, 100, 207, 194, 214, 203, 222, 199, 119, 3, 114, 74, 57, 160, 242, 109, 116, 138, 3, 221, 93], 1]",
+          "fn_args_hex": "d74b5afd5c3a0a9b3c9a99a064cfc2d6cbdec77703724a39a0f26d748a03dd5d01",
+          "tx_id": "49be7b9ff8fad5489bd6d4bf69e217771c91cb4ca253a572d9e6df1f8191b45f",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-23T10:29:21Z"
+        },
         {
           "target_contract_id": "09e12d5d0af3935ea0c93f4b4eef3a88a24b0de28cd89fd54114c9fb85ef7fdb",
           "fn_name": "push_link_status",
@@ -2763,21 +2981,105 @@
           "called_at": "2026-08-22T20:03:20Z"
         }
       ]
+    },
+    "compliance-predicate-registry.init_lp": {
+      "current": {
+        "target_contract_id": "50b8f3e7eea2cc2ab3a79348a67e47645593474131f2218011852b35fcf57dc2",
+        "fn_name": "init_lp",
+        "args": "\"zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX\"",
+        "fn_args_hex": "e1b15bf20d8e4599b8097e10a8d794b0af55d5b797ee39587bcab88b4a596dd4d45c93e94995b0e359d770c03e47e80d88ca9e033c4cbaa4109aa69c4b20a5ad8e1c5f064066e6a5fcf2634b64582218dab4fefc276cecd17dcb9527b827b9025741653d4e889d72d97117ab7d7efd59e5965bf0ddd15317872aca6ce0822f96dfadffe9357c9c831e84fdc194d776012a877150a700d062d8e08a18658332c6ca54132559e071a818cdc4e85a2ba2801414bacb700c799a0175f98c3daed4170000000000000000",
+        "tx_id": "7d05cb77e030f0f44649369b696005dabf23eab4801865706ec01a7e7d650103",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-25T06:44:40Z"
+      },
+      "history": []
+    },
+    "compliance-gate.init_identity_contract": {
+      "current": {
+        "target_contract_id": "c1a58b62dd972aeca268e067001763455ad8e23dc8cdef34f9cf768ab60df024",
+        "fn_name": "init_identity_contract",
+        "args": "\"b97be68d2965c1e8f78707b7206c6126beecf3f73e1bc6b204b4b03b7d7c099a\"",
+        "fn_args_hex": "b97be68d2965c1e8f78707b7206c6126beecf3f73e1bc6b204b4b03b7d7c099a",
+        "tx_id": "f730f6651504aa1c119b1c59f80713b64757c4be9226d98ed1dadbdcd0631928",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-25T06:51:39Z"
+      },
+      "history": []
+    },
+    "compliance-gate.init_revocation_contract": {
+      "current": {
+        "target_contract_id": "c1a58b62dd972aeca268e067001763455ad8e23dc8cdef34f9cf768ab60df024",
+        "fn_name": "init_revocation_contract",
+        "args": "\"5e83f7be75b08e37b5f314aa1cd9b8b49ee95216bc21066603dadf1eb3b03cd6\"",
+        "fn_args_hex": "5e83f7be75b08e37b5f314aa1cd9b8b49ee95216bc21066603dadf1eb3b03cd6",
+        "tx_id": "ce25be98fbf5e528a889c28f7182984f7449a9c4c00d70962e09e88bea1ffd1e",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-25T06:52:00Z"
+      },
+      "history": []
+    },
+    "compliance-gate.init_predicate_registry_contract": {
+      "current": {
+        "target_contract_id": "c1a58b62dd972aeca268e067001763455ad8e23dc8cdef34f9cf768ab60df024",
+        "fn_name": "init_predicate_registry_contract",
+        "args": "\"50b8f3e7eea2cc2ab3a79348a67e47645593474131f2218011852b35fcf57dc2\"",
+        "fn_args_hex": "50b8f3e7eea2cc2ab3a79348a67e47645593474131f2218011852b35fcf57dc2",
+        "tx_id": "c3473821934c345821ae5ae0fb3d5610409e85f53133ddb65d97240ac0dc115b",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-25T06:52:21Z"
+      },
+      "history": []
+    },
+    "compliance-predicate-registry.register_commitment": {
+      "current": {
+        "target_contract_id": "50b8f3e7eea2cc2ab3a79348a67e47645593474131f2218011852b35fcf57dc2",
+        "fn_name": "register_commitment",
+        "args": "{\"commitment\": \"cc23be9e49b91032a5ed4bc66e9e9bbc4002e968f20c82fa80441f8de92e7671\", \"lp_signature\": [128, 135, 63, 221, 80, 232, 61, 151, 238, 0, 177, 138, 126, 127, 46, 181, 9, 98, 189, 138, 138, 143, 67, 75, 252, 131, 166, 214, 24, 185, 133, 150, 207, 195, 135, 107, 177, 105, 78, 192, 149, 134, 103, 202, 0, 33, 116, 167]}",
+        "fn_args_hex": "80873fdd50e83d97ee00b18a7e7f2eb50962bd8a8a8f434bfc83a6d618b98596cfc3876bb1694ec0958667ca002174a75d6f99c5805c96580626edffd76c814f74d91ce35d391a2487862d77113b534bb0ffffff30000000",
+        "tx_id": "a75a314631b006a041d622330836ee2fd1111b33ff72961a6b65a35a6bac3c4d",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-25T07:05:29Z"
+      },
+      "history": []
+    },
+    "compliance-predicate-registry.submit_proof": {
+      "current": {
+        "target_contract_id": "50b8f3e7eea2cc2ab3a79348a67e47645593474131f2218011852b35fcf57dc2",
+        "fn_name": "submit_proof",
+        "args": "{\"proof\": [176, 21, 87, 204, 8, 31, 152, 104, 148, 43, 209, 40, 140, 67, 140, 54, 123, 238, 157, 134, 255, 244, 220, 119, 24, 231, 248, 254, 78, 230, 151, 236, 52, 158, 133, 113, 213, 233, 252, 146, 201, 139, 44, 69, 249, 212, 182, 64, 185, 240, 229, 62, 96, 204, 199, 97, 247, 156, 25, 13, 183, 77, 254, 183, 3, 249, 240, 43, 239, 163, 185, 118, 11, 239, 222, 229, 175, 140, 190, 188, 230, 168, 220, 230, 182, 6, 171, 218, 156, 64, 144, 116, 102, 80, 58, 8, 176, 130, 59, 209, 59, 90, 101, 32, 249, 21, 43, 148, 32, 54, 188, 185, 1, 64, 145, 159, 126, 169, 21, 219, 76, 21, 166, 221, 95, 34, 54, 115, 250, 158, 95, 215, 78, 199, 240, 171, 135, 224, 247, 161, 152, 133, 134, 168, 140, 45, 62, 11, 78, 209, 146, 51, 10, 169, 233, 173, 172, 116, 206, 100, 217, 184, 179, 244, 75, 217, 86, 170, 243, 60, 52, 31, 147, 54, 102, 77, 141, 111, 73, 28, 222, 200, 8, 112, 14, 107, 249, 239, 28, 38, 13, 246, 144, 49, 58, 154, 104, 141, 251, 210, 34, 164, 226, 189, 231, 29, 2, 188, 38, 145, 104, 194, 90, 67, 192, 6, 251, 11, 238, 54, 119, 63, 176, 52, 86, 142, 26, 206, 134, 103, 111, 54, 2, 149, 32, 239, 11, 0, 87, 27, 176, 86, 201, 184, 11, 223, 139, 237, 171, 91, 179, 212, 185, 173, 74, 94, 226, 180, 140, 124, 58, 123, 145, 114, 34, 254, 254, 208, 221, 142, 179, 206, 56, 42, 230, 199, 227, 225, 66, 31, 67, 75, 27, 246, 218, 85, 31, 3, 176, 7, 167, 60, 193, 221, 51, 208, 72, 156, 162, 136, 220, 113, 220, 204, 234, 106, 181, 242, 133, 247, 73, 177, 101, 74, 65, 173, 44, 29, 83, 43, 132, 190, 228, 107, 24, 202, 195, 95, 215, 252, 95, 179, 136, 97, 182, 47, 164, 38, 11, 76, 118, 157, 16, 124, 3, 5, 98, 107, 14, 188, 64, 180, 185, 74, 124, 205, 180, 199, 244, 91, 99, 66, 19, 98, 143, 57, 142, 126, 72, 239, 40, 12, 124, 110, 59, 106, 68, 42, 97, 65, 132, 175, 96, 11, 174, 138, 245, 37, 75, 215, 11, 218, 184, 69, 179, 13, 156, 161, 136, 221, 221, 133, 201, 4, 26, 114, 1, 214, 101, 179, 76, 236, 7, 10, 94, 236, 126, 136, 115, 199, 74, 200, 148, 69, 122, 199, 148, 23, 167, 70, 119, 231, 175, 136, 239, 238, 143, 217, 189, 29, 138, 95, 247, 134, 243, 149, 18, 158, 124, 12, 231, 65, 218, 107, 208, 198, 234, 160, 17, 227, 122, 189, 89, 162, 219, 156, 123, 171, 64, 65, 238, 165, 202, 30, 200, 40, 247, 7, 94, 188, 141, 192, 123, 242, 94, 230, 25, 126, 213, 140, 178, 86, 32, 175, 14, 141, 27, 147, 216, 165, 224, 138, 222, 251, 50, 117, 91, 152, 25, 160, 244, 142, 36, 124, 228, 117, 234, 232, 80, 44, 165, 246, 239, 132, 72, 167, 97, 142, 128, 243, 167, 38, 73, 70, 255, 222, 234, 130, 2, 54, 218, 18, 141, 197, 34, 66, 7, 234, 146, 156, 179, 43, 165, 16, 253, 228, 31, 36, 197, 65, 32, 138, 214, 247, 221, 12, 222, 89, 139, 233, 78, 194, 113, 92, 250, 88, 111, 114, 175, 134, 245, 47, 255, 12, 70, 190, 202, 7, 51, 42, 140, 63, 112, 103, 25, 215, 49, 36, 172, 114, 101, 84, 193, 199, 28, 167, 141, 22, 219, 59, 99, 187, 130, 9, 46, 195, 218, 180, 168, 226, 217, 66, 174, 100, 222, 144, 246, 23, 237, 175, 126, 236, 222, 204, 210, 39, 177, 137, 211, 150, 156, 200, 140, 27, 21, 38, 247, 34, 154, 52, 93, 222, 10, 66, 66, 2, 94, 50, 106, 255, 3, 124, 45, 46, 121, 42, 53, 0, 196, 224, 147, 176, 42, 255, 81, 251, 27, 89, 90, 106, 122, 113, 173, 197, 179, 60, 174, 26, 96, 36, 28, 164, 207, 196, 162, 206, 134, 9, 176, 77, 95, 122, 81, 133, 8, 137, 151, 74, 235, 196, 121, 68, 111, 126, 174, 100, 194, 200, 233, 5, 223, 116, 139, 51, 49, 85, 70, 212, 170, 224, 182, 216, 174, 133, 243, 177, 47, 138, 113, 8, 6, 53, 16, 3, 100, 51, 118, 205, 12, 240, 169, 101, 174, 35, 97, 184, 125, 211, 21, 4, 209, 32, 10, 159, 127, 172, 32, 4, 28, 26, 174, 195, 220, 50, 221, 38, 48, 121, 22, 222, 209, 124, 76, 30, 151, 150, 143, 97, 206, 85, 190, 168, 152, 152, 182, 19, 43, 89, 6, 217, 224, 235, 140, 42, 133, 182, 102, 156, 122, 207, 250, 3, 141, 45, 167, 104, 21, 135, 24, 67, 231, 44, 134, 78, 198, 254, 162, 132, 95, 55, 100, 112, 237, 107, 145, 220, 237, 127, 86, 122, 115, 223, 184, 13, 163, 31, 14, 114, 142, 21, 217, 192, 232, 95, 201, 225, 138, 57, 110, 106, 203, 31, 96, 216, 216, 166, 43, 177, 45, 124, 153, 56, 24, 180, 110, 21, 26, 233, 40, 26, 7, 193, 39, 135, 250, 182, 166, 45, 188, 113, 59, 2, 120, 220, 135, 41, 135, 54, 204, 13, 11, 109, 185, 4, 37, 173, 97, 128, 160, 204, 90, 29, 96, 152, 246, 203, 15, 251, 78, 197, 36, 44, 51, 171, 187, 77, 155, 58, 49, 246, 142, 228, 44, 226, 182, 37, 60, 133, 177, 139, 237, 135, 234, 33, 34, 36, 158, 109, 4, 214, 179, 250, 192, 248, 97, 174, 144, 58, 135, 43, 92, 42, 110, 25, 217, 202, 193, 13, 126, 31, 48, 99, 244, 115, 206, 15, 88, 155, 155, 132, 136, 239, 74, 210, 225, 109, 155, 42, 16, 170, 186, 102, 188, 28, 186, 116, 12, 141, 84, 20, 173, 185, 170, 151, 155, 120, 192, 103], \"public_inputs\": [\"1200000000000000000000000000000000000000000000000000000000000000\", \"5802000000000000000000000000000000000000000000000000000000000000\", \"cc23be9e49b91032a5ed4bc66e9e9bbc4002e968f20c82fa80441f8de92e7671\"]}",
+        "fn_args_hex": "b01557cc081f9868942bd1288c438c367bee9d86fff4dc7718e7f8fe4ee697ec349e8571d5e9fc92c98b2c45f9d4b640b9f0e53e60ccc761f79c190db74dfeb703f9f02befa3b9760befdee5af8cbebce6a8dce6b606abda9c40907466503a08b0823bd13b5a6520f9152b942036bcb90140919f7ea915db4c15a6dd5f223673fa9e5fd74ec7f0ab87e0f7a1988586a88c2d3e0b4ed192330aa9e9adac74ce64d9b8b3f44bd956aaf33c341f9336664d8d6f491cdec808700e6bf9ef1c260df690313a9a688dfbd222a4e2bde71d02bc269168c25a43c006fb0bee36773fb034568e1ace86676f36029520ef0b00571bb056c9b80bdf8bedab5bb3d4b9ad4a5ee2b48c7c3a7b917222fefed0dd8eb3ce382ae6c7e3e1421f434b1bf6da551f03b007a73cc1dd33d0489ca288dc71dcccea6ab5f285f749b1654a41ad2c1d532b84bee46b18cac35fd7fc5fb38861b62fa4260b4c769d107c0305626b0ebc40b4b94a7ccdb4c7f45b634213628f398e7e48ef280c7c6e3b6a442a614184af600bae8af5254bd70bdab845b30d9ca188dddd85c9041a7201d665b34cec070a5eec7e8873c74ac894457ac79417a74677e7af88efee8fd9bd1d8a5ff786f395129e7c0ce741da6bd0c6eaa011e37abd59a2db9c7bab4041eea5ca1ec828f7075ebc8dc07bf25ee6197ed58cb25620af0e8d1b93d8a5e08adefb32755b9819a0f48e247ce475eae8502ca5f6ef8448a7618e80f3a7264946ffdeea820236da128dc5224207ea929cb32ba510fde41f24c541208ad6f7dd0cde598be94ec2715cfa586f72af86f52fff0c46beca07332a8c3f706719d73124ac726554c1c71ca78d16db3b63bb82092ec3dab4a8e2d942ae64de90f617edaf7eecdeccd227b189d3969cc88c1b1526f7229a345dde0a4242025e326aff037c2d2e792a3500c4e093b02aff51fb1b595a6a7a71adc5b33cae1a60241ca4cfc4a2ce8609b04d5f7a51850889974aebc479446f7eae64c2c8e905df748b33315546d4aae0b6d8ae85f3b12f8a710806351003643376cd0cf0a965ae2361b87dd31504d1200a9f7fac20041c1aaec3dc32dd26307916ded17c4c1e97968f61ce55bea89898b6132b5906d9e0eb8c2a85b6669c7acffa038d2da76815871843e72c864ec6fea2845f376470ed6b91dced7f567a73dfb80da31f0e728e15d9c0e85fc9e18a396e6acb1f60d8d8a62bb12d7c993818b46e151ae9281a07c12787fab6a62dbc713b0278dc87298736cc0d0b6db90425ad6180a0cc5a1d6098f6cb0ffb4ec5242c33abbb4d9b3a31f68ee42ce2b6253c85b18bed87ea2122249e6d04d6b3fac0f861ae903a872b5c2a6e19d9cac10d7e1f3063f473ce0f589b9b8488ef4ad2e16d9b2a10aaba66bc1cba740c8d5414adb9aa979b78c067d9ffffff2600000027fc3f008b031c3e30175888c616303200ea01a95482cb56d4faffff2b0500002c357c087cc033e772c4f62e6eb6d610970e7cc5e49de26e5d6f99c5805c96580626edffd76c814f74d91ce35d391a2487862d77113b534bb0fbfffff003000098ffffff03000000",
+        "tx_id": "1069636c22ce1c52a0e5acba73abac9fb8d4ab5ac395a79351fef2a1cbd84f0e",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-25T07:05:50Z"
+      },
+      "history": []
     }
   },
   "compliance-gate": {
     "current": {
-      "version": "0.1.3",
-      "contract_id": "d5beb88a4fe99147e601bc9e144fe99f9832b12bb3abb48634e6d0132a630b24",
-      "tx_id": "7fabea19a7da8d5b39af3a9a2777c4fa6efc6f8a6801957bf78528bbaff06925",
-      "wasm_path": "/Users/leonidas/dev/aichbindas/latch/.worktrees/xdm-attestation-push/target/contract/wasm32-unknown-unknown/release/compliance_gate.wasm",
-      "dd_wasm_path": "/Users/leonidas/dev/aichbindas/latch/.worktrees/xdm-attestation-push/target/data-driver/wasm32-unknown-unknown/release/compliance_gate.wasm",
-      "wasm_sha256": "650b75af939d3ced8fd0e6cde97a623c49430b17051f7d3cede88b4a307a7d43",
-      "deploy_nonce": 1787411382,
+      "version": "0.1.4",
+      "contract_id": "c1a58b62dd972aeca268e067001763455ad8e23dc8cdef34f9cf768ab60df024",
+      "tx_id": "8a10967f12975816b05d0ee255bd6a3f9a107c2deb575ac5e29cd06b1d418e38",
+      "wasm_path": "/Users/leonidas/dev/aichbindas/latch/target/contract/wasm32-unknown-unknown/release/compliance_gate.wasm",
+      "dd_wasm_path": "/Users/leonidas/dev/aichbindas/latch/target/data-driver/wasm32-unknown-unknown/release/compliance_gate.wasm",
+      "wasm_sha256": "73b7ba6fa3f7fd39d2a630029fc0420e07b9a8de22246ba5d2be5bcfc8180d47",
+      "deploy_nonce": 1787640615,
       "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-      "deployed_at": "2026-08-22T15:10:00Z"
+      "deployed_at": "2026-08-25T06:50:31Z"
     },
-    "history": []
+    "history": [
+      {
+        "version": "0.1.3",
+        "contract_id": "d5beb88a4fe99147e601bc9e144fe99f9832b12bb3abb48634e6d0132a630b24",
+        "tx_id": "7fabea19a7da8d5b39af3a9a2777c4fa6efc6f8a6801957bf78528bbaff06925",
+        "wasm_path": "/Users/leonidas/dev/aichbindas/latch/.worktrees/xdm-attestation-push/target/contract/wasm32-unknown-unknown/release/compliance_gate.wasm",
+        "dd_wasm_path": "/Users/leonidas/dev/aichbindas/latch/.worktrees/xdm-attestation-push/target/data-driver/wasm32-unknown-unknown/release/compliance_gate.wasm",
+        "wasm_sha256": "650b75af939d3ced8fd0e6cde97a623c49430b17051f7d3cede88b4a307a7d43",
+        "deploy_nonce": 1787411382,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-08-22T15:10:00Z"
+      }
+    ]
   },
   "address-link-registry": {
     "current": {
@@ -2804,5 +3106,33 @@
         "deployed_at": "2026-08-22T17:19:41Z"
       }
     ]
+  },
+  "compliance-predicate-registry": {
+    "current": {
+      "version": "0.1.0",
+      "contract_id": "50b8f3e7eea2cc2ab3a79348a67e47645593474131f2218011852b35fcf57dc2",
+      "tx_id": "25349ec99f3b24c59d385972a2ac9cada5a9d12620b66d3b90aaa4b4a789e34e",
+      "wasm_path": "/Users/leonidas/dev/aichbindas/latch/target/contract/wasm32-unknown-unknown/release/compliance_predicate_registry.wasm",
+      "dd_wasm_path": "/Users/leonidas/dev/aichbindas/latch/target/data-driver/wasm32-unknown-unknown/release/compliance_predicate_registry.wasm",
+      "wasm_sha256": "cb8c7fb8b1e7ab4b35dd614348bd42412f9caa07f4a89d71f7c0dc3308912554",
+      "deploy_nonce": 1787640170,
+      "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+      "deployed_at": "2026-08-25T06:43:11Z"
+    },
+    "history": []
+  },
+  "attested-nav": {
+    "current": {
+      "version": "0.1.0",
+      "contract_id": "fc94225db8c75eb6e11685f4cadbe91c83d19298aff8127f046efacd0d39f3f1",
+      "tx_id": "2ec8c6b5f47b4d289ba853f6f3a34bdd560e753093c7f198b888353cba07af1e",
+      "wasm_path": "/Users/leonidas/dev/aichbindas/latch/.worktrees/xdm-nav-push/target/contract/wasm32-unknown-unknown/release/attested_nav.wasm",
+      "dd_wasm_path": "/Users/leonidas/dev/aichbindas/latch/.worktrees/xdm-nav-push/target/data-driver/wasm32-unknown-unknown/release/attested_nav.wasm",
+      "wasm_sha256": "30183f0463d36253db78e10ad9d47919521f5634ea9c5f19adbf78777e493bcb",
+      "deploy_nonce": 1787654144,
+      "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+      "deployed_at": "2026-08-25T10:36:00Z"
+    },
+    "history": []
   }
 }
