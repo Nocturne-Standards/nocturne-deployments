@@ -965,17 +965,29 @@
     },
     "compliance-predicate-registry": {
       "current": {
-        "version": "0.1.0",
-        "contract_id": "50b8f3e7eea2cc2ab3a79348a67e47645593474131f2218011852b35fcf57dc2",
-        "tx_id": "25349ec99f3b24c59d385972a2ac9cada5a9d12620b66d3b90aaa4b4a789e34e",
+        "version": "0.2.0",
+        "contract_id": "9c8954d4581b96826bf8f3850920516957a28a38dbc4789af57e530bc77b1bdb",
+        "tx_id": "b8a92c7f0386a71efe3f312f69a6fe73529c69fdda516c780e1e68c8bdf0e25c",
         "wasm_path": "/Users/leonidas/dev/aichbindas/latch/target/contract/wasm32-unknown-unknown/release/compliance_predicate_registry.wasm",
         "dd_wasm_path": "/Users/leonidas/dev/aichbindas/latch/target/data-driver/wasm32-unknown-unknown/release/compliance_predicate_registry.wasm",
-        "wasm_sha256": "cb8c7fb8b1e7ab4b35dd614348bd42412f9caa07f4a89d71f7c0dc3308912554",
-        "deploy_nonce": 1787640170,
+        "wasm_sha256": "e05354a49f703588ae9b766a1f6abf28e87a1563fcd22b71f70dacc208fbd7b2",
+        "deploy_nonce": 1787782529,
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "deployed_at": "2026-08-25T06:43:11Z"
+        "deployed_at": "2026-08-26T22:15:51Z"
       },
-      "history": []
+      "history": [
+        {
+          "version": "0.1.0",
+          "contract_id": "50b8f3e7eea2cc2ab3a79348a67e47645593474131f2218011852b35fcf57dc2",
+          "tx_id": "25349ec99f3b24c59d385972a2ac9cada5a9d12620b66d3b90aaa4b4a789e34e",
+          "wasm_path": "/Users/leonidas/dev/aichbindas/latch/target/contract/wasm32-unknown-unknown/release/compliance_predicate_registry.wasm",
+          "dd_wasm_path": "/Users/leonidas/dev/aichbindas/latch/target/data-driver/wasm32-unknown-unknown/release/compliance_predicate_registry.wasm",
+          "wasm_sha256": "cb8c7fb8b1e7ab4b35dd614348bd42412f9caa07f4a89d71f7c0dc3308912554",
+          "deploy_nonce": 1787640170,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-08-25T06:43:11Z"
+        }
+      ]
     },
     "attested-nav": {
       "current": {
@@ -1002,6 +1014,76 @@
           "deployed_at": "2026-08-25T10:36:00Z"
         }
       ]
+    },
+    "tnst-token": {
+      "current": {
+        "version": "0.1.0",
+        "contract_id": "f090528946990f3f2d3291d903327dfd700af6d912388c5f3c64c9bbc2a4edda",
+        "tx_id": "5d0fb577474ecc0d35bcfee14130922f739273257365b722a3b8b7afdb0c0d60",
+        "wasm_path": "/Users/leonidas/dev/aichbindas/tnst-token/target/contract/wasm32-unknown-unknown/release/tnst_token.wasm",
+        "dd_wasm_path": "/Users/leonidas/dev/aichbindas/tnst-token/target/data-driver/wasm32-unknown-unknown/release/tnst_token.wasm",
+        "wasm_sha256": "1f70e0ee903c722127d87c644fab77aeee6a45d39f6b1a67d06bfc4b4c2c92a1",
+        "deploy_nonce": 1787786019,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-08-26T23:14:01Z"
+      },
+      "history": []
+    },
+    "agent-compliance-gate-tnst": {
+      "current": {
+        "version": "0.1.3",
+        "contract_id": "8636b7d5ff490b0661a98ce300b8affccad6607fa3e9bc73ba76e771fb2370ec",
+        "tx_id": "e42aaa4754ff5b42a2373fc3e450c0221a86c2b1e4ec4c63067f27fc353d422a",
+        "wasm_path": "/Users/leonidas/dev/aichbindas/chit/target/contract/wasm32-unknown-unknown/release/agent_compliance_gate.wasm",
+        "dd_wasm_path": "/Users/leonidas/dev/aichbindas/chit/target/data-driver/wasm32-unknown-unknown/release/agent_compliance_gate.wasm",
+        "wasm_sha256": "00887964a32e6edaef19f8d192509112a3e35e7a97152b1c167e1914acf5bd09",
+        "deploy_nonce": 1787787119,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-08-26T23:32:22Z"
+      },
+      "history": []
+    },
+    "agent-settlement-tnst": {
+      "current": {
+        "version": "0.1.1",
+        "contract_id": "11c0e3e202e386d3069f194de6746ac9306060a42214fc9547cb904cd66a11ed",
+        "tx_id": "f1bc80c7fa2514dd7b92645692704f2bcee67e11ac0bed584c2d3a2b00b66c5b",
+        "wasm_path": "/Users/leonidas/dev/aichbindas/chit/target/contract/wasm32-unknown-unknown/release/agent_settlement.wasm",
+        "dd_wasm_path": "/Users/leonidas/dev/aichbindas/chit/target/data-driver/wasm32-unknown-unknown/release/agent_settlement.wasm",
+        "wasm_sha256": "695c64ca04f3e09013016af26e2c23b088e4e97aa44e7862c55c571022cc99fc",
+        "deploy_nonce": 1787787144,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-08-26T23:32:41Z"
+      },
+      "history": []
+    },
+    "agent-cash-escrow-tnst": {
+      "current": {
+        "version": "0.1.0",
+        "contract_id": "bf2d7162da00442403770b576a31baeda5d8516dc5da6e72548ae36a7f340c90",
+        "tx_id": "7fb859c755cdf6e2235f5f1d2274842cc0bcaa63167a17aabb13e6c2ed42926b",
+        "wasm_path": "/Users/leonidas/dev/aichbindas/chit/target/contract/wasm32-unknown-unknown/release/agent_cash_escrow.wasm",
+        "dd_wasm_path": "/Users/leonidas/dev/aichbindas/chit/target/data-driver/wasm32-unknown-unknown/release/agent_cash_escrow.wasm",
+        "wasm_sha256": "da76eedc87b938e53afdc32cd3a9b7ab681e904ef2b6c184fb22ba83ab26b95c",
+        "deploy_nonce": 1787787162,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-08-26T23:33:00Z"
+      },
+      "history": []
+    },
+    "chit-receive-tnst-demo": {
+      "current": {
+        "version": "0.1.0",
+        "contract_id": "439140ccfa3fc1a1c978a0783052adc3915046d292609141f9d4e9cf94bdbfe5",
+        "tx_id": "cd1a7406899e4fa09b1b7842f086d993c338566c4bf6065f340e84e5c32a3061",
+        "wasm_path": "/Users/leonidas/dev/aichbindas/chit/target/chit-receive-dusk-demo/wasm32-unknown-unknown/release/chit_receive_dusk_demo.wasm",
+        "dd_wasm_path": null,
+        "wasm_sha256": "be57d2920db3e532b62544bd3b68502e5af57a6dfe8309180908f0866252fc37",
+        "deploy_nonce": 1787787181,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-08-26T23:33:21Z"
+      },
+      "history": []
     }
   },
   "wiring": {
@@ -3330,11 +3412,20 @@
         "fn_name": "push_attestation",
         "args": "[[15, 96, 88, 250, 230, 13, 209, 255, 246, 65, 219, 185, 51, 215, 5, 86, 227, 64, 188, 178, 250, 247, 225, 82, 4, 152, 120, 65, 67, 175, 224, 147], true, [97, 116, 116, 101, 115, 116, 45, 114, 101, 102, 45, 118, 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]",
         "fn_args_hex": "010f6058fae60dd1fff641dbb933d70556e340bcb2faf7e1520498784143afe0936174746573742d7265662d763100000000000000000000000000000000000000",
-        "tx_id": "4747d0e7188f5c1bb16104bfdd10bb1740370502a9e5e96c1d6c90ddc2207171",
+        "tx_id": "56a7dce47d3937c2f40c0ead7da25764981ffee899e09779f0194216782bd538",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-26T16:56:20Z"
+        "called_at": "2026-08-26T21:48:39Z"
       },
       "history": [
+        {
+          "target_contract_id": "72d6f85dbe0a1ee92b7352bcd5f51ac927cb1321808551d21854b949266e51e3",
+          "fn_name": "push_attestation",
+          "args": "[[15, 96, 88, 250, 230, 13, 209, 255, 246, 65, 219, 185, 51, 215, 5, 86, 227, 64, 188, 178, 250, 247, 225, 82, 4, 152, 120, 65, 67, 175, 224, 147], true, [97, 116, 116, 101, 115, 116, 45, 114, 101, 102, 45, 118, 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]",
+          "fn_args_hex": "010f6058fae60dd1fff641dbb933d70556e340bcb2faf7e1520498784143afe0936174746573742d7265662d763100000000000000000000000000000000000000",
+          "tx_id": "4747d0e7188f5c1bb16104bfdd10bb1740370502a9e5e96c1d6c90ddc2207171",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-26T16:56:20Z"
+        },
         {
           "target_contract_id": "72d6f85dbe0a1ee92b7352bcd5f51ac927cb1321808551d21854b949266e51e3",
           "fn_name": "push_attestation",
@@ -4084,15 +4175,34 @@
     },
     "compliance-predicate-registry.init_lp": {
       "current": {
-        "target_contract_id": "50b8f3e7eea2cc2ab3a79348a67e47645593474131f2218011852b35fcf57dc2",
+        "target_contract_id": "9c8954d4581b96826bf8f3850920516957a28a38dbc4789af57e530bc77b1bdb",
         "fn_name": "init_lp",
-        "args": "\"zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX\"",
-        "fn_args_hex": "e1b15bf20d8e4599b8097e10a8d794b0af55d5b797ee39587bcab88b4a596dd4d45c93e94995b0e359d770c03e47e80d88ca9e033c4cbaa4109aa69c4b20a5ad8e1c5f064066e6a5fcf2634b64582218dab4fefc276cecd17dcb9527b827b9025741653d4e889d72d97117ab7d7efd59e5965bf0ddd15317872aca6ce0822f96dfadffe9357c9c831e84fdc194d776012a877150a700d062d8e08a18658332c6ca54132559e071a818cdc4e85a2ba2801414bacb700c799a0175f98c3daed4170000000000000000",
-        "tx_id": "7d05cb77e030f0f44649369b696005dabf23eab4801865706ec01a7e7d650103",
+        "args": "\"21YvSBg7ncQRCAzF2RExUVribyH34NryEVZrpU1PXCsjuUuWZiyCVtpXcjmUUNdaisGEptzGdv1qTPc5zppVR6QDrnmZQWJUBkMpqPRfK2Q9sQY5eKCcCpyxXuoMXfiFghs2\"",
+        "fn_args_hex": "bfbc09fdec189f2434ba230168e2d5d19075342906cc01afa41d2d70e1f91b2ded644b1db68f8c98d493c4b91fed1f0595cd01fd8fc1902675d460f9d1a9bd39b04e06e74f97889787bf14b9239c1cead4cf8a768ac394640fac84a5e2a684116a902076ced16f82942374d9a42dc1d94d4899fb690ec8cedfbc711932028bd47d407ca1192ed624dde5fd44a354630f8a740b02a3a77db54205a4bb68de8916a737091af8ca1593d255bfcac2d1b5bd1f773fc56282e11763c1e8b8edd05c0d0000000000000000",
+        "tx_id": "aa91b6b100902080bbfb1556a3f2a2086f06b97a068dcca8bdbcb6d145d8ac52",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-25T06:44:40Z"
+        "called_at": "2026-08-26T23:38:30Z"
       },
-      "history": []
+      "history": [
+        {
+          "target_contract_id": "9c8954d4581b96826bf8f3850920516957a28a38dbc4789af57e530bc77b1bdb",
+          "fn_name": "init_lp",
+          "args": "\"zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX\"",
+          "fn_args_hex": "e1b15bf20d8e4599b8097e10a8d794b0af55d5b797ee39587bcab88b4a596dd4d45c93e94995b0e359d770c03e47e80d88ca9e033c4cbaa4109aa69c4b20a5ad8e1c5f064066e6a5fcf2634b64582218dab4fefc276cecd17dcb9527b827b9025741653d4e889d72d97117ab7d7efd59e5965bf0ddd15317872aca6ce0822f96dfadffe9357c9c831e84fdc194d776012a877150a700d062d8e08a18658332c6ca54132559e071a818cdc4e85a2ba2801414bacb700c799a0175f98c3daed4170000000000000000",
+          "tx_id": "e3ab19fa2197dd50707d43ed6ee715d4435c452d874ee65c82c88dcf09816c0d",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-26T22:16:20Z"
+        },
+        {
+          "target_contract_id": "50b8f3e7eea2cc2ab3a79348a67e47645593474131f2218011852b35fcf57dc2",
+          "fn_name": "init_lp",
+          "args": "\"zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX\"",
+          "fn_args_hex": "e1b15bf20d8e4599b8097e10a8d794b0af55d5b797ee39587bcab88b4a596dd4d45c93e94995b0e359d770c03e47e80d88ca9e033c4cbaa4109aa69c4b20a5ad8e1c5f064066e6a5fcf2634b64582218dab4fefc276cecd17dcb9527b827b9025741653d4e889d72d97117ab7d7efd59e5965bf0ddd15317872aca6ce0822f96dfadffe9357c9c831e84fdc194d776012a877150a700d062d8e08a18658332c6ca54132559e071a818cdc4e85a2ba2801414bacb700c799a0175f98c3daed4170000000000000000",
+          "tx_id": "7d05cb77e030f0f44649369b696005dabf23eab4801865706ec01a7e7d650103",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-25T06:44:40Z"
+        }
+      ]
     },
     "compliance-gate.init_identity_contract": {
       "current": {
@@ -4142,13 +4252,22 @@
       "current": {
         "target_contract_id": "72d6f85dbe0a1ee92b7352bcd5f51ac927cb1321808551d21854b949266e51e3",
         "fn_name": "init_predicate_registry_contract",
-        "args": "\"50b8f3e7eea2cc2ab3a79348a67e47645593474131f2218011852b35fcf57dc2\"",
-        "fn_args_hex": "50b8f3e7eea2cc2ab3a79348a67e47645593474131f2218011852b35fcf57dc2",
-        "tx_id": "25c1d7bb35a3fe6c4a5f2bcd0d953dcca9d022932372aa164bbae0b9f5265a4e",
+        "args": "\"9c8954d4581b96826bf8f3850920516957a28a38dbc4789af57e530bc77b1bdb\"",
+        "fn_args_hex": "9c8954d4581b96826bf8f3850920516957a28a38dbc4789af57e530bc77b1bdb",
+        "tx_id": "9403b7e3efe4cf0934856c9123e3c01e38d862a491a5a6b61239369630106c2a",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-26T16:02:50Z"
+        "called_at": "2026-08-26T22:16:40Z"
       },
       "history": [
+        {
+          "target_contract_id": "72d6f85dbe0a1ee92b7352bcd5f51ac927cb1321808551d21854b949266e51e3",
+          "fn_name": "init_predicate_registry_contract",
+          "args": "\"50b8f3e7eea2cc2ab3a79348a67e47645593474131f2218011852b35fcf57dc2\"",
+          "fn_args_hex": "50b8f3e7eea2cc2ab3a79348a67e47645593474131f2218011852b35fcf57dc2",
+          "tx_id": "25c1d7bb35a3fe6c4a5f2bcd0d953dcca9d022932372aa164bbae0b9f5265a4e",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-26T16:02:50Z"
+        },
         {
           "target_contract_id": "c1a58b62dd972aeca268e067001763455ad8e23dc8cdef34f9cf768ab60df024",
           "fn_name": "init_predicate_registry_contract",
@@ -4162,15 +4281,33 @@
     },
     "compliance-predicate-registry.register_commitment": {
       "current": {
-        "target_contract_id": "50b8f3e7eea2cc2ab3a79348a67e47645593474131f2218011852b35fcf57dc2",
+        "target_contract_id": "9c8954d4581b96826bf8f3850920516957a28a38dbc4789af57e530bc77b1bdb",
         "fn_name": "register_commitment",
-        "args": "{\"commitment\": \"4ffa718d3bc5e83f9c27beb97c54a6d27c228488301fcc1ddc2f6da22fcb5e0e\", \"lp_signature\": [172, 142, 208, 42, 151, 16, 159, 199, 193, 100, 146, 222, 126, 149, 239, 32, 66, 212, 50, 7, 236, 140, 119, 207, 146, 232, 173, 108, 168, 223, 255, 197, 211, 166, 216, 42, 192, 251, 251, 16, 193, 84, 252, 212, 195, 130, 96, 163]}",
-        "fn_args_hex": "ac8ed02a97109fc7c16492de7e95ef2042d43207ec8c77cf92e8ad6ca8dfffc5d3a6d82ac0fbfb10c154fcd4c38260a36969794f351a6c045f4a0f42ee01059e6be450162ff7c7e186ecb1ee96492011b0ffffff30000000",
-        "tx_id": "5abe2e2d47e31f196f0dbc5ef1e83ab68aa41c9e587cbb15cb3814267497b830",
+        "args": "{\"circuit_id\": 0, \"commitment\": \"cc23be9e49b91032a5ed4bc66e9e9bbc4002e968f20c82fa80441f8de92e7671\", \"lp_signature\": [162, 219, 226, 15, 39, 154, 31, 59, 108, 16, 148, 113, 196, 27, 214, 74, 233, 111, 152, 217, 52, 207, 66, 198, 123, 166, 12, 67, 128, 189, 86, 219, 200, 234, 94, 3, 116, 2, 27, 228, 129, 148, 223, 102, 187, 206, 161, 65]}",
+        "fn_args_hex": "a2dbe20f279a1f3b6c109471c41bd64ae96f98d934cf42c67ba60c4380bd56dbc8ea5e0374021be48194df66bbcea1415d6f99c5805c96580626edffd76c814f74d91ce35d391a2487862d77113b534bb0ffffff300000000000000000000000",
+        "tx_id": "3dd2b4539e5836c98de6910e6076d2f4953b542ced708c8daa56fae2e4688157",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-25T11:14:50Z"
+        "called_at": "2026-08-26T23:39:30Z"
       },
       "history": [
+        {
+          "target_contract_id": "9c8954d4581b96826bf8f3850920516957a28a38dbc4789af57e530bc77b1bdb",
+          "fn_name": "register_commitment",
+          "args": "{\"circuit_id\": 1, \"commitment\": \"5c4ac214081c296eee0d59026cf7ba4f08c6616266e84bb78a6b59ed8faa9326\", \"lp_signature\": [148, 222, 229, 24, 65, 251, 131, 20, 201, 146, 42, 45, 72, 111, 144, 255, 252, 200, 41, 74, 181, 128, 50, 219, 32, 178, 17, 115, 108, 146, 141, 24, 84, 250, 179, 111, 8, 135, 163, 99, 146, 108, 100, 116, 192, 237, 69, 80]}",
+          "fn_args_hex": "94dee51841fb8314c9922a2d486f90fffcc8294ab58032db20b211736c928d1854fab36f0887a363926c6474c0ed455078272953647ca9cf8151a43d49ed2d9123ef42e4be0b80a78de471e799b6d311b0ffffff300000000100000000000000",
+          "tx_id": "4d56ce4407fc48e2323e334f3b4c8f301389c276a38a7b01b8d6ea2bbc898f2e",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-26T23:38:50Z"
+        },
+        {
+          "target_contract_id": "50b8f3e7eea2cc2ab3a79348a67e47645593474131f2218011852b35fcf57dc2",
+          "fn_name": "register_commitment",
+          "args": "{\"commitment\": \"4ffa718d3bc5e83f9c27beb97c54a6d27c228488301fcc1ddc2f6da22fcb5e0e\", \"lp_signature\": [172, 142, 208, 42, 151, 16, 159, 199, 193, 100, 146, 222, 126, 149, 239, 32, 66, 212, 50, 7, 236, 140, 119, 207, 146, 232, 173, 108, 168, 223, 255, 197, 211, 166, 216, 42, 192, 251, 251, 16, 193, 84, 252, 212, 195, 130, 96, 163]}",
+          "fn_args_hex": "ac8ed02a97109fc7c16492de7e95ef2042d43207ec8c77cf92e8ad6ca8dfffc5d3a6d82ac0fbfb10c154fcd4c38260a36969794f351a6c045f4a0f42ee01059e6be450162ff7c7e186ecb1ee96492011b0ffffff30000000",
+          "tx_id": "5abe2e2d47e31f196f0dbc5ef1e83ab68aa41c9e587cbb15cb3814267497b830",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-25T11:14:50Z"
+        },
         {
           "target_contract_id": "50b8f3e7eea2cc2ab3a79348a67e47645593474131f2218011852b35fcf57dc2",
           "fn_name": "register_commitment",
@@ -4184,15 +4321,33 @@
     },
     "compliance-predicate-registry.submit_proof": {
       "current": {
-        "target_contract_id": "50b8f3e7eea2cc2ab3a79348a67e47645593474131f2218011852b35fcf57dc2",
+        "target_contract_id": "9c8954d4581b96826bf8f3850920516957a28a38dbc4789af57e530bc77b1bdb",
         "fn_name": "submit_proof",
-        "args": "{\"proof\": [140, 171, 214, 218, 96, 75, 85, 35, 184, 109, 18, 44, 253, 170, 2, 248, 107, 112, 49, 19, 199, 131, 114, 238, 242, 153, 45, 160, 114, 240, 232, 114, 212, 1, 51, 123, 198, 88, 160, 117, 85, 182, 177, 246, 169, 105, 123, 6, 167, 101, 127, 145, 216, 220, 151, 30, 4, 198, 233, 180, 140, 160, 253, 42, 167, 199, 205, 22, 177, 161, 16, 56, 5, 59, 73, 173, 246, 125, 193, 50, 96, 8, 52, 242, 99, 136, 2, 49, 136, 205, 238, 102, 24, 64, 16, 225, 145, 167, 158, 255, 222, 112, 33, 153, 207, 47, 134, 173, 28, 180, 223, 171, 12, 243, 164, 5, 81, 38, 244, 109, 72, 41, 200, 110, 59, 182, 44, 253, 183, 251, 195, 228, 19, 228, 21, 251, 185, 83, 56, 239, 91, 43, 206, 76, 148, 219, 139, 171, 4, 113, 178, 140, 15, 66, 191, 161, 85, 186, 19, 190, 75, 39, 213, 75, 127, 164, 233, 126, 51, 152, 177, 102, 72, 209, 203, 232, 22, 183, 212, 71, 25, 181, 160, 50, 75, 61, 143, 250, 236, 126, 228, 167, 169, 128, 159, 123, 109, 63, 152, 34, 189, 203, 15, 236, 148, 145, 8, 159, 199, 252, 29, 155, 200, 254, 136, 59, 76, 247, 16, 165, 133, 37, 213, 98, 104, 239, 191, 138, 9, 185, 101, 200, 173, 108, 148, 103, 227, 245, 12, 46, 185, 10, 128, 167, 107, 109, 111, 246, 105, 26, 176, 94, 43, 142, 174, 142, 20, 125, 43, 173, 196, 222, 38, 241, 150, 66, 227, 88, 16, 89, 5, 210, 156, 226, 144, 24, 50, 215, 255, 209, 16, 232, 151, 73, 122, 8, 72, 129, 133, 194, 40, 196, 116, 168, 246, 161, 130, 241, 226, 162, 67, 15, 61, 223, 71, 69, 143, 56, 192, 172, 92, 163, 60, 95, 6, 243, 183, 118, 210, 33, 222, 32, 194, 198, 52, 33, 76, 202, 215, 46, 12, 185, 153, 136, 0, 2, 144, 203, 208, 119, 188, 101, 209, 138, 205, 209, 163, 198, 16, 30, 42, 34, 170, 109, 56, 87, 193, 183, 119, 170, 148, 199, 59, 173, 23, 6, 29, 124, 88, 45, 167, 164, 58, 115, 84, 37, 12, 14, 108, 120, 218, 85, 161, 23, 173, 107, 30, 101, 222, 131, 141, 73, 160, 76, 178, 231, 59, 111, 152, 83, 235, 250, 91, 73, 246, 152, 243, 107, 179, 196, 211, 57, 211, 10, 64, 64, 90, 89, 204, 10, 78, 124, 46, 255, 61, 83, 229, 83, 197, 234, 225, 156, 138, 8, 214, 77, 241, 165, 24, 53, 177, 47, 1, 28, 16, 132, 170, 172, 253, 48, 68, 62, 65, 184, 156, 35, 164, 185, 233, 249, 242, 101, 166, 162, 14, 91, 91, 145, 71, 122, 26, 158, 73, 122, 182, 222, 224, 149, 173, 138, 185, 74, 168, 214, 185, 63, 219, 100, 139, 219, 72, 105, 199, 162, 46, 148, 234, 164, 11, 87, 206, 120, 124, 57, 137, 15, 187, 64, 17, 5, 84, 181, 2, 101, 153, 7, 223, 255, 47, 69, 209, 155, 186, 117, 93, 164, 61, 46, 152, 19, 22, 72, 74, 113, 230, 116, 63, 188, 45, 216, 93, 243, 13, 158, 231, 250, 202, 190, 152, 70, 183, 55, 138, 145, 82, 20, 233, 243, 15, 78, 247, 222, 209, 243, 247, 36, 168, 156, 38, 115, 246, 149, 228, 28, 56, 249, 110, 52, 27, 128, 20, 180, 195, 16, 168, 6, 148, 150, 69, 247, 168, 44, 17, 193, 122, 77, 7, 197, 202, 57, 240, 9, 103, 199, 157, 155, 214, 163, 215, 178, 29, 247, 61, 61, 144, 108, 173, 168, 109, 145, 173, 127, 234, 63, 135, 10, 242, 86, 143, 116, 30, 248, 22, 134, 91, 30, 22, 137, 131, 74, 185, 125, 192, 82, 205, 155, 54, 74, 73, 147, 246, 148, 119, 199, 62, 19, 182, 143, 186, 159, 249, 68, 39, 156, 114, 65, 106, 161, 71, 150, 141, 76, 81, 89, 10, 28, 180, 182, 121, 233, 116, 154, 112, 162, 91, 215, 48, 28, 103, 172, 14, 174, 124, 128, 83, 50, 136, 22, 103, 202, 70, 78, 13, 2, 140, 117, 108, 25, 91, 79, 131, 255, 33, 249, 92, 89, 88, 11, 108, 32, 205, 29, 112, 22, 206, 58, 150, 251, 225, 80, 127, 78, 3, 132, 127, 250, 34, 184, 3, 239, 154, 29, 90, 144, 56, 158, 226, 227, 57, 75, 147, 102, 4, 126, 105, 239, 212, 164, 227, 92, 88, 156, 205, 182, 237, 71, 237, 48, 75, 76, 230, 55, 139, 183, 235, 189, 135, 87, 86, 229, 91, 90, 179, 77, 82, 29, 199, 228, 207, 20, 206, 37, 200, 101, 152, 86, 240, 105, 18, 254, 56, 79, 250, 153, 141, 229, 251, 151, 89, 179, 47, 246, 58, 16, 105, 108, 7, 40, 75, 148, 53, 92, 142, 152, 54, 52, 32, 50, 0, 101, 40, 188, 191, 52, 184, 69, 151, 29, 173, 158, 209, 150, 171, 83, 185, 161, 247, 25, 74, 33, 135, 23, 224, 175, 95, 15, 24, 4, 1, 119, 140, 107, 115, 84, 116, 24, 56, 144, 0, 221, 36, 181, 189, 161, 160, 169, 22, 168, 167, 55, 59, 77, 190, 241, 158, 99, 99, 215, 87, 196, 225, 204, 81, 88, 147, 124, 44, 20, 255, 132, 239, 164, 115, 24, 122, 144, 142, 182, 15, 172, 167, 63, 83, 134, 219, 17, 121, 144, 14, 31, 173, 152, 144, 144, 35, 10, 84, 93, 59, 212, 74, 218, 76, 144, 112, 243, 242, 243, 59, 255, 85, 255, 72, 57, 9, 27, 83, 232, 153, 228, 157, 143, 196, 79, 208, 184, 119, 120, 38, 63, 132, 47, 244, 121, 103, 22, 251, 85, 69, 153, 238, 132, 182, 11, 118, 111, 82, 68, 61, 140, 152, 57, 195, 50, 207, 10, 142, 117, 1, 223, 180, 100, 179, 45, 78, 205, 188, 138, 22, 28, 229, 151, 4, 106, 125, 89, 35, 7], \"public_inputs\": [\"1200000000000000000000000000000000000000000000000000000000000000\", \"5802000000000000000000000000000000000000000000000000000000000000\", \"4ffa718d3bc5e83f9c27beb97c54a6d27c228488301fcc1ddc2f6da22fcb5e0e\"]}",
-        "fn_args_hex": "8cabd6da604b5523b86d122cfdaa02f86b703113c78372eef2992da072f0e872d401337bc658a07555b6b1f6a9697b06a7657f91d8dc971e04c6e9b48ca0fd2aa7c7cd16b1a11038053b49adf67dc132600834f26388023188cdee66184010e191a79effde702199cf2f86ad1cb4dfab0cf3a4055126f46d4829c86e3bb62cfdb7fbc3e413e415fbb95338ef5b2bce4c94db8bab0471b28c0f42bfa155ba13be4b27d54b7fa4e97e3398b16648d1cbe816b7d44719b5a0324b3d8ffaec7ee4a7a9809f7b6d3f9822bdcb0fec9491089fc7fc1d9bc8fe883b4cf710a58525d56268efbf8a09b965c8ad6c9467e3f50c2eb90a80a76b6d6ff6691ab05e2b8eae8e147d2badc4de26f19642e358105905d29ce2901832d7ffd110e897497a08488185c228c474a8f6a182f1e2a2430f3ddf47458f38c0ac5ca33c5f06f3b776d221de20c2c634214ccad72e0cb99988000290cbd077bc65d18acdd1a3c6101e2a22aa6d3857c1b777aa94c73bad17061d7c582da7a43a7354250c0e6c78da55a117ad6b1e65de838d49a04cb2e73b6f9853ebfa5b49f698f36bb3c4d339d30a40405a59cc0a4e7c2eff3d53e553c5eae19c8a08d64df1a51835b12f011c1084aaacfd30443e41b89c23a4b9e9f9f265a6a20e5b5b91477a1a9e497ab6dee095ad8ab94aa8d6b93fdb648bdb4869c7a22e94eaa40b57ce787c39890fbb40110554b502659907dfff2f45d19bba755da43d2e981316484a71e6743fbc2dd85df30d9ee7facabe9846b7378a915214e9f30f4ef7ded1f3f724a89c2673f695e41c38f96e341b8014b4c310a806949645f7a82c11c17a4d07c5ca39f00967c79d9bd6a3d7b21df73d3d906cada86d91ad7fea3f870af2568f741ef816865b1e1689834ab97dc052cd9b364a4993f69477c73e13b68fba9ff944279c72416aa147968d4c51590a1cb4b679e9749a70a25bd7301c67ac0eae7c805332881667ca464e0d028c756c195b4f83ff21f95c59580b6c20cd1d7016ce3a96fbe1507f4e03847ffa22b803ef9a1d5a90389ee2e3394b9366047e69efd4a4e35c589ccdb6ed47ed304b4ce6378bb7ebbd875756e55b5ab34d521dc7e4cf14ce25c8659856f06912fe384ffa998de5fb9759b32ff63a10696c07284b94355c8e9836342032006528bcbf34b845971dad9ed196ab53b9a1f7194a218717e0af5f0f180401778c6b73547418389000dd24b5bda1a0a916a8a7373b4dbef19e6363d757c4e1cc5158937c2c14ff84efa473187a908eb60faca73f5386db1179900e1fad989090230a545d3bd44ada4c9070f3f2f33bff55ff4839091b53e899e49d8fc44fd0b87778263f842ff4796716fb554599ee84b60b766f52443d8c9839c332cf0a8e7501dfb464b32d4ecdbc8a161ce597046a7d592307d9ffffff2600000027fc3f008b031c3e30175888c616303200ea01a95482cb56d4faffff2b0500002c357c087cc033e772c4f62e6eb6d610970e7cc5e49de26e6969794f351a6c045f4a0f42ee01059e6be450162ff7c7e186ecb1ee96492011b0fbfffff003000098ffffff03000000",
-        "tx_id": "fb9a79bf6f6a2657dce55671e71c0975ebdbade5fbeb46110e8a10734409045d",
+        "args": "{\"proof\": [143, 155, 21, 102, 11, 81, 237, 158, 136, 191, 116, 10, 77, 149, 239, 26, 134, 54, 20, 213, 199, 173, 142, 208, 121, 129, 119, 43, 173, 77, 63, 29, 203, 83, 92, 120, 164, 239, 178, 179, 131, 219, 114, 157, 133, 11, 255, 238, 143, 139, 90, 57, 130, 67, 221, 101, 142, 114, 81, 92, 175, 79, 71, 10, 223, 236, 169, 31, 3, 70, 137, 105, 9, 142, 164, 180, 101, 197, 17, 164, 83, 238, 144, 150, 101, 135, 63, 183, 148, 235, 165, 79, 193, 133, 65, 80, 182, 46, 33, 188, 102, 20, 32, 235, 71, 150, 144, 243, 134, 213, 161, 45, 189, 87, 18, 239, 98, 213, 117, 142, 190, 59, 86, 5, 178, 83, 184, 100, 84, 48, 64, 208, 11, 21, 97, 142, 139, 210, 10, 160, 136, 124, 172, 132, 172, 222, 104, 175, 243, 10, 141, 54, 114, 234, 36, 162, 231, 9, 229, 135, 230, 111, 249, 105, 36, 105, 69, 17, 206, 99, 200, 249, 98, 78, 164, 255, 22, 224, 179, 57, 113, 185, 185, 50, 159, 6, 151, 156, 204, 103, 209, 56, 166, 9, 63, 29, 140, 177, 111, 198, 104, 197, 127, 239, 97, 76, 133, 25, 184, 16, 6, 97, 183, 171, 88, 99, 67, 28, 29, 179, 243, 129, 182, 139, 36, 82, 221, 10, 10, 126, 195, 122, 68, 114, 173, 6, 80, 84, 191, 115, 167, 143, 90, 53, 66, 218, 249, 70, 26, 22, 226, 121, 83, 125, 167, 68, 39, 25, 125, 89, 88, 115, 209, 156, 49, 226, 184, 242, 221, 128, 241, 152, 14, 1, 6, 247, 235, 84, 117, 124, 99, 51, 23, 64, 207, 20, 102, 188, 132, 184, 182, 226, 51, 199, 213, 108, 55, 227, 159, 35, 238, 167, 53, 15, 77, 105, 32, 11, 12, 254, 11, 138, 162, 200, 206, 36, 248, 54, 140, 88, 180, 115, 79, 103, 106, 163, 237, 144, 163, 13, 34, 222, 254, 54, 191, 205, 148, 27, 20, 170, 179, 134, 37, 157, 26, 47, 221, 108, 232, 181, 170, 64, 120, 228, 41, 189, 15, 2, 190, 218, 89, 72, 144, 184, 134, 59, 77, 49, 244, 49, 93, 121, 164, 250, 248, 119, 37, 43, 74, 122, 175, 53, 230, 109, 171, 118, 128, 19, 241, 69, 243, 113, 78, 255, 116, 187, 112, 93, 91, 98, 165, 93, 214, 188, 139, 221, 50, 230, 159, 146, 204, 88, 205, 21, 28, 16, 202, 7, 186, 79, 73, 127, 135, 255, 159, 253, 132, 235, 150, 13, 193, 38, 143, 7, 228, 125, 111, 17, 158, 242, 127, 70, 244, 23, 246, 137, 35, 47, 137, 119, 143, 42, 124, 88, 64, 186, 125, 162, 225, 183, 132, 54, 28, 187, 193, 97, 212, 91, 132, 23, 83, 12, 176, 192, 7, 104, 6, 35, 249, 81, 173, 120, 54, 186, 195, 136, 124, 204, 172, 95, 109, 247, 73, 43, 197, 85, 194, 37, 145, 181, 75, 155, 56, 247, 149, 95, 236, 134, 143, 252, 208, 132, 189, 57, 64, 40, 219, 72, 57, 153, 175, 180, 190, 42, 42, 144, 77, 50, 60, 123, 69, 141, 118, 109, 189, 242, 226, 80, 129, 177, 43, 196, 124, 192, 220, 189, 78, 53, 101, 180, 63, 195, 151, 110, 168, 193, 64, 207, 117, 32, 221, 207, 82, 245, 190, 160, 130, 100, 113, 244, 37, 90, 140, 235, 199, 56, 15, 93, 222, 81, 78, 155, 149, 186, 157, 99, 106, 232, 217, 114, 26, 78, 208, 24, 94, 138, 121, 177, 5, 129, 39, 14, 203, 115, 222, 17, 206, 42, 46, 127, 47, 4, 160, 182, 177, 138, 44, 200, 106, 106, 105, 239, 148, 60, 49, 235, 78, 8, 27, 105, 87, 116, 110, 38, 161, 58, 144, 100, 92, 125, 53, 103, 88, 140, 142, 254, 79, 14, 223, 39, 133, 58, 197, 37, 224, 111, 20, 184, 126, 156, 40, 14, 239, 226, 74, 184, 200, 105, 88, 11, 216, 196, 137, 116, 85, 214, 198, 57, 105, 89, 195, 183, 124, 245, 174, 53, 129, 3, 165, 99, 216, 50, 111, 60, 90, 169, 255, 71, 78, 192, 201, 157, 60, 90, 115, 161, 214, 22, 248, 143, 155, 24, 71, 125, 204, 208, 73, 32, 157, 83, 146, 107, 158, 59, 219, 145, 217, 165, 188, 109, 248, 197, 167, 244, 95, 124, 34, 239, 104, 128, 86, 57, 79, 77, 83, 114, 169, 74, 255, 138, 241, 69, 224, 70, 238, 149, 167, 12, 170, 179, 207, 50, 112, 53, 78, 240, 138, 241, 91, 245, 228, 50, 176, 189, 62, 155, 101, 65, 79, 174, 60, 248, 100, 24, 85, 230, 116, 201, 202, 218, 66, 23, 123, 36, 60, 123, 202, 210, 97, 185, 0, 182, 46, 44, 189, 251, 50, 54, 87, 245, 172, 44, 44, 93, 164, 115, 211, 71, 212, 71, 211, 154, 108, 136, 32, 225, 133, 48, 18, 155, 181, 251, 77, 189, 229, 130, 188, 4, 226, 70, 207, 85, 159, 3, 163, 14, 54, 60, 58, 159, 28, 67, 51, 78, 30, 145, 176, 252, 95, 176, 42, 134, 181, 250, 241, 198, 223, 61, 27, 252, 52, 90, 155, 143, 193, 15, 111, 246, 133, 49, 98, 111, 253, 48, 247, 16, 43, 122, 225, 138, 149, 29, 54, 127, 96, 29, 5, 15, 211, 123, 41, 143, 168, 64, 107, 61, 47, 31, 184, 75, 157, 37, 27, 43, 234, 54, 203, 216, 81, 182, 229, 148, 222, 231, 75, 201, 172, 221, 193, 3, 165, 92, 107, 80, 5, 178, 100, 239, 225, 92, 238, 173, 67, 72, 53, 50, 47, 67, 65, 217, 67, 240, 246, 2, 133, 226, 17, 21, 173, 66, 133, 172, 178, 24, 11, 245, 21, 11, 155, 177, 187, 242, 104, 234, 22, 79, 111, 113, 83, 78, 248, 20, 108, 171, 57, 23, 215, 67, 237, 82, 77, 209, 227, 2, 33, 251, 42, 244, 35, 29, 4, 0, 244, 55, 202, 228, 250, 92], \"public_inputs\": [\"1200000000000000000000000000000000000000000000000000000000000000\", \"f401000000000000000000000000000000000000000000000000000000000000\", \"cc23be9e49b91032a5ed4bc66e9e9bbc4002e968f20c82fa80441f8de92e7671\"]}",
+        "fn_args_hex": "8f9b15660b51ed9e88bf740a4d95ef1a863614d5c7ad8ed07981772bad4d3f1dcb535c78a4efb2b383db729d850bffee8f8b5a398243dd658e72515caf4f470adfeca91f03468969098ea4b465c511a453ee909665873fb794eba54fc1854150b62e21bc661420eb479690f386d5a12dbd5712ef62d5758ebe3b5605b253b864543040d00b15618e8bd20aa0887cac84acde68aff30a8d3672ea24a2e709e587e66ff96924694511ce63c8f9624ea4ff16e0b33971b9b9329f06979ccc67d138a6093f1d8cb16fc668c57fef614c8519b8100661b7ab5863431c1db3f381b68b2452dd0a0a7ec37a4472ad065054bf73a78f5a3542daf9461a16e279537da74427197d595873d19c31e2b8f2dd80f1980e0106f7eb54757c63331740cf1466bc84b8b6e233c7d56c37e39f23eea7350f4d69200b0cfe0b8aa2c8ce24f8368c58b4734f676aa3ed90a30d22defe36bfcd941b14aab386259d1a2fdd6ce8b5aa4078e429bd0f02beda594890b8863b4d31f4315d79a4faf877252b4a7aaf35e66dab768013f145f3714eff74bb705d5b62a55dd6bc8bdd32e69f92cc58cd151c10ca07ba4f497f87ff9ffd84eb960dc1268f07e47d6f119ef27f46f417f689232f89778f2a7c5840ba7da2e1b784361cbbc161d45b8417530cb0c007680623f951ad7836bac3887cccac5f6df7492bc555c22591b54b9b38f7955fec868ffcd084bd394028db483999afb4be2a2a904d323c7b458d766dbdf2e25081b12bc47cc0dcbd4e3565b43fc3976ea8c140cf7520ddcf52f5bea0826471f4255a8cebc7380f5dde514e9b95ba9d636ae8d9721a4ed0185e8a79b10581270ecb73de11ce2a2e7f2f04a0b6b18a2cc86a6a69ef943c31eb4e081b6957746e26a13a90645c7d3567588c8efe4f0edf27853ac525e06f14b87e9c280eefe24ab8c869580bd8c4897455d6c6396959c3b77cf5ae358103a563d8326f3c5aa9ff474ec0c99d3c5a73a1d616f88f9b18477dccd049209d53926b9e3bdb91d9a5bc6df8c5a7f45f7c22ef688056394f4d5372a94aff8af145e046ee95a70caab3cf3270354ef08af15bf5e432b0bd3e9b65414fae3cf8641855e674c9cada42177b243c7bcad261b900b62e2cbdfb323657f5ac2c2c5da473d347d447d39a6c8820e18530129bb5fb4dbde582bc04e246cf559f03a30e363c3a9f1c43334e1e91b0fc5fb02a86b5faf1c6df3d1bfc345a9b8fc10f6ff68531626ffd30f7102b7ae18a951d367f601d050fd37b298fa8406b3d2f1fb84b9d251b2bea36cbd851b6e594dee74bc9acddc103a55c6b5005b264efe15ceead434835322f4341d943f0f60285e21115ad4285acb2180bf5150b9bb1bbf268ea164f6f71534ef8146cab3917d743ed524dd1e30221fb2af4231d0400f437cae4fa5cd9ffffff2600000027fc3f008b031c3e30175888c616303200ea01a95482cb56b0fbffff4f0400005044130710b32cde06690c76565d8c16a3b8d3885c691e0f5d6f99c5805c96580626edffd76c814f74d91ce35d391a2487862d77113b534bb0fbfffff003000098ffffff03000000",
+        "tx_id": "b795af184e20d8dc23371cd009fc8e27d5f5f80ed5d213a50f1c721f08b7071f",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-25T11:15:10Z"
+        "called_at": "2026-08-26T23:39:51Z"
       },
       "history": [
+        {
+          "target_contract_id": "9c8954d4581b96826bf8f3850920516957a28a38dbc4789af57e530bc77b1bdb",
+          "fn_name": "submit_proof",
+          "args": "{\"proof\": [177, 36, 222, 143, 134, 123, 182, 151, 226, 227, 147, 239, 132, 251, 156, 159, 125, 53, 56, 180, 205, 10, 137, 192, 5, 37, 183, 244, 255, 45, 25, 53, 103, 228, 106, 78, 231, 4, 120, 49, 238, 116, 39, 118, 232, 244, 160, 242, 142, 30, 50, 84, 69, 3, 86, 125, 136, 36, 247, 56, 194, 51, 210, 148, 125, 9, 166, 238, 24, 27, 111, 215, 8, 11, 22, 74, 223, 121, 67, 144, 41, 89, 207, 70, 209, 161, 191, 234, 135, 222, 156, 245, 108, 224, 32, 145, 151, 182, 82, 32, 33, 55, 128, 28, 54, 129, 25, 2, 240, 150, 90, 94, 94, 90, 182, 38, 69, 49, 111, 186, 17, 142, 69, 47, 13, 238, 238, 217, 232, 11, 28, 236, 34, 114, 244, 28, 231, 72, 74, 133, 189, 4, 190, 136, 170, 39, 100, 133, 214, 125, 185, 161, 56, 17, 224, 244, 60, 196, 216, 250, 35, 72, 206, 86, 236, 157, 122, 20, 71, 145, 184, 203, 125, 111, 119, 119, 68, 159, 71, 236, 93, 238, 30, 27, 158, 144, 109, 46, 202, 14, 208, 239, 179, 62, 193, 28, 47, 115, 77, 144, 85, 167, 135, 33, 118, 133, 189, 247, 166, 190, 9, 108, 21, 218, 162, 11, 143, 231, 146, 43, 212, 1, 119, 118, 60, 161, 49, 59, 47, 33, 222, 246, 17, 103, 92, 192, 54, 191, 86, 138, 150, 197, 13, 102, 6, 202, 232, 233, 47, 176, 163, 4, 75, 226, 210, 109, 194, 64, 16, 3, 255, 64, 58, 17, 255, 123, 235, 42, 49, 60, 38, 49, 188, 251, 200, 209, 166, 134, 165, 195, 236, 8, 227, 249, 227, 123, 157, 149, 174, 107, 95, 125, 48, 102, 155, 137, 23, 120, 241, 103, 101, 133, 14, 34, 108, 235, 159, 105, 14, 20, 46, 49, 37, 115, 88, 29, 3, 208, 209, 193, 178, 40, 73, 113, 22, 101, 171, 23, 10, 240, 133, 209, 24, 180, 219, 31, 180, 123, 49, 139, 223, 97, 206, 78, 158, 184, 220, 38, 74, 220, 187, 90, 232, 88, 49, 169, 162, 234, 41, 105, 15, 109, 78, 127, 26, 171, 75, 24, 118, 167, 104, 230, 228, 30, 138, 61, 23, 99, 120, 64, 177, 45, 182, 175, 183, 40, 108, 114, 20, 86, 246, 90, 189, 129, 11, 207, 137, 80, 153, 138, 79, 40, 152, 91, 11, 48, 48, 95, 21, 245, 20, 86, 48, 214, 46, 224, 84, 51, 185, 117, 141, 149, 190, 188, 94, 8, 13, 50, 130, 63, 15, 48, 152, 35, 240, 244, 94, 76, 245, 139, 114, 210, 23, 123, 162, 148, 213, 43, 37, 177, 109, 169, 40, 55, 154, 108, 182, 153, 238, 110, 99, 191, 209, 200, 123, 144, 20, 175, 157, 28, 51, 151, 187, 221, 27, 250, 0, 235, 160, 244, 183, 147, 44, 131, 20, 198, 208, 237, 109, 161, 89, 5, 194, 230, 228, 24, 93, 117, 212, 68, 193, 1, 120, 115, 134, 28, 91, 94, 229, 81, 155, 207, 162, 115, 254, 117, 141, 197, 112, 56, 174, 236, 196, 78, 7, 66, 93, 3, 48, 126, 115, 240, 167, 157, 39, 57, 210, 243, 191, 184, 201, 44, 21, 51, 91, 238, 22, 106, 42, 49, 7, 40, 74, 88, 127, 71, 153, 68, 226, 7, 188, 246, 211, 101, 215, 179, 206, 50, 86, 146, 73, 242, 127, 72, 157, 31, 225, 105, 197, 201, 166, 152, 179, 224, 143, 234, 71, 4, 161, 184, 234, 84, 154, 234, 234, 176, 156, 85, 58, 215, 79, 117, 238, 177, 173, 218, 156, 212, 172, 167, 100, 119, 57, 16, 97, 6, 169, 105, 88, 106, 74, 144, 87, 14, 43, 18, 90, 38, 151, 243, 202, 152, 188, 149, 26, 250, 171, 63, 84, 102, 108, 11, 181, 127, 102, 146, 18, 125, 70, 168, 220, 93, 225, 139, 204, 35, 54, 136, 89, 66, 127, 39, 109, 139, 124, 124, 136, 12, 65, 189, 213, 16, 78, 211, 216, 101, 6, 163, 91, 201, 76, 56, 62, 158, 168, 205, 228, 88, 254, 101, 74, 112, 34, 31, 255, 153, 63, 11, 118, 200, 35, 138, 109, 49, 89, 15, 221, 127, 83, 106, 98, 57, 52, 162, 228, 102, 242, 146, 156, 0, 213, 136, 77, 172, 49, 238, 158, 88, 200, 192, 143, 113, 50, 237, 129, 192, 123, 195, 236, 232, 250, 227, 55, 98, 14, 45, 138, 155, 53, 122, 218, 111, 0, 41, 103, 172, 255, 142, 53, 86, 85, 182, 89, 77, 93, 33, 127, 216, 88, 128, 62, 46, 7, 45, 244, 134, 67, 167, 61, 201, 68, 115, 236, 115, 70, 132, 184, 150, 58, 94, 86, 96, 16, 63, 7, 42, 89, 67, 27, 51, 227, 236, 106, 68, 62, 147, 173, 217, 220, 238, 27, 161, 120, 145, 39, 11, 172, 230, 252, 125, 124, 1, 123, 52, 196, 145, 206, 30, 21, 112, 24, 147, 165, 151, 172, 116, 238, 98, 177, 16, 193, 4, 236, 132, 165, 254, 20, 38, 49, 196, 11, 99, 5, 245, 122, 211, 89, 224, 53, 190, 145, 137, 137, 167, 146, 206, 115, 147, 10, 33, 192, 53, 107, 72, 94, 241, 131, 109, 243, 14, 3, 174, 221, 239, 192, 175, 51, 93, 129, 249, 220, 28, 3, 144, 111, 33, 9, 145, 22, 144, 2, 251, 128, 148, 98, 253, 113, 254, 134, 114, 231, 104, 78, 98, 136, 140, 11, 45, 184, 74, 18, 214, 7, 152, 115, 106, 58, 145, 159, 83, 161, 241, 225, 220, 151, 20, 141, 31, 186, 249, 59, 26, 253, 52, 23, 166, 104, 171, 19, 70, 49, 194, 195, 98, 41, 60, 179, 248, 135, 240, 107, 44, 217, 107, 59, 155, 76, 66, 52, 50, 249, 108, 213, 130, 183, 57, 120, 160, 80, 236, 88, 83, 202, 125, 91, 46, 119, 93, 5, 79, 156, 96, 30, 41, 179, 223, 79, 164, 9, 180, 1, 191, 212, 84, 11, 159, 78, 5], \"public_inputs\": [\"1200000000000000000000000000000000000000000000000000000000000000\", \"f401000000000000000000000000000000000000000000000000000000000000\", \"0100000000000000000000000000000000000000000000000000000000000000\", \"5c4ac214081c296eee0d59026cf7ba4f08c6616266e84bb78a6b59ed8faa9326\"]}",
+          "fn_args_hex": "b124de8f867bb697e2e393ef84fb9c9f7d3538b4cd0a89c00525b7f4ff2d193567e46a4ee7047831ee742776e8f4a0f28e1e32544503567d8824f738c233d2947d09a6ee181b6fd7080b164adf7943902959cf46d1a1bfea87de9cf56ce0209197b652202137801c36811902f0965a5e5e5ab62645316fba118e452f0deeeed9e80b1cec2272f41ce7484a85bd04be88aa276485d67db9a13811e0f43cc4d8fa2348ce56ec9d7a144791b8cb7d6f7777449f47ec5dee1e1b9e906d2eca0ed0efb33ec11c2f734d9055a787217685bdf7a6be096c15daa20b8fe7922bd40177763ca1313b2f21def611675cc036bf568a96c50d6606cae8e92fb0a3044be2d26dc2401003ff403a11ff7beb2a313c2631bcfbc8d1a686a5c3ec08e3f9e37b9d95ae6b5f7d30669b891778f16765850e226ceb9f690e142e312573581d03d0d1c1b22849711665ab170af085d118b4db1fb47b318bdf61ce4e9eb8dc264adcbb5ae85831a9a2ea29690f6d4e7f1aab4b1876a768e6e41e8a3d17637840b12db6afb7286c721456f65abd810bcf8950998a4f28985b0b30305f15f5145630d62ee05433b9758d95bebc5e080d32823f0f309823f0f45e4cf58b72d2177ba294d52b25b16da928379a6cb699ee6e63bfd1c87b9014af9d1c3397bbdd1bfa00eba0f4b7932c8314c6d0ed6da15905c2e6e4185d75d444c1017873861c5b5ee5519bcfa273fe758dc57038aeecc44e07425d03307e73f0a79d2739d2f3bfb8c92c15335bee166a2a3107284a587f479944e207bcf6d365d7b3ce32569249f27f489d1fe169c5c9a698b3e08fea4704a1b8ea549aeaeab09c553ad74f75eeb1adda9cd4aca7647739106106a969586a4a90570e2b125a2697f3ca98bc951afaab3f54666c0bb57f6692127d46a8dc5de18bcc23368859427f276d8b7c7c880c41bdd5104ed3d86506a35bc94c383e9ea8cde458fe654a70221fff993f0b76c8238a6d31590fdd7f536a623934a2e466f2929c00d5884dac31ee9e58c8c08f7132ed81c07bc3ece8fae337620e2d8a9b357ada6f002967acff8e355655b6594d5d217fd858803e2e072df48643a73dc94473ec734684b8963a5e5660103f072a59431b33e3ec6a443e93add9dcee1ba17891270bace6fc7d7c017b34c491ce1e15701893a597ac74ee62b110c104ec84a5fe142631c40b6305f57ad359e035be918989a792ce73930a21c0356b485ef1836df30e03aeddefc0af335d81f9dc1c03906f210991169002fb809462fd71fe8672e7684e62888c0b2db84a12d60798736a3a919f53a1f1e1dc97148d1fbaf93b1afd3417a668ab134631c2c362293cb3f887f06b2cd96b3b9b4c423432f96cd582b73978a050ec5853ca7d5b2e775d054f9c601e29b3df4fa409b401bfd4540b9f4e05d9ffffff2600000027fc3f008b031c3e30175888c616303200ea01a95482cb56b0fbffff4f0400005044130710b32cde06690c76565d8c16a3b8d3885c691e0ffeffffff0100000002480300fab78458f54fbcecef4f8c996f05c5ac59b1241878272953647ca9cf8151a43d49ed2d9123ef42e4be0b80a78de471e799b6d31190fbfffff003000078ffffff04000000",
+          "tx_id": "7fa586036e64a3b737a0fc82b164e38af3a47b2dfe6665295b4aa13e07f56840",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-26T23:39:10Z"
+        },
+        {
+          "target_contract_id": "50b8f3e7eea2cc2ab3a79348a67e47645593474131f2218011852b35fcf57dc2",
+          "fn_name": "submit_proof",
+          "args": "{\"proof\": [140, 171, 214, 218, 96, 75, 85, 35, 184, 109, 18, 44, 253, 170, 2, 248, 107, 112, 49, 19, 199, 131, 114, 238, 242, 153, 45, 160, 114, 240, 232, 114, 212, 1, 51, 123, 198, 88, 160, 117, 85, 182, 177, 246, 169, 105, 123, 6, 167, 101, 127, 145, 216, 220, 151, 30, 4, 198, 233, 180, 140, 160, 253, 42, 167, 199, 205, 22, 177, 161, 16, 56, 5, 59, 73, 173, 246, 125, 193, 50, 96, 8, 52, 242, 99, 136, 2, 49, 136, 205, 238, 102, 24, 64, 16, 225, 145, 167, 158, 255, 222, 112, 33, 153, 207, 47, 134, 173, 28, 180, 223, 171, 12, 243, 164, 5, 81, 38, 244, 109, 72, 41, 200, 110, 59, 182, 44, 253, 183, 251, 195, 228, 19, 228, 21, 251, 185, 83, 56, 239, 91, 43, 206, 76, 148, 219, 139, 171, 4, 113, 178, 140, 15, 66, 191, 161, 85, 186, 19, 190, 75, 39, 213, 75, 127, 164, 233, 126, 51, 152, 177, 102, 72, 209, 203, 232, 22, 183, 212, 71, 25, 181, 160, 50, 75, 61, 143, 250, 236, 126, 228, 167, 169, 128, 159, 123, 109, 63, 152, 34, 189, 203, 15, 236, 148, 145, 8, 159, 199, 252, 29, 155, 200, 254, 136, 59, 76, 247, 16, 165, 133, 37, 213, 98, 104, 239, 191, 138, 9, 185, 101, 200, 173, 108, 148, 103, 227, 245, 12, 46, 185, 10, 128, 167, 107, 109, 111, 246, 105, 26, 176, 94, 43, 142, 174, 142, 20, 125, 43, 173, 196, 222, 38, 241, 150, 66, 227, 88, 16, 89, 5, 210, 156, 226, 144, 24, 50, 215, 255, 209, 16, 232, 151, 73, 122, 8, 72, 129, 133, 194, 40, 196, 116, 168, 246, 161, 130, 241, 226, 162, 67, 15, 61, 223, 71, 69, 143, 56, 192, 172, 92, 163, 60, 95, 6, 243, 183, 118, 210, 33, 222, 32, 194, 198, 52, 33, 76, 202, 215, 46, 12, 185, 153, 136, 0, 2, 144, 203, 208, 119, 188, 101, 209, 138, 205, 209, 163, 198, 16, 30, 42, 34, 170, 109, 56, 87, 193, 183, 119, 170, 148, 199, 59, 173, 23, 6, 29, 124, 88, 45, 167, 164, 58, 115, 84, 37, 12, 14, 108, 120, 218, 85, 161, 23, 173, 107, 30, 101, 222, 131, 141, 73, 160, 76, 178, 231, 59, 111, 152, 83, 235, 250, 91, 73, 246, 152, 243, 107, 179, 196, 211, 57, 211, 10, 64, 64, 90, 89, 204, 10, 78, 124, 46, 255, 61, 83, 229, 83, 197, 234, 225, 156, 138, 8, 214, 77, 241, 165, 24, 53, 177, 47, 1, 28, 16, 132, 170, 172, 253, 48, 68, 62, 65, 184, 156, 35, 164, 185, 233, 249, 242, 101, 166, 162, 14, 91, 91, 145, 71, 122, 26, 158, 73, 122, 182, 222, 224, 149, 173, 138, 185, 74, 168, 214, 185, 63, 219, 100, 139, 219, 72, 105, 199, 162, 46, 148, 234, 164, 11, 87, 206, 120, 124, 57, 137, 15, 187, 64, 17, 5, 84, 181, 2, 101, 153, 7, 223, 255, 47, 69, 209, 155, 186, 117, 93, 164, 61, 46, 152, 19, 22, 72, 74, 113, 230, 116, 63, 188, 45, 216, 93, 243, 13, 158, 231, 250, 202, 190, 152, 70, 183, 55, 138, 145, 82, 20, 233, 243, 15, 78, 247, 222, 209, 243, 247, 36, 168, 156, 38, 115, 246, 149, 228, 28, 56, 249, 110, 52, 27, 128, 20, 180, 195, 16, 168, 6, 148, 150, 69, 247, 168, 44, 17, 193, 122, 77, 7, 197, 202, 57, 240, 9, 103, 199, 157, 155, 214, 163, 215, 178, 29, 247, 61, 61, 144, 108, 173, 168, 109, 145, 173, 127, 234, 63, 135, 10, 242, 86, 143, 116, 30, 248, 22, 134, 91, 30, 22, 137, 131, 74, 185, 125, 192, 82, 205, 155, 54, 74, 73, 147, 246, 148, 119, 199, 62, 19, 182, 143, 186, 159, 249, 68, 39, 156, 114, 65, 106, 161, 71, 150, 141, 76, 81, 89, 10, 28, 180, 182, 121, 233, 116, 154, 112, 162, 91, 215, 48, 28, 103, 172, 14, 174, 124, 128, 83, 50, 136, 22, 103, 202, 70, 78, 13, 2, 140, 117, 108, 25, 91, 79, 131, 255, 33, 249, 92, 89, 88, 11, 108, 32, 205, 29, 112, 22, 206, 58, 150, 251, 225, 80, 127, 78, 3, 132, 127, 250, 34, 184, 3, 239, 154, 29, 90, 144, 56, 158, 226, 227, 57, 75, 147, 102, 4, 126, 105, 239, 212, 164, 227, 92, 88, 156, 205, 182, 237, 71, 237, 48, 75, 76, 230, 55, 139, 183, 235, 189, 135, 87, 86, 229, 91, 90, 179, 77, 82, 29, 199, 228, 207, 20, 206, 37, 200, 101, 152, 86, 240, 105, 18, 254, 56, 79, 250, 153, 141, 229, 251, 151, 89, 179, 47, 246, 58, 16, 105, 108, 7, 40, 75, 148, 53, 92, 142, 152, 54, 52, 32, 50, 0, 101, 40, 188, 191, 52, 184, 69, 151, 29, 173, 158, 209, 150, 171, 83, 185, 161, 247, 25, 74, 33, 135, 23, 224, 175, 95, 15, 24, 4, 1, 119, 140, 107, 115, 84, 116, 24, 56, 144, 0, 221, 36, 181, 189, 161, 160, 169, 22, 168, 167, 55, 59, 77, 190, 241, 158, 99, 99, 215, 87, 196, 225, 204, 81, 88, 147, 124, 44, 20, 255, 132, 239, 164, 115, 24, 122, 144, 142, 182, 15, 172, 167, 63, 83, 134, 219, 17, 121, 144, 14, 31, 173, 152, 144, 144, 35, 10, 84, 93, 59, 212, 74, 218, 76, 144, 112, 243, 242, 243, 59, 255, 85, 255, 72, 57, 9, 27, 83, 232, 153, 228, 157, 143, 196, 79, 208, 184, 119, 120, 38, 63, 132, 47, 244, 121, 103, 22, 251, 85, 69, 153, 238, 132, 182, 11, 118, 111, 82, 68, 61, 140, 152, 57, 195, 50, 207, 10, 142, 117, 1, 223, 180, 100, 179, 45, 78, 205, 188, 138, 22, 28, 229, 151, 4, 106, 125, 89, 35, 7], \"public_inputs\": [\"1200000000000000000000000000000000000000000000000000000000000000\", \"5802000000000000000000000000000000000000000000000000000000000000\", \"4ffa718d3bc5e83f9c27beb97c54a6d27c228488301fcc1ddc2f6da22fcb5e0e\"]}",
+          "fn_args_hex": "8cabd6da604b5523b86d122cfdaa02f86b703113c78372eef2992da072f0e872d401337bc658a07555b6b1f6a9697b06a7657f91d8dc971e04c6e9b48ca0fd2aa7c7cd16b1a11038053b49adf67dc132600834f26388023188cdee66184010e191a79effde702199cf2f86ad1cb4dfab0cf3a4055126f46d4829c86e3bb62cfdb7fbc3e413e415fbb95338ef5b2bce4c94db8bab0471b28c0f42bfa155ba13be4b27d54b7fa4e97e3398b16648d1cbe816b7d44719b5a0324b3d8ffaec7ee4a7a9809f7b6d3f9822bdcb0fec9491089fc7fc1d9bc8fe883b4cf710a58525d56268efbf8a09b965c8ad6c9467e3f50c2eb90a80a76b6d6ff6691ab05e2b8eae8e147d2badc4de26f19642e358105905d29ce2901832d7ffd110e897497a08488185c228c474a8f6a182f1e2a2430f3ddf47458f38c0ac5ca33c5f06f3b776d221de20c2c634214ccad72e0cb99988000290cbd077bc65d18acdd1a3c6101e2a22aa6d3857c1b777aa94c73bad17061d7c582da7a43a7354250c0e6c78da55a117ad6b1e65de838d49a04cb2e73b6f9853ebfa5b49f698f36bb3c4d339d30a40405a59cc0a4e7c2eff3d53e553c5eae19c8a08d64df1a51835b12f011c1084aaacfd30443e41b89c23a4b9e9f9f265a6a20e5b5b91477a1a9e497ab6dee095ad8ab94aa8d6b93fdb648bdb4869c7a22e94eaa40b57ce787c39890fbb40110554b502659907dfff2f45d19bba755da43d2e981316484a71e6743fbc2dd85df30d9ee7facabe9846b7378a915214e9f30f4ef7ded1f3f724a89c2673f695e41c38f96e341b8014b4c310a806949645f7a82c11c17a4d07c5ca39f00967c79d9bd6a3d7b21df73d3d906cada86d91ad7fea3f870af2568f741ef816865b1e1689834ab97dc052cd9b364a4993f69477c73e13b68fba9ff944279c72416aa147968d4c51590a1cb4b679e9749a70a25bd7301c67ac0eae7c805332881667ca464e0d028c756c195b4f83ff21f95c59580b6c20cd1d7016ce3a96fbe1507f4e03847ffa22b803ef9a1d5a90389ee2e3394b9366047e69efd4a4e35c589ccdb6ed47ed304b4ce6378bb7ebbd875756e55b5ab34d521dc7e4cf14ce25c8659856f06912fe384ffa998de5fb9759b32ff63a10696c07284b94355c8e9836342032006528bcbf34b845971dad9ed196ab53b9a1f7194a218717e0af5f0f180401778c6b73547418389000dd24b5bda1a0a916a8a7373b4dbef19e6363d757c4e1cc5158937c2c14ff84efa473187a908eb60faca73f5386db1179900e1fad989090230a545d3bd44ada4c9070f3f2f33bff55ff4839091b53e899e49d8fc44fd0b87778263f842ff4796716fb554599ee84b60b766f52443d8c9839c332cf0a8e7501dfb464b32d4ecdbc8a161ce597046a7d592307d9ffffff2600000027fc3f008b031c3e30175888c616303200ea01a95482cb56d4faffff2b0500002c357c087cc033e772c4f62e6eb6d610970e7cc5e49de26e6969794f351a6c045f4a0f42ee01059e6be450162ff7c7e186ecb1ee96492011b0fbfffff003000098ffffff03000000",
+          "tx_id": "fb9a79bf6f6a2657dce55671e71c0975ebdbade5fbeb46110e8a10734409045d",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-25T11:15:10Z"
+        },
         {
           "target_contract_id": "50b8f3e7eea2cc2ab3a79348a67e47645593474131f2218011852b35fcf57dc2",
           "fn_name": "submit_proof",
@@ -4310,6 +4465,162 @@
         "tx_id": "4f1de3c8e2a96ad842e78336302485a39fd9f029d0153c72a2861cc486812036",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
         "called_at": "2026-08-25T12:27:39Z"
+      },
+      "history": []
+    },
+    "tnst-token.init_token": {
+      "current": {
+        "target_contract_id": "f090528946990f3f2d3291d903327dfd700af6d912388c5f3c64c9bbc2a4edda",
+        "fn_name": "init_token",
+        "args": "{\"name\":\"Nocturne Standards Test Token\",\"symbol\":\"tNST\",\"decimals\":9,\"initial_balances\":[]}",
+        "fn_args_hex": "4e6f637475726e65205374616e6461726473205465737420546f6b656e0000001d000000e0ffffff744e535400000004f0ffffff0000000009000000",
+        "tx_id": "059676a08a7bb983a2a02daf2311404ef9905927dca9261905ca636a0b77562b",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-26T23:14:30Z"
+      },
+      "history": []
+    },
+    "tnst-token.mint": {
+      "current": {
+        "target_contract_id": "f090528946990f3f2d3291d903327dfd700af6d912388c5f3c64c9bbc2a4edda",
+        "fn_name": "mint",
+        "args": "[{\"kind\": \"Moonlight\", \"bytes\": [225, 177, 91, 242, 13, 142, 69, 153, 184, 9, 126, 16, 168, 215, 148, 176, 175, 85, 213, 183, 151, 238, 57, 88, 123, 202, 184, 139, 74, 89, 109, 212, 212, 92, 147, 233, 73, 149, 176, 227, 89, 215, 112, 192, 62, 71, 232, 13, 136, 202, 158, 3, 60, 76, 186, 164, 16, 154, 166, 156, 75, 32, 165, 173, 142, 28, 95, 6, 64, 102, 230, 165, 252, 242, 99, 75, 100, 88, 34, 24, 218, 180, 254, 252, 39, 108, 236, 209, 125, 203, 149, 39, 184, 39, 185, 2, 87, 65, 101, 61, 78, 136, 157, 114, 217, 113, 23, 171, 125, 126, 253, 89, 229, 150, 91, 240, 221, 209, 83, 23, 135, 42, 202, 108, 224, 130, 47, 150, 223, 173, 255, 233, 53, 124, 156, 131, 30, 132, 253, 193, 148, 215, 118, 1, 42, 135, 113, 80, 167, 0, 208, 98, 216, 224, 138, 24, 101, 131, 50, 198, 202, 84, 19, 37, 89, 224, 113, 168, 24, 205, 196, 232, 90, 43, 162, 128, 20, 20, 186, 203, 112, 12, 121, 154, 1, 117, 249, 140, 61, 174, 212, 23, 0]}, 500000000000]",
+        "fn_args_hex": "00e1b15bf20d8e4599b8097e10a8d794b0af55d5b797ee39587bcab88b4a596dd4d45c93e94995b0e359d770c03e47e80d88ca9e033c4cbaa4109aa69c4b20a5ad8e1c5f064066e6a5fcf2634b64582218dab4fefc276cecd17dcb9527b827b9025741653d4e889d72d97117ab7d7efd59e5965bf0ddd15317872aca6ce0822f96dfadffe9357c9c831e84fdc194d776012a877150a700d062d8e08a18658332c6ca54132559e071a818cdc4e85a2ba2801414bacb700c799a0175f98c3daed417000000000000000088526a74000000",
+        "tx_id": "61873dc7739b3033c9c12c8fd4943d7d55b169b8a4b2f552bf2ce3d7729c012b",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-26T23:16:10Z"
+      },
+      "history": []
+    },
+    "agent-compliance-gate-tnst.init_mandate_contract": {
+      "current": {
+        "target_contract_id": "8636b7d5ff490b0661a98ce300b8affccad6607fa3e9bc73ba76e771fb2370ec",
+        "fn_name": "init_mandate_contract",
+        "args": "\"b592983fd7ab9ec51483ca7f3bedbba08ae1531c19a4d065bf82be497bf36475\"",
+        "fn_args_hex": "b592983fd7ab9ec51483ca7f3bedbba08ae1531c19a4d065bf82be497bf36475",
+        "tx_id": "c6ec81beed346ff9e5d9d5f2750f49efc1bae2717b34115db5efbf5de91d3344",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-26T23:33:41Z"
+      },
+      "history": []
+    },
+    "agent-compliance-gate-tnst.init_revocation_contract": {
+      "current": {
+        "target_contract_id": "8636b7d5ff490b0661a98ce300b8affccad6607fa3e9bc73ba76e771fb2370ec",
+        "fn_name": "init_revocation_contract",
+        "args": "\"5e83f7be75b08e37b5f314aa1cd9b8b49ee95216bc21066603dadf1eb3b03cd6\"",
+        "fn_args_hex": "5e83f7be75b08e37b5f314aa1cd9b8b49ee95216bc21066603dadf1eb3b03cd6",
+        "tx_id": "e1d4662d91f9100d7aacacddffb4924e6ed6dd2f04d4d87cd3eabf92263c3e39",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-26T23:34:00Z"
+      },
+      "history": []
+    },
+    "agent-compliance-gate-tnst.add_settlement_contract": {
+      "current": {
+        "target_contract_id": "8636b7d5ff490b0661a98ce300b8affccad6607fa3e9bc73ba76e771fb2370ec",
+        "fn_name": "add_settlement_contract",
+        "args": "\"11c0e3e202e386d3069f194de6746ac9306060a42214fc9547cb904cd66a11ed\"",
+        "fn_args_hex": "11c0e3e202e386d3069f194de6746ac9306060a42214fc9547cb904cd66a11ed",
+        "tx_id": "0246bdea3af4186a4e0dd5e0acb01d411a96cea341136789eb00e2d66284124c",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-26T23:34:20Z"
+      },
+      "history": []
+    },
+    "agent-compliance-gate-tnst.init_cash_escrow": {
+      "current": {
+        "target_contract_id": "8636b7d5ff490b0661a98ce300b8affccad6607fa3e9bc73ba76e771fb2370ec",
+        "fn_name": "init_cash_escrow",
+        "args": "\"bf2d7162da00442403770b576a31baeda5d8516dc5da6e72548ae36a7f340c90\"",
+        "fn_args_hex": "bf2d7162da00442403770b576a31baeda5d8516dc5da6e72548ae36a7f340c90",
+        "tx_id": "ee28db26dc67a57844e10b68333045f9411c7c6812ea4938785578240767a317",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-26T23:34:40Z"
+      },
+      "history": []
+    },
+    "agent-settlement-tnst.init_gate": {
+      "current": {
+        "target_contract_id": "11c0e3e202e386d3069f194de6746ac9306060a42214fc9547cb904cd66a11ed",
+        "fn_name": "init_gate",
+        "args": "\"8636b7d5ff490b0661a98ce300b8affccad6607fa3e9bc73ba76e771fb2370ec\"",
+        "fn_args_hex": "8636b7d5ff490b0661a98ce300b8affccad6607fa3e9bc73ba76e771fb2370ec",
+        "tx_id": "ddbce6b81065509bdff70584d639619e5c6b652f3a0fc5f2fd2530afea8de35c",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-26T23:35:00Z"
+      },
+      "history": []
+    },
+    "agent-settlement-tnst.init_cash_escrow": {
+      "current": {
+        "target_contract_id": "11c0e3e202e386d3069f194de6746ac9306060a42214fc9547cb904cd66a11ed",
+        "fn_name": "init_cash_escrow",
+        "args": "\"bf2d7162da00442403770b576a31baeda5d8516dc5da6e72548ae36a7f340c90\"",
+        "fn_args_hex": "bf2d7162da00442403770b576a31baeda5d8516dc5da6e72548ae36a7f340c90",
+        "tx_id": "8251619cdddbaca288375c8e1a2809cdd52a85240ae16e9dab4ad3812dca9230",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-26T23:35:22Z"
+      },
+      "history": []
+    },
+    "agent-settlement-tnst.init_chain_id": {
+      "current": {
+        "target_contract_id": "11c0e3e202e386d3069f194de6746ac9306060a42214fc9547cb904cd66a11ed",
+        "fn_name": "init_chain_id",
+        "args": "2",
+        "fn_args_hex": "0200000000000000",
+        "tx_id": "099179dba1f33cb7edefc8f8d3c72ddb89e11effd87e4b7c9741a744b9f49c30",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-26T23:35:40Z"
+      },
+      "history": []
+    },
+    "agent-settlement-tnst.init_token": {
+      "current": {
+        "target_contract_id": "11c0e3e202e386d3069f194de6746ac9306060a42214fc9547cb904cd66a11ed",
+        "fn_name": "init_token",
+        "args": "\"f090528946990f3f2d3291d903327dfd700af6d912388c5f3c64c9bbc2a4edda\"",
+        "fn_args_hex": "f090528946990f3f2d3291d903327dfd700af6d912388c5f3c64c9bbc2a4edda",
+        "tx_id": "acfb61eb48f54a758e0f81ce5d5b9611641f3348c395ac2a5b0dc38bbb886441",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-26T23:36:00Z"
+      },
+      "history": []
+    },
+    "agent-cash-escrow-tnst.init_gate": {
+      "current": {
+        "target_contract_id": "bf2d7162da00442403770b576a31baeda5d8516dc5da6e72548ae36a7f340c90",
+        "fn_name": "init_gate",
+        "args": "\"8636b7d5ff490b0661a98ce300b8affccad6607fa3e9bc73ba76e771fb2370ec\"",
+        "fn_args_hex": "8636b7d5ff490b0661a98ce300b8affccad6607fa3e9bc73ba76e771fb2370ec",
+        "tx_id": "007cbec1289d5fb8aca82f84b9330cf2ea825b908cd260c03003406edc38494f",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-26T23:36:20Z"
+      },
+      "history": []
+    },
+    "agent-cash-escrow-tnst.init_token": {
+      "current": {
+        "target_contract_id": "bf2d7162da00442403770b576a31baeda5d8516dc5da6e72548ae36a7f340c90",
+        "fn_name": "init_token",
+        "args": "\"f090528946990f3f2d3291d903327dfd700af6d912388c5f3c64c9bbc2a4edda\"",
+        "fn_args_hex": "f090528946990f3f2d3291d903327dfd700af6d912388c5f3c64c9bbc2a4edda",
+        "tx_id": "9328bd950b012ca71a73792fd88d74b53444c0afd19f05c783f515cafb84d039",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-26T23:36:40Z"
+      },
+      "history": []
+    },
+    "agent-cash-escrow-tnst.add_settlement_drawer": {
+      "current": {
+        "target_contract_id": "bf2d7162da00442403770b576a31baeda5d8516dc5da6e72548ae36a7f340c90",
+        "fn_name": "add_settlement_drawer",
+        "args": "\"11c0e3e202e386d3069f194de6746ac9306060a42214fc9547cb904cd66a11ed\"",
+        "fn_args_hex": "11c0e3e202e386d3069f194de6746ac9306060a42214fc9547cb904cd66a11ed",
+        "tx_id": "efbc199d9203c7272969c0d05701a887eb3259256e43db1333fa8df15252746d",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-26T23:37:00Z"
       },
       "history": []
     }
