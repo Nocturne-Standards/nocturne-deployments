@@ -1,0 +1,216 @@
+{
+  "_template": "chit-tnst-testnet v1 — merge contract blocks + wiring into testnet.json after deploy. Delete _template and _wiring_notes before commit.",
+  "_wiring_notes": {
+    "token_contract_id": "f090528946990f3f2d3291d903327dfd700af6d912388c5f3c64c9bbc2a4edda",
+    "token_pin_key": "tnst-token",
+    "prod_reference_stack": "agent-compliance-gate / agent-settlement / agent-cash-escrow (2026-08-13 pins)",
+    "mandate_contract_id_reuse": "b592983fd7ab9ec51483ca7f3bedbba08ae1531c19a4d065bf82be497bf36475",
+    "revocation_contract_id_reuse": "5e83f7be75b08e37b5f314aa1cd9b8b49ee95216bc21066603dadf1eb3b03cd6",
+    "init_token_arg": "\"f090528946990f3f2d3291d903327dfd700af6d912388c5f3c64c9bbc2a4edda\"",
+    "wire_order": [
+      "agent-compliance-gate-tnst.init_mandate_contract",
+      "agent-compliance-gate-tnst.add_settlement_contract",
+      "agent-compliance-gate-tnst.init_cash_escrow",
+      "agent-settlement-tnst.init_gate",
+      "agent-settlement-tnst.init_cash_escrow",
+      "agent-settlement-tnst.init_token",
+      "agent-settlement-tnst.init_chain_id",
+      "agent-cash-escrow-tnst.init_gate",
+      "agent-cash-escrow-tnst.init_token",
+      "agent-cash-escrow-tnst.add_settlement_drawer",
+      "agent-compliance-gate-tnst.init_revocation_contract"
+    ]
+  },
+  "contracts": {
+    "agent-compliance-gate-tnst": {
+      "current": {
+        "version": "0.1.0",
+        "contract_id": "REPLACE_GATE_TNST_CONTRACT_ID_64_HEX",
+        "tx_id": "REPLACE_GATE_TNST_DEPLOY_TX_ID",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "REPLACE_GATE_TNST_WASM_SHA256",
+        "deploy_nonce": 0,
+        "address": "REPLACE_DEPLOYER_MOONLIGHT_BASE58",
+        "deployed_at": "REPLACE_ISO8601"
+      },
+      "history": []
+    },
+    "agent-settlement-tnst": {
+      "current": {
+        "version": "0.1.0",
+        "contract_id": "REPLACE_SETTLEMENT_TNST_CONTRACT_ID_64_HEX",
+        "tx_id": "REPLACE_SETTLEMENT_TNST_DEPLOY_TX_ID",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "REPLACE_SETTLEMENT_TNST_WASM_SHA256",
+        "deploy_nonce": 0,
+        "address": "REPLACE_DEPLOYER_MOONLIGHT_BASE58",
+        "deployed_at": "REPLACE_ISO8601"
+      },
+      "history": []
+    },
+    "agent-cash-escrow-tnst": {
+      "current": {
+        "version": "0.1.0",
+        "contract_id": "REPLACE_ESCROW_TNST_CONTRACT_ID_64_HEX",
+        "tx_id": "REPLACE_ESCROW_TNST_DEPLOY_TX_ID",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "REPLACE_ESCROW_TNST_WASM_SHA256",
+        "deploy_nonce": 0,
+        "address": "REPLACE_DEPLOYER_MOONLIGHT_BASE58",
+        "deployed_at": "REPLACE_ISO8601"
+      },
+      "history": []
+    },
+    "chit-receive-tnst-demo": {
+      "current": {
+        "version": "0.1.0",
+        "contract_id": "REPLACE_RECEIVER_TNST_CONTRACT_ID_64_HEX",
+        "tx_id": "REPLACE_RECEIVER_TNST_DEPLOY_TX_ID",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "REPLACE_RECEIVER_TNST_WASM_SHA256",
+        "deploy_nonce": 0,
+        "address": "REPLACE_DEPLOYER_MOONLIGHT_BASE58",
+        "deployed_at": "REPLACE_ISO8601"
+      },
+      "history": []
+    }
+  },
+  "wiring": {
+    "agent-compliance-gate-tnst.init_mandate_contract": {
+      "current": {
+        "target_contract_id": "REPLACE_GATE_TNST_CONTRACT_ID_64_HEX",
+        "fn_name": "init_mandate_contract",
+        "args": "\"b592983fd7ab9ec51483ca7f3bedbba08ae1531c19a4d065bf82be497bf36475\"",
+        "fn_args_hex": "b592983fd7ab9ec51483ca7f3bedbba08ae1531c19a4d065bf82be497bf36475",
+        "tx_id": "REPLACE_WIRE_TX_ID",
+        "address": "REPLACE_DEPLOYER_MOONLIGHT_BASE58",
+        "called_at": "REPLACE_ISO8601"
+      },
+      "history": []
+    },
+    "agent-compliance-gate-tnst.add_settlement_contract": {
+      "current": {
+        "target_contract_id": "REPLACE_GATE_TNST_CONTRACT_ID_64_HEX",
+        "fn_name": "add_settlement_contract",
+        "args": "\"REPLACE_SETTLEMENT_TNST_CONTRACT_ID_64_HEX\"",
+        "fn_args_hex": "REPLACE_SETTLEMENT_TNST_CONTRACT_ID_64_HEX",
+        "tx_id": "REPLACE_WIRE_TX_ID",
+        "address": "REPLACE_DEPLOYER_MOONLIGHT_BASE58",
+        "called_at": "REPLACE_ISO8601"
+      },
+      "history": []
+    },
+    "agent-compliance-gate-tnst.init_cash_escrow": {
+      "current": {
+        "target_contract_id": "REPLACE_GATE_TNST_CONTRACT_ID_64_HEX",
+        "fn_name": "init_cash_escrow",
+        "args": "\"REPLACE_ESCROW_TNST_CONTRACT_ID_64_HEX\"",
+        "fn_args_hex": "REPLACE_ESCROW_TNST_CONTRACT_ID_64_HEX",
+        "tx_id": "REPLACE_WIRE_TX_ID",
+        "address": "REPLACE_DEPLOYER_MOONLIGHT_BASE58",
+        "called_at": "REPLACE_ISO8601"
+      },
+      "history": []
+    },
+    "agent-settlement-tnst.init_gate": {
+      "current": {
+        "target_contract_id": "REPLACE_SETTLEMENT_TNST_CONTRACT_ID_64_HEX",
+        "fn_name": "init_gate",
+        "args": "\"REPLACE_GATE_TNST_CONTRACT_ID_64_HEX\"",
+        "fn_args_hex": "REPLACE_GATE_TNST_CONTRACT_ID_64_HEX",
+        "tx_id": "REPLACE_WIRE_TX_ID",
+        "address": "REPLACE_DEPLOYER_MOONLIGHT_BASE58",
+        "called_at": "REPLACE_ISO8601"
+      },
+      "history": []
+    },
+    "agent-settlement-tnst.init_cash_escrow": {
+      "current": {
+        "target_contract_id": "REPLACE_SETTLEMENT_TNST_CONTRACT_ID_64_HEX",
+        "fn_name": "init_cash_escrow",
+        "args": "\"REPLACE_ESCROW_TNST_CONTRACT_ID_64_HEX\"",
+        "fn_args_hex": "REPLACE_ESCROW_TNST_CONTRACT_ID_64_HEX",
+        "tx_id": "REPLACE_WIRE_TX_ID",
+        "address": "REPLACE_DEPLOYER_MOONLIGHT_BASE58",
+        "called_at": "REPLACE_ISO8601"
+      },
+      "history": []
+    },
+    "agent-settlement-tnst.init_token": {
+      "current": {
+        "target_contract_id": "REPLACE_SETTLEMENT_TNST_CONTRACT_ID_64_HEX",
+        "fn_name": "init_token",
+        "args": "\"f090528946990f3f2d3291d903327dfd700af6d912388c5f3c64c9bbc2a4edda\"",
+        "fn_args_hex": "f090528946990f3f2d3291d903327dfd700af6d912388c5f3c64c9bbc2a4edda",
+        "tx_id": "REPLACE_WIRE_TX_ID",
+        "address": "REPLACE_DEPLOYER_MOONLIGHT_BASE58",
+        "called_at": "REPLACE_ISO8601"
+      },
+      "history": []
+    },
+    "agent-settlement-tnst.init_chain_id": {
+      "current": {
+        "target_contract_id": "REPLACE_SETTLEMENT_TNST_CONTRACT_ID_64_HEX",
+        "fn_name": "init_chain_id",
+        "args": "2",
+        "fn_args_hex": "REPLACE_CHAIN_ID_FN_ARGS_HEX",
+        "tx_id": "REPLACE_WIRE_TX_ID",
+        "address": "REPLACE_DEPLOYER_MOONLIGHT_BASE58",
+        "called_at": "REPLACE_ISO8601"
+      },
+      "history": []
+    },
+    "agent-cash-escrow-tnst.init_gate": {
+      "current": {
+        "target_contract_id": "REPLACE_ESCROW_TNST_CONTRACT_ID_64_HEX",
+        "fn_name": "init_gate",
+        "args": "\"REPLACE_GATE_TNST_CONTRACT_ID_64_HEX\"",
+        "fn_args_hex": "REPLACE_GATE_TNST_CONTRACT_ID_64_HEX",
+        "tx_id": "REPLACE_WIRE_TX_ID",
+        "address": "REPLACE_DEPLOYER_MOONLIGHT_BASE58",
+        "called_at": "REPLACE_ISO8601"
+      },
+      "history": []
+    },
+    "agent-cash-escrow-tnst.init_token": {
+      "current": {
+        "target_contract_id": "REPLACE_ESCROW_TNST_CONTRACT_ID_64_HEX",
+        "fn_name": "init_token",
+        "args": "\"f090528946990f3f2d3291d903327dfd700af6d912388c5f3c64c9bbc2a4edda\"",
+        "fn_args_hex": "f090528946990f3f2d3291d903327dfd700af6d912388c5f3c64c9bbc2a4edda",
+        "tx_id": "REPLACE_WIRE_TX_ID",
+        "address": "REPLACE_DEPLOYER_MOONLIGHT_BASE58",
+        "called_at": "REPLACE_ISO8601"
+      },
+      "history": []
+    },
+    "agent-cash-escrow-tnst.add_settlement_drawer": {
+      "current": {
+        "target_contract_id": "REPLACE_ESCROW_TNST_CONTRACT_ID_64_HEX",
+        "fn_name": "add_settlement_drawer",
+        "args": "\"REPLACE_SETTLEMENT_TNST_CONTRACT_ID_64_HEX\"",
+        "fn_args_hex": "REPLACE_SETTLEMENT_TNST_CONTRACT_ID_64_HEX",
+        "tx_id": "REPLACE_WIRE_TX_ID",
+        "address": "REPLACE_DEPLOYER_MOONLIGHT_BASE58",
+        "called_at": "REPLACE_ISO8601"
+      },
+      "history": []
+    },
+    "agent-compliance-gate-tnst.init_revocation_contract": {
+      "current": {
+        "target_contract_id": "REPLACE_GATE_TNST_CONTRACT_ID_64_HEX",
+        "fn_name": "init_revocation_contract",
+        "args": "\"5e83f7be75b08e37b5f314aa1cd9b8b49ee95216bc21066603dadf1eb3b03cd6\"",
+        "fn_args_hex": "5e83f7be75b08e37b5f314aa1cd9b8b49ee95216bc21066603dadf1eb3b03cd6",
+        "tx_id": "REPLACE_WIRE_TX_ID",
+        "address": "REPLACE_DEPLOYER_MOONLIGHT_BASE58",
+        "called_at": "REPLACE_ISO8601"
+      },
+      "history": []
+    }
+  }
+}

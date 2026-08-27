@@ -902,17 +902,28 @@
     },
     "compliance-gate": {
       "current": {
-        "version": "0.1.5",
-        "contract_id": "72d6f85dbe0a1ee92b7352bcd5f51ac927cb1321808551d21854b949266e51e3",
-        "tx_id": "0a32db06c0248c05d89bbba65b1053c4ef07c9439c42da45b544bcf67df6fc39",
+        "version": "0.1.6",
+        "contract_id": "b602b385dfe65b5a23245e9567f55941bec6a8315d4cec2283d5e71e9141222c",
+        "tx_id": "7458245181b1563c588b465045894b15440e80f7ddda0d8ced191712987c016c",
         "wasm_path": "/Users/leonidas/dev/aichbindas/latch/target/contract/wasm32-unknown-unknown/release/compliance_gate.wasm",
         "dd_wasm_path": "/Users/leonidas/dev/aichbindas/latch/target/data-driver/wasm32-unknown-unknown/release/compliance_gate.wasm",
-        "wasm_sha256": "7cce7b202d866cb2e21b078b2650af1874f22219208623706fd2d01011de1ffd",
-        "deploy_nonce": 1787760097,
+        "wasm_sha256": "97eef11ac193b9949880c38ccce3f6205613b995c7db5e2b9f537958e76104d1",
+        "deploy_nonce": 1787847141,
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "deployed_at": "2026-08-26T16:01:51Z"
+        "deployed_at": "2026-08-27T16:12:42Z"
       },
       "history": [
+        {
+          "version": "0.1.5",
+          "contract_id": "72d6f85dbe0a1ee92b7352bcd5f51ac927cb1321808551d21854b949266e51e3",
+          "tx_id": "0a32db06c0248c05d89bbba65b1053c4ef07c9439c42da45b544bcf67df6fc39",
+          "wasm_path": "/Users/leonidas/dev/aichbindas/latch/target/contract/wasm32-unknown-unknown/release/compliance_gate.wasm",
+          "dd_wasm_path": "/Users/leonidas/dev/aichbindas/latch/target/data-driver/wasm32-unknown-unknown/release/compliance_gate.wasm",
+          "wasm_sha256": "7cce7b202d866cb2e21b078b2650af1874f22219208623706fd2d01011de1ffd",
+          "deploy_nonce": 1787760097,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-08-26T16:01:51Z"
+        },
         {
           "version": "0.1.4",
           "contract_id": "c1a58b62dd972aeca268e067001763455ad8e23dc8cdef34f9cf768ab60df024",
@@ -1018,16 +1029,28 @@
     "tnst-token": {
       "current": {
         "version": "0.1.0",
-        "contract_id": "f090528946990f3f2d3291d903327dfd700af6d912388c5f3c64c9bbc2a4edda",
-        "tx_id": "5d0fb577474ecc0d35bcfee14130922f739273257365b722a3b8b7afdb0c0d60",
+        "contract_id": "f8186c417a7226a16e6af5207bec296215c29758be5f7107cc55422aef41c80d",
+        "tx_id": "1e8a89095987fb61c34c09592539cb69674d7760f17b7cc2f4808825e4017b13",
         "wasm_path": "/Users/leonidas/dev/aichbindas/tnst-token/target/contract/wasm32-unknown-unknown/release/tnst_token.wasm",
         "dd_wasm_path": "/Users/leonidas/dev/aichbindas/tnst-token/target/data-driver/wasm32-unknown-unknown/release/tnst_token.wasm",
-        "wasm_sha256": "1f70e0ee903c722127d87c644fab77aeee6a45d39f6b1a67d06bfc4b4c2c92a1",
-        "deploy_nonce": 1787786019,
-        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "deployed_at": "2026-08-26T23:14:01Z"
+        "wasm_sha256": "fe9852db1315618369ef661a9068fbbe4190cafa0f2a266dd9cba7a3dfed5461",
+        "deploy_nonce": 1787855697,
+        "address": "24gBt8C1Jfjy2SbH947gjLWTggAkAqkxzc2otbksnFcXX45n5dRY8Qo1gd7LhV7JktXWYQAM6HtSewyuKRfsWQpVYfNixzwWWytK9yrJuEopKmM7EnkDKrFtyZBW6ZYnDjzP",
+        "deployed_at": "2026-08-27T18:35:10Z"
       },
-      "history": []
+      "history": [
+        {
+          "version": "0.1.0",
+          "contract_id": "f090528946990f3f2d3291d903327dfd700af6d912388c5f3c64c9bbc2a4edda",
+          "tx_id": "5d0fb577474ecc0d35bcfee14130922f739273257365b722a3b8b7afdb0c0d60",
+          "wasm_path": "/Users/leonidas/dev/aichbindas/tnst-token/target/contract/wasm32-unknown-unknown/release/tnst_token.wasm",
+          "dd_wasm_path": "/Users/leonidas/dev/aichbindas/tnst-token/target/data-driver/wasm32-unknown-unknown/release/tnst_token.wasm",
+          "wasm_sha256": "1f70e0ee903c722127d87c644fab77aeee6a45d39f6b1a67d06bfc4b4c2c92a1",
+          "deploy_nonce": 1787786019,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-08-26T23:14:01Z"
+        }
+      ]
     },
     "agent-compliance-gate-tnst": {
       "current": {
@@ -3239,15 +3262,24 @@
     },
     "compliance-gate.init_l1_messenger_contract": {
       "current": {
-        "target_contract_id": "72d6f85dbe0a1ee92b7352bcd5f51ac927cb1321808551d21854b949266e51e3",
+        "target_contract_id": "b602b385dfe65b5a23245e9567f55941bec6a8315d4cec2283d5e71e9141222c",
         "fn_name": "init_l1_messenger_contract",
         "args": "\"63cd2c93016296b2ec357e31fd44b716cf2cda3b31217d45087f17ccc6440530\"",
         "fn_args_hex": "63cd2c93016296b2ec357e31fd44b716cf2cda3b31217d45087f17ccc6440530",
-        "tx_id": "5a95a1499b5b4b30679ecf6371bc6a19e21acb1e997c890b1724efeb9cba5e4e",
+        "tx_id": "251f16f8a11d4d58ee4ea848cd04ca887ff38b8c86a3b7d844e526c04e6eee4b",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-26T16:03:10Z"
+        "called_at": "2026-08-27T16:14:20Z"
       },
       "history": [
+        {
+          "target_contract_id": "72d6f85dbe0a1ee92b7352bcd5f51ac927cb1321808551d21854b949266e51e3",
+          "fn_name": "init_l1_messenger_contract",
+          "args": "\"63cd2c93016296b2ec357e31fd44b716cf2cda3b31217d45087f17ccc6440530\"",
+          "fn_args_hex": "63cd2c93016296b2ec357e31fd44b716cf2cda3b31217d45087f17ccc6440530",
+          "tx_id": "5a95a1499b5b4b30679ecf6371bc6a19e21acb1e997c890b1724efeb9cba5e4e",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-26T16:03:10Z"
+        },
         {
           "target_contract_id": "c1a58b62dd972aeca268e067001763455ad8e23dc8cdef34f9cf768ab60df024",
           "fn_name": "init_l1_messenger_contract",
@@ -3270,15 +3302,42 @@
     },
     "compliance-gate.init_evm_compliance_gate": {
       "current": {
-        "target_contract_id": "72d6f85dbe0a1ee92b7352bcd5f51ac927cb1321808551d21854b949266e51e3",
+        "target_contract_id": "b602b385dfe65b5a23245e9567f55941bec6a8315d4cec2283d5e71e9141222c",
         "fn_name": "init_evm_compliance_gate",
-        "args": "[73, 86, 2, 105, 173, 169, 160, 149, 132, 224, 74, 169, 7, 87, 171, 67, 78, 253, 222, 71]",
-        "fn_args_hex": "49560269ada9a09584e04aa90757ab434efdde47",
-        "tx_id": "3f07268a2dd0d5ff0879ca2a2ea0f415b58349be908880c5a31a62554b95a936",
+        "args": "[25, 80, 4, 211, 7, 155, 110, 248, 93, 25, 201, 37, 30, 190, 71, 66, 164, 0, 75, 13]",
+        "fn_args_hex": "195004d3079b6ef85d19c9251ebe4742a4004b0d",
+        "tx_id": "dbca7993b0cf14b913f117ffbafda0f58b0e5320d765237379f74ff9b554ae06",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-26T16:09:41Z"
+        "called_at": "2026-08-27T20:56:50Z"
       },
       "history": [
+        {
+          "target_contract_id": "b602b385dfe65b5a23245e9567f55941bec6a8315d4cec2283d5e71e9141222c",
+          "fn_name": "init_evm_compliance_gate",
+          "args": "[150, 136, 2, 116, 104, 85, 101, 9, 14, 39, 119, 201, 57, 32, 7, 89, 149, 49, 88, 19]",
+          "fn_args_hex": "96880274685565090e2777c93920075995315813",
+          "tx_id": "be80948dae9d463d59b1a4cc9f4fcec07f68b05012d6f027b8caaa05c80c8411",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-27T16:29:51Z"
+        },
+        {
+          "target_contract_id": "b602b385dfe65b5a23245e9567f55941bec6a8315d4cec2283d5e71e9141222c",
+          "fn_name": "init_evm_compliance_gate",
+          "args": "[150, 136, 2, 116, 104, 85, 101, 9, 14, 39, 119, 201, 57, 32, 7, 89, 149, 49, 88, 19]",
+          "fn_args_hex": "96880274685565090e2777c93920075995315813",
+          "tx_id": "5fa3b4631650b1a792aa7e9d2f1a6350ae2862f71a6c28d45421da18357d2c6d",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-27T16:22:00Z"
+        },
+        {
+          "target_contract_id": "72d6f85dbe0a1ee92b7352bcd5f51ac927cb1321808551d21854b949266e51e3",
+          "fn_name": "init_evm_compliance_gate",
+          "args": "[73, 86, 2, 105, 173, 169, 160, 149, 132, 224, 74, 169, 7, 87, 171, 67, 78, 253, 222, 71]",
+          "fn_args_hex": "49560269ada9a09584e04aa90757ab434efdde47",
+          "tx_id": "3f07268a2dd0d5ff0879ca2a2ea0f415b58349be908880c5a31a62554b95a936",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-26T16:09:41Z"
+        },
         {
           "target_contract_id": "c1a58b62dd972aeca268e067001763455ad8e23dc8cdef34f9cf768ab60df024",
           "fn_name": "init_evm_compliance_gate",
@@ -3391,15 +3450,24 @@
     },
     "compliance-gate.init_min_gas_limit": {
       "current": {
-        "target_contract_id": "72d6f85dbe0a1ee92b7352bcd5f51ac927cb1321808551d21854b949266e51e3",
+        "target_contract_id": "b602b385dfe65b5a23245e9567f55941bec6a8315d4cec2283d5e71e9141222c",
         "fn_name": "init_min_gas_limit",
         "args": "250000",
         "fn_args_hex": "90d00300",
-        "tx_id": "f69bd9defc37fbaf91db8c8a8c4344c2139c3601043fe1cd1b774da541e22b72",
+        "tx_id": "f7fed97f37d3328ea6e76e3abc847b96d506f49379bdc05dc6c6932acae52d40",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-26T16:10:01Z"
+        "called_at": "2026-08-27T16:14:41Z"
       },
       "history": [
+        {
+          "target_contract_id": "72d6f85dbe0a1ee92b7352bcd5f51ac927cb1321808551d21854b949266e51e3",
+          "fn_name": "init_min_gas_limit",
+          "args": "250000",
+          "fn_args_hex": "90d00300",
+          "tx_id": "f69bd9defc37fbaf91db8c8a8c4344c2139c3601043fe1cd1b774da541e22b72",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-26T16:10:01Z"
+        },
         {
           "target_contract_id": "c1a58b62dd972aeca268e067001763455ad8e23dc8cdef34f9cf768ab60df024",
           "fn_name": "init_min_gas_limit",
@@ -3422,15 +3490,42 @@
     },
     "compliance-gate.push_attestation": {
       "current": {
-        "target_contract_id": "72d6f85dbe0a1ee92b7352bcd5f51ac927cb1321808551d21854b949266e51e3",
+        "target_contract_id": "b602b385dfe65b5a23245e9567f55941bec6a8315d4cec2283d5e71e9141222c",
         "fn_name": "push_attestation",
-        "args": "[[15, 96, 88, 250, 230, 13, 209, 255, 246, 65, 219, 185, 51, 215, 5, 86, 227, 64, 188, 178, 250, 247, 225, 82, 4, 152, 120, 65, 67, 175, 224, 147], true, [97, 116, 116, 101, 115, 116, 45, 114, 101, 102, 45, 118, 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]",
-        "fn_args_hex": "010f6058fae60dd1fff641dbb933d70556e340bcb2faf7e1520498784143afe0936174746573742d7265662d763100000000000000000000000000000000000000",
-        "tx_id": "56a7dce47d3937c2f40c0ead7da25764981ffee899e09779f0194216782bd538",
+        "args": "[[247, 148, 202, 215, 221, 124, 84, 229, 116, 12, 10, 182, 131, 249, 205, 38, 179, 67, 64, 199, 47, 229, 48, 29, 129, 233, 154, 106, 83, 210, 43, 102], true, [97, 116, 116, 101, 115, 116, 45, 114, 101, 102, 45, 118, 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]",
+        "fn_args_hex": "01f794cad7dd7c54e5740c0ab683f9cd26b34340c72fe5301d81e99a6a53d22b666174746573742d7265662d763100000000000000000000000000000000000000",
+        "tx_id": "b36314a38760e4875fc156aef9f0c9f46038ce9b087cb24e673defa7e010f94c",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-26T21:48:39Z"
+        "called_at": "2026-08-27T21:00:10Z"
       },
       "history": [
+        {
+          "target_contract_id": "b602b385dfe65b5a23245e9567f55941bec6a8315d4cec2283d5e71e9141222c",
+          "fn_name": "push_attestation",
+          "args": "[[105, 144, 161, 9, 6, 239, 20, 135, 135, 111, 118, 244, 66, 133, 35, 246, 182, 27, 166, 188, 7, 252, 230, 99, 51, 175, 142, 26, 184, 88, 98, 203], true, [97, 116, 116, 101, 115, 116, 45, 114, 101, 102, 45, 118, 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]",
+          "fn_args_hex": "016990a10906ef1487876f76f4428523f6b61ba6bc07fce66333af8e1ab85862cb6174746573742d7265662d763100000000000000000000000000000000000000",
+          "tx_id": "530885b4e452ca41be07bc3082830c9e56fb5b098ec8415705afd5847cd8eb42",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-27T17:10:01Z"
+        },
+        {
+          "target_contract_id": "b602b385dfe65b5a23245e9567f55941bec6a8315d4cec2283d5e71e9141222c",
+          "fn_name": "push_attestation",
+          "args": "[[105, 144, 161, 9, 6, 239, 20, 135, 135, 111, 118, 244, 66, 133, 35, 246, 182, 27, 166, 188, 7, 252, 230, 99, 51, 175, 142, 26, 184, 88, 98, 203], true, [97, 116, 116, 101, 115, 116, 45, 114, 101, 102, 45, 118, 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]",
+          "fn_args_hex": "016990a10906ef1487876f76f4428523f6b61ba6bc07fce66333af8e1ab85862cb6174746573742d7265662d763100000000000000000000000000000000000000",
+          "tx_id": "a902a8171deea35c7695ccc65bfe6dae164510663f6fde81ea03c38d6d28dc13",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-27T16:33:10Z"
+        },
+        {
+          "target_contract_id": "72d6f85dbe0a1ee92b7352bcd5f51ac927cb1321808551d21854b949266e51e3",
+          "fn_name": "push_attestation",
+          "args": "[[15, 96, 88, 250, 230, 13, 209, 255, 246, 65, 219, 185, 51, 215, 5, 86, 227, 64, 188, 178, 250, 247, 225, 82, 4, 152, 120, 65, 67, 175, 224, 147], true, [97, 116, 116, 101, 115, 116, 45, 114, 101, 102, 45, 118, 49, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]",
+          "fn_args_hex": "010f6058fae60dd1fff641dbb933d70556e340bcb2faf7e1520498784143afe0936174746573742d7265662d763100000000000000000000000000000000000000",
+          "tx_id": "56a7dce47d3937c2f40c0ead7da25764981ffee899e09779f0194216782bd538",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-26T21:48:39Z"
+        },
         {
           "target_contract_id": "72d6f85dbe0a1ee92b7352bcd5f51ac927cb1321808551d21854b949266e51e3",
           "fn_name": "push_attestation",
@@ -3819,13 +3914,40 @@
       "current": {
         "target_contract_id": "09e12d5d0af3935ea0c93f4b4eef3a88a24b0de28cd89fd54114c9fb85ef7fdb",
         "fn_name": "init_evm_compliance_gate",
-        "args": "[73, 86, 2, 105, 173, 169, 160, 149, 132, 224, 74, 169, 7, 87, 171, 67, 78, 253, 222, 71]",
-        "fn_args_hex": "49560269ada9a09584e04aa90757ab434efdde47",
-        "tx_id": "ab360cd76539a7ca06fbdae7c456efb9c9d54626270b5addd0c2adfa2751812a",
+        "args": "[25, 80, 4, 211, 7, 155, 110, 248, 93, 25, 201, 37, 30, 190, 71, 66, 164, 0, 75, 13]",
+        "fn_args_hex": "195004d3079b6ef85d19c9251ebe4742a4004b0d",
+        "tx_id": "e35e89e6c1f47b4043f61053f3a7bce95fd97d64fc1218a121192d2544c0bd31",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-25T10:41:20Z"
+        "called_at": "2026-08-27T20:57:11Z"
       },
       "history": [
+        {
+          "target_contract_id": "09e12d5d0af3935ea0c93f4b4eef3a88a24b0de28cd89fd54114c9fb85ef7fdb",
+          "fn_name": "init_evm_compliance_gate",
+          "args": "[150, 136, 2, 116, 104, 85, 101, 9, 14, 39, 119, 201, 57, 32, 7, 89, 149, 49, 88, 19]",
+          "fn_args_hex": "96880274685565090e2777c93920075995315813",
+          "tx_id": "428e018e91580bf027b1efede36ef93f750f676cac4d96acc95a6f63929df210",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-27T16:30:11Z"
+        },
+        {
+          "target_contract_id": "09e12d5d0af3935ea0c93f4b4eef3a88a24b0de28cd89fd54114c9fb85ef7fdb",
+          "fn_name": "init_evm_compliance_gate",
+          "args": "[150, 136, 2, 116, 104, 85, 101, 9, 14, 39, 119, 201, 57, 32, 7, 89, 149, 49, 88, 19]",
+          "fn_args_hex": "96880274685565090e2777c93920075995315813",
+          "tx_id": "84f93f26bfa5e7107ba0cce66b9443827e905220c261736e66e5fa06e5e4a102",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-27T16:22:20Z"
+        },
+        {
+          "target_contract_id": "09e12d5d0af3935ea0c93f4b4eef3a88a24b0de28cd89fd54114c9fb85ef7fdb",
+          "fn_name": "init_evm_compliance_gate",
+          "args": "[73, 86, 2, 105, 173, 169, 160, 149, 132, 224, 74, 169, 7, 87, 171, 67, 78, 253, 222, 71]",
+          "fn_args_hex": "49560269ada9a09584e04aa90757ab434efdde47",
+          "tx_id": "ab360cd76539a7ca06fbdae7c456efb9c9d54626270b5addd0c2adfa2751812a",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-25T10:41:20Z"
+        },
         {
           "target_contract_id": "09e12d5d0af3935ea0c93f4b4eef3a88a24b0de28cd89fd54114c9fb85ef7fdb",
           "fn_name": "init_evm_compliance_gate",
@@ -3917,13 +4039,49 @@
       "current": {
         "target_contract_id": "09e12d5d0af3935ea0c93f4b4eef3a88a24b0de28cd89fd54114c9fb85ef7fdb",
         "fn_name": "push_link_status",
-        "args": "[[137, 148, 162, 94, 108, 121, 159, 195, 215, 125, 0, 185, 10, 112, 10, 180, 82, 156, 115, 52, 133, 126, 116, 12, 114, 107, 189, 121, 23, 83, 73, 202], 2]",
-        "fn_args_hex": "8994a25e6c799fc3d77d00b90a700ab4529c7334857e740c726bbd79175349ca02",
-        "tx_id": "57ca810ea905d54dc6a2c6f7b2ca4aa55377b669867c97ae12341a7d05a08836",
+        "args": "[[247, 148, 202, 215, 221, 124, 84, 229, 116, 12, 10, 182, 131, 249, 205, 38, 179, 67, 64, 199, 47, 229, 48, 29, 129, 233, 154, 106, 83, 210, 43, 102], 2]",
+        "fn_args_hex": "f794cad7dd7c54e5740c0ab683f9cd26b34340c72fe5301d81e99a6a53d22b6602",
+        "tx_id": "c2d4cec9502873c6a6fb2a1ca831220af3a727e9286fcc7d367b4eba7e27f727",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-26T16:12:20Z"
+        "called_at": "2026-08-27T20:59:20Z"
       },
       "history": [
+        {
+          "target_contract_id": "09e12d5d0af3935ea0c93f4b4eef3a88a24b0de28cd89fd54114c9fb85ef7fdb",
+          "fn_name": "push_link_status",
+          "args": "[[247, 148, 202, 215, 221, 124, 84, 229, 116, 12, 10, 182, 131, 249, 205, 38, 179, 67, 64, 199, 47, 229, 48, 29, 129, 233, 154, 106, 83, 210, 43, 102], 1]",
+          "fn_args_hex": "f794cad7dd7c54e5740c0ab683f9cd26b34340c72fe5301d81e99a6a53d22b6601",
+          "tx_id": "65d15f284ac89e77538ec3169d97f7ac61cd188c8475a937bcaa7b4990694850",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-27T20:58:31Z"
+        },
+        {
+          "target_contract_id": "09e12d5d0af3935ea0c93f4b4eef3a88a24b0de28cd89fd54114c9fb85ef7fdb",
+          "fn_name": "push_link_status",
+          "args": "[[105, 144, 161, 9, 6, 239, 20, 135, 135, 111, 118, 244, 66, 133, 35, 246, 182, 27, 166, 188, 7, 252, 230, 99, 51, 175, 142, 26, 184, 88, 98, 203], 2]",
+          "fn_args_hex": "6990a10906ef1487876f76f4428523f6b61ba6bc07fce66333af8e1ab85862cb02",
+          "tx_id": "893814ec3786c18be690eeb31f67833f6d0bfa5bc0fc1f0165c2351eefe1c65d",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-27T16:32:20Z"
+        },
+        {
+          "target_contract_id": "09e12d5d0af3935ea0c93f4b4eef3a88a24b0de28cd89fd54114c9fb85ef7fdb",
+          "fn_name": "push_link_status",
+          "args": "[[105, 144, 161, 9, 6, 239, 20, 135, 135, 111, 118, 244, 66, 133, 35, 246, 182, 27, 166, 188, 7, 252, 230, 99, 51, 175, 142, 26, 184, 88, 98, 203], 1]",
+          "fn_args_hex": "6990a10906ef1487876f76f4428523f6b61ba6bc07fce66333af8e1ab85862cb01",
+          "tx_id": "feb2c048d0a7362cb258d597a2feb62ed92510d96eb26a6382f0feee60c07516",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-27T16:31:31Z"
+        },
+        {
+          "target_contract_id": "09e12d5d0af3935ea0c93f4b4eef3a88a24b0de28cd89fd54114c9fb85ef7fdb",
+          "fn_name": "push_link_status",
+          "args": "[[137, 148, 162, 94, 108, 121, 159, 195, 215, 125, 0, 185, 10, 112, 10, 180, 82, 156, 115, 52, 133, 126, 116, 12, 114, 107, 189, 121, 23, 83, 73, 202], 2]",
+          "fn_args_hex": "8994a25e6c799fc3d77d00b90a700ab4529c7334857e740c726bbd79175349ca02",
+          "tx_id": "57ca810ea905d54dc6a2c6f7b2ca4aa55377b669867c97ae12341a7d05a08836",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-26T16:12:20Z"
+        },
         {
           "target_contract_id": "09e12d5d0af3935ea0c93f4b4eef3a88a24b0de28cd89fd54114c9fb85ef7fdb",
           "fn_name": "push_link_status",
@@ -4220,15 +4378,24 @@
     },
     "compliance-gate.init_identity_contract": {
       "current": {
-        "target_contract_id": "72d6f85dbe0a1ee92b7352bcd5f51ac927cb1321808551d21854b949266e51e3",
+        "target_contract_id": "b602b385dfe65b5a23245e9567f55941bec6a8315d4cec2283d5e71e9141222c",
         "fn_name": "init_identity_contract",
         "args": "\"b97be68d2965c1e8f78707b7206c6126beecf3f73e1bc6b204b4b03b7d7c099a\"",
         "fn_args_hex": "b97be68d2965c1e8f78707b7206c6126beecf3f73e1bc6b204b4b03b7d7c099a",
-        "tx_id": "6ca0cab6f4ea863c4b19db784f2dfd59838c1264a09cd4d6b81f4d6b6ac8be2a",
+        "tx_id": "c1ac4c42eed297de4b450cf5f4a79cc9c8deb58462995e51ae83505e0eb33a3c",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-26T16:02:10Z"
+        "called_at": "2026-08-27T16:13:01Z"
       },
       "history": [
+        {
+          "target_contract_id": "72d6f85dbe0a1ee92b7352bcd5f51ac927cb1321808551d21854b949266e51e3",
+          "fn_name": "init_identity_contract",
+          "args": "\"b97be68d2965c1e8f78707b7206c6126beecf3f73e1bc6b204b4b03b7d7c099a\"",
+          "fn_args_hex": "b97be68d2965c1e8f78707b7206c6126beecf3f73e1bc6b204b4b03b7d7c099a",
+          "tx_id": "6ca0cab6f4ea863c4b19db784f2dfd59838c1264a09cd4d6b81f4d6b6ac8be2a",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-26T16:02:10Z"
+        },
         {
           "target_contract_id": "c1a58b62dd972aeca268e067001763455ad8e23dc8cdef34f9cf768ab60df024",
           "fn_name": "init_identity_contract",
@@ -4242,15 +4409,24 @@
     },
     "compliance-gate.init_revocation_contract": {
       "current": {
-        "target_contract_id": "72d6f85dbe0a1ee92b7352bcd5f51ac927cb1321808551d21854b949266e51e3",
+        "target_contract_id": "b602b385dfe65b5a23245e9567f55941bec6a8315d4cec2283d5e71e9141222c",
         "fn_name": "init_revocation_contract",
         "args": "\"5e83f7be75b08e37b5f314aa1cd9b8b49ee95216bc21066603dadf1eb3b03cd6\"",
         "fn_args_hex": "5e83f7be75b08e37b5f314aa1cd9b8b49ee95216bc21066603dadf1eb3b03cd6",
-        "tx_id": "7d951d03ce00f0ed681ad31cddfe2bd1f39ae990eaa1f392ca419ced8a41d354",
+        "tx_id": "80bfceb2395e03a6275cb325f9546dbdc6ec95158297f795691a6bf3f427cd1d",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-26T16:02:30Z"
+        "called_at": "2026-08-27T16:13:20Z"
       },
       "history": [
+        {
+          "target_contract_id": "72d6f85dbe0a1ee92b7352bcd5f51ac927cb1321808551d21854b949266e51e3",
+          "fn_name": "init_revocation_contract",
+          "args": "\"5e83f7be75b08e37b5f314aa1cd9b8b49ee95216bc21066603dadf1eb3b03cd6\"",
+          "fn_args_hex": "5e83f7be75b08e37b5f314aa1cd9b8b49ee95216bc21066603dadf1eb3b03cd6",
+          "tx_id": "7d951d03ce00f0ed681ad31cddfe2bd1f39ae990eaa1f392ca419ced8a41d354",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-26T16:02:30Z"
+        },
         {
           "target_contract_id": "c1a58b62dd972aeca268e067001763455ad8e23dc8cdef34f9cf768ab60df024",
           "fn_name": "init_revocation_contract",
@@ -4264,15 +4440,24 @@
     },
     "compliance-gate.init_predicate_registry_contract": {
       "current": {
-        "target_contract_id": "72d6f85dbe0a1ee92b7352bcd5f51ac927cb1321808551d21854b949266e51e3",
+        "target_contract_id": "b602b385dfe65b5a23245e9567f55941bec6a8315d4cec2283d5e71e9141222c",
         "fn_name": "init_predicate_registry_contract",
         "args": "\"9c8954d4581b96826bf8f3850920516957a28a38dbc4789af57e530bc77b1bdb\"",
         "fn_args_hex": "9c8954d4581b96826bf8f3850920516957a28a38dbc4789af57e530bc77b1bdb",
-        "tx_id": "9403b7e3efe4cf0934856c9123e3c01e38d862a491a5a6b61239369630106c2a",
+        "tx_id": "c573f9d41f543a0bb5b7e8098b44a1a74fdfbcdb9a91d3e9fb3c35d4855e755e",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-26T22:16:40Z"
+        "called_at": "2026-08-27T16:13:40Z"
       },
       "history": [
+        {
+          "target_contract_id": "72d6f85dbe0a1ee92b7352bcd5f51ac927cb1321808551d21854b949266e51e3",
+          "fn_name": "init_predicate_registry_contract",
+          "args": "\"9c8954d4581b96826bf8f3850920516957a28a38dbc4789af57e530bc77b1bdb\"",
+          "fn_args_hex": "9c8954d4581b96826bf8f3850920516957a28a38dbc4789af57e530bc77b1bdb",
+          "tx_id": "9403b7e3efe4cf0934856c9123e3c01e38d862a491a5a6b61239369630106c2a",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-26T22:16:40Z"
+        },
         {
           "target_contract_id": "72d6f85dbe0a1ee92b7352bcd5f51ac927cb1321808551d21854b949266e51e3",
           "fn_name": "init_predicate_registry_contract",
@@ -4484,15 +4669,25 @@
     },
     "tnst-token.init_token": {
       "current": {
-        "target_contract_id": "f090528946990f3f2d3291d903327dfd700af6d912388c5f3c64c9bbc2a4edda",
+        "target_contract_id": "f8186c417a7226a16e6af5207bec296215c29758be5f7107cc55422aef41c80d",
         "fn_name": "init_token",
         "args": "{\"name\":\"Nocturne Standards Test Token\",\"symbol\":\"tNST\",\"decimals\":9,\"initial_balances\":[]}",
         "fn_args_hex": "4e6f637475726e65205374616e6461726473205465737420546f6b656e0000001d000000e0ffffff744e535400000004f0ffffff0000000009000000",
-        "tx_id": "059676a08a7bb983a2a02daf2311404ef9905927dca9261905ca636a0b77562b",
-        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-26T23:14:30Z"
+        "tx_id": "9bce7f3f51ce19058ec222b56d5ee551df4e8f8965c4e47e81566a7617dc9c0c",
+        "address": "24gBt8C1Jfjy2SbH947gjLWTggAkAqkxzc2otbksnFcXX45n5dRY8Qo1gd7LhV7JktXWYQAM6HtSewyuKRfsWQpVYfNixzwWWytK9yrJuEopKmM7EnkDKrFtyZBW6ZYnDjzP",
+        "called_at": "2026-08-27T20:40:42Z"
       },
-      "history": []
+      "history": [
+        {
+          "target_contract_id": "f090528946990f3f2d3291d903327dfd700af6d912388c5f3c64c9bbc2a4edda",
+          "fn_name": "init_token",
+          "args": "{\"name\":\"Nocturne Standards Test Token\",\"symbol\":\"tNST\",\"decimals\":9,\"initial_balances\":[]}",
+          "fn_args_hex": "4e6f637475726e65205374616e6461726473205465737420546f6b656e0000001d000000e0ffffff744e535400000004f0ffffff0000000009000000",
+          "tx_id": "059676a08a7bb983a2a02daf2311404ef9905927dca9261905ca636a0b77562b",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-26T23:14:30Z"
+        }
+      ]
     },
     "tnst-token.mint": {
       "current": {
@@ -4604,13 +4799,23 @@
       "current": {
         "target_contract_id": "11c0e3e202e386d3069f194de6746ac9306060a42214fc9547cb904cd66a11ed",
         "fn_name": "init_token",
-        "args": "\"f090528946990f3f2d3291d903327dfd700af6d912388c5f3c64c9bbc2a4edda\"",
-        "fn_args_hex": "f090528946990f3f2d3291d903327dfd700af6d912388c5f3c64c9bbc2a4edda",
-        "tx_id": "acfb61eb48f54a758e0f81ce5d5b9611641f3348c395ac2a5b0dc38bbb886441",
+        "args": "\"f8186c417a7226a16e6af5207bec296215c29758be5f7107cc55422aef41c80d\"",
+        "fn_args_hex": "f8186c417a7226a16e6af5207bec296215c29758be5f7107cc55422aef41c80d",
+        "tx_id": "154a608179bf290b6151dbaca2a6124530125876c031e0e6c65c12e757b6d126",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-26T23:36:00Z"
+        "called_at": "2026-08-27T20:44:31Z"
       },
-      "history": []
+      "history": [
+        {
+          "target_contract_id": "11c0e3e202e386d3069f194de6746ac9306060a42214fc9547cb904cd66a11ed",
+          "fn_name": "init_token",
+          "args": "\"f090528946990f3f2d3291d903327dfd700af6d912388c5f3c64c9bbc2a4edda\"",
+          "fn_args_hex": "f090528946990f3f2d3291d903327dfd700af6d912388c5f3c64c9bbc2a4edda",
+          "tx_id": "acfb61eb48f54a758e0f81ce5d5b9611641f3348c395ac2a5b0dc38bbb886441",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-26T23:36:00Z"
+        }
+      ]
     },
     "agent-cash-escrow-tnst.init_gate": {
       "current": {
@@ -4628,13 +4833,23 @@
       "current": {
         "target_contract_id": "bf2d7162da00442403770b576a31baeda5d8516dc5da6e72548ae36a7f340c90",
         "fn_name": "init_token",
-        "args": "\"f090528946990f3f2d3291d903327dfd700af6d912388c5f3c64c9bbc2a4edda\"",
-        "fn_args_hex": "f090528946990f3f2d3291d903327dfd700af6d912388c5f3c64c9bbc2a4edda",
-        "tx_id": "9328bd950b012ca71a73792fd88d74b53444c0afd19f05c783f515cafb84d039",
+        "args": "\"f8186c417a7226a16e6af5207bec296215c29758be5f7107cc55422aef41c80d\"",
+        "fn_args_hex": "f8186c417a7226a16e6af5207bec296215c29758be5f7107cc55422aef41c80d",
+        "tx_id": "c99af18a7e36f1f0a89b2bf71a5b32396c0b1ccd016ffc78251cc245d7a40202",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-26T23:36:40Z"
+        "called_at": "2026-08-27T20:44:10Z"
       },
-      "history": []
+      "history": [
+        {
+          "target_contract_id": "bf2d7162da00442403770b576a31baeda5d8516dc5da6e72548ae36a7f340c90",
+          "fn_name": "init_token",
+          "args": "\"f090528946990f3f2d3291d903327dfd700af6d912388c5f3c64c9bbc2a4edda\"",
+          "fn_args_hex": "f090528946990f3f2d3291d903327dfd700af6d912388c5f3c64c9bbc2a4edda",
+          "tx_id": "9328bd950b012ca71a73792fd88d74b53444c0afd19f05c783f515cafb84d039",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-26T23:36:40Z"
+        }
+      ]
     },
     "agent-cash-escrow-tnst.add_settlement_drawer": {
       "current": {
@@ -4690,6 +4905,98 @@
         "called_at": "2026-08-27T14:46:00Z"
       },
       "history": []
+    },
+    "compliance-gate.init_link_registry_contract": {
+      "current": {
+        "target_contract_id": "b602b385dfe65b5a23245e9567f55941bec6a8315d4cec2283d5e71e9141222c",
+        "fn_name": "init_link_registry_contract",
+        "args": "\"09e12d5d0af3935ea0c93f4b4eef3a88a24b0de28cd89fd54114c9fb85ef7fdb\"",
+        "fn_args_hex": "09e12d5d0af3935ea0c93f4b4eef3a88a24b0de28cd89fd54114c9fb85ef7fdb",
+        "tx_id": "14fa8419d996b32acd5438c092d1082ba86b22902ab5bb784f7064fd2bed4128",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-27T16:14:01Z"
+      },
+      "history": []
+    },
+    "compliance-gate.init_evm_chain_id": {
+      "current": {
+        "target_contract_id": "b602b385dfe65b5a23245e9567f55941bec6a8315d4cec2283d5e71e9141222c",
+        "fn_name": "init_evm_chain_id",
+        "args": "745",
+        "fn_args_hex": "e902000000000000",
+        "tx_id": "6cfd7ea7df80b8de0730f8187c603355165fe0ca449fce99c8fc283933926502",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-27T20:57:29Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "b602b385dfe65b5a23245e9567f55941bec6a8315d4cec2283d5e71e9141222c",
+          "fn_name": "init_evm_chain_id",
+          "args": "745",
+          "fn_args_hex": "e902000000000000",
+          "tx_id": "7cc07d56f218bf184a6ec79f99092e6906f7b78dfc945628d20dfc5634473623",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-27T16:30:30Z"
+        },
+        {
+          "target_contract_id": "b602b385dfe65b5a23245e9567f55941bec6a8315d4cec2283d5e71e9141222c",
+          "fn_name": "init_evm_chain_id",
+          "args": "745",
+          "fn_args_hex": "e902000000000000",
+          "tx_id": "66f0c15fe79fb30e9369c60de94e70590180a6f2efae1afa04667343ed455769",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-27T16:22:40Z"
+        },
+        {
+          "target_contract_id": "b602b385dfe65b5a23245e9567f55941bec6a8315d4cec2283d5e71e9141222c",
+          "fn_name": "init_evm_chain_id",
+          "args": "745",
+          "fn_args_hex": "e902000000000000",
+          "tx_id": "8ea3d7829261406bff4a4f3896090559247afc8f4f8fa3ddb85a4faafc3a7e33",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-27T16:15:00Z"
+        }
+      ]
+    },
+    "compliance-gate.init_attestation_signer": {
+      "current": {
+        "target_contract_id": "b602b385dfe65b5a23245e9567f55941bec6a8315d4cec2283d5e71e9141222c",
+        "fn_name": "init_attestation_signer",
+        "args": "[89, 198, 153, 94, 153, 143, 151, 165, 160, 4, 73, 102, 240, 148, 83, 137, 220, 158, 134, 218, 232, 140, 122, 132, 18, 244, 96, 59, 107, 120, 105, 13]",
+        "fn_args_hex": "59c6995e998f97a5a0044966f0945389dc9e86dae88c7a8412f4603b6b78690d",
+        "tx_id": "dfe4498b6dd02ee7d5508151a4d8f834144605e53fc1301af8efa360bc13930c",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-27T20:57:50Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "b602b385dfe65b5a23245e9567f55941bec6a8315d4cec2283d5e71e9141222c",
+          "fn_name": "init_attestation_signer",
+          "args": "[89, 198, 153, 94, 153, 143, 151, 165, 160, 4, 73, 102, 240, 148, 83, 137, 220, 158, 134, 218, 232, 140, 122, 132, 18, 244, 96, 59, 107, 120, 105, 13]",
+          "fn_args_hex": "59c6995e998f97a5a0044966f0945389dc9e86dae88c7a8412f4603b6b78690d",
+          "tx_id": "b3fdd599bd7f412b626d30ec7c97c1a2fed7760fe77285423c9cc028b842da4b",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-27T16:30:50Z"
+        },
+        {
+          "target_contract_id": "b602b385dfe65b5a23245e9567f55941bec6a8315d4cec2283d5e71e9141222c",
+          "fn_name": "init_attestation_signer",
+          "args": "[89, 198, 153, 94, 153, 143, 151, 165, 160, 4, 73, 102, 240, 148, 83, 137, 220, 158, 134, 218, 232, 140, 122, 132, 18, 244, 96, 59, 107, 120, 105, 13]",
+          "fn_args_hex": "59c6995e998f97a5a0044966f0945389dc9e86dae88c7a8412f4603b6b78690d",
+          "tx_id": "edadd970e5b0816e31622d9851b50eeee397df8663a5e89f0682732ea9d31925",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-27T16:22:59Z"
+        },
+        {
+          "target_contract_id": "b602b385dfe65b5a23245e9567f55941bec6a8315d4cec2283d5e71e9141222c",
+          "fn_name": "init_attestation_signer",
+          "args": "[89, 198, 153, 94, 153, 143, 151, 165, 160, 4, 73, 102, 240, 148, 83, 137, 220, 158, 134, 218, 232, 140, 122, 132, 18, 244, 96, 59, 107, 120, 105, 13]",
+          "fn_args_hex": "59c6995e998f97a5a0044966f0945389dc9e86dae88c7a8412f4603b6b78690d",
+          "tx_id": "a071f099a47f58737a2078f57396498272815eab675ae015efc043df75d91714",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-27T16:15:20Z"
+        }
+      ]
     }
   }
 }
