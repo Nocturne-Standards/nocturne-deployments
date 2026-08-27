@@ -3707,13 +3707,23 @@
       "current": {
         "target_contract_id": "f090528946990f3f2d3291d903327dfd700af6d912388c5f3c64c9bbc2a4edda",
         "fn_name": "mint",
-        "args": "[{\"kind\": \"Moonlight\", \"bytes\": [225, 177, 91, 242, 13, 142, 69, 153, 184, 9, 126, 16, 168, 215, 148, 176, 175, 85, 213, 183, 151, 238, 57, 88, 123, 202, 184, 139, 74, 89, 109, 212, 212, 92, 147, 233, 73, 149, 176, 227, 89, 215, 112, 192, 62, 71, 232, 13, 136, 202, 158, 3, 60, 76, 186, 164, 16, 154, 166, 156, 75, 32, 165, 173, 142, 28, 95, 6, 64, 102, 230, 165, 252, 242, 99, 75, 100, 88, 34, 24, 218, 180, 254, 252, 39, 108, 236, 209, 125, 203, 149, 39, 184, 39, 185, 2, 87, 65, 101, 61, 78, 136, 157, 114, 217, 113, 23, 171, 125, 126, 253, 89, 229, 150, 91, 240, 221, 209, 83, 23, 135, 42, 202, 108, 224, 130, 47, 150, 223, 173, 255, 233, 53, 124, 156, 131, 30, 132, 253, 193, 148, 215, 118, 1, 42, 135, 113, 80, 167, 0, 208, 98, 216, 224, 138, 24, 101, 131, 50, 198, 202, 84, 19, 37, 89, 224, 113, 168, 24, 205, 196, 232, 90, 43, 162, 128, 20, 20, 186, 203, 112, 12, 121, 154, 1, 117, 249, 140, 61, 174, 212, 23, 0]}, 500000000000]",
-        "fn_args_hex": "00e1b15bf20d8e4599b8097e10a8d794b0af55d5b797ee39587bcab88b4a596dd4d45c93e94995b0e359d770c03e47e80d88ca9e033c4cbaa4109aa69c4b20a5ad8e1c5f064066e6a5fcf2634b64582218dab4fefc276cecd17dcb9527b827b9025741653d4e889d72d97117ab7d7efd59e5965bf0ddd15317872aca6ce0822f96dfadffe9357c9c831e84fdc194d776012a877150a700d062d8e08a18658332c6ca54132559e071a818cdc4e85a2ba2801414bacb700c799a0175f98c3daed417000000000000000088526a74000000",
-        "tx_id": "61873dc7739b3033c9c12c8fd4943d7d55b169b8a4b2f552bf2ce3d7729c012b",
+        "args": "[{\"kind\": \"Moonlight\", \"bytes\": [225, 177, 91, 242, 13, 142, 69, 153, 184, 9, 126, 16, 168, 215, 148, 176, 175, 85, 213, 183, 151, 238, 57, 88, 123, 202, 184, 139, 74, 89, 109, 212, 212, 92, 147, 233, 73, 149, 176, 227, 89, 215, 112, 192, 62, 71, 232, 13, 136, 202, 158, 3, 60, 76, 186, 164, 16, 154, 166, 156, 75, 32, 165, 173, 142, 28, 95, 6, 64, 102, 230, 165, 252, 242, 99, 75, 100, 88, 34, 24, 218, 180, 254, 252, 39, 108, 236, 209, 125, 203, 149, 39, 184, 39, 185, 2, 87, 65, 101, 61, 78, 136, 157, 114, 217, 113, 23, 171, 125, 126, 253, 89, 229, 150, 91, 240, 221, 209, 83, 23, 135, 42, 202, 108, 224, 130, 47, 150, 223, 173, 255, 233, 53, 124, 156, 131, 30, 132, 253, 193, 148, 215, 118, 1, 42, 135, 113, 80, 167, 0, 208, 98, 216, 224, 138, 24, 101, 131, 50, 198, 202, 84, 19, 37, 89, 224, 113, 168, 24, 205, 196, 232, 90, 43, 162, 128, 20, 20, 186, 203, 112, 12, 121, 154, 1, 117, 249, 140, 61, 174, 212, 23, 0]}, 100000000000]",
+        "fn_args_hex": "00e1b15bf20d8e4599b8097e10a8d794b0af55d5b797ee39587bcab88b4a596dd4d45c93e94995b0e359d770c03e47e80d88ca9e033c4cbaa4109aa69c4b20a5ad8e1c5f064066e6a5fcf2634b64582218dab4fefc276cecd17dcb9527b827b9025741653d4e889d72d97117ab7d7efd59e5965bf0ddd15317872aca6ce0822f96dfadffe9357c9c831e84fdc194d776012a877150a700d062d8e08a18658332c6ca54132559e071a818cdc4e85a2ba2801414bacb700c799a0175f98c3daed4170000000000000000e8764817000000",
+        "tx_id": "4a4eabe3a8a7422dc989f0abfd198b7eeeb591437f1f38338d37ff318ad22947",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-26T23:16:10Z"
+        "called_at": "2026-08-27T07:24:19Z"
       },
-      "history": []
+      "history": [
+        {
+          "target_contract_id": "f090528946990f3f2d3291d903327dfd700af6d912388c5f3c64c9bbc2a4edda",
+          "fn_name": "mint",
+          "args": "[{\"kind\": \"Moonlight\", \"bytes\": [225, 177, 91, 242, 13, 142, 69, 153, 184, 9, 126, 16, 168, 215, 148, 176, 175, 85, 213, 183, 151, 238, 57, 88, 123, 202, 184, 139, 74, 89, 109, 212, 212, 92, 147, 233, 73, 149, 176, 227, 89, 215, 112, 192, 62, 71, 232, 13, 136, 202, 158, 3, 60, 76, 186, 164, 16, 154, 166, 156, 75, 32, 165, 173, 142, 28, 95, 6, 64, 102, 230, 165, 252, 242, 99, 75, 100, 88, 34, 24, 218, 180, 254, 252, 39, 108, 236, 209, 125, 203, 149, 39, 184, 39, 185, 2, 87, 65, 101, 61, 78, 136, 157, 114, 217, 113, 23, 171, 125, 126, 253, 89, 229, 150, 91, 240, 221, 209, 83, 23, 135, 42, 202, 108, 224, 130, 47, 150, 223, 173, 255, 233, 53, 124, 156, 131, 30, 132, 253, 193, 148, 215, 118, 1, 42, 135, 113, 80, 167, 0, 208, 98, 216, 224, 138, 24, 101, 131, 50, 198, 202, 84, 19, 37, 89, 224, 113, 168, 24, 205, 196, 232, 90, 43, 162, 128, 20, 20, 186, 203, 112, 12, 121, 154, 1, 117, 249, 140, 61, 174, 212, 23, 0]}, 500000000000]",
+          "fn_args_hex": "00e1b15bf20d8e4599b8097e10a8d794b0af55d5b797ee39587bcab88b4a596dd4d45c93e94995b0e359d770c03e47e80d88ca9e033c4cbaa4109aa69c4b20a5ad8e1c5f064066e6a5fcf2634b64582218dab4fefc276cecd17dcb9527b827b9025741653d4e889d72d97117ab7d7efd59e5965bf0ddd15317872aca6ce0822f96dfadffe9357c9c831e84fdc194d776012a877150a700d062d8e08a18658332c6ca54132559e071a818cdc4e85a2ba2801414bacb700c799a0175f98c3daed417000000000000000088526a74000000",
+          "tx_id": "61873dc7739b3033c9c12c8fd4943d7d55b169b8a4b2f552bf2ce3d7729c012b",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-26T23:16:10Z"
+        }
+      ]
     },
     "agent-compliance-gate-tnst.init_mandate_contract": {
       "current": {
@@ -3844,6 +3854,40 @@
         "tx_id": "efbc199d9203c7272969c0d05701a887eb3259256e43db1333fa8df15252746d",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
         "called_at": "2026-08-26T23:37:00Z"
+      },
+      "history": []
+    },
+    "nocturne-credentials-v1.init_minter": {
+      "current": {
+        "target_contract_id": "68874e6f59b0ffe762519d03337fc14c52426312bff281de5ca1896d1d1c725e",
+        "fn_name": "init_minter",
+        "args": "\"zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX\"",
+        "fn_args_hex": "e1b15bf20d8e4599b8097e10a8d794b0af55d5b797ee39587bcab88b4a596dd4d45c93e94995b0e359d770c03e47e80d88ca9e033c4cbaa4109aa69c4b20a5ad8e1c5f064066e6a5fcf2634b64582218dab4fefc276cecd17dcb9527b827b9025741653d4e889d72d97117ab7d7efd59e5965bf0ddd15317872aca6ce0822f96dfadffe9357c9c831e84fdc194d776012a877150a700d062d8e08a18658332c6ca54132559e071a818cdc4e85a2ba2801414bacb700c799a0175f98c3daed4170000000000000000",
+        "tx_id": "325f630042a90a4a4a55aeadbbbae1463176147af6e4582e58746c72c7a33653",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-27T14:45:40Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "68874e6f59b0ffe762519d03337fc14c52426312bff281de5ca1896d1d1c725e",
+          "fn_name": "init_minter",
+          "args": "\"przWPPqkdbR2rGTGncMMHc1KDoFHfHzqxZREQji7bCkmsFM5ENBs1dCrCEzMTyC6i1Yta3tu6D1GMpQLw4ChBSyAk12BgnxUvaE7YBmoSnesmPRgvFSPJKcECq79wxYyzFv\"",
+          "fn_args_hex": "2d6991fd00a36c335b1459f9cccc1110b6d3683573a88e96859eb38d01bf6b871a1009e327f15575188ed0355e552300d272fd45f03e587e7051d9b57f512ef24948b01027034a9504b9dfdec6d8136b83cc2fa1ea1be6fe95103a078b1a65150d70874cd05cd5bac72cb3324a5f55f156fe0a4085a4af29bd02c33f4b06b68062ec91f50b52d0946e29bd9179d81807ec6a8a4909982a42fc155a664380e9c64aaaaddd2416c18623abe7b2902bb2b63b66da6e729e9da10ce9a9692a401d080000000000000000",
+          "tx_id": "ca56444da6d710ab56f1c899516de2e761f8a3774392febaf19f20aed03a6a38",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-27T14:44:50Z"
+        }
+      ]
+    },
+    "nocturne-credentials-v1.set_base_uri": {
+      "current": {
+        "target_contract_id": "68874e6f59b0ffe762519d03337fc14c52426312bff281de5ca1896d1d1c725e",
+        "fn_name": "set_base_uri",
+        "args": "\"https://credentials.testnet.nocturne-standards.org/meta/\"",
+        "fn_args_hex": "68747470733a2f2f63726564656e7469616c732e746573746e65742e6e6f637475726e652d7374616e64617264732e6f72672f6d6574612f38000000c8ffffff",
+        "tx_id": "1eb4cecc0ca6d8e538acc634473d8d4ce2757b06bce06fe92c6a602cd26dee1f",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-08-27T14:46:00Z"
       },
       "history": []
     }
@@ -4030,6 +4074,20 @@
       "deploy_nonce": 1787787181,
       "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
       "deployed_at": "2026-08-26T23:33:21Z"
+    },
+    "history": []
+  },
+  "nocturne-credentials-v1": {
+    "current": {
+      "version": "0.1.0",
+      "contract_id": "68874e6f59b0ffe762519d03337fc14c52426312bff281de5ca1896d1d1c725e",
+      "tx_id": "79ea491c3e23ea2f8817f8b5c50a2861ac0ebbcc11e5e6c7981f300e4276bc5b",
+      "wasm_path": "/Users/leonidas/dev/aichbindas/nocturne-credentials/target/contract/wasm32-unknown-unknown/release/nocturne_credentials.wasm",
+      "dd_wasm_path": "/Users/leonidas/dev/aichbindas/nocturne-credentials/target/data-driver/wasm32-unknown-unknown/release/nocturne_credentials.wasm",
+      "wasm_sha256": "aa4de58d0af753a6717ca576be765f59ec10c8695020392c25932cc9e168793b",
+      "deploy_nonce": 1787836230,
+      "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+      "deployed_at": "2026-08-27T13:10:50Z"
     },
     "history": []
   }
