@@ -73,6 +73,19 @@
       "current": {
         "address": "0x85F9b8Cb87830716F4690dF30bEF6E88B43e2be4"
       }
+    },
+    "tnst-token-evm": {
+      "current": {
+        "address": "0x15fb8738844a40d65a1607fb920d136d267bb56d",
+        "chain_id": 745,
+        "deploy_tx": "0x0a852719e9dc423bf4e964363b0929da61052888ac58b5da808763b9506c8bd2",
+        "minter": "0xc11d5aAb4234E255E214aC6e8c0ad61FA0836473",
+        "admin": "0xc11d5aAb4234E255E214aC6e8c0ad61FA0836473",
+        "decimals": 9,
+        "symbol": "tNST",
+        "name": "Nocturne Standards Test Token",
+        "deployed_at": "2026-08-28T13:00:23Z"
+      }
     }
   }
 }
