@@ -1256,16 +1256,27 @@
     "chit-session-projector": {
       "current": {
         "version": "0.1.0",
-        "contract_id": "906ef6ead99ba9213a432d299d23ac8157b1a87faf03d3aa80ee29af31914c81",
-        "tx_id": "ba5421bb727d4ceba37c30b6367da2702cfad6214f5c959823119c75a5822522",
+        "contract_id": "b426ec073179fe2c4e9e5418104dbb61f5970f5d941f87a0d75ca729b5f2258a",
+        "tx_id": "2da0f912514a4297be7a59dcd63aaa1bc0461fe0da9dfc7d06424812df95770c",
         "wasm_path": "/Users/leonidas/dev/aichbindas/chit/.worktrees/chit-page-spike/target/contract/wasm32-unknown-unknown/release/chit_session_projector.wasm",
         "dd_wasm_path": "/Users/leonidas/dev/aichbindas/chit/.worktrees/chit-page-spike/target/data-driver/wasm32-unknown-unknown/release/chit_session_projector.wasm",
-        "wasm_sha256": "37ce779c2e9a678e38a7a495c0068474e541709d8d598de1abe9f01f0db4d0aa",
-        "deploy_nonce": 1787952214,
+        "wasm_sha256": "345b4e1f676fbeb68aadd22d98ee7bb2f27274915ae9dc32f14c8b71891d6f44",
+        "deploy_nonce": 1788112524,
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "deployed_at": "2026-08-28T21:23:51Z"
+        "deployed_at": "2026-08-30T17:55:41Z"
       },
       "history": [
+        {
+          "version": "0.1.0",
+          "contract_id": "906ef6ead99ba9213a432d299d23ac8157b1a87faf03d3aa80ee29af31914c81",
+          "tx_id": "ba5421bb727d4ceba37c30b6367da2702cfad6214f5c959823119c75a5822522",
+          "wasm_path": "/Users/leonidas/dev/aichbindas/chit/.worktrees/chit-page-spike/target/contract/wasm32-unknown-unknown/release/chit_session_projector.wasm",
+          "dd_wasm_path": "/Users/leonidas/dev/aichbindas/chit/.worktrees/chit-page-spike/target/data-driver/wasm32-unknown-unknown/release/chit_session_projector.wasm",
+          "wasm_sha256": "37ce779c2e9a678e38a7a495c0068474e541709d8d598de1abe9f01f0db4d0aa",
+          "deploy_nonce": 1787952214,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-08-28T21:23:51Z"
+        },
         {
           "version": "0.1.0",
           "contract_id": "7f72eef6092bb58cb9f9178f3f64e8c6863a24258d0f6b7bbda8070428aa9f9f",
@@ -5625,15 +5636,51 @@
     },
     "chit-session-projector.init_gate": {
       "current": {
-        "target_contract_id": "906ef6ead99ba9213a432d299d23ac8157b1a87faf03d3aa80ee29af31914c81",
+        "target_contract_id": "b426ec073179fe2c4e9e5418104dbb61f5970f5d941f87a0d75ca729b5f2258a",
         "fn_name": "init_gate",
-        "args": "\"086e1b1cc64e30ef3944f20a395925e80b3f4aace779f529ec76658dce4fb989\"",
-        "fn_args_hex": "086e1b1cc64e30ef3944f20a395925e80b3f4aace779f529ec76658dce4fb989",
-        "tx_id": "4207a72c48810e19ecb994ca63f98caba2d635bee6423d05e78cecaca8f9df0a",
+        "args": "\"58ff7f92f78bfafc4ca2d90ec2e78fbecd2395566d042df712bc5a89a23e6308\"",
+        "fn_args_hex": "58ff7f92f78bfafc4ca2d90ec2e78fbecd2395566d042df712bc5a89a23e6308",
+        "tx_id": "4009694155a7e518aaf74676e9f25463a9232f574a0121d6a9fda9a21bed9d5a",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-28T21:24:10Z"
+        "called_at": "2026-08-30T17:57:20Z"
       },
       "history": [
+        {
+          "target_contract_id": "b426ec073179fe2c4e9e5418104dbb61f5970f5d941f87a0d75ca729b5f2258a",
+          "fn_name": "init_gate",
+          "args": "\"086e1b1cc64e30ef3944f20a395925e80b3f4aace779f529ec76658dce4fb989\"",
+          "fn_args_hex": "086e1b1cc64e30ef3944f20a395925e80b3f4aace779f529ec76658dce4fb989",
+          "tx_id": "daae7e9415616f302cea322f555857c5ba9e9b1d5406e13d38400aca2d6edc1a",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-30T17:56:00Z"
+        },
+        {
+          "target_contract_id": "cf6257acfa6286f1ce05d434723fc93087df57de8d351e02eb5a9b412afcf937",
+          "fn_name": "init_gate",
+          "args": "\"58ff7f92f78bfafc4ca2d90ec2e78fbecd2395566d042df712bc5a89a23e6308\"",
+          "fn_args_hex": "58ff7f92f78bfafc4ca2d90ec2e78fbecd2395566d042df712bc5a89a23e6308",
+          "tx_id": "e3b3f516552911ef94ec341dcd94c2fbc724daf6b1b399b478ed6253990d4537",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-30T16:53:50Z"
+        },
+        {
+          "target_contract_id": "906ef6ead99ba9213a432d299d23ac8157b1a87faf03d3aa80ee29af31914c81",
+          "fn_name": "init_gate",
+          "args": "\"58ff7f92f78bfafc4ca2d90ec2e78fbecd2395566d042df712bc5a89a23e6308\"",
+          "fn_args_hex": "58ff7f92f78bfafc4ca2d90ec2e78fbecd2395566d042df712bc5a89a23e6308",
+          "tx_id": "a25ef8bd56b27dca74bdaf92a6ce333f61e0003e39dc0288528f047374d39832",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-30T16:51:51Z"
+        },
+        {
+          "target_contract_id": "906ef6ead99ba9213a432d299d23ac8157b1a87faf03d3aa80ee29af31914c81",
+          "fn_name": "init_gate",
+          "args": "\"086e1b1cc64e30ef3944f20a395925e80b3f4aace779f529ec76658dce4fb989\"",
+          "fn_args_hex": "086e1b1cc64e30ef3944f20a395925e80b3f4aace779f529ec76658dce4fb989",
+          "tx_id": "4207a72c48810e19ecb994ca63f98caba2d635bee6423d05e78cecaca8f9df0a",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-28T21:24:10Z"
+        },
         {
           "target_contract_id": "7f72eef6092bb58cb9f9178f3f64e8c6863a24258d0f6b7bbda8070428aa9f9f",
           "fn_name": "init_gate",
@@ -5665,15 +5712,24 @@
     },
     "chit-session-projector.init_messenger": {
       "current": {
-        "target_contract_id": "906ef6ead99ba9213a432d299d23ac8157b1a87faf03d3aa80ee29af31914c81",
+        "target_contract_id": "b426ec073179fe2c4e9e5418104dbb61f5970f5d941f87a0d75ca729b5f2258a",
         "fn_name": "init_messenger",
         "args": "\"63cd2c93016296b2ec357e31fd44b716cf2cda3b31217d45087f17ccc6440530\"",
         "fn_args_hex": "63cd2c93016296b2ec357e31fd44b716cf2cda3b31217d45087f17ccc6440530",
-        "tx_id": "743bc0de62a3d575b3a3684b4af2368ca01bfa7fa284d4e341cf56351292d75e",
+        "tx_id": "88bca6e099400baaee8c013f4cb8d679807237ce43d7312129ecd7cf722c0f5d",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-28T21:24:30Z"
+        "called_at": "2026-08-30T17:56:20Z"
       },
       "history": [
+        {
+          "target_contract_id": "906ef6ead99ba9213a432d299d23ac8157b1a87faf03d3aa80ee29af31914c81",
+          "fn_name": "init_messenger",
+          "args": "\"63cd2c93016296b2ec357e31fd44b716cf2cda3b31217d45087f17ccc6440530\"",
+          "fn_args_hex": "63cd2c93016296b2ec357e31fd44b716cf2cda3b31217d45087f17ccc6440530",
+          "tx_id": "743bc0de62a3d575b3a3684b4af2368ca01bfa7fa284d4e341cf56351292d75e",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-28T21:24:30Z"
+        },
         {
           "target_contract_id": "7f72eef6092bb58cb9f9178f3f64e8c6863a24258d0f6b7bbda8070428aa9f9f",
           "fn_name": "init_messenger",
@@ -5687,15 +5743,24 @@
     },
     "chit-session-projector.init_min_gas_limit": {
       "current": {
-        "target_contract_id": "906ef6ead99ba9213a432d299d23ac8157b1a87faf03d3aa80ee29af31914c81",
+        "target_contract_id": "b426ec073179fe2c4e9e5418104dbb61f5970f5d941f87a0d75ca729b5f2258a",
         "fn_name": "init_min_gas_limit",
         "args": "250000",
         "fn_args_hex": "90d00300",
-        "tx_id": "f83db8829700dda7904bfb42a94a6888daa32893b2f46b40f44a5a43c804f45a",
+        "tx_id": "690601c7047f638f07ee3afb135866f7058c0f549ed187a878c41eceb203b94e",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-28T21:24:50Z"
+        "called_at": "2026-08-30T17:56:40Z"
       },
       "history": [
+        {
+          "target_contract_id": "906ef6ead99ba9213a432d299d23ac8157b1a87faf03d3aa80ee29af31914c81",
+          "fn_name": "init_min_gas_limit",
+          "args": "250000",
+          "fn_args_hex": "90d00300",
+          "tx_id": "f83db8829700dda7904bfb42a94a6888daa32893b2f46b40f44a5a43c804f45a",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-28T21:24:50Z"
+        },
         {
           "target_contract_id": "7f72eef6092bb58cb9f9178f3f64e8c6863a24258d0f6b7bbda8070428aa9f9f",
           "fn_name": "init_min_gas_limit",
@@ -5709,15 +5774,24 @@
     },
     "chit-session-projector.init_session_gate_evm": {
       "current": {
-        "target_contract_id": "906ef6ead99ba9213a432d299d23ac8157b1a87faf03d3aa80ee29af31914c81",
+        "target_contract_id": "b426ec073179fe2c4e9e5418104dbb61f5970f5d941f87a0d75ca729b5f2258a",
         "fn_name": "init_session_gate_evm",
-        "args": "[250,70,242,214,98,83,73,37,143,116,171,222,190,111,254,100,220,188,235,57]",
-        "fn_args_hex": "fa46f2d6625349258f74abdebe6ffe64dcbceb39",
-        "tx_id": "3760d5c9ed71ef40d9e2b0709ec67ae3ee0c65c105723d7f0b235f73e65da55e",
+        "args": "[172,216,76,194,142,85,72,172,170,46,198,218,216,14,203,5,21,230,65,201]",
+        "fn_args_hex": "acd84cc28e5548acaa2ec6dad80ecb0515e641c9",
+        "tx_id": "0ada9837b27bdaa9884e7cc3035ccbe8a1b24e999c2b7c98f25c08d315b6c835",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-28T21:37:40Z"
+        "called_at": "2026-08-30T18:04:41Z"
       },
       "history": [
+        {
+          "target_contract_id": "906ef6ead99ba9213a432d299d23ac8157b1a87faf03d3aa80ee29af31914c81",
+          "fn_name": "init_session_gate_evm",
+          "args": "[250,70,242,214,98,83,73,37,143,116,171,222,190,111,254,100,220,188,235,57]",
+          "fn_args_hex": "fa46f2d6625349258f74abdebe6ffe64dcbceb39",
+          "tx_id": "3760d5c9ed71ef40d9e2b0709ec67ae3ee0c65c105723d7f0b235f73e65da55e",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-28T21:37:40Z"
+        },
         {
           "target_contract_id": "906ef6ead99ba9213a432d299d23ac8157b1a87faf03d3aa80ee29af31914c81",
           "fn_name": "init_session_gate_evm",
