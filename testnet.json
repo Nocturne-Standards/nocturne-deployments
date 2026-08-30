@@ -224,13 +224,13 @@
     "current": {
       "version": "0.1.3",
       "contract_id": "58ff7f92f78bfafc4ca2d90ec2e78fbecd2395566d042df712bc5a89a23e6308",
-      "tx_id": null,
-      "wasm_path": "/Users/leonidas/dev/aichbindas/chit/.worktrees/chit-page-spike/target/contract/wasm32-unknown-unknown/release/agent_compliance_gate.wasm",
-      "dd_wasm_path": "/Users/leonidas/dev/aichbindas/chit/.worktrees/chit-page-spike/target/data-driver/wasm32-unknown-unknown/release/agent_compliance_gate.wasm",
-      "wasm_sha256": "214424171f181d5da5c8e48fefcc772250f60b7cc79c0edcbbd4904640a430c3",
-      "deploy_nonce": null,
+      "tx_id": "8b123c4adfd3b515f26e913ecdfd2a7f102baf8c7141fdaf425d49219c43f30f",
+      "wasm_path": "/Users/leonidas/dev/aichbindas/chit/.worktrees/chit-session-event-catalog/target/contract/wasm32-unknown-unknown/release/agent_compliance_gate.wasm",
+      "dd_wasm_path": "/Users/leonidas/dev/aichbindas/chit/.worktrees/chit-session-event-catalog/target/data-driver/wasm32-unknown-unknown/release/agent_compliance_gate.wasm",
+      "wasm_sha256": "cd41c6b33d47d952cacea3a478b506bc51032e8604052bb422b51cb537a7f424",
+      "deploy_nonce": 1788018112,
       "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-      "deployed_at": "2026-08-29T00:00:00Z"
+      "deployed_at": "2026-08-29T15:42:11Z"
     },
     "history": [
       {
