@@ -254,16 +254,27 @@
     "agent-compliance-gate": {
       "current": {
         "version": "0.1.3",
-        "contract_id": "086e1b1cc64e30ef3944f20a395925e80b3f4aace779f529ec76658dce4fb989",
-        "tx_id": "ac4206f30226de1af321a72b76bfc2a7a788b0ff843d3a469555cf9ee1cbaf6c",
+        "contract_id": "58ff7f92f78bfafc4ca2d90ec2e78fbecd2395566d042df712bc5a89a23e6308",
+        "tx_id": null,
         "wasm_path": "/Users/leonidas/dev/aichbindas/chit/.worktrees/chit-page-spike/target/contract/wasm32-unknown-unknown/release/agent_compliance_gate.wasm",
         "dd_wasm_path": "/Users/leonidas/dev/aichbindas/chit/.worktrees/chit-page-spike/target/data-driver/wasm32-unknown-unknown/release/agent_compliance_gate.wasm",
         "wasm_sha256": "214424171f181d5da5c8e48fefcc772250f60b7cc79c0edcbbd4904640a430c3",
-        "deploy_nonce": 1787949769,
+        "deploy_nonce": null,
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
         "deployed_at": "2026-08-28T20:43:12Z"
       },
       "history": [
+        {
+          "version": "0.1.3",
+          "contract_id": "086e1b1cc64e30ef3944f20a395925e80b3f4aace779f529ec76658dce4fb989",
+          "tx_id": "ac4206f30226de1af321a72b76bfc2a7a788b0ff843d3a469555cf9ee1cbaf6c",
+          "wasm_path": "/Users/leonidas/dev/aichbindas/chit/.worktrees/chit-page-spike/target/contract/wasm32-unknown-unknown/release/agent_compliance_gate.wasm",
+          "dd_wasm_path": "/Users/leonidas/dev/aichbindas/chit/.worktrees/chit-page-spike/target/data-driver/wasm32-unknown-unknown/release/agent_compliance_gate.wasm",
+          "wasm_sha256": "214424171f181d5da5c8e48fefcc772250f60b7cc79c0edcbbd4904640a430c3",
+          "deploy_nonce": 1787949769,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-08-28T20:43:12Z"
+        },
         {
           "version": "0.1.3",
           "contract_id": "26ed26d54979bf5b6d6da60776d995eb64246dee25b9b54f221faf22380cece8",
@@ -764,7 +775,7 @@
           "deploy_nonce": 1784998677,
           "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
           "deployed_at": "2026-07-25T16:58:14Z",
-          "ops_note": "TEMP live pin 2026-07-30 for finishing markets on pre-Phase-2 deploy. Phase G rights/bond wired on b7543a2b only — Create/has_right may be unavailable here."
+          "ops_note": "TEMP live pin 2026-07-30 for finishing markets on pre-Phase-2 deploy. Phase G rights/bond wired on b7543a2b only \u2014 Create/has_right may be unavailable here."
         },
         {
           "version": "0.1.1",
@@ -836,7 +847,7 @@
           "deploy_nonce": 1784998700,
           "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
           "deployed_at": "2026-07-25T16:58:34Z",
-          "ops_note": "TEMP live pin 2026-07-30 for finishing markets on pre-Phase-2 deploy. Phase G rights/bond wired on b7543a2b only — Create/has_right may be unavailable here."
+          "ops_note": "TEMP live pin 2026-07-30 for finishing markets on pre-Phase-2 deploy. Phase G rights/bond wired on b7543a2b only \u2014 Create/has_right may be unavailable here."
         },
         {
           "version": "0.2.0",
