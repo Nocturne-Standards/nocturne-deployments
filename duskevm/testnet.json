@@ -84,8 +84,35 @@
         "decimals": 9,
         "symbol": "tNST",
         "name": "Nocturne Standards Test Token",
-        "deployed_at": "2026-08-28T13:00:23Z"
+        "deployed_at": "2026-08-28T13:00:23Z",
+        "verified_at": "2026-08-30T19:42:04Z",
+        "verification": {
+          "method": "blockscout-api-v2-standard-input",
+          "explorer": "https://explorer.testnet.evm.dusk.network",
+          "fully_verified": true
+        }
       }
     }
+  },
+  "verification": {
+    "method": "blockscout-api-v2-standard-input",
+    "explorer": "https://explorer.testnet.evm.dusk.network",
+    "note": "forge --verifier blockscout fails (no eth /api). Sourcify unsupported for chain 745. POST /api/v2/smart-contracts/{addr}/verification/via/standard-input with files[0]=standard-json. Mill core status lives in sme_platform/deployments/evm-dusk-testnet.json.",
+    "verified_at": "2026-08-30T19:42:04Z",
+    "status": {
+      "tnst-token-evm": true,
+      "loan-register": true,
+      "compliance-gate-evm": true,
+      "servicing-contract": true,
+      "mock-cross-domain-messenger": true
+    },
+    "unverified": [
+      "protocol-adapter",
+      "risc-zero-verifier-router",
+      "risc-zero-groth16-verifier",
+      "loan-register-forwarder",
+      "compliance-gate-forwarder",
+      "servicing-contract-forwarder"
+    ]
   }
 }
