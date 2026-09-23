@@ -4915,6 +4915,74 @@
         "called_at": "2026-08-28T20:49:20Z"
       },
       "history": []
+    },
+    "atlas.init_guardian": {
+      "current": {
+        "target_contract_id": "21c653385e3b7cc8be32edd5e6df2e30b6464be867f39442171ba8ca8d089612",
+        "fn_name": "init_guardian",
+        "args": "{\"guardian\":{\"Contract\":\"fb143b1e10288ea6527edc2e556c009d78e7a01add076ab90d6e133aec47cdcb\"},\"timelock_blocks\":2}",
+        "fn_args_hex": "01fb143b1e10288ea6527edc2e556c009d78e7a01add076ab90d6e133aec47cdcb000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200000000000000",
+        "tx_id": "67d6b00b1fab9cdf2a5b236caacf271b35e83713b6f4a0f374d814d829667a60",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-09-23T16:52:35Z"
+      },
+      "history": []
+    },
+    "knot-warden.init_warden": {
+      "current": {
+        "target_contract_id": "fb143b1e10288ea6527edc2e556c009d78e7a01add076ab90d6e133aec47cdcb",
+        "fn_name": "init_warden",
+        "args": "{\"atlas\":\"21c653385e3b7cc8be32edd5e6df2e30b6464be867f39442171ba8ca8d089612\",\"scheduler\":{\"External\":\"zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX\"},\"delay_blocks\":2}",
+        "fn_args_hex": "21c653385e3b7cc8be32edd5e6df2e30b6464be867f39442171ba8ca8d0896120000000000000000e1b15bf20d8e4599b8097e10a8d794b0af55d5b797ee39587bcab88b4a596dd4d45c93e94995b0e359d770c03e47e80d88ca9e033c4cbaa4109aa69c4b20a5ad8e1c5f064066e6a5fcf2634b64582218dab4fefc276cecd17dcb9527b827b9025741653d4e889d72d97117ab7d7efd59e5965bf0ddd15317872aca6ce0822f96dfadffe9357c9c831e84fdc194d776012a877150a700d062d8e08a18658332c6ca54132559e071a818cdc4e85a2ba2801414bacb700c799a0175f98c3daed41700000000000000000200000000000000",
+        "tx_id": "0233b49b53f6f06f0c6c56fcf338d9f3010e4f7bbeceb3f61f7c7ae7dccbe649",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-09-23T16:52:14Z"
+      },
+      "history": []
+    },
+    "knot-warden.schedule_service": {
+      "current": {
+        "target_contract_id": "fb143b1e10288ea6527edc2e556c009d78e7a01add076ab90d6e133aec47cdcb",
+        "fn_name": "schedule_service",
+        "args": "{\"name\":\"payroll-data\",\"id\":\"2222222222222222222222222222222222222222222222222222222222222222\"}",
+        "fn_args_hex": "706179726f6c6c2d646174610c000000f4ffffff2222222222222222222222222222222222222222222222222222222222222222",
+        "tx_id": "16fe029d85bdee4a63815d9a294a45a3f6678816cbc876407d963594f08f4d5c",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-09-23T16:55:15Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "fb143b1e10288ea6527edc2e556c009d78e7a01add076ab90d6e133aec47cdcb",
+          "fn_name": "schedule_service",
+          "args": "{\"name\":\"treasury-data\",\"id\":\"1111111111111111111111111111111111111111111111111111111111111111\"}",
+          "fn_args_hex": "74726561737572792d646174610000000d000000f0ffffff1111111111111111111111111111111111111111111111111111111111111111",
+          "tx_id": "1960ae34118e802a5c3acc208d0817cb9449873dcee27acb65689e6def63d96d",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-09-23T16:53:25Z"
+        }
+      ]
+    },
+    "knot-warden.execute_service": {
+      "current": {
+        "target_contract_id": "fb143b1e10288ea6527edc2e556c009d78e7a01add076ab90d6e133aec47cdcb",
+        "fn_name": "execute_service",
+        "args": "\"payroll-data\"",
+        "fn_args_hex": "706179726f6c6c2d646174610c000000f4ffffff",
+        "tx_id": "9ab5f8c303e77fb71e01f93e437b7c2eb3603c1596bf0f2079cd37b2d84a3830",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-09-23T16:56:35Z"
+      },
+      "history": [
+        {
+          "target_contract_id": "fb143b1e10288ea6527edc2e556c009d78e7a01add076ab90d6e133aec47cdcb",
+          "fn_name": "execute_service",
+          "args": "\"treasury-data\"",
+          "fn_args_hex": "74726561737572792d646174610000000d000000f0ffffff",
+          "tx_id": "44ea87f9eb9932cd12ef1dc0cbb8a082d69b586548a02286d3e49fba7393995a",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-09-23T16:54:05Z"
+        }
+      ]
     }
   },
   "compliance-gate": {
@@ -5253,5 +5321,68 @@
     "cleanup_bounty_lux": 0,
     "published": false,
     "note": "UNPUBLISHED \u2014 run check-indexer-gas-telemetry.sh --live --min-samples 30 before setting nonzero published policy"
+  },
+  "atlas": {
+    "current": {
+      "version": "0.3.1",
+      "contract_id": "21c653385e3b7cc8be32edd5e6df2e30b6464be867f39442171ba8ca8d089612",
+      "tx_id": "8a84c2ba63214747fd65eeef21c9e8d6cd28945e6ca53f1952484982c47d321e",
+      "wasm_path": "/Users/leonidas/dev/aichbindas/atlas/target/contract/wasm32-unknown-unknown/release/atlas.wasm",
+      "dd_wasm_path": "/Users/leonidas/dev/aichbindas/atlas/target/data-driver/wasm32-unknown-unknown/release/atlas.wasm",
+      "wasm_sha256": "2896d01d7f5834da9441edd959a28ed3374e834b9743ebb2668560be070299cf",
+      "deploy_nonce": 1790182207,
+      "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+      "deployed_at": "2026-09-23T16:50:26Z"
+    },
+    "history": [
+      {
+        "version": "0.3.0",
+        "contract_id": "38cf71e6e32d892319bf631eafef1a44fbf9f6b02e8dfe64177cf4d7dc2dce46",
+        "tx_id": "a66bf04b5d317e0b0b8a88066067942d88cd1f53c33b8adac2409229343b7046",
+        "wasm_path": "/Users/leonidas/dev/aichbindas/atlas/target/contract/wasm32-unknown-unknown/release/atlas.wasm",
+        "dd_wasm_path": "/Users/leonidas/dev/aichbindas/atlas/target/data-driver/wasm32-unknown-unknown/release/atlas.wasm",
+        "wasm_sha256": "1800cb29f37433921ee1b2aae23ec6b4040560b33e28c66686cbfb7044673f8d",
+        "deploy_nonce": 1790181460,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-09-23T16:37:55Z"
+      },
+      {
+        "version": "0.2.0",
+        "contract_id": "48d998a29a8a7bd357f3913c89446d0956e6aaae9185d83a84fc2d07e9b27e09",
+        "tx_id": "71363d9d7cf5c5b2210d885ab4e01bc09410c0807f3f2a0fa1e763af96ce4049",
+        "wasm_path": "/Users/leonidas/dev/aichbindas/atlas/.worktrees/atlas-public-release/target/contract/wasm32-unknown-unknown/release/atlas.wasm",
+        "dd_wasm_path": "/Users/leonidas/dev/aichbindas/atlas/.worktrees/atlas-public-release/target/data-driver/wasm32-unknown-unknown/release/atlas.wasm",
+        "wasm_sha256": "63889124267dddb8b8471e8dd4ab096bd38187409a08b9993bc87ac55068d333",
+        "deploy_nonce": 1789895173,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-09-20T09:06:35Z"
+      }
+    ]
+  },
+  "knot-warden": {
+    "current": {
+      "version": "0.1.1",
+      "contract_id": "fb143b1e10288ea6527edc2e556c009d78e7a01add076ab90d6e133aec47cdcb",
+      "tx_id": "9b821f4a386126509aa4963dead608f63972af906b232b8916b7f0ed2f9e2952",
+      "wasm_path": "/Users/leonidas/dev/aichbindas/knot/crates/knot-warden/target/contract/wasm32-unknown-unknown/release/knot_warden.wasm",
+      "dd_wasm_path": "/Users/leonidas/dev/aichbindas/knot/crates/knot-warden/target/data-driver/wasm32-unknown-unknown/release/knot_warden.wasm",
+      "wasm_sha256": "884002f1eb79cd5b9899e21e82e487da6af4e9322f33cff7d739b26a58ce64cd",
+      "deploy_nonce": 1790182236,
+      "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+      "deployed_at": "2026-09-23T16:50:56Z"
+    },
+    "history": [
+      {
+        "version": "0.1.0",
+        "contract_id": "d61dfc3f7cebf46ca03376093f15e719505ce7d69a3f23a154112dc72f42aee5",
+        "tx_id": "2c437c6e94f04a58cb5852e4645c1995516d122b2411a94087b6d62f0f044917",
+        "wasm_path": "/Users/leonidas/dev/aichbindas/knot/crates/knot-warden/target/contract/wasm32-unknown-unknown/release/knot_warden.wasm",
+        "dd_wasm_path": "/Users/leonidas/dev/aichbindas/knot/crates/knot-warden/target/data-driver/wasm32-unknown-unknown/release/knot_warden.wasm",
+        "wasm_sha256": "8f1be0f40f8c3c559690663e29f23d012b830273d17bd2a056d06c189b867444",
+        "deploy_nonce": 1790181627,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-09-23T16:40:45Z"
+      }
+    ]
   }
 }
