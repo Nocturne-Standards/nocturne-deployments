@@ -4094,15 +4094,33 @@
     },
     "compliance-predicate-registry.register_commitment": {
       "current": {
-        "target_contract_id": "9c8954d4581b96826bf8f3850920516957a28a38dbc4789af57e530bc77b1bdb",
+        "target_contract_id": "51462a62b4c223208085af348ebaeec27db9cb0f8721faaa6729eb0dabe182f9",
         "fn_name": "register_commitment",
-        "args": "{\"circuit_id\": 0, \"commitment\": \"cc23be9e49b91032a5ed4bc66e9e9bbc4002e968f20c82fa80441f8de92e7671\", \"lp_signature\": [162, 219, 226, 15, 39, 154, 31, 59, 108, 16, 148, 113, 196, 27, 214, 74, 233, 111, 152, 217, 52, 207, 66, 198, 123, 166, 12, 67, 128, 189, 86, 219, 200, 234, 94, 3, 116, 2, 27, 228, 129, 148, 223, 102, 187, 206, 161, 65]}",
-        "fn_args_hex": "a2dbe20f279a1f3b6c109471c41bd64ae96f98d934cf42c67ba60c4380bd56dbc8ea5e0374021be48194df66bbcea1415d6f99c5805c96580626edffd76c814f74d91ce35d391a2487862d77113b534bb0ffffff300000000000000000000000",
-        "tx_id": "3dd2b4539e5836c98de6910e6076d2f4953b542ced708c8daa56fae2e4688157",
+        "args": "{\"circuit_id\": 1, \"commitment\": \"5c4ac214081c296eee0d59026cf7ba4f08c6616266e84bb78a6b59ed8faa9326\", \"lp_signature\": [148, 222, 229, 24, 65, 251, 131, 20, 201, 146, 42, 45, 72, 111, 144, 255, 252, 200, 41, 74, 181, 128, 50, 219, 32, 178, 17, 115, 108, 146, 141, 24, 84, 250, 179, 111, 8, 135, 163, 99, 146, 108, 100, 116, 192, 237, 69, 80]}",
+        "fn_args_hex": "94dee51841fb8314c9922a2d486f90fffcc8294ab58032db20b211736c928d1854fab36f0887a363926c6474c0ed455078272953647ca9cf8151a43d49ed2d9123ef42e4be0b80a78de471e799b6d311b0ffffff300000000100000000000000",
+        "tx_id": "be18bbcbe0306eb4eb24f86ab1dfc3db1d4bd32fb87a0e050758e0d8cd813a6c",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-26T23:39:30Z"
+        "called_at": "2026-09-24T20:21:25Z"
       },
       "history": [
+        {
+          "target_contract_id": "51462a62b4c223208085af348ebaeec27db9cb0f8721faaa6729eb0dabe182f9",
+          "fn_name": "register_commitment",
+          "args": "{\"circuit_id\": 0, \"commitment\": \"cc23be9e49b91032a5ed4bc66e9e9bbc4002e968f20c82fa80441f8de92e7671\", \"lp_signature\": [162, 219, 226, 15, 39, 154, 31, 59, 108, 16, 148, 113, 196, 27, 214, 74, 233, 111, 152, 217, 52, 207, 66, 198, 123, 166, 12, 67, 128, 189, 86, 219, 200, 234, 94, 3, 116, 2, 27, 228, 129, 148, 223, 102, 187, 206, 161, 65]}",
+          "fn_args_hex": "a2dbe20f279a1f3b6c109471c41bd64ae96f98d934cf42c67ba60c4380bd56dbc8ea5e0374021be48194df66bbcea1415d6f99c5805c96580626edffd76c814f74d91ce35d391a2487862d77113b534bb0ffffff300000000000000000000000",
+          "tx_id": "7a0d7606999ce918eaf10a7d122714793a2e5ab354e3f402b260aa6d44072d69",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-09-24T20:11:55Z"
+        },
+        {
+          "target_contract_id": "9c8954d4581b96826bf8f3850920516957a28a38dbc4789af57e530bc77b1bdb",
+          "fn_name": "register_commitment",
+          "args": "{\"circuit_id\": 0, \"commitment\": \"cc23be9e49b91032a5ed4bc66e9e9bbc4002e968f20c82fa80441f8de92e7671\", \"lp_signature\": [162, 219, 226, 15, 39, 154, 31, 59, 108, 16, 148, 113, 196, 27, 214, 74, 233, 111, 152, 217, 52, 207, 66, 198, 123, 166, 12, 67, 128, 189, 86, 219, 200, 234, 94, 3, 116, 2, 27, 228, 129, 148, 223, 102, 187, 206, 161, 65]}",
+          "fn_args_hex": "a2dbe20f279a1f3b6c109471c41bd64ae96f98d934cf42c67ba60c4380bd56dbc8ea5e0374021be48194df66bbcea1415d6f99c5805c96580626edffd76c814f74d91ce35d391a2487862d77113b534bb0ffffff300000000000000000000000",
+          "tx_id": "3dd2b4539e5836c98de6910e6076d2f4953b542ced708c8daa56fae2e4688157",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-26T23:39:30Z"
+        },
         {
           "target_contract_id": "9c8954d4581b96826bf8f3850920516957a28a38dbc4789af57e530bc77b1bdb",
           "fn_name": "register_commitment",
