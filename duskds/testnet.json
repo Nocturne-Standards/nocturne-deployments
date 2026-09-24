@@ -808,7 +808,7 @@
           "deploy_nonce": 1784998677,
           "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
           "deployed_at": "2026-07-25T16:58:14Z",
-          "ops_note": "TEMP live pin 2026-07-30 for finishing markets on pre-Phase-2 deploy. Phase G rights/bond wired on b7543a2b only \u2014 Create/has_right may be unavailable here."
+          "ops_note": "TEMP live pin 2026-07-30 for finishing markets on pre-Phase-2 deploy. Phase G rights/bond wired on b7543a2b only — Create/has_right may be unavailable here."
         },
         {
           "version": "0.1.1",
@@ -880,7 +880,7 @@
           "deploy_nonce": 1784998700,
           "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
           "deployed_at": "2026-07-25T16:58:34Z",
-          "ops_note": "TEMP live pin 2026-07-30 for finishing markets on pre-Phase-2 deploy. Phase G rights/bond wired on b7543a2b only \u2014 Create/has_right may be unavailable here."
+          "ops_note": "TEMP live pin 2026-07-30 for finishing markets on pre-Phase-2 deploy. Phase G rights/bond wired on b7543a2b only — Create/has_right may be unavailable here."
         },
         {
           "version": "0.2.0",
@@ -1730,7 +1730,7 @@
         "contract_id": "399781079a1819dfa8c03fcd7e5ab12c308516c0f2495b3d581ddc6a03488a96",
         "tx_id": "ea980edd1ecc98198329c0851259bdcc881eb9be618fcf278f07dce688b52a1f",
         "wasm_path": "/Users/leonidas/dev/aichbindas/chit/target/contract/wasm32-unknown-unknown/release/agent_gas_meter.wasm",
-        "dd_wasm_path": null,
+        "dd_wasm_path": "/Users/leonidas/dev/aichbindas/chit/target/data-driver/wasm32-unknown-unknown/release/agent_gas_meter.wasm",
         "wasm_sha256": "9f65c7f5ea96bd7bfdd0635abae8d3723c13fca9f2249ad6be8199c023976543",
         "deploy_nonce": 1790284468,
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
@@ -7300,6 +7300,18 @@
         "tx_id": "06bd92e890f5993881a8856bad85f50f47c935567bf9608ef0fac6cd79748c5c",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
         "called_at": "2026-09-24T21:33:26Z"
+      },
+      "history": []
+    },
+    "agent-mandate.init_deployment_context": {
+      "current": {
+        "target_contract_id": "3707325bb760c21ca6410c4a4b47f549ed87338690b1764f018d9c00f518b94c",
+        "fn_name": "init_deployment_context",
+        "args": "{\"chain_id\":\"0200000000000000000000000000000000000000000000000000000000000000\",\"deployment_id\":\"0000000000000000000000000000000000000000000000000000000000000000\",\"context_tag\":\"0000000000000000000000000000000000000000000000000000000000000000\",\"contract_id\":\"3707325bb760c21ca6410c4a4b47f549ed87338690b1764f018d9c00f518b94c\"}",
+        "fn_args_hex": "fcffffff0300000004900600f46f09b1ea9f78d9df9f1833df0a8a59b3624930000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007a6dccbfe87e464fbdba1def5194d840036599743f2fbde0b22dbd019f87cc73",
+        "tx_id": "c7a2d30cf6554389cef40dd2d81223159b096aac98bb19a1a4d34164925ac421",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-09-24T21:54:14Z"
       },
       "history": []
     }
