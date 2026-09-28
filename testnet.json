@@ -6517,17 +6517,39 @@
   },
   "vigil-vault": {
     "current": {
-      "version": "0.1.0",
-      "contract_id": "54b9ed865539a8cb1a6e34ed43a0f485763ff0e0555fa3f9c729a3c51aeeed42",
-      "tx_id": "e6903bb84db8381bc3f89e9fdb40e774663e06dd514900aa50d4a0284127332a",
+      "version": "0.1.1",
+      "contract_id": "95a04905a71115322e9c7c106c4b19a8ac54e928cbb7a4c1ff7607e03204e4d1",
+      "tx_id": "7bcedf308869d29cf5195d96a0ec911b31acbe7e12138752feaa748f17435122",
       "wasm_path": "/Users/leonidas/dev/aichbindas/vigil/.worktrees/vigil-l1-product/target/contract/wasm32-unknown-unknown/release/vigil_vault.wasm",
       "dd_wasm_path": "/Users/leonidas/dev/aichbindas/vigil/.worktrees/vigil-l1-product/target/data-driver/wasm32-unknown-unknown/release/vigil_vault.wasm",
-      "wasm_sha256": "459ceb97c1fa5d2a3fe49669e145bbf3b4f8969370bd5bb35f5e867ff5103c0c",
-      "deploy_nonce": 1790006654,
+      "wasm_sha256": "268b3ab42cda2170eb58eabcb8224621771481399b55dd36b2f7dde190506169",
+      "deploy_nonce": 1790607823,
       "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-      "deployed_at": "2026-09-21T16:04:36Z"
+      "deployed_at": "2026-09-28T15:04:04Z"
     },
     "history": [
+      {
+        "version": "0.1.0",
+        "contract_id": "0fe4d8f8870d7dafc3c60686fdf4314751ec8de445560e7948879ca06e39b9c7",
+        "tx_id": "1c96985b7da29e92dab821163500c47bb9cf900c8c306d4bd4310282f9f5e118",
+        "wasm_path": "/Users/leonidas/dev/aichbindas/vigil/.worktrees/vigil-l1-product/target/contract/wasm32-unknown-unknown/release/vigil_vault.wasm",
+        "dd_wasm_path": "/Users/leonidas/dev/aichbindas/vigil/.worktrees/vigil-l1-product/target/data-driver/wasm32-unknown-unknown/release/vigil_vault.wasm",
+        "wasm_sha256": "02e73ba28d11b9b90d84458f4112eaf8997f1e5ea3cd2fcfb7f6f71ffda7b635",
+        "deploy_nonce": 1790519416,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-09-27T15:38:28Z"
+      },
+      {
+        "version": "0.1.0",
+        "contract_id": "54b9ed865539a8cb1a6e34ed43a0f485763ff0e0555fa3f9c729a3c51aeeed42",
+        "tx_id": "e6903bb84db8381bc3f89e9fdb40e774663e06dd514900aa50d4a0284127332a",
+        "wasm_path": "/Users/leonidas/dev/aichbindas/vigil/.worktrees/vigil-l1-product/target/contract/wasm32-unknown-unknown/release/vigil_vault.wasm",
+        "dd_wasm_path": "/Users/leonidas/dev/aichbindas/vigil/.worktrees/vigil-l1-product/target/data-driver/wasm32-unknown-unknown/release/vigil_vault.wasm",
+        "wasm_sha256": "459ceb97c1fa5d2a3fe49669e145bbf3b4f8969370bd5bb35f5e867ff5103c0c",
+        "deploy_nonce": 1790006654,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-09-21T16:04:36Z"
+      },
       {
         "version": "0.1.0",
         "contract_id": "e786d2615f2e30fc1c650be37a82544430188b09a9d270481b312d9c4ce7390c",
