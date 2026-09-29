@@ -7056,13 +7056,31 @@
       "current": {
         "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
         "fn_name": "schedule_service",
-        "args": "{\"name\":\"knot-proposals\",\"id\":\"45ca19e8795584a01d357541db18eac39f2d7684ff208ce241d3fd963acd1f0a\"}",
-        "fn_args_hex": "6b6e6f742d70726f706f73616c7300000e000000f0ffffff45ca19e8795584a01d357541db18eac39f2d7684ff208ce241d3fd963acd1f0a",
-        "tx_id": "a9626c2bf7c20cae57645b21b2de7921c85b93112108210fc07e7695886fec4c",
+        "args": "{\"name\":\"agent-session-escrow\",\"id\":\"257a26f3251ac899ffc1d10e229c4b44b76b9f250edd3fb0a8fb7c48abac0729\"}",
+        "fn_args_hex": "6167656e742d73657373696f6e2d657363726f7714000000ecffffff257a26f3251ac899ffc1d10e229c4b44b76b9f250edd3fb0a8fb7c48abac0729",
+        "tx_id": "d7a1df7be8ba764222e096551596850cfe898a30a514051bd4432036a890ed0d",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-09-27T23:35:54Z"
+        "called_at": "2026-09-29T08:12:03Z"
       },
       "history": [
+        {
+          "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
+          "fn_name": "schedule_service",
+          "args": "{\"name\":\"agent-compliance-gate\",\"id\":\"58e604241c86bc857824a25ef14f007191f83241c39b0e144dcde51fe58d974a\"}",
+          "fn_args_hex": "6167656e742d636f6d706c69616e63652d6761746500000015000000e8ffffff58e604241c86bc857824a25ef14f007191f83241c39b0e144dcde51fe58d974a",
+          "tx_id": "c0c98badde32a60fa2c7c976afd84a69eba96450718b8b602f99a50d3a88f56f",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-09-29T08:11:42Z"
+        },
+        {
+          "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
+          "fn_name": "schedule_service",
+          "args": "{\"name\":\"knot-proposals\",\"id\":\"45ca19e8795584a01d357541db18eac39f2d7684ff208ce241d3fd963acd1f0a\"}",
+          "fn_args_hex": "6b6e6f742d70726f706f73616c7300000e000000f0ffffff45ca19e8795584a01d357541db18eac39f2d7684ff208ce241d3fd963acd1f0a",
+          "tx_id": "a9626c2bf7c20cae57645b21b2de7921c85b93112108210fc07e7695886fec4c",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-09-27T23:35:54Z"
+        },
         {
           "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
           "fn_name": "schedule_service",
@@ -7240,13 +7258,31 @@
       "current": {
         "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
         "fn_name": "execute_service",
-        "args": "\"knot-proposals\"",
-        "fn_args_hex": "6b6e6f742d70726f706f73616c7300000e000000f0ffffff",
-        "tx_id": "6996c3ffab15e497df433d46e3ac4c1dc658798188c0433839064b59ca5a565f",
+        "args": "\"agent-session-escrow\"",
+        "fn_args_hex": "6167656e742d73657373696f6e2d657363726f7714000000ecffffff",
+        "tx_id": "b87304b7f3319308336a953e06bca4922a6d47ce7d2cfd768b59f801b9762066",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-09-27T23:38:04Z"
+        "called_at": "2026-09-29T08:12:43Z"
       },
       "history": [
+        {
+          "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
+          "fn_name": "execute_service",
+          "args": "\"agent-compliance-gate\"",
+          "fn_args_hex": "6167656e742d636f6d706c69616e63652d6761746500000015000000e8ffffff",
+          "tx_id": "b528572f37dae75b71b5ae78ee11ba048545b337c9a5827d73d2f2016a926227",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-09-29T08:12:22Z"
+        },
+        {
+          "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
+          "fn_name": "execute_service",
+          "args": "\"knot-proposals\"",
+          "fn_args_hex": "6b6e6f742d70726f706f73616c7300000e000000f0ffffff",
+          "tx_id": "6996c3ffab15e497df433d46e3ac4c1dc658798188c0433839064b59ca5a565f",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-09-27T23:38:04Z"
+        },
         {
           "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
           "fn_name": "execute_service",
