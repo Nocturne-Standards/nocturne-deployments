@@ -18,6 +18,11 @@ product tools (Knot Lab, etc.) agree on which bytecode is "current" on testnet.
 Local machine paths are **not** part of the public pin record (`wasm_path` /
 `dd_wasm_path` may be null); use `contract_id`, `wasm_sha256`, and `tx_id`.
 
+A testnet redeploy is unfinished until the matching row in
+`products/pin-map.testnet.json` has the new producer commit, contract id,
+wasm sha256, and a feature line of `present` or `in development`. That file
+is a note. It is not a resolver.
+
 This tree holds pin JSON and the reader crate. Specs and plans live in private
 `nocturne-working/deployments/superpowers/`.
 
