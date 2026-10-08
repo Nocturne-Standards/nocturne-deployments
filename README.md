@@ -16,7 +16,9 @@ Contract IDs are on-chain public data. This repo is the **shared pin file** so
 product tools (Knot Lab, etc.) agree on which bytecode is "current" on testnet.
 
 Local machine paths are **not** part of the public pin record (`wasm_path` /
-`dd_wasm_path` may be null); use `contract_id`, `wasm_sha256`, and `tx_id`.
+`dd_wasm_path` stay null); use `contract_id`, `wasm_sha256`, and `tx_id`.
+`python3 scripts/check-no-local-paths.py` fails the tree when a home path or a
+set `wasm_path` / `dd_wasm_path` is present.
 
 This tree holds pin JSON and the reader crate. Specs and plans live in private
 `nocturne-working/deployments/superpowers/`.
