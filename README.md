@@ -61,6 +61,11 @@ file + their own deploy path.
 | `duskds/testnet.json` | DS pins: `contracts`, `wiring`, `aliases` |
 | `duskevm/testnet.json` | EVM pins: `contracts`, `aliases` (live chain-745 public pins) |
 | `testnet.json` | Flat compat: duskds `contracts` keys at top level plus `wiring` |
+| `duskds/domains.json` | Allowlist of `.dusk` roots and children. Children point at pin keys. Contract ids stay in `duskds/testnet.json`. |
 
 Run `python3 scripts/check-aliases.py` to verify alias targets exist in each
 pin file's `contracts` map (skipped when `contracts` is `{}`).
+
+## Dusk domains
+
+`duskds/domains.json` names the roots and children to publish. A child label maps to a pin key. Contract ids stay in `duskds/testnet.json`. The signer that reads this file and writes `dusk_contract` records lives in private `nocturne-working/ops/dusk-domains`.
