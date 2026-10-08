@@ -5801,13 +5801,31 @@
       "current": {
         "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
         "fn_name": "schedule_service",
-        "args": "{\"name\":\"vigil_policy\",\"id\":\"5f501962caa5ae92ede6ee05732cc6b56ddc6a43b4fc69a3df7ab1fe473429e9\"}",
-        "fn_args_hex": "766967696c5f706f6c6963790c000000f4ffffff5f501962caa5ae92ede6ee05732cc6b56ddc6a43b4fc69a3df7ab1fe473429e9",
-        "tx_id": "915086f75ec1f4d7d1756b2a7ce55e374667e537840eb07c06d58be2cdde3c07",
+        "args": "{\"name\":\"vigil_wicket\",\"id\":\"dd090fa4e4e4f09f7f7ee0e2ea6e6dc2a2c3f41651df903cac1015e6a9d52e1d\"}",
+        "fn_args_hex": "766967696c5f7769636b65740c000000f4ffffffdd090fa4e4e4f09f7f7ee0e2ea6e6dc2a2c3f41651df903cac1015e6a9d52e1d",
+        "tx_id": "6fdb395985aec4d55f71d9d33b437709116f642f3bf78a8e5779394c09cb002f",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-10-08T18:41:10Z"
+        "called_at": "2026-10-08T19:15:50Z"
       },
       "history": [
+        {
+          "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
+          "fn_name": "schedule_service",
+          "args": "{\"name\":\"vigil_sozu\",\"id\":\"671f25fd739b1bd7a86f2b4fe341d1c519f54079e52be72f1fa2b23bff4baa98\"}",
+          "fn_args_hex": "766967696c5f736f7a7500000a000000f4ffffff671f25fd739b1bd7a86f2b4fe341d1c519f54079e52be72f1fa2b23bff4baa98",
+          "tx_id": "1b94c4a1a4d3d18bad795bb73c4ffa2c0b4e6667fc4010b60af93875df659457",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-10-08T19:15:31Z"
+        },
+        {
+          "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
+          "fn_name": "schedule_service",
+          "args": "{\"name\":\"vigil_policy\",\"id\":\"5f501962caa5ae92ede6ee05732cc6b56ddc6a43b4fc69a3df7ab1fe473429e9\"}",
+          "fn_args_hex": "766967696c5f706f6c6963790c000000f4ffffff5f501962caa5ae92ede6ee05732cc6b56ddc6a43b4fc69a3df7ab1fe473429e9",
+          "tx_id": "915086f75ec1f4d7d1756b2a7ce55e374667e537840eb07c06d58be2cdde3c07",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-10-08T18:41:10Z"
+        },
         {
           "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
           "fn_name": "schedule_service",
@@ -6084,13 +6102,31 @@
       "current": {
         "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
         "fn_name": "execute_service",
-        "args": "\"vigil_policy\"",
-        "fn_args_hex": "766967696c5f706f6c6963790c000000f4ffffff",
-        "tx_id": "4027bcb14e78bc4ab1110f3618c92e4d80e5e8e36545a8c342ea4c3e4c03bf67",
+        "args": "\"vigil_wicket\"",
+        "fn_args_hex": "766967696c5f7769636b65740c000000f4ffffff",
+        "tx_id": "0fbe386ae4dc680294136f06302dce7c3f7c2c0fc2e2bd2ec4df73194f841144",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-10-08T18:43:00Z"
+        "called_at": "2026-10-08T19:18:11Z"
       },
       "history": [
+        {
+          "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
+          "fn_name": "execute_service",
+          "args": "\"vigil_sozu\"",
+          "fn_args_hex": "766967696c5f736f7a7500000a000000f4ffffff",
+          "tx_id": "720722c2ef091f726444378b00951312927851b69cba7652f220148e8bce6942",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-10-08T19:17:50Z"
+        },
+        {
+          "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
+          "fn_name": "execute_service",
+          "args": "\"vigil_policy\"",
+          "fn_args_hex": "766967696c5f706f6c6963790c000000f4ffffff",
+          "tx_id": "4027bcb14e78bc4ab1110f3618c92e4d80e5e8e36545a8c342ea4c3e4c03bf67",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-10-08T18:43:00Z"
+        },
         {
           "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
           "fn_name": "execute_service",
