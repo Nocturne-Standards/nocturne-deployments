@@ -1,0 +1,36 @@
+# Public repos. Copy to `.github/workflows/kit-gates.yml`.
+# Job name `kit-gates` is the branch-protection context.
+# ALLOW_PRIVATE_TIER must stay unset. Do not wrap these in ci-accept-warn.
+name: kit-gates
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  kit-gates:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Install gitleaks
+        run: |
+          ver=8.24.3
+          curl -sSfL "https://github.com/gitleaks/gitleaks/releases/download/v${ver}/gitleaks_${ver}_linux_x64.tar.gz" \
+            | sudo tar -xz -C /usr/local/bin gitleaks
+
+      - name: Gate coverage
+        run: scripts/check-gate-coverage.sh
+
+      - name: Public-surface leak gate
+        run: scripts/check-public-surface.sh
+
+      - name: Gitleaks
+        run: scripts/check-gitleaks.sh

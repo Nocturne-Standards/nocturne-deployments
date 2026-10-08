@@ -788,7 +788,7 @@
         "deploy_nonce": 1784998677,
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
         "deployed_at": "2026-07-25T16:58:14Z",
-        "ops_note": "TEMP live pin 2026-07-30 for finishing markets on pre-Phase-2 deploy. Phase G rights/bond wired on b7543a2b only — Create/has_right may be unavailable here."
+        "ops_note": "TEMP live pin 2026-07-30 for finishing markets on the earlier market deploy. Rights/bond generation wired on b7543a2b only — Create/has_right may be unavailable here."
       },
       {
         "version": "0.1.1",
@@ -800,7 +800,7 @@
         "deploy_nonce": 1785279401,
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
         "deployed_at": "2026-07-28T22:56:55Z",
-        "ops_note": "Temporarily demoted 2026-07-30: live stack repointed to e0c4c22c to finish participant markets before next beta. Restore b7543a2b + ea48859c for Phase G relaunch."
+        "ops_note": "Temporarily demoted 2026-07-30: live stack repointed to e0c4c22c to finish participant markets before next beta. Restore b7543a2b + ea48859c for the rights/bond relaunch."
       }
     ]
   },
@@ -860,7 +860,7 @@
         "deploy_nonce": 1784998700,
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
         "deployed_at": "2026-07-25T16:58:34Z",
-        "ops_note": "TEMP live pin 2026-07-30 for finishing markets on pre-Phase-2 deploy. Phase G rights/bond wired on b7543a2b only — Create/has_right may be unavailable here."
+        "ops_note": "TEMP live pin 2026-07-30 for finishing markets on the earlier market deploy. Rights/bond generation wired on b7543a2b only — Create/has_right may be unavailable here."
       },
       {
         "version": "0.2.0",
@@ -872,7 +872,7 @@
         "deploy_nonce": 1785279422,
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
         "deployed_at": "2026-07-28T22:57:15Z",
-        "ops_note": "Temporarily demoted 2026-07-30: live stack repointed to e0c4c22c to finish participant markets before next beta. Restore b7543a2b + ea48859c for Phase G relaunch."
+        "ops_note": "Temporarily demoted 2026-07-30: live stack repointed to e0c4c22c to finish participant markets before next beta. Restore b7543a2b + ea48859c for the rights/bond relaunch."
       }
     ]
   },
