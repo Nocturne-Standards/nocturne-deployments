@@ -5,3 +5,8 @@
 .superpowers/
 .env
 .env.*
+
+# Local kit pin. Not part of the public tree.
+.cursor/
+FIELD_GUIDE/
+AGENTS.md

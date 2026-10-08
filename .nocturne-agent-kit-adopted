@@ -1,0 +1,5 @@
+# nocturne-agent-kit adoption marker — commit this file
+# kit_path is relative to the repo root when possible; otherwise the env sentinel
+# NOCTURNE_AGENT_KIT (resolve via that variable — do not commit absolute paths).
+kit_path=NOCTURNE_AGENT_KIT
+adopted_at=2026-10-08T14:20:41Z
