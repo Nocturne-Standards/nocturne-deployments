@@ -1694,16 +1694,27 @@
     "vigil-vault": {
       "current": {
         "version": "0.1.2",
-        "contract_id": "bfe0850ad34b89b1ecdd6ead01f68a2a125202f539cd9feb97a92be2e07d2932",
-        "tx_id": "647e7980bc372e1de4b735cc5343b0b5dc98a024af94563893a7cf14a4c2412a",
+        "contract_id": "5e98f26989f960abc3122ea342a604512203b0bf54a93e50a0197836e205f783",
+        "tx_id": "694ab2892dbf22cbfeafcf1abdf8cea618da7428e7a94db4a6bdbf8132fe6966",
         "wasm_path": null,
         "dd_wasm_path": null,
-        "wasm_sha256": "55344e3c37b32e68255e1ca9ca3c76a8da7359986daa2226f74215dfe88a06fa",
-        "deploy_nonce": 1791481599,
+        "wasm_sha256": "88683b6cf2e9f30c5431c782a6abf5118db9b39640767955af14632fb2a6c29e",
+        "deploy_nonce": 1791905222,
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "deployed_at": "2026-10-08T17:47:02Z"
+        "deployed_at": "2026-10-13T15:27:23Z"
       },
       "history": [
+        {
+          "version": "0.1.2",
+          "contract_id": "bfe0850ad34b89b1ecdd6ead01f68a2a125202f539cd9feb97a92be2e07d2932",
+          "tx_id": "647e7980bc372e1de4b735cc5343b0b5dc98a024af94563893a7cf14a4c2412a",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "55344e3c37b32e68255e1ca9ca3c76a8da7359986daa2226f74215dfe88a06fa",
+          "deploy_nonce": 1791481599,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-10-08T17:47:02Z"
+        },
         {
           "version": "0.1.2",
           "contract_id": "3812fa955e49d9dbc16a18dfc89dfa5268873ebdbaa6ecf37affcd3ef710a73b",
@@ -2124,16 +2135,27 @@
     "vigil-sozu-ledger": {
       "current": {
         "version": "0.1.0",
-        "contract_id": "671f25fd739b1bd7a86f2b4fe341d1c519f54079e52be72f1fa2b23bff4baa98",
-        "tx_id": "4e3891f6f0354b074c961d20d0f5d716196d4c40962427c0300d9b8e0931c523",
+        "contract_id": "264976c23c40b4eb338a6b23b1baad8fe1d8eaacc67a9500bbab047d637958ae",
+        "tx_id": "22bf1c6e2c0485204d80a7d77aa608252c9d1e06b5f640879ff6741e78e28457",
         "wasm_path": null,
         "dd_wasm_path": null,
-        "wasm_sha256": "ab5a75699eaad397866021144e04aaadbcf12a57933c229bf919a9a4d8529806",
-        "deploy_nonce": 1791481678,
+        "wasm_sha256": "811d495ea2b177f2010a2f3b40c986515d205c2af6ab7248703c232f3675d6c0",
+        "deploy_nonce": 1791905149,
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "deployed_at": "2026-10-08T17:48:11Z"
+        "deployed_at": "2026-10-13T15:26:10Z"
       },
       "history": [
+        {
+          "version": "0.1.0",
+          "contract_id": "671f25fd739b1bd7a86f2b4fe341d1c519f54079e52be72f1fa2b23bff4baa98",
+          "tx_id": "4e3891f6f0354b074c961d20d0f5d716196d4c40962427c0300d9b8e0931c523",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "ab5a75699eaad397866021144e04aaadbcf12a57933c229bf919a9a4d8529806",
+          "deploy_nonce": 1791481678,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-10-08T17:48:11Z"
+        },
         {
           "version": "0.1.0",
           "contract_id": "83941fb325c3626f752d6b9d0367acb9ddd30193201078ab22591b766f34f933",
@@ -7500,13 +7522,22 @@
       "current": {
         "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
         "fn_name": "schedule_service",
-        "args": "{\"name\":\"vigil_wicket\",\"id\":\"c48fae3c443bee41f7a1be168c83d8c5f1ccb3ff0a83147472cb176d4f57d241\"}",
-        "fn_args_hex": "766967696c5f7769636b65740c000000f4ffffffc48fae3c443bee41f7a1be168c83d8c5f1ccb3ff0a83147472cb176d4f57d241",
-        "tx_id": "b02208aff0ea96fbb744c7220362b9305244096ec4f65da05ad407fe173b7c18",
+        "args": "{\"name\":\"vigil_sozu\",\"id\":\"264976c23c40b4eb338a6b23b1baad8fe1d8eaacc67a9500bbab047d637958ae\"}",
+        "fn_args_hex": "766967696c5f736f7a7500000a000000f4ffffff264976c23c40b4eb338a6b23b1baad8fe1d8eaacc67a9500bbab047d637958ae",
+        "tx_id": "e3a474d5b40e994066f55210e6d7e8a6366936ff445c1718f92c9ce136ddfc69",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-10-08T20:38:31Z"
+        "called_at": "2026-10-13T15:31:50Z"
       },
       "history": [
+        {
+          "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
+          "fn_name": "schedule_service",
+          "args": "{\"name\":\"vigil_wicket\",\"id\":\"c48fae3c443bee41f7a1be168c83d8c5f1ccb3ff0a83147472cb176d4f57d241\"}",
+          "fn_args_hex": "766967696c5f7769636b65740c000000f4ffffffc48fae3c443bee41f7a1be168c83d8c5f1ccb3ff0a83147472cb176d4f57d241",
+          "tx_id": "b02208aff0ea96fbb744c7220362b9305244096ec4f65da05ad407fe173b7c18",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-10-08T20:38:31Z"
+        },
         {
           "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
           "fn_name": "schedule_service",
@@ -7900,13 +7931,22 @@
       "current": {
         "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
         "fn_name": "execute_service",
-        "args": "\"vigil_wicket\"",
-        "fn_args_hex": "766967696c5f7769636b65740c000000f4ffffff",
-        "tx_id": "4275445981fd50704b66bbb68d0052efb95699aae2f54daeb5ca0c321dbd591a",
+        "args": "\"vigil_sozu\"",
+        "fn_args_hex": "766967696c5f736f7a7500000a000000f4ffffff",
+        "tx_id": "7cedc70c97b5019bf96b39dd0156262cf224151e5de1b2a9d85485f7732a650e",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-10-08T20:39:09Z"
+        "called_at": "2026-10-13T15:32:51Z"
       },
       "history": [
+        {
+          "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
+          "fn_name": "execute_service",
+          "args": "\"vigil_wicket\"",
+          "fn_args_hex": "766967696c5f7769636b65740c000000f4ffffff",
+          "tx_id": "4275445981fd50704b66bbb68d0052efb95699aae2f54daeb5ca0c321dbd591a",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-10-08T20:39:09Z"
+        },
         {
           "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
           "fn_name": "execute_service",
@@ -8768,15 +8808,24 @@
     },
     "vigil-vault.init_bounds": {
       "current": {
-        "target_contract_id": "bfe0850ad34b89b1ecdd6ead01f68a2a125202f539cd9feb97a92be2e07d2932",
+        "target_contract_id": "5e98f26989f960abc3122ea342a604512203b0bf54a93e50a0197836e205f783",
         "fn_name": "init_bounds",
         "args": "{\"delay_min\":10,\"delay_max\":100000,\"settle_window_min\":100,\"settle_window_max\":1000000,\"queue_cap_max\":8,\"recovery_delay_max\":1000001,\"open_bond\":1000000000}",
         "fn_args_hex": "0a00000000000000a086010000000000640000000000000040420f0000000000080000000000000041420f000000000000ca9a3b00000000",
-        "tx_id": "5cdd76c6c7e0224c310d840bebac353ed97315ae7c74b1e91c9e5a1ad256ef70",
+        "tx_id": "fec0f75d2fd41044504cd890ec773c792795fe33985c5393fcec1d1f3c8ee339",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-10-08T17:47:50Z"
+        "called_at": "2026-10-13T15:30:21Z"
       },
       "history": [
+        {
+          "target_contract_id": "bfe0850ad34b89b1ecdd6ead01f68a2a125202f539cd9feb97a92be2e07d2932",
+          "fn_name": "init_bounds",
+          "args": "{\"delay_min\":10,\"delay_max\":100000,\"settle_window_min\":100,\"settle_window_max\":1000000,\"queue_cap_max\":8,\"recovery_delay_max\":1000001,\"open_bond\":1000000000}",
+          "fn_args_hex": "0a00000000000000a086010000000000640000000000000040420f0000000000080000000000000041420f000000000000ca9a3b00000000",
+          "tx_id": "5cdd76c6c7e0224c310d840bebac353ed97315ae7c74b1e91c9e5a1ad256ef70",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-10-08T17:47:50Z"
+        },
         {
           "target_contract_id": "3812fa955e49d9dbc16a18dfc89dfa5268873ebdbaa6ecf37affcd3ef710a73b",
           "fn_name": "init_bounds",
@@ -8817,15 +8866,24 @@
     },
     "vigil-sozu-ledger.init_vault": {
       "current": {
-        "target_contract_id": "671f25fd739b1bd7a86f2b4fe341d1c519f54079e52be72f1fa2b23bff4baa98",
+        "target_contract_id": "264976c23c40b4eb338a6b23b1baad8fe1d8eaacc67a9500bbab047d637958ae",
         "fn_name": "init_vault",
-        "args": "\"bfe0850ad34b89b1ecdd6ead01f68a2a125202f539cd9feb97a92be2e07d2932\"",
-        "fn_args_hex": "bfe0850ad34b89b1ecdd6ead01f68a2a125202f539cd9feb97a92be2e07d2932",
-        "tx_id": "f2b6bad7dd3ddcf1d61e6f2f94beda54b30419b21b0cf272cce5a181b178de4b",
+        "args": "\"5e98f26989f960abc3122ea342a604512203b0bf54a93e50a0197836e205f783\"",
+        "fn_args_hex": "5e98f26989f960abc3122ea342a604512203b0bf54a93e50a0197836e205f783",
+        "tx_id": "ce9a9e217e434919d9bff6d76cee6915fbbdfbabe16a42d0086bc7348eb4e706",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-10-08T17:51:00Z"
+        "called_at": "2026-10-13T15:30:51Z"
       },
       "history": [
+        {
+          "target_contract_id": "671f25fd739b1bd7a86f2b4fe341d1c519f54079e52be72f1fa2b23bff4baa98",
+          "fn_name": "init_vault",
+          "args": "\"bfe0850ad34b89b1ecdd6ead01f68a2a125202f539cd9feb97a92be2e07d2932\"",
+          "fn_args_hex": "bfe0850ad34b89b1ecdd6ead01f68a2a125202f539cd9feb97a92be2e07d2932",
+          "tx_id": "f2b6bad7dd3ddcf1d61e6f2f94beda54b30419b21b0cf272cce5a181b178de4b",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-10-08T17:51:00Z"
+        },
         {
           "target_contract_id": "83941fb325c3626f752d6b9d0367acb9ddd30193201078ab22591b766f34f933",
           "fn_name": "init_vault",
