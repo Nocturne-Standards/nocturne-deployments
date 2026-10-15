@@ -9625,16 +9625,27 @@
   "agent-session-escrow": {
     "current": {
       "version": "0.2.0",
-      "contract_id": "09be49d5e3bd86bc57210bb717f3febffce72b09bc0605a9b9ad920f91c2c1fb",
-      "tx_id": "9a0f440b235fbb55b5098eace9a692f640aaee861947bbb4a4696b671e5ee464",
+      "contract_id": "fea6c295e3ea6268af822d9105f538af7a455afc535ea5350866a0d8c11c1852",
+      "tx_id": "cad9a99b044a8573ddc2ebe101bde371c826af1a742b688c64291652e8fe4d39",
       "wasm_path": null,
       "dd_wasm_path": null,
-      "wasm_sha256": "0fe622f5f9b7da6824e716abf14b51e840a641a17a2278d117a22d3a17ff9f6d",
-      "deploy_nonce": 1791907550,
+      "wasm_sha256": "24a7e61068c07c6aedae030cee90ba9604ad73d6fb7ea83544a739dca42aa838",
+      "deploy_nonce": 1792076846,
       "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-      "deployed_at": "2026-10-13T16:06:11Z"
+      "deployed_at": "2026-10-15T15:07:38Z"
     },
     "history": [
+      {
+        "version": "0.2.0",
+        "contract_id": "09be49d5e3bd86bc57210bb717f3febffce72b09bc0605a9b9ad920f91c2c1fb",
+        "tx_id": "9a0f440b235fbb55b5098eace9a692f640aaee861947bbb4a4696b671e5ee464",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "0fe622f5f9b7da6824e716abf14b51e840a641a17a2278d117a22d3a17ff9f6d",
+        "deploy_nonce": 1791907550,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-10-13T16:06:11Z"
+      },
       {
         "version": "0.2.0",
         "contract_id": "d723eb50eb0d6377d7eac45c12103fcd3e05b73f22abc4cd541a7117b57ff635",
