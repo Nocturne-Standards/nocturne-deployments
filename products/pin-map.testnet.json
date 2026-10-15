@@ -1,0 +1,176 @@
+[
+  {
+    "network": "testnet",
+    "consumer": "aichbindas/vigil",
+    "consumer_commit": "88de5f9e46891bdf0696771f7415e8fcc751f187",
+    "producer": "aichbindas/vigil",
+    "producer_commit": "88de5f9e46891bdf0696771f7415e8fcc751f187",
+    "pin_key": "vigil-vault",
+    "id_record": "duskds/testnet.json",
+    "contract_id": "1c160f130f18c2ab45e1b7f6a2c4128d6a186cfe2521f3c0b8c57d23861fc1bd",
+    "wasm_sha256": "987190f3ca231606099f356891102442cefad52b562204a7d0799433fcac9617",
+    "features": [
+      { "name": "send", "status": "present" },
+      { "name": "session-join", "status": "in development" }
+    ]
+  },
+  {
+    "network": "testnet",
+    "consumer": "aichbindas/vigil",
+    "consumer_commit": "88de5f9e46891bdf0696771f7415e8fcc751f187",
+    "producer": "aichbindas/vigil",
+    "producer_commit": "88de5f9e46891bdf0696771f7415e8fcc751f187",
+    "pin_key": "vigil-policy",
+    "id_record": "duskds/testnet.json",
+    "contract_id": "a00faa795a9e0fafcaca3290e4a5d3a294010bec3082bde16d3e427aa9ffb769",
+    "wasm_sha256": "5e166375649650250e335c179e6b29fe3dd2f74d122cccc1afe5230282658917",
+    "features": [
+      { "name": "sozu-settlement", "status": "in development" },
+      { "name": "wicket-settlement", "status": "in development" }
+    ]
+  },
+  {
+    "network": "testnet",
+    "consumer": "aichbindas/vigil",
+    "consumer_commit": "88de5f9e46891bdf0696771f7415e8fcc751f187",
+    "producer": "aichbindas/vigil",
+    "producer_commit": "88de5f9e46891bdf0696771f7415e8fcc751f187",
+    "pin_key": "vigil-sozu-ledger",
+    "id_record": "duskds/testnet.json",
+    "contract_id": "735b069374b9326d453da0eeaa7958679c9be148c6d99aeff89f270e5747ebac",
+    "wasm_sha256": "e17dedb7e5f8bb193cfbceaed344cb772a2c8b58ea7b124eb437a237b756bcf8",
+    "features": [
+      { "name": "sozu-settlement", "status": "in development" }
+    ]
+  },
+  {
+    "network": "testnet",
+    "consumer": "aichbindas/vigil",
+    "consumer_commit": "88de5f9e46891bdf0696771f7415e8fcc751f187",
+    "producer": "aichbindas/vigil",
+    "producer_commit": "88de5f9e46891bdf0696771f7415e8fcc751f187",
+    "pin_key": "vigil-wicket-ledger",
+    "id_record": "duskds/testnet.json",
+    "contract_id": "48ac037c6d29ec364efa613d0c119f8b28a17674a6a7dd42a0d1625a2dd3bd5e",
+    "wasm_sha256": "668f1dea2de0d0e0709a10b4b243515d8d844be7e666281c65a3c93b61598775",
+    "features": [
+      { "name": "wicket-settlement", "status": "in development" }
+    ]
+  },
+  {
+    "network": "testnet",
+    "consumer": "aichbindas/vigil",
+    "consumer_commit": "88de5f9e46891bdf0696771f7415e8fcc751f187",
+    "producer": "aichbindas/chit",
+    "producer_commit": "28845ac216a0082ab9b39d21597caa7cbc54dadd",
+    "pin_key": "agent-compliance-gate",
+    "id_record": "duskds/testnet.json",
+    "contract_id": "e0007aa0dceaafea777abbbea86cc48df8af4bd98a5538466fd960c70ca51311",
+    "wasm_sha256": "8c5a7f0687d34869bf1682acb59e61b584541ac639277f13c0f4523dd301b177",
+    "features": [
+      { "name": "join", "status": "in development" }
+    ]
+  },
+  {
+    "network": "testnet",
+    "consumer": "aichbindas/vigil",
+    "consumer_commit": "88de5f9e46891bdf0696771f7415e8fcc751f187",
+    "producer": "aichbindas/chit",
+    "producer_commit": "28845ac216a0082ab9b39d21597caa7cbc54dadd",
+    "pin_key": "agent-session-escrow",
+    "id_record": "duskds/testnet.json",
+    "contract_id": "8ba23d9f39d196608c224fd54140b6fdc578c820e6c3a83ed978f8c881f684b2",
+    "wasm_sha256": "ea2cd5cb25c5292c5699fb58d10a478888ed8418d96cff3cd789efed0e8eefc5",
+    "features": [
+      { "name": "join", "status": "in development" }
+    ]
+  },
+  {
+    "network": "testnet",
+    "consumer": "aichbindas/vigil",
+    "consumer_commit": "88de5f9e46891bdf0696771f7415e8fcc751f187",
+    "producer": "aichbindas/wicket",
+    "producer_commit": "78053611f9a2300c5dbb6daa52d539397edfcb5f",
+    "pin_key": "dusk-sozu-main",
+    "id_record": "wicket/deployments/wicket-testnet.json",
+    "contract_id": "ed7176a3a7845a577732395887494965ae49c0daf29672d4370121b51844a0af",
+    "wasm_sha256": "3a56e7b7a2a5648ee4bc7dc40c9ef80f904ec836fa4c384e4831eba2033b4c81",
+    "features": [
+      { "name": "deposit", "status": "in development" },
+      { "name": "redeem", "status": "in development" }
+    ]
+  },
+  {
+    "network": "testnet",
+    "consumer": "aichbindas/vigil",
+    "consumer_commit": "88de5f9e46891bdf0696771f7415e8fcc751f187",
+    "producer": "",
+    "producer_commit": "",
+    "pin_key": "pool",
+    "id_record": "wicket/deployments/sozu-testnet.json",
+    "contract_id": "72883945ac1aa032a88543aacc9e358d1dfef07717094c05296ce675f23078f2",
+    "wasm_sha256": "f2955f40d460c95fec5b59c9f1acdbe0a382e57128c1858558f69d7b869df0e8",
+    "features": [
+      { "name": "deposit", "status": "in development" },
+      { "name": "unstake", "status": "in development" }
+    ]
+  },
+  {
+    "network": "testnet",
+    "consumer": "aichbindas/vigil",
+    "consumer_commit": "88de5f9e46891bdf0696771f7415e8fcc751f187",
+    "producer": "aichbindas/sozu-evm",
+    "producer_commit": "c5a9ad2ac3509067fa06ad02ad53b33e21113724",
+    "pin_key": "targetContractId",
+    "id_record": "sozu-evm/scripts/testnet/keeper.json",
+    "contract_id": "9dc21dee2d17f1ad3643b76966e6c76a040fd08db9b8f9e78719e708bd24e5e2",
+    "wasm_sha256": "",
+    "features": [
+      { "name": "desk", "status": "in development" }
+    ]
+  },
+  {
+    "network": "testnet",
+    "consumer": "aichbindas/vigil",
+    "consumer_commit": "88de5f9e46891bdf0696771f7415e8fcc751f187",
+    "producer": "",
+    "producer_commit": "",
+    "pin_key": "token",
+    "id_record": "wicket/deployments/sozu-testnet.json",
+    "contract_id": "fdbf49102e76cf58224003451c6cb9e3403c54ff1d9042f8bc46ec25c6a4337c",
+    "wasm_sha256": "d7e2823a134824fffd82f01b59b0a42ab9b62b2da2c84336878d4ac7f29f0449",
+    "features": [
+      { "name": "desk", "status": "in development" }
+    ]
+  },
+  {
+    "network": "testnet",
+    "consumer": "aichbindas/vigil",
+    "consumer_commit": "88de5f9e46891bdf0696771f7415e8fcc751f187",
+    "producer": "aichbindas/atlas",
+    "producer_commit": "c57d384ae215ac1e59aceebd08ad8a858d461580",
+    "pin_key": "atlas",
+    "id_record": "duskds/testnet.json",
+    "contract_id": "21c653385e3b7cc8be32edd5e6df2e30b6464be867f39442171ba8ca8d089612",
+    "wasm_sha256": "2896d01d7f5834da9441edd959a28ed3374e834b9743ebb2668560be070299cf",
+    "features": [
+      { "name": "vigil_wicket", "status": "present" },
+      { "name": "vigil_policy", "status": "in development" },
+      { "name": "vigil_sozu", "status": "in development" }
+    ]
+  },
+  {
+    "network": "testnet",
+    "consumer": "aichbindas/vigil",
+    "consumer_commit": "88de5f9e46891bdf0696771f7415e8fcc751f187",
+    "producer": "",
+    "producer_commit": "",
+    "pin_key": "GENESIS_EVM_TX_ROUTER",
+    "id_record": "vigil/crates/vigil-vault/src/state.rs",
+    "contract_id": "2e4b8b46390c860282b765641fa94037812601bf777164d7b7f801a262206046",
+    "wasm_sha256": "",
+    "features": [
+      { "name": "bridge", "status": "in development" }
+    ]
+  }
+]

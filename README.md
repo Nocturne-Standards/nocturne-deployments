@@ -20,6 +20,11 @@ Local machine paths are **not** part of the public pin record (`wasm_path` /
 `python3 scripts/check-no-local-paths.py` fails the tree when a home path or a
 set `wasm_path` / `dd_wasm_path` is present.
 
+A testnet redeploy is unfinished until the matching row in
+`products/pin-map.testnet.json` has the new producer commit, contract id,
+wasm sha256, and a feature line of `present` or `in development`. That file
+is a note. It is not a resolver.
+
 This tree holds pin JSON and the reader crate. Specs and plans live in private
 `nocturne-working/deployments/superpowers/`.
 
