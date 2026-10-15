@@ -1753,16 +1753,27 @@
     "vigil-policy": {
       "current": {
         "version": "0.1.0",
-        "contract_id": "fedd52f6924249e23fc8120a5773c1b8259e390be3589b9afedabaabe341a36d",
-        "tx_id": "93df0970c4bed81ff3fc056838045da967b2630bd119a6fa11c8f6ac0d871c61",
+        "contract_id": "ad8b23e8efc7c5b71acb13e5d67fc756596f71d43a5207b1bfe4e7e1f8d44416",
+        "tx_id": "bad73d6152ae39fdbaadb070defc5794799916b7276bef2d30174cdabd23ea1b",
         "wasm_path": null,
         "dd_wasm_path": null,
-        "wasm_sha256": "91f419c6e832b4e21d91b8ec9a9e4d0f247709a05a8408550c6772bb4a24c7bd",
-        "deploy_nonce": 1791909676,
+        "wasm_sha256": "e3ce18c1662bf17e181f573906e9dd1c8cc27a6cc108e67c1fa309e360ec50b7",
+        "deploy_nonce": 1792081194,
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "deployed_at": "2026-10-13T16:41:30Z"
+        "deployed_at": "2026-10-15T16:20:09Z"
       },
       "history": [
+        {
+          "version": "0.1.0",
+          "contract_id": "fedd52f6924249e23fc8120a5773c1b8259e390be3589b9afedabaabe341a36d",
+          "tx_id": "93df0970c4bed81ff3fc056838045da967b2630bd119a6fa11c8f6ac0d871c61",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "91f419c6e832b4e21d91b8ec9a9e4d0f247709a05a8408550c6772bb4a24c7bd",
+          "deploy_nonce": 1791909676,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-10-13T16:41:30Z"
+        },
         {
           "version": "0.1.0",
           "contract_id": "a00faa795a9e0fafcaca3290e4a5d3a294010bec3082bde16d3e427aa9ffb769",
@@ -1801,16 +1812,27 @@
     "vigil-vault": {
       "current": {
         "version": "0.1.2",
-        "contract_id": "50fcc7eab7e1b6c07151118cbfef184826fd4e804098d5a49d713a34bcf16090",
-        "tx_id": "e4d5efbbcaf8239cebcaaa78b88fb35a4d4b363e6605ed1f856c40786b6e5d5e",
+        "contract_id": "89396e6dbec79acadba8ed6f42673117c4dd311dfc544136f1ba0a53b80cc952",
+        "tx_id": "b1665afba9d893d1f46f2695091f7e785bd278febb496067724bd787beef3a57",
         "wasm_path": null,
         "dd_wasm_path": null,
-        "wasm_sha256": "fa4196ea2dd3144b2b8dea39c435c854f483b4cdb0e727bc2405ba8aca361cee",
-        "deploy_nonce": 1791909633,
+        "wasm_sha256": "f03781cbe4e3c15d85ea9d35e365d23214f9c8637e8bc6446babe97862be6944",
+        "deploy_nonce": 1792081260,
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "deployed_at": "2026-10-13T16:40:52Z"
+        "deployed_at": "2026-10-15T16:21:21Z"
       },
       "history": [
+        {
+          "version": "0.1.2",
+          "contract_id": "50fcc7eab7e1b6c07151118cbfef184826fd4e804098d5a49d713a34bcf16090",
+          "tx_id": "e4d5efbbcaf8239cebcaaa78b88fb35a4d4b363e6605ed1f856c40786b6e5d5e",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "fa4196ea2dd3144b2b8dea39c435c854f483b4cdb0e727bc2405ba8aca361cee",
+          "deploy_nonce": 1791909633,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-10-13T16:40:52Z"
+        },
         {
           "version": "0.1.2",
           "contract_id": "5e98f26989f960abc3122ea342a604512203b0bf54a93e50a0197836e205f783",
@@ -2253,16 +2275,27 @@
     "vigil-sozu-ledger": {
       "current": {
         "version": "0.1.0",
-        "contract_id": "cc00b98cc6673d2f10c84f2045fd9b904fb303b584429d298e2d19c207353995",
-        "tx_id": "11c1968b43eddf246043eaa9cf00fbbc3b7452411b9a60191ab11d958cc76a4d",
+        "contract_id": "2f286919251d594cf2cbbf7113b29e33686f881f2d595052d196e6c9ba4ab17f",
+        "tx_id": "81585d917cea93431c12da32e94c4b74539c21f6d988e3f2c0158a4f9cdf3331",
         "wasm_path": null,
         "dd_wasm_path": null,
-        "wasm_sha256": "811d495ea2b177f2010a2f3b40c986515d205c2af6ab7248703c232f3675d6c0",
-        "deploy_nonce": 1791909691,
+        "wasm_sha256": "6e5d4c63a7ea581827a9c1aac725727f4a1aa5ef6f25485cedc473a70f64e550",
+        "deploy_nonce": 1792081209,
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "deployed_at": "2026-10-13T16:41:51Z"
+        "deployed_at": "2026-10-15T16:20:29Z"
       },
       "history": [
+        {
+          "version": "0.1.0",
+          "contract_id": "cc00b98cc6673d2f10c84f2045fd9b904fb303b584429d298e2d19c207353995",
+          "tx_id": "11c1968b43eddf246043eaa9cf00fbbc3b7452411b9a60191ab11d958cc76a4d",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "811d495ea2b177f2010a2f3b40c986515d205c2af6ab7248703c232f3675d6c0",
+          "deploy_nonce": 1791909691,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-10-13T16:41:51Z"
+        },
         {
           "version": "0.1.0",
           "contract_id": "264976c23c40b4eb338a6b23b1baad8fe1d8eaacc67a9500bbab047d637958ae",
@@ -2312,16 +2345,27 @@
     "vigil-wicket-ledger": {
       "current": {
         "version": "0.1.0",
-        "contract_id": "c48fae3c443bee41f7a1be168c83d8c5f1ccb3ff0a83147472cb176d4f57d241",
-        "tx_id": "fc417c283015876934b0f3770dd91243f94bc2ba44ebfae276e8c5f7b5ed9166",
+        "contract_id": "d503fabc0a80c4b0f9697de2b60481e3ba5afebb3d470541b0329381c8e9f945",
+        "tx_id": "d188629e5315b556239bdc824160b916947a7cf5dbee147eb46e817fe0d5d637",
         "wasm_path": null,
         "dd_wasm_path": null,
-        "wasm_sha256": "5ce4182efe0c453d37cb628a63f914bf4b8f77ea574fd5595e2f8382b9fcb7d0",
-        "deploy_nonce": 1791491852,
+        "wasm_sha256": "b4ff9f37135fdf642e5613917e900d0d85324e3cfaf58a4091cd671ca1d64b48",
+        "deploy_nonce": 1792081230,
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "deployed_at": "2026-10-08T20:37:50Z"
+        "deployed_at": "2026-10-15T16:20:49Z"
       },
       "history": [
+        {
+          "version": "0.1.0",
+          "contract_id": "c48fae3c443bee41f7a1be168c83d8c5f1ccb3ff0a83147472cb176d4f57d241",
+          "tx_id": "fc417c283015876934b0f3770dd91243f94bc2ba44ebfae276e8c5f7b5ed9166",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "5ce4182efe0c453d37cb628a63f914bf4b8f77ea574fd5595e2f8382b9fcb7d0",
+          "deploy_nonce": 1791491852,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-10-08T20:37:50Z"
+        },
         {
           "version": "0.1.0",
           "contract_id": "362cf6e32c37aac8911a9e535df577d2f0692313ab6f2ca6ccd3c8fe3a5da61c",
