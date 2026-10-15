@@ -1,0 +1,37 @@
+{
+  "schema": "nocturne.chit-registry.v1",
+  "canonical": [
+    "id",
+    "role",
+    "scope",
+    "version"
+  ],
+  "merkle": {
+    "hash": "sha256",
+    "row": "UTF-8 compact JSON array of id, role, scope, version, in that order",
+    "leaf": "sha256(0x00 || row)",
+    "node": "sha256(0x01 || left || right)",
+    "split": "largest power of two strictly less than the count"
+  },
+  "rows": [
+    {
+      "id": "e0007aa0dceaafea777abbbea86cc48df8af4bd98a5538466fd960c70ca51311",
+      "role": "gate",
+      "scope": "consensus.history.query",
+      "version": "0.3.0"
+    },
+    {
+      "id": "d7127728b576fd4992e78e0bafd6a2bf779b4d6bfffd651f6be8d1eef1095e4c",
+      "role": "settlement",
+      "scope": "consensus.history.query",
+      "version": "0.2.0"
+    },
+    {
+      "id": "d723eb50eb0d6377d7eac45c12103fcd3e05b73f22abc4cd541a7117b57ff635",
+      "role": "escrow",
+      "scope": "consensus.history.query",
+      "version": "0.2.0"
+    }
+  ],
+  "root": "3d3606fc28b04cdb1e290001c06de570951ddde5e18a23ea438f2250047710e8"
+}
