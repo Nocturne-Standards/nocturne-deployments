@@ -22,16 +22,27 @@
     "knot-registry": {
       "current": {
         "version": "0.2.0",
-        "contract_id": "c8991fa3d54b0a16c1789a0821db4096f9d501ba83dd9de4bd620c3377cee02d",
-        "tx_id": "f88676b7832a8911ee48722413ef1b931069031be8f63eb912331443567fc86e",
+        "contract_id": "fdfde67aacc1a6fa02fdc153d24661d0920498f1f39290628856289f9d5514d9",
+        "tx_id": "ee3e490d112aa462a1176bad21517594ad48d6ff4bd9979d54851aaed554382f",
         "wasm_path": null,
         "dd_wasm_path": null,
-        "wasm_sha256": "6c75b8ee086128422c526f681ddd94a16fdef1f113fdd35824e43cb7f609fd62",
-        "deploy_nonce": 1790551969,
+        "wasm_sha256": "c82df21837e93aec0e180181da8963cc32dfe48d164f6d4009ef0c75b495fefd",
+        "deploy_nonce": 1792076990,
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "deployed_at": "2026-09-27T23:33:05Z"
+        "deployed_at": "2026-10-15T15:10:09Z"
       },
       "history": [
+        {
+          "version": "0.2.0",
+          "contract_id": "c8991fa3d54b0a16c1789a0821db4096f9d501ba83dd9de4bd620c3377cee02d",
+          "tx_id": "f88676b7832a8911ee48722413ef1b931069031be8f63eb912331443567fc86e",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "6c75b8ee086128422c526f681ddd94a16fdef1f113fdd35824e43cb7f609fd62",
+          "deploy_nonce": 1790551969,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-09-27T23:33:05Z"
+        },
         {
           "version": "0.1.6",
           "contract_id": "db2c8229285f525cb717a4c8feeb4b0e270102735a164ca93f40452f2095f00f",
@@ -937,7 +948,7 @@
           "deploy_nonce": 1784998677,
           "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
           "deployed_at": "2026-07-25T16:58:14Z",
-          "ops_note": "TEMP live pin 2026-07-30 for finishing markets on the earlier market deploy. Rights/bond generation wired on b7543a2b only \u2014 Create/has_right may be unavailable here."
+          "ops_note": "TEMP live pin 2026-07-30 for finishing markets on the earlier market deploy. Rights/bond generation wired on b7543a2b only — Create/has_right may be unavailable here."
         },
         {
           "version": "0.1.1",
@@ -1009,7 +1020,7 @@
           "deploy_nonce": 1784998700,
           "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
           "deployed_at": "2026-07-25T16:58:34Z",
-          "ops_note": "TEMP live pin 2026-07-30 for finishing markets on the earlier market deploy. Rights/bond generation wired on b7543a2b only \u2014 Create/has_right may be unavailable here."
+          "ops_note": "TEMP live pin 2026-07-30 for finishing markets on the earlier market deploy. Rights/bond generation wired on b7543a2b only — Create/has_right may be unavailable here."
         },
         {
           "version": "0.2.0",
