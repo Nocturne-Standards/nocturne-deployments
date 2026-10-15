@@ -4,14 +4,12 @@ Operator scaffolding — **not** loaded at runtime. Copy, fill `REPLACE_*` field
 
 ## `chit-tnst-testnet.pin-template.json`
 
-Parallel Chit stack for **tNST** (`cash_asset: drc20`). See plan:
-
-`docs/superpowers/plans/2026-08-27-tnst-chit-t2-lite.md`
+Parallel Chit stack for **tNST** (`cash_asset: drc20`). The ops plan stays in the private working repo.
 
 ### Merge steps
 
 1. Deploy four contracts (fresh nonces): gate, settlement, escrow, receive-demo — same wasm family as prod Chit stack (`chit/scripts/deploy-contract.sh` + ops wrappers).
-2. Run wiring in `_wiring_notes.wire_order` via `nocturne-working/ops/wire-contract.sh`.
+2. Run wiring in `_wiring_notes.wire_order` via the ops wire script.
 3. Replace every `REPLACE_*` placeholder in the template with on-chain values.
 4. Remove `_template` and `_wiring_notes` top-level keys.
 5. Merge `contracts` entries into the manifest root (alongside `tnst-token`, `agent-cash-escrow`, …).

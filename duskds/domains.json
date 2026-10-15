@@ -1,0 +1,30 @@
+{
+  "schema": "nocturne.domains.v1",
+  "network": "testnet",
+  "sdk": "0.2.0",
+  "chain_id": "dusk:2",
+  "node_url": "https://testnet.nodes.dusk.network",
+  "core_contract_id": "0xa099981c4b5f4c5980bc9c27a48af9a1aca458e8f9f291dd0ca6b2b19dee07be",
+  "driver_url": "https://testnet.dusk.domains/contracts/dusk-domains-core.data-driver.wasm",
+  "owner": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+  "years": 1,
+  "ttl_seconds": 86400,
+  "expiry_policy": "inherits_parent",
+  "gas_price_lux": 1,
+  "roots": {
+    "chit": {
+      "children": {
+        "projector": "chit-session-projector",
+        "atlas": "atlas"
+      }
+    },
+    "vigil": {
+      "children": {
+        "vault": "vigil-vault",
+        "policy": "vigil-policy",
+        "sozu": "vigil-sozu-ledger",
+        "wicket": "vigil-wicket-ledger"
+      }
+    }
+  }
+}
