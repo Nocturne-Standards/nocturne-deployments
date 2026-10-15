@@ -3039,6 +3039,76 @@
           "deployed_at": "2026-07-25T16:57:14Z"
         }
       ]
+    },
+    "season-roots-data": {
+      "current": {
+        "version": "0.1.0",
+        "contract_id": "412f36241a38110ba5e61a0c71b228d3aa6382c66651de4a4033a8bdf901dc10",
+        "tx_id": "a476b194661efb654af1b08c2aefe5c7050f22de56194e0eecc617a94dc43735",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "f32f1956f91657657056e4212914c76d84d8a19fcde3b372d438564de9cbed5d",
+        "deploy_nonce": 1791976778,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-10-14T11:19:39Z"
+      },
+      "history": []
+    },
+    "season-roots-logic": {
+      "current": {
+        "version": "0.1.0",
+        "contract_id": "1ede82ef4d7e80e481724bf70dfd3db3da42aafb76a404c720da3bc46e6781ab",
+        "tx_id": "85cb7d548eb678af6a2e7cf2cfa51b5f0a0f088595938144a171b31f03399423",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "300f65952a1b4f6bfcb16544b3d6312c9092a71f86173275981f09a82b926c53",
+        "deploy_nonce": 1791976779,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-10-14T11:19:59Z"
+      },
+      "history": []
+    },
+    "season-credentials-data": {
+      "current": {
+        "version": "0.1.0",
+        "contract_id": "5b777051739ef48c2800d60f48c7f748f3a9ee084b7e55762bef504fc73a8301",
+        "tx_id": "2a21e2d299f022f6fdc2bc2426d750d1dadeb073d9426b917f52510f0c18732a",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "0bb6176a616fd94cdb0f3e6f8ab8989a2b68f458c0041cbe38624c486694490b",
+        "deploy_nonce": 1791976780,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-10-14T11:20:19Z"
+      },
+      "history": []
+    },
+    "season-credentials-logic": {
+      "current": {
+        "version": "0.1.0",
+        "contract_id": "c43e4535cfa2daf825964585e8d3f2d196f800aa338744f04588f1f8c77f8fb5",
+        "tx_id": "2339405f11a8e71e040d00f45a5dadfe17426d80a4c5db3c8f574122f7122147",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "5dd1f91fa39d042b9269a8406ea0617894f775984170054b3f487637fe7f3c30",
+        "deploy_nonce": 1791976781,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-10-14T11:20:38Z"
+      },
+      "history": []
+    },
+    "season-claim": {
+      "current": {
+        "version": "0.1.0",
+        "contract_id": "2dbb8bac14d5422bce957852c92bf786497a465f3486ba10b4bbdfb8e7e0f2b4",
+        "tx_id": "5ea838e9a20574aa6a2f822107ef64deb34e4b51f47839c7bc732af03fff6e4c",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "b7801e455567362b6a782d14cbd1b6d022fdf2d4309fe183a3400347ac6eedb8",
+        "deploy_nonce": 1791976782,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-10-14T11:20:59Z"
+      },
+      "history": []
     }
   },
   "wiring": {
@@ -11061,6 +11131,114 @@
         "tx_id": "00748b6ac6ed3b5e7954f76ddf9e173ddcd195805c3fcab55592766b1c59eb1d",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
         "called_at": "2026-09-24T23:13:06Z"
+      },
+      "history": []
+    },
+    "season-roots-logic.init_data": {
+      "current": {
+        "target_contract_id": "1ede82ef4d7e80e481724bf70dfd3db3da42aafb76a404c720da3bc46e6781ab",
+        "fn_name": "init_data",
+        "args": "\"412f36241a38110ba5e61a0c71b228d3aa6382c66651de4a4033a8bdf901dc10\"",
+        "fn_args_hex": "412f36241a38110ba5e61a0c71b228d3aa6382c66651de4a4033a8bdf901dc10",
+        "tx_id": "827223ee008b4f1e77b9800ff71fc5dd8c408cc9353ef4ca67c8e47a129d9d3a",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-10-14T11:21:18Z"
+      },
+      "history": []
+    },
+    "season-credentials-logic.init_data": {
+      "current": {
+        "target_contract_id": "c43e4535cfa2daf825964585e8d3f2d196f800aa338744f04588f1f8c77f8fb5",
+        "fn_name": "init_data",
+        "args": "\"5b777051739ef48c2800d60f48c7f748f3a9ee084b7e55762bef504fc73a8301\"",
+        "fn_args_hex": "5b777051739ef48c2800d60f48c7f748f3a9ee084b7e55762bef504fc73a8301",
+        "tx_id": "8485389eabe52546117a917523bd29d267aade6b14fa325286e6a6b521b55618",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-10-14T11:21:38Z"
+      },
+      "history": []
+    },
+    "season-credentials-logic.grant_minter": {
+      "current": {
+        "target_contract_id": "c43e4535cfa2daf825964585e8d3f2d196f800aa338744f04588f1f8c77f8fb5",
+        "fn_name": "grant_minter",
+        "args": "\"2dbb8bac14d5422bce957852c92bf786497a465f3486ba10b4bbdfb8e7e0f2b4\"",
+        "fn_args_hex": "2dbb8bac14d5422bce957852c92bf786497a465f3486ba10b4bbdfb8e7e0f2b4",
+        "tx_id": "c889fd994335a23c5b2ff993bd6bf423fdada97f974f04a139571a3593218918",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-10-14T11:21:59Z"
+      },
+      "history": []
+    },
+    "knot-warden.schedule_service.season-roots": {
+      "current": {
+        "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
+        "fn_name": "schedule_service",
+        "args": "{\"name\":\"season-roots\",\"id\":\"1ede82ef4d7e80e481724bf70dfd3db3da42aafb76a404c720da3bc46e6781ab\"}",
+        "fn_args_hex": "736561736f6e2d726f6f74730c000000f4ffffff1ede82ef4d7e80e481724bf70dfd3db3da42aafb76a404c720da3bc46e6781ab",
+        "tx_id": "b3b79ef5931c80755981ea329d4e3cd645cd7e5b03d82ebf1a81749824085a73",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-10-14T11:22:18Z"
+      },
+      "history": []
+    },
+    "knot-warden.schedule_service.season-credentials": {
+      "current": {
+        "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
+        "fn_name": "schedule_service",
+        "args": "{\"name\":\"season-credentials\",\"id\":\"c43e4535cfa2daf825964585e8d3f2d196f800aa338744f04588f1f8c77f8fb5\"}",
+        "fn_args_hex": "736561736f6e2d63726564656e7469616c73000012000000ecffffffc43e4535cfa2daf825964585e8d3f2d196f800aa338744f04588f1f8c77f8fb5",
+        "tx_id": "f036a072e271e7d5eb88a1a8b44b5278ca4e41a34ad48a06e8e1de4408808034",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-10-14T11:22:39Z"
+      },
+      "history": []
+    },
+    "knot-warden.execute_service.season-roots": {
+      "current": {
+        "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
+        "fn_name": "execute_service",
+        "args": "\"season-roots\"",
+        "fn_args_hex": "736561736f6e2d726f6f74730c000000f4ffffff",
+        "tx_id": "7c033100b7cba1e05b554a8bb012c2bcfe436afe7ed75a63c17696d536f39725",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-10-14T11:24:37Z"
+      },
+      "history": []
+    },
+    "knot-warden.execute_service.season-credentials": {
+      "current": {
+        "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
+        "fn_name": "execute_service",
+        "args": "\"season-credentials\"",
+        "fn_args_hex": "736561736f6e2d63726564656e7469616c73000012000000ecffffff",
+        "tx_id": "e132abb5c37e806d552c787f74e00fdc6686905dc64c4b2d0ce9a384f7d98271",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-10-14T11:24:59Z"
+      },
+      "history": []
+    },
+    "season-roots-logic.open": {
+      "current": {
+        "target_contract_id": "1ede82ef4d7e80e481724bf70dfd3db3da42aafb76a404c720da3bc46e6781ab",
+        "fn_name": "open",
+        "args": "{\"season\":20261014,\"season_start\":4586974,\"season_end\":4587694,\"window_open_at\":4586974,\"window_end_at\":4587694,\"rules_commitment\":\"dd4a7a77886840bef16b761c38879ec614200b7a4bb34b67e77ba24ecd1c79cd\"}",
+        "fn_args_hex": "9628350100000000defd450000000000ae00460000000000defd450000000000ae00460000000000dd4a7a77886840bef16b761c38879ec614200b7a4bb34b67e77ba24ecd1c79cd",
+        "tx_id": "630af08df9d294a421bad9fa348fa19a0f33dc55e76db0be5a376ff28ce22164",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-10-14T11:25:19Z"
+      },
+      "history": []
+    },
+    "season-roots-logic.publish": {
+      "current": {
+        "target_contract_id": "1ede82ef4d7e80e481724bf70dfd3db3da42aafb76a404c720da3bc46e6781ab",
+        "fn_name": "publish",
+        "args": "{\"season\":20261014,\"root\":\"253e1eefbd66525d0fe13085b381fa619660626a4ae4b0a8e5fd12533bd65fd8\",\"rules\":\"throwaway testnet 2026-10-14\"}",
+        "fn_args_hex": "7468726f776177617920746573746e657420323032362d31302d313400000000253e1eefbd66525d0fe13085b381fa619660626a4ae4b0a8e5fd12533bd65fd89628350100000000b8ffffff1c000000",
+        "tx_id": "1761858decef8d4763e495bcb31cdca65f5b413bbfdfe0c903b1bc7c23e59801",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-10-14T11:25:39Z"
       },
       "history": []
     }
