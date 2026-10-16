@@ -1,15 +1,15 @@
 {
   "knot-registry": {
     "current": {
-      "version": "0.2.0",
-      "contract_id": "fdfde67aacc1a6fa02fdc153d24661d0920498f1f39290628856289f9d5514d9",
-      "tx_id": "ee3e490d112aa462a1176bad21517594ad48d6ff4bd9979d54851aaed554382f",
+      "version": "0.2.1",
+      "contract_id": "26ed935a1ba59d889b54a0e2a14e71a7eb342488aefdd32fd3c84a3088b5ad0d",
+      "tx_id": "86651fa1091f9aefb1e78af4476c81b7b7a7f43769c026ec84beed230234093e",
       "wasm_path": null,
       "dd_wasm_path": null,
-      "wasm_sha256": "c82df21837e93aec0e180181da8963cc32dfe48d164f6d4009ef0c75b495fefd",
-      "deploy_nonce": 1792076990,
+      "wasm_sha256": "4c141b1dc8ea6f24115261eebcc4d205a251f4d1d3653e81c8626a879d347c76",
+      "deploy_nonce": 1792158978,
       "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-      "deployed_at": "2026-10-15T15:10:09Z"
+      "deployed_at": "2026-10-16T13:56:38Z"
     },
     "history": [
       {
@@ -928,7 +928,7 @@
         "deploy_nonce": 1784998677,
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
         "deployed_at": "2026-07-25T16:58:14Z",
-        "ops_note": "TEMP live pin 2026-07-30 for finishing markets on the earlier market deploy. Rights/bond generation wired on b7543a2b only — Create/has_right may be unavailable here."
+        "ops_note": "TEMP live pin 2026-07-30 for finishing markets on the earlier market deploy. Rights/bond generation wired on b7543a2b only \u2014 Create/has_right may be unavailable here."
       },
       {
         "version": "0.1.1",
@@ -1000,7 +1000,7 @@
         "deploy_nonce": 1784998700,
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
         "deployed_at": "2026-07-25T16:58:34Z",
-        "ops_note": "TEMP live pin 2026-07-30 for finishing markets on the earlier market deploy. Rights/bond generation wired on b7543a2b only — Create/has_right may be unavailable here."
+        "ops_note": "TEMP live pin 2026-07-30 for finishing markets on the earlier market deploy. Rights/bond generation wired on b7543a2b only \u2014 Create/has_right may be unavailable here."
       },
       {
         "version": "0.2.0",
@@ -7272,15 +7272,24 @@
     },
     "vigil-vault.init_registry": {
       "current": {
-        "target_contract_id": "50fcc7eab7e1b6c07151118cbfef184826fd4e804098d5a49d713a34bcf16090",
+        "target_contract_id": "cfd4e18ea967f61c0c76673db94082d274a32c457c1168bd78316a0c2242ad82",
         "fn_name": "init_registry",
-        "args": "\"c8991fa3d54b0a16c1789a0821db4096f9d501ba83dd9de4bd620c3377cee02d\"",
-        "fn_args_hex": "c8991fa3d54b0a16c1789a0821db4096f9d501ba83dd9de4bd620c3377cee02d",
-        "tx_id": "a46f69cf07611263d440024a6a0265d164160b038db4bb68153fbb4cf9c2e473",
+        "args": "\"26ed935a1ba59d889b54a0e2a14e71a7eb342488aefdd32fd3c84a3088b5ad0d\"",
+        "fn_args_hex": "26ed935a1ba59d889b54a0e2a14e71a7eb342488aefdd32fd3c84a3088b5ad0d",
+        "tx_id": "b9e842626feb114fd8c6acf340b2a7e8f6951f882f84caaf9a4e7a38410d9b0e",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-10-13T16:44:20Z"
+        "called_at": "2026-10-16T14:00:08Z"
       },
       "history": [
+        {
+          "target_contract_id": "50fcc7eab7e1b6c07151118cbfef184826fd4e804098d5a49d713a34bcf16090",
+          "fn_name": "init_registry",
+          "args": "\"c8991fa3d54b0a16c1789a0821db4096f9d501ba83dd9de4bd620c3377cee02d\"",
+          "fn_args_hex": "c8991fa3d54b0a16c1789a0821db4096f9d501ba83dd9de4bd620c3377cee02d",
+          "tx_id": "a46f69cf07611263d440024a6a0265d164160b038db4bb68153fbb4cf9c2e473",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-10-13T16:44:20Z"
+        },
         {
           "target_contract_id": "bfe0850ad34b89b1ecdd6ead01f68a2a125202f539cd9feb97a92be2e07d2932",
           "fn_name": "init_registry",
@@ -7659,15 +7668,24 @@
     },
     "vigil-vault.init_bounds": {
       "current": {
-        "target_contract_id": "50fcc7eab7e1b6c07151118cbfef184826fd4e804098d5a49d713a34bcf16090",
+        "target_contract_id": "cfd4e18ea967f61c0c76673db94082d274a32c457c1168bd78316a0c2242ad82",
         "fn_name": "init_bounds",
         "args": "{\"delay_min\":10,\"delay_max\":100000,\"settle_window_min\":100,\"settle_window_max\":1000000,\"queue_cap_max\":8,\"recovery_delay_max\":1000001,\"open_bond\":1000000000}",
         "fn_args_hex": "0a00000000000000a086010000000000640000000000000040420f0000000000080000000000000041420f000000000000ca9a3b00000000",
-        "tx_id": "dadd10d8ec4436b852e1d15b1abb8463bfd786b266c8567af71592e9253d4218",
+        "tx_id": "9180296d550a11c8d0b6bc585974961b24ad3379ce40a6cbf79ab5bfea721b4c",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-10-13T16:44:00Z"
+        "called_at": "2026-10-16T13:59:49Z"
       },
       "history": [
+        {
+          "target_contract_id": "50fcc7eab7e1b6c07151118cbfef184826fd4e804098d5a49d713a34bcf16090",
+          "fn_name": "init_bounds",
+          "args": "{\"delay_min\":10,\"delay_max\":100000,\"settle_window_min\":100,\"settle_window_max\":1000000,\"queue_cap_max\":8,\"recovery_delay_max\":1000001,\"open_bond\":1000000000}",
+          "fn_args_hex": "0a00000000000000a086010000000000640000000000000040420f0000000000080000000000000041420f000000000000ca9a3b00000000",
+          "tx_id": "dadd10d8ec4436b852e1d15b1abb8463bfd786b266c8567af71592e9253d4218",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-10-13T16:44:00Z"
+        },
         {
           "target_contract_id": "5e98f26989f960abc3122ea342a604512203b0bf54a93e50a0197836e205f783",
           "fn_name": "init_bounds",
@@ -7726,13 +7744,13 @@
     },
     "vigil-sozu-ledger.init_vault": {
       "current": {
-        "target_contract_id": "264976c23c40b4eb338a6b23b1baad8fe1d8eaacc67a9500bbab047d637958ae",
+        "target_contract_id": "2f286919251d594cf2cbbf7113b29e33686f881f2d595052d196e6c9ba4ab17f",
         "fn_name": "init_vault",
-        "args": "\"5e98f26989f960abc3122ea342a604512203b0bf54a93e50a0197836e205f783\"",
-        "fn_args_hex": "5e98f26989f960abc3122ea342a604512203b0bf54a93e50a0197836e205f783",
-        "tx_id": "ce9a9e217e434919d9bff6d76cee6915fbbdfbabe16a42d0086bc7348eb4e706",
+        "args": "\"cfd4e18ea967f61c0c76673db94082d274a32c457c1168bd78316a0c2242ad82\"",
+        "fn_args_hex": "cfd4e18ea967f61c0c76673db94082d274a32c457c1168bd78316a0c2242ad82",
+        "tx_id": "dacb8e129990373621c179adfcc58766d17fae71ed2bd1c61f437bd355e3595d",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-10-13T15:30:51Z"
+        "called_at": "2026-10-16T14:02:00Z"
       },
       "history": [
         {
@@ -7748,13 +7766,13 @@
     },
     "vigil-wicket-ledger.init_vault": {
       "current": {
-        "target_contract_id": "c48fae3c443bee41f7a1be168c83d8c5f1ccb3ff0a83147472cb176d4f57d241",
+        "target_contract_id": "d503fabc0a80c4b0f9697de2b60481e3ba5afebb3d470541b0329381c8e9f945",
         "fn_name": "init_vault",
-        "args": "\"bfe0850ad34b89b1ecdd6ead01f68a2a125202f539cd9feb97a92be2e07d2932\"",
-        "fn_args_hex": "bfe0850ad34b89b1ecdd6ead01f68a2a125202f539cd9feb97a92be2e07d2932",
-        "tx_id": "60d8326feb7f7edae067fa04eedfe6f1ea1d7189f26302c91486c3daaa713326",
+        "args": "\"cfd4e18ea967f61c0c76673db94082d274a32c457c1168bd78316a0c2242ad82\"",
+        "fn_args_hex": "cfd4e18ea967f61c0c76673db94082d274a32c457c1168bd78316a0c2242ad82",
+        "tx_id": "e1b5bcc348cd8d029ba6be245b3c980b3443d536df45cb6472bcdbd94ea10629",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-10-08T20:38:10Z"
+        "called_at": "2026-10-16T14:02:00Z"
       },
       "history": [
         {
@@ -9721,7 +9739,7 @@
     "gas_price_ceiling_lux_per_gas": 0,
     "cleanup_bounty_lux": 0,
     "published": false,
-    "note": "UNPUBLISHED — run check-indexer-gas-telemetry.sh --live --min-samples 30 before setting nonzero published policy"
+    "note": "UNPUBLISHED \u2014 run check-indexer-gas-telemetry.sh --live --min-samples 30 before setting nonzero published policy"
   },
   "atlas": {
     "current": {
@@ -9869,15 +9887,15 @@
   },
   "vigil-vault": {
     "current": {
-      "version": "0.1.2",
-      "contract_id": "89396e6dbec79acadba8ed6f42673117c4dd311dfc544136f1ba0a53b80cc952",
-      "tx_id": "b1665afba9d893d1f46f2695091f7e785bd278febb496067724bd787beef3a57",
+      "version": "0.1.3",
+      "contract_id": "cfd4e18ea967f61c0c76673db94082d274a32c457c1168bd78316a0c2242ad82",
+      "tx_id": "15cb00a174958bb42ee243c61e3ee1204ada9d8b3593b1fc7fde9712d6713f10",
       "wasm_path": null,
       "dd_wasm_path": null,
-      "wasm_sha256": "f03781cbe4e3c15d85ea9d35e365d23214f9c8637e8bc6446babe97862be6944",
-      "deploy_nonce": 1792081260,
+      "wasm_sha256": "9a3fb49ee0e01dddee1fd6c6aa0a22d8388637fe9c135191ebb6835e4e254565",
+      "deploy_nonce": 1792159042,
       "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-      "deployed_at": "2026-10-15T16:21:21Z"
+      "deployed_at": "2026-10-16T13:57:41Z"
     },
     "history": [
       {
@@ -10474,16 +10492,27 @@
     "vigil-wicket-ledger": {
       "current": {
         "version": "0.1.0",
-        "contract_id": "6162b297c2f9ae70a7ee4f4d1371e9310d358784529ff9903bcc939fb5e65c12",
-        "tx_id": "5aee4422cd5ec8039dbad452456b365ef9233b2a6c736dfac98df07919af1f3a",
+        "contract_id": "d503fabc0a80c4b0f9697de2b60481e3ba5afebb3d470541b0329381c8e9f945",
+        "tx_id": "d188629e5315b556239bdc824160b916947a7cf5dbee147eb46e817fe0d5d637",
         "wasm_path": null,
         "dd_wasm_path": null,
-        "wasm_sha256": "f6474a3c16480a0a7d25b1af72af4616112be0763c8eaa94d52982cbe197778a",
-        "deploy_nonce": 1791398264,
+        "wasm_sha256": "b4ff9f37135fdf642e5613917e900d0d85324e3cfaf58a4091cd671ca1d64b48",
+        "deploy_nonce": 1792081230,
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "deployed_at": "2026-10-07T18:38:00Z"
+        "deployed_at": "2026-10-15T16:20:49Z"
       },
       "history": [
+        {
+          "version": "0.1.0",
+          "contract_id": "bb3b325adcac7ce521ce47ed0c9fb269439591b4a4adce274ac78833a386927e",
+          "tx_id": "8167157f68237455d2eb43273340da072760bf3b0e681d37a95052a855ae1f5e",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "f6474a3c16480a0a7d25b1af72af4616112be0763c8eaa94d52982cbe197778a",
+          "deploy_nonce": 1791455236,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-10-08T10:27:30Z"
+        },
         {
           "version": "0.1.0",
           "contract_id": "48ac037c6d29ec364efa613d0c119f8b28a17674a6a7dd42a0d1625a2dd3bd5e",
@@ -10494,6 +10523,54 @@
           "deploy_nonce": 1790935709,
           "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
           "deployed_at": "2026-10-02T10:08:45Z"
+        }
+      ]
+    },
+    "vigil-sozu-ledger": {
+      "current": {
+        "version": "0.1.0",
+        "contract_id": "2f286919251d594cf2cbbf7113b29e33686f881f2d595052d196e6c9ba4ab17f",
+        "tx_id": "81585d917cea93431c12da32e94c4b74539c21f6d988e3f2c0158a4f9cdf3331",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "6e5d4c63a7ea581827a9c1aac725727f4a1aa5ef6f25485cedc473a70f64e550",
+        "deploy_nonce": 1792081209,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-10-15T16:20:29Z"
+      },
+      "history": [
+        {
+          "version": "0.1.0",
+          "contract_id": "cc00b98cc6673d2f10c84f2045fd9b904fb303b584429d298e2d19c207353995",
+          "tx_id": "11c1968b43eddf246043eaa9cf00fbbc3b7452411b9a60191ab11d958cc76a4d",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "811d495ea2b177f2010a2f3b40c986515d205c2af6ab7248703c232f3675d6c0",
+          "deploy_nonce": 1791909691,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-10-13T16:41:51Z"
+        },
+        {
+          "version": "0.1.0",
+          "contract_id": "83941fb325c3626f752d6b9d0367acb9ddd30193201078ab22591b766f34f933",
+          "tx_id": "a91a4709bf71ff24b09e648258e91b3a138492c439baa564b8abfa461dc1ce0c",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "2c0f3016296fe130b3e7e4f4dd7033facbc3b6743b5d666bb8a5e7911b023f90",
+          "deploy_nonce": 1791455078,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-10-08T10:24:51Z"
+        },
+        {
+          "version": "0.1.0",
+          "contract_id": "735b069374b9326d453da0eeaa7958679c9be148c6d99aeff89f270e5747ebac",
+          "tx_id": "383a7b70d8b7e18872686d377734e54b5bd07d9b41dd89971088c4b58d27883b",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "e17dedb7e5f8bb193cfbceaed344cb772a2c8b58ea7b124eb437a237b756bcf8",
+          "deploy_nonce": 1790935676,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-10-02T10:08:16Z"
         }
       ]
     }
