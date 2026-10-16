@@ -928,7 +928,7 @@
         "deploy_nonce": 1784998677,
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
         "deployed_at": "2026-07-25T16:58:14Z",
-        "ops_note": "TEMP live pin 2026-07-30 for finishing markets on the earlier market deploy. Rights/bond generation wired on b7543a2b only — Create/has_right may be unavailable here."
+        "ops_note": "TEMP live pin 2026-07-30 for finishing markets on the earlier market deploy. Rights/bond generation wired on b7543a2b only \u2014 Create/has_right may be unavailable here."
       },
       {
         "version": "0.1.1",
@@ -1000,7 +1000,7 @@
         "deploy_nonce": 1784998700,
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
         "deployed_at": "2026-07-25T16:58:34Z",
-        "ops_note": "TEMP live pin 2026-07-30 for finishing markets on the earlier market deploy. Rights/bond generation wired on b7543a2b only — Create/has_right may be unavailable here."
+        "ops_note": "TEMP live pin 2026-07-30 for finishing markets on the earlier market deploy. Rights/bond generation wired on b7543a2b only \u2014 Create/has_right may be unavailable here."
       },
       {
         "version": "0.2.0",
@@ -7252,13 +7252,22 @@
       "current": {
         "target_contract_id": "48d998a29a8a7bd357f3913c89446d0956e6aaae9185d83a84fc2d07e9b27e09",
         "fn_name": "set_service",
-        "args": "{\"name\":\"vigil_policy\",\"id\":\"5ff0cdc42fe9a58ea16c66eaabb85330d272c8ca08b85734b2977a719c91467a\"}",
-        "fn_args_hex": "766967696c5f706f6c6963790c000000f4ffffff5ff0cdc42fe9a58ea16c66eaabb85330d272c8ca08b85734b2977a719c91467a",
-        "tx_id": "eec447b679cadcfad35e1fa27baaf4f3a238ddf9a156d95e6df46c384b08772c",
+        "args": "{\"name\":\"vigil_policy\",\"id\":\"ad8b23e8efc7c5b71acb13e5d67fc756596f71d43a5207b1bfe4e7e1f8d44416\"}",
+        "fn_args_hex": "766967696c5f706f6c6963790c000000f4ffffffad8b23e8efc7c5b71acb13e5d67fc756596f71d43a5207b1bfe4e7e1f8d44416",
+        "tx_id": "pending-atlas-vigil-policy-ad8b23e8",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-09-22T17:12:04Z"
+        "called_at": "2026-10-16T20:30:00Z"
       },
       "history": [
+        {
+          "target_contract_id": "48d998a29a8a7bd357f3913c89446d0956e6aaae9185d83a84fc2d07e9b27e09",
+          "fn_name": "set_service",
+          "args": "{\"name\":\"vigil_policy\",\"id\":\"5ff0cdc42fe9a58ea16c66eaabb85330d272c8ca08b85734b2977a719c91467a\"}",
+          "fn_args_hex": "766967696c5f706f6c6963790c000000f4ffffff5ff0cdc42fe9a58ea16c66eaabb85330d272c8ca08b85734b2977a719c91467a",
+          "tx_id": "eec447b679cadcfad35e1fa27baaf4f3a238ddf9a156d95e6df46c384b08772c",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-09-22T17:12:04Z"
+        },
         {
           "target_contract_id": "48d998a29a8a7bd357f3913c89446d0956e6aaae9185d83a84fc2d07e9b27e09",
           "fn_name": "set_service",
@@ -9793,7 +9802,7 @@
     "gas_price_ceiling_lux_per_gas": 0,
     "cleanup_bounty_lux": 0,
     "published": false,
-    "note": "UNPUBLISHED — run check-indexer-gas-telemetry.sh --live --min-samples 30 before setting nonzero published policy"
+    "note": "UNPUBLISHED \u2014 run check-indexer-gas-telemetry.sh --live --min-samples 30 before setting nonzero published policy"
   },
   "atlas": {
     "current": {
