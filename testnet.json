@@ -1792,15 +1792,24 @@
     },
     "revocation-registry.init_auditor": {
       "current": {
-        "target_contract_id": "7515426fe6c48c29d0d6d7cc08eaf30bda195cefca9dbf40da1e99604cc27fc6",
+        "target_contract_id": "c25af5cece125498a1e45bb46392b0485dd86efff7640912301c33238d76cf95",
         "fn_name": "init_auditor",
         "args": "\"zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX\"",
         "fn_args_hex": "e1b15bf20d8e4599b8097e10a8d794b0af55d5b797ee39587bcab88b4a596dd4d45c93e94995b0e359d770c03e47e80d88ca9e033c4cbaa4109aa69c4b20a5ad8e1c5f064066e6a5fcf2634b64582218dab4fefc276cecd17dcb9527b827b9025741653d4e889d72d97117ab7d7efd59e5965bf0ddd15317872aca6ce0822f96dfadffe9357c9c831e84fdc194d776012a877150a700d062d8e08a18658332c6ca54132559e071a818cdc4e85a2ba2801414bacb700c799a0175f98c3daed4170000000000000000",
-        "tx_id": "479f54e503658b624632be6a45a5e22785d68db3add9597f7c659b15bdcf5323",
+        "tx_id": "ed417152356daebe024be50e50b8ca88610ac292ad67145be1c3b735c6dc842b",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-08-28T20:46:00Z"
+        "called_at": "2026-10-17T15:55:26Z"
       },
       "history": [
+        {
+          "target_contract_id": "7515426fe6c48c29d0d6d7cc08eaf30bda195cefca9dbf40da1e99604cc27fc6",
+          "fn_name": "init_auditor",
+          "args": "\"zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX\"",
+          "fn_args_hex": "e1b15bf20d8e4599b8097e10a8d794b0af55d5b797ee39587bcab88b4a596dd4d45c93e94995b0e359d770c03e47e80d88ca9e033c4cbaa4109aa69c4b20a5ad8e1c5f064066e6a5fcf2634b64582218dab4fefc276cecd17dcb9527b827b9025741653d4e889d72d97117ab7d7efd59e5965bf0ddd15317872aca6ce0822f96dfadffe9357c9c831e84fdc194d776012a877150a700d062d8e08a18658332c6ca54132559e071a818cdc4e85a2ba2801414bacb700c799a0175f98c3daed4170000000000000000",
+          "tx_id": "479f54e503658b624632be6a45a5e22785d68db3add9597f7c659b15bdcf5323",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-08-28T20:46:00Z"
+        },
         {
           "target_contract_id": "b082ed7eb566fe54d57c68f96ca40f8038abb4453d4e61b0f21e5ab260659fbd",
           "fn_name": "init_auditor",
