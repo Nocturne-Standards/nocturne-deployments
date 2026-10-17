@@ -667,17 +667,28 @@
   },
   "revocation-registry": {
     "current": {
-      "version": "0.1.1",
-      "contract_id": "7515426fe6c48c29d0d6d7cc08eaf30bda195cefca9dbf40da1e99604cc27fc6",
-      "tx_id": "ad6bec6262016c9f37e85ccf9df39639f66d4f99e848003483a27dd12f809048",
+      "version": "0.2.0",
+      "contract_id": "c25af5cece125498a1e45bb46392b0485dd86efff7640912301c33238d76cf95",
+      "tx_id": "2f5300962e46a288bad156a7d76e65f88474f4a193eca871332e1b26beeb5115",
       "wasm_path": null,
       "dd_wasm_path": null,
-      "wasm_sha256": "a4ac89fcd3a3d8628539deff3bba699084bc0444668b733dc81bf97dbbf2f382",
-      "deploy_nonce": 1787949922,
+      "wasm_sha256": "053c6f5dc02e0530cc3084ba6b0b9de000c850aadf749982c739aefe46e589d3",
+      "deploy_nonce": 1792228381,
       "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-      "deployed_at": "2026-08-28T20:45:41Z"
+      "deployed_at": "2026-10-17T09:13:19Z"
     },
     "history": [
+      {
+        "version": "0.1.1",
+        "contract_id": "7515426fe6c48c29d0d6d7cc08eaf30bda195cefca9dbf40da1e99604cc27fc6",
+        "tx_id": "ad6bec6262016c9f37e85ccf9df39639f66d4f99e848003483a27dd12f809048",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "a4ac89fcd3a3d8628539deff3bba699084bc0444668b733dc81bf97dbbf2f382",
+        "deploy_nonce": 1787949922,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-08-28T20:45:41Z"
+      },
       {
         "version": "0.1.1",
         "contract_id": "b082ed7eb566fe54d57c68f96ca40f8038abb4453d4e61b0f21e5ab260659fbd",
@@ -4856,13 +4867,22 @@
       "current": {
         "target_contract_id": "beb2ee054fbad1798134eabbcec1969c5183d2a0854c1d8c0fca85f2568bf3c9",
         "fn_name": "init_revocation_contract",
-        "args": "\"7515426fe6c48c29d0d6d7cc08eaf30bda195cefca9dbf40da1e99604cc27fc6\"",
-        "fn_args_hex": "7515426fe6c48c29d0d6d7cc08eaf30bda195cefca9dbf40da1e99604cc27fc6",
-        "tx_id": "76ea5ba4341a240a9f45eecb27a8cd62b19f465c72ca6b4c7e3db357425b646c",
+        "args": "\"c25af5cece125498a1e45bb46392b0485dd86efff7640912301c33238d76cf95\"",
+        "fn_args_hex": "c25af5cece125498a1e45bb46392b0485dd86efff7640912301c33238d76cf95",
+        "tx_id": "2c11d71c60655e21b98e1597f672e6b9c20b171f5b64914a36ce76715963a040",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-09-24T16:22:35Z"
+        "called_at": "2026-10-17T09:14:49Z"
       },
       "history": [
+        {
+          "target_contract_id": "beb2ee054fbad1798134eabbcec1969c5183d2a0854c1d8c0fca85f2568bf3c9",
+          "fn_name": "init_revocation_contract",
+          "args": "\"7515426fe6c48c29d0d6d7cc08eaf30bda195cefca9dbf40da1e99604cc27fc6\"",
+          "fn_args_hex": "7515426fe6c48c29d0d6d7cc08eaf30bda195cefca9dbf40da1e99604cc27fc6",
+          "tx_id": "76ea5ba4341a240a9f45eecb27a8cd62b19f465c72ca6b4c7e3db357425b646c",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-09-24T16:22:35Z"
+        },
         {
           "target_contract_id": "b602b385dfe65b5a23245e9567f55941bec6a8315d4cec2283d5e71e9141222c",
           "fn_name": "init_revocation_contract",
@@ -6373,13 +6393,22 @@
       "current": {
         "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
         "fn_name": "schedule_service",
-        "args": "{\"name\":\"vigil_sozu\",\"id\":\"264976c23c40b4eb338a6b23b1baad8fe1d8eaacc67a9500bbab047d637958ae\"}",
-        "fn_args_hex": "766967696c5f736f7a7500000a000000f4ffffff264976c23c40b4eb338a6b23b1baad8fe1d8eaacc67a9500bbab047d637958ae",
-        "tx_id": "e3a474d5b40e994066f55210e6d7e8a6366936ff445c1718f92c9ce136ddfc69",
+        "args": "{\"name\":\"revocation-registry\",\"id\":\"c25af5cece125498a1e45bb46392b0485dd86efff7640912301c33238d76cf95\"}",
+        "fn_args_hex": "7265766f636174696f6e2d72656769737472790013000000ecffffffc25af5cece125498a1e45bb46392b0485dd86efff7640912301c33238d76cf95",
+        "tx_id": "263e93456d21bc8b5e4dcbee8d4c69296ca32648973a16f809988f5657421c1b",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-10-13T15:31:50Z"
+        "called_at": "2026-10-17T09:13:38Z"
       },
       "history": [
+        {
+          "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
+          "fn_name": "schedule_service",
+          "args": "{\"name\":\"vigil_sozu\",\"id\":\"264976c23c40b4eb338a6b23b1baad8fe1d8eaacc67a9500bbab047d637958ae\"}",
+          "fn_args_hex": "766967696c5f736f7a7500000a000000f4ffffff264976c23c40b4eb338a6b23b1baad8fe1d8eaacc67a9500bbab047d637958ae",
+          "tx_id": "e3a474d5b40e994066f55210e6d7e8a6366936ff445c1718f92c9ce136ddfc69",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-10-13T15:31:50Z"
+        },
         {
           "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
           "fn_name": "schedule_service",
@@ -6773,13 +6802,22 @@
       "current": {
         "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
         "fn_name": "execute_service",
-        "args": "\"vigil_sozu\"",
-        "fn_args_hex": "766967696c5f736f7a7500000a000000f4ffffff",
-        "tx_id": "7cedc70c97b5019bf96b39dd0156262cf224151e5de1b2a9d85485f7732a650e",
+        "args": "\"revocation-registry\"",
+        "fn_args_hex": "7265766f636174696f6e2d72656769737472790013000000ecffffff",
+        "tx_id": "e3e02997b7d4b5969c730790cf7e79d072a82c4a4089d64f028205b8abecb722",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-10-13T15:32:51Z"
+        "called_at": "2026-10-17T09:14:08Z"
       },
       "history": [
+        {
+          "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
+          "fn_name": "execute_service",
+          "args": "\"vigil_sozu\"",
+          "fn_args_hex": "766967696c5f736f7a7500000a000000f4ffffff",
+          "tx_id": "7cedc70c97b5019bf96b39dd0156262cf224151e5de1b2a9d85485f7732a650e",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-10-13T15:32:51Z"
+        },
         {
           "target_contract_id": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3",
           "fn_name": "execute_service",
@@ -9288,6 +9326,18 @@
         "called_at": "2026-10-14T11:25:39Z"
       },
       "history": []
+    },
+    "revocation-registry.init_data": {
+      "current": {
+        "target_contract_id": "c25af5cece125498a1e45bb46392b0485dd86efff7640912301c33238d76cf95",
+        "fn_name": "init_data",
+        "args": "\"7e89ebb222b0a6c2bb13158fe684dbf191cdd25734fc8dafef30e6162d3a4711\"",
+        "fn_args_hex": "7e89ebb222b0a6c2bb13158fe684dbf191cdd25734fc8dafef30e6162d3a4711",
+        "tx_id": "f218617111b6e03317ce584bec0e4b93f73c653ec6216593bd5150b5df1d6203",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-10-17T09:14:29Z"
+      },
+      "history": []
     }
   },
   "compliance-gate": {
@@ -11456,6 +11506,20 @@
       "deploy_nonce": 1791976782,
       "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
       "deployed_at": "2026-10-14T11:20:59Z"
+    },
+    "history": []
+  },
+  "revocation-registry-data": {
+    "current": {
+      "version": "0.1.0",
+      "contract_id": "7e89ebb222b0a6c2bb13158fe684dbf191cdd25734fc8dafef30e6162d3a4711",
+      "tx_id": "dc588a7a79365adb147896b48602abe0ca0634c865ff00c0f014ef9416910822",
+      "wasm_path": null,
+      "dd_wasm_path": null,
+      "wasm_sha256": "16af33539a292b91529c8da3aa0cf82ce7d7c97c4585e3ce06113156809c669f",
+      "deploy_nonce": 1792228356,
+      "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+      "deployed_at": "2026-10-17T09:12:49Z"
     },
     "history": []
   }
