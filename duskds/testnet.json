@@ -2464,17 +2464,28 @@
     },
     "security-token": {
       "current": {
-        "version": "0.1.2",
-        "contract_id": "287d9174a0a91663a21282e03f02966abee11591b9d761f307916f0ff7fae6b0",
-        "tx_id": "c573d667123491721b2e8e1e95eb3dd9713c80537e8d26e4ec0fe108aeadb535",
+        "version": "0.1.3",
+        "contract_id": "d27c9a34fef3b67fbd1b11ff0c1835793f81a03ffed3db3046978965f9958de0",
+        "tx_id": "dfd800dae901d89548c166027a7051ff472a4f627d894a624bcac4112b188b54",
         "wasm_path": null,
         "dd_wasm_path": null,
-        "wasm_sha256": "de43db07651d3ac2ccb9b56a53911356f0f7c67b2340eb6b04cb640683ced266",
-        "deploy_nonce": 1785767936,
+        "wasm_sha256": "11374b1535dabbc0bce0b296ae8ba13a4450ff5ece9a9426e87b87c38b9f68ef",
+        "deploy_nonce": 1792252672,
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "deployed_at": "2026-08-03T14:39:17Z"
+        "deployed_at": "2026-10-17T15:58:06Z"
       },
       "history": [
+        {
+          "version": "0.1.2",
+          "contract_id": "287d9174a0a91663a21282e03f02966abee11591b9d761f307916f0ff7fae6b0",
+          "tx_id": "c573d667123491721b2e8e1e95eb3dd9713c80537e8d26e4ec0fe108aeadb535",
+          "wasm_path": null,
+          "dd_wasm_path": null,
+          "wasm_sha256": "de43db07651d3ac2ccb9b56a53911356f0f7c67b2340eb6b04cb640683ced266",
+          "deploy_nonce": 1785767936,
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "deployed_at": "2026-08-03T14:39:17Z"
+        },
         {
           "version": "0.1.1",
           "contract_id": "1a3e7b2dbb745e73c2606c680b5be5ba3256e2d2ed9a97fd4b34f2a40d2a11f0",
@@ -10103,15 +10114,24 @@
     },
     "security-token.init_gate": {
       "current": {
-        "target_contract_id": "1a3e7b2dbb745e73c2606c680b5be5ba3256e2d2ed9a97fd4b34f2a40d2a11f0",
+        "target_contract_id": "d27c9a34fef3b67fbd1b11ff0c1835793f81a03ffed3db3046978965f9958de0",
         "fn_name": "init_gate",
-        "args": "\"922dd6f316f72e302185266138be68b7383fbc4718c5d76b60aab37c950af9b3\"",
-        "fn_args_hex": "922dd6f316f72e302185266138be68b7383fbc4718c5d76b60aab37c950af9b3",
-        "tx_id": "adb4f64e69ffd07535835841f816e12bdd661e6fc0134b42f4ea5c4a15836134",
+        "args": "\"beb2ee054fbad1798134eabbcec1969c5183d2a0854c1d8c0fca85f2568bf3c9\"",
+        "fn_args_hex": "beb2ee054fbad1798134eabbcec1969c5183d2a0854c1d8c0fca85f2568bf3c9",
+        "tx_id": "e79d9dd46347582ce96416ceb3de80e8165bfc3807d83b50e8874db1ad20dc5c",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-07-13T21:38:38Z"
+        "called_at": "2026-10-17T15:59:26Z"
       },
       "history": [
+        {
+          "target_contract_id": "1a3e7b2dbb745e73c2606c680b5be5ba3256e2d2ed9a97fd4b34f2a40d2a11f0",
+          "fn_name": "init_gate",
+          "args": "\"922dd6f316f72e302185266138be68b7383fbc4718c5d76b60aab37c950af9b3\"",
+          "fn_args_hex": "922dd6f316f72e302185266138be68b7383fbc4718c5d76b60aab37c950af9b3",
+          "tx_id": "adb4f64e69ffd07535835841f816e12bdd661e6fc0134b42f4ea5c4a15836134",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-13T21:38:38Z"
+        },
         {
           "target_contract_id": "a3453b60a237e222e6670d214b0534e8ba5f0e793302cd48b65c6d83d6f0183f",
           "fn_name": "init_gate",
@@ -10134,15 +10154,24 @@
     },
     "security-token.init_token": {
       "current": {
-        "target_contract_id": "1a3e7b2dbb745e73c2606c680b5be5ba3256e2d2ed9a97fd4b34f2a40d2a11f0",
+        "target_contract_id": "d27c9a34fef3b67fbd1b11ff0c1835793f81a03ffed3db3046978965f9958de0",
         "fn_name": "init_token",
         "args": "{\"name\":\"Security Token\",\"symbol\":\"ST\",\"decimals\":0,\"initial_balances\":[]}",
         "fn_args_hex": "536563757269747920546f6b656e00000e000000f0ffffff5354000000000002f0ffffff0000000000000000",
-        "tx_id": "a95cf3776d125901f63d51cd1d5f308c35a462b5814c47727fcc8c4c94afff42",
+        "tx_id": "221cf9daf565a1985c9d5ab37672a6a644f2d079c010e76212867e04427cd614",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "called_at": "2026-07-13T21:41:09Z"
+        "called_at": "2026-10-17T15:59:05Z"
       },
       "history": [
+        {
+          "target_contract_id": "1a3e7b2dbb745e73c2606c680b5be5ba3256e2d2ed9a97fd4b34f2a40d2a11f0",
+          "fn_name": "init_token",
+          "args": "{\"name\":\"Security Token\",\"symbol\":\"ST\",\"decimals\":0,\"initial_balances\":[]}",
+          "fn_args_hex": "536563757269747920546f6b656e00000e000000f0ffffff5354000000000002f0ffffff0000000000000000",
+          "tx_id": "a95cf3776d125901f63d51cd1d5f308c35a462b5814c47727fcc8c4c94afff42",
+          "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+          "called_at": "2026-07-13T21:41:09Z"
+        },
         {
           "target_contract_id": "a3453b60a237e222e6670d214b0534e8ba5f0e793302cd48b65c6d83d6f0183f",
           "fn_name": "init_token",
@@ -11479,6 +11508,30 @@
         "tx_id": "f218617111b6e03317ce584bec0e4b93f73c653ec6216593bd5150b5df1d6203",
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
         "called_at": "2026-10-17T09:14:29Z"
+      },
+      "history": []
+    },
+    "security-token.init_l1_messenger_contract": {
+      "current": {
+        "target_contract_id": "d27c9a34fef3b67fbd1b11ff0c1835793f81a03ffed3db3046978965f9958de0",
+        "fn_name": "init_l1_messenger_contract",
+        "args": "\"63cd2c93016296b2ec357e31fd44b716cf2cda3b31217d45087f17ccc6440530\"",
+        "fn_args_hex": "63cd2c93016296b2ec357e31fd44b716cf2cda3b31217d45087f17ccc6440530",
+        "tx_id": "07f14287ffeb21f3a5cb093d94bd380fdef1d34425aaef9b9e279cfdea93b72a",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-10-17T15:59:45Z"
+      },
+      "history": []
+    },
+    "security-token.init_evm_plate": {
+      "current": {
+        "target_contract_id": "d27c9a34fef3b67fbd1b11ff0c1835793f81a03ffed3db3046978965f9958de0",
+        "fn_name": "init_evm_plate",
+        "args": "[3, 120, 224, 43, 166, 106, 188, 232, 59, 247, 231, 195, 25, 202, 220, 8, 209, 70, 131, 142]",
+        "fn_args_hex": "0378e02ba66abce83bf7e7c319cadc08d146838e",
+        "tx_id": "132dca5d75960232d35ff8c57ad733c06ef923906e936a07149f927c6a930d36",
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "called_at": "2026-10-17T16:00:06Z"
       },
       "history": []
     }
