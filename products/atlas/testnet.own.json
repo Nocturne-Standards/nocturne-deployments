@@ -1,0 +1,217 @@
+{
+  "schema": "nocturne.pins.v2",
+  "product": "atlas",
+  "network": "testnet",
+  "tier": "own",
+  "contracts": {
+    "atlas": {
+      "layer": "duskds",
+      "id": "fd2b8594031d56ae584301976e26f7348aaaea3a9900d2967201789f1b4e4ce9",
+      "version": "0.4.1",
+      "tx": "743432a6ab77bc2b34246b7deea5b9326f1d77c2feb659e27485fe903573633c",
+      "at": "2026-10-20T15:15:25Z",
+      "record": {
+        "version": "0.4.1",
+        "contract_id": "fd2b8594031d56ae584301976e26f7348aaaea3a9900d2967201789f1b4e4ce9",
+        "tx_id": "743432a6ab77bc2b34246b7deea5b9326f1d77c2feb659e27485fe903573633c",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "cf259587c7a7013516921a4e8c71ef7ce99bc835793b10daed0ba1c46667e6a7",
+        "deploy_nonce": 1792509076,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-10-20T15:15:25Z"
+      }
+    },
+    "knot-warden": {
+      "layer": "duskds",
+      "id": "9222e9995febf7fed02a0910a58f7c4190e0f388653ddc8b0d12bb4ef944f607",
+      "version": "0.2.1",
+      "tx": "7944e22f4247ee8c1f51af9cc08c65db70d05fc2880dfb5cc6ce837b3c3dcb1f",
+      "at": "2026-10-20T15:15:47Z",
+      "record": {
+        "version": "0.2.1",
+        "contract_id": "9222e9995febf7fed02a0910a58f7c4190e0f388653ddc8b0d12bb4ef944f607",
+        "tx_id": "7944e22f4247ee8c1f51af9cc08c65db70d05fc2880dfb5cc6ce837b3c3dcb1f",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "abf1a0d72ed8c294e5486183ed1e2768ce32adf8c0b39740d529f08a7476f10d",
+        "deploy_nonce": 1792509077,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-10-20T15:15:47Z"
+      }
+    },
+    "evm-atlas": {
+      "layer": "duskevm",
+      "id": "0x152a7238426B403057aB2c7F2Bbe0B52EF694D90",
+      "version": "0.4.1",
+      "tx": "block:4014796",
+      "at": "2026-10-28T16:53:35Z",
+      "record": {
+        "address": "0x152a7238426B403057aB2c7F2Bbe0B52EF694D90",
+        "version": "0.4.1",
+        "deployed_block": 4014796,
+        "deployer": "0xc11d5aAb4234E255E214aC6e8c0ad61FA0836473",
+        "guardian": "0x83966e7E879B05f660fab01e09B911651Be4Ef1D",
+        "timelock_blocks": 150,
+        "source_commit": "b22f6e790062826e5e320d2bc63a4ef03f9ae66f"
+      }
+    },
+    "evm-warden": {
+      "layer": "duskevm",
+      "id": "0x83966e7E879B05f660fab01e09B911651Be4Ef1D",
+      "version": "0.4.1",
+      "tx": "block:4014798",
+      "at": "2026-10-28T16:53:39Z",
+      "record": {
+        "address": "0x83966e7E879B05f660fab01e09B911651Be4Ef1D",
+        "version": "0.4.1",
+        "deployed_block": 4014798,
+        "atlas": "0x152a7238426B403057aB2c7F2Bbe0B52EF694D90",
+        "scheduler": "0xc11d5aAb4234E255E214aC6e8c0ad61FA0836473",
+        "delay_blocks": 150,
+        "source_commit": "b22f6e790062826e5e320d2bc63a4ef03f9ae66f"
+      }
+    }
+  },
+  "state": {
+    "atlas.init_operator": {
+      "value": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+      "since": "7c8ac817adaca36894ada4ebc5843af1d8b79f18ec115e2eed709263386e8641",
+      "at": "2026-09-20T09:07:25Z"
+    },
+    "atlas.set_service": {
+      "value": {
+        "name": "vigil_policy",
+        "id": "5ff0cdc42fe9a58ea16c66eaabb85330d272c8ca08b85734b2977a719c91467a"
+      },
+      "since": "eec447b679cadcfad35e1fa27baaf4f3a238ddf9a156d95e6df46c384b08772c",
+      "at": "2026-09-22T17:12:04Z"
+    },
+    "atlas.set_constant": {
+      "value": {
+        "name": "vigil.open.bond",
+        "value": 1000000000
+      },
+      "since": "24cc6adc526e358ac360f8630c4b6ee1283cf38bb87fabe2d87f607c16110070",
+      "at": "2026-09-21T13:51:15Z"
+    },
+    "knot-warden.init_warden": {
+      "value": {
+        "atlas": "fd2b8594031d56ae584301976e26f7348aaaea3a9900d2967201789f1b4e4ce9",
+        "scheduler": {
+          "External": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX"
+        },
+        "delay_blocks": 30
+      },
+      "since": "14845e09a7d885c0608f9739d52e7de87780167a97191efcbc87627982dc6037",
+      "at": "2026-10-20T15:17:06Z"
+    },
+    "atlas.init_guardian": {
+      "value": {
+        "guardian": {
+          "Contract": "9222e9995febf7fed02a0910a58f7c4190e0f388653ddc8b0d12bb4ef944f607"
+        },
+        "timelock_blocks": 30
+      },
+      "since": "5addf0971971ded6849fa26dc918a9f7beabfce0e322e35c58f78f2b8260b452",
+      "at": "2026-10-20T15:17:26Z"
+    },
+    "knot-warden.schedule_service": {
+      "value": {
+        "name": "vigil_gas_logic",
+        "id": "a63a652fe6598ca5b02deeb6935f823cf319c1d30447214f3103ccb053cf110f"
+      },
+      "since": "a71ed1bc603038b48aeddfa8d1b5345ae611de1774a24d686b07998af61ab71c",
+      "at": "2026-10-28T14:36:11Z"
+    },
+    "knot-warden.execute_service": {
+      "value": "vigil_gas_logic",
+      "since": "38c4edcbe41b138b2e244f64f02390d36509d18fdd4f180ddbbd3623d05f561a",
+      "at": "2026-10-28T14:42:10Z"
+    },
+    "atlas.set_guardian": {
+      "value": {
+        "Contract": "113159d33377e7778d552cc48f40318c44643ca06970e2482b41b276a4d9cdb3"
+      },
+      "since": "002aceda2811b2ddc8d3276b406f781fece7b8108946b4d0327a8190a8d2ea62",
+      "at": "2026-09-27T14:27:53Z"
+    },
+    "knot-warden.schedule_service.season-roots": {
+      "value": {
+        "name": "season-roots",
+        "id": "1ede82ef4d7e80e481724bf70dfd3db3da42aafb76a404c720da3bc46e6781ab"
+      },
+      "since": "b3b79ef5931c80755981ea329d4e3cd645cd7e5b03d82ebf1a81749824085a73",
+      "at": "2026-10-14T11:22:18Z"
+    },
+    "knot-warden.schedule_service.season-credentials": {
+      "value": {
+        "name": "season-credentials",
+        "id": "c43e4535cfa2daf825964585e8d3f2d196f800aa338744f04588f1f8c77f8fb5"
+      },
+      "since": "f036a072e271e7d5eb88a1a8b44b5278ca4e41a34ad48a06e8e1de4408808034",
+      "at": "2026-10-14T11:22:39Z"
+    },
+    "knot-warden.execute_service.season-roots": {
+      "value": "season-roots",
+      "since": "7c033100b7cba1e05b554a8bb012c2bcfe436afe7ed75a63c17696d536f39725",
+      "at": "2026-10-14T11:24:37Z"
+    },
+    "knot-warden.execute_service.season-credentials": {
+      "value": "season-credentials",
+      "since": "e132abb5c37e806d552c787f74e00fdc6686905dc64c4b2d0ce9a384f7d98271",
+      "at": "2026-10-14T11:24:59Z"
+    },
+    "knot-warden.schedule_service.vigil_sozu": {
+      "value": {
+        "name": "vigil_sozu",
+        "id": "68fb863a0b6fd90b37863beec2827c005af5e0facdb7be8a6bdaf710f048b44f"
+      },
+      "since": "8b91bfc442d743c4dda5a1e938217c8743da08594e17316d64515c98846e1016",
+      "at": "2026-10-18T17:42:35Z"
+    },
+    "knot-warden.schedule_service.vigil_wicket": {
+      "value": {
+        "name": "vigil_wicket",
+        "id": "e3d81a3deb21fafce0a1fa61945bb2bb806e0652dbc643b909bef5723e375e83"
+      },
+      "since": "c6954ee135958b871c607825f2b3bec2984315a0044bb9b8a23ca6d36433c108",
+      "at": "2026-10-18T17:42:55Z"
+    },
+    "knot-warden.execute_service.vigil_sozu": {
+      "value": "vigil_sozu",
+      "since": "be9dd73c64719e6bd302e0dfc037cfc80ba363ead77517ce572257a4dbf3d555",
+      "at": "2026-10-18T17:48:34Z"
+    },
+    "knot-warden.execute_service.vigil_wicket": {
+      "value": "vigil_wicket",
+      "since": "a1af69e99607f98fbe649677824d8428fb4cdc003acb0c57f65c1b2f5be76545",
+      "at": "2026-10-18T17:48:55Z"
+    },
+    "knot-warden.schedule_service.knot-registry": {
+      "value": {
+        "name": "knot-registry",
+        "id": "29db8e8eedd70bb42fe477131ca967069e2e641a0c0411ebf7f8ae2de0e9e731"
+      },
+      "since": "7dd066de8707082459f4d3acb1247523c6537a8d561266afee169b79781fd86e",
+      "at": "2026-10-28T14:57:09Z"
+    },
+    "knot-warden.execute_service.knot-registry": {
+      "value": "knot-registry",
+      "since": "eabeadc4771daf1fbd68f368c03e1fe3f5e59b4f395fe0e5cab54108ee1f075b",
+      "at": "2026-10-28T15:13:59Z"
+    },
+    "evm-warden.service.native.knot-registry": {
+      "value": {
+        "target": "0x83966e7E879B05f660fab01e09B911651Be4Ef1D",
+        "name": "native.knot-registry",
+        "kind": 2,
+        "data": "0x29db8e8eedd70bb42fe477131ca967069e2e641a0c0411ebf7f8ae2de0e9e731"
+      },
+      "since": "block:4014959",
+      "at": "2026-10-28T16:59:01Z"
+    }
+  },
+  "events": 177,
+  "last_event": "df1c65f47a32f6f7c50f5d66caa5b3071ca6f4ca422688eadf1891908e4fd537"
+}

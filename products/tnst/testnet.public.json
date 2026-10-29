@@ -1,0 +1,128 @@
+{
+  "schema": "nocturne.pins.v2",
+  "product": "tnst",
+  "network": "testnet",
+  "tier": "public",
+  "contracts": {
+    "tnst-token": {
+      "layer": "duskds",
+      "id": "7261b8a41869a8cafdba7b3e2e65126b3679888b3efb647b00e362029495e757",
+      "version": "0.2.0",
+      "tx": "7213dbc6e3aa7b436962071c02999f0492816efb324727f60376e335fa82d601",
+      "at": "2026-09-24T13:12:55Z",
+      "record": {
+        "version": "0.2.0",
+        "contract_id": "7261b8a41869a8cafdba7b3e2e65126b3679888b3efb647b00e362029495e757",
+        "tx_id": "7213dbc6e3aa7b436962071c02999f0492816efb324727f60376e335fa82d601",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "af65b9b65edb73fac5816e5238bffa58dc26c38689b6349414f6abda3591a709",
+        "deploy_nonce": 1790255557,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-09-24T13:12:55Z"
+      }
+    },
+    "tnst-token-evm": {
+      "layer": "duskevm",
+      "id": "0x15fb8738844a40d65a1607fb920d136d267bb56d",
+      "version": null,
+      "tx": "0x0a852719e9dc423bf4e964363b0929da61052888ac58b5da808763b9506c8bd2",
+      "at": "2026-08-28T13:00:23Z",
+      "record": {
+        "address": "0x15fb8738844a40d65a1607fb920d136d267bb56d",
+        "chain_id": 745,
+        "deploy_tx": "0x0a852719e9dc423bf4e964363b0929da61052888ac58b5da808763b9506c8bd2",
+        "minter": "0xc11d5aAb4234E255E214aC6e8c0ad61FA0836473",
+        "admin": "0xc11d5aAb4234E255E214aC6e8c0ad61FA0836473",
+        "decimals": 9,
+        "symbol": "tNST",
+        "name": "Nocturne Standards Test Token",
+        "deployed_at": "2026-08-28T13:00:23Z",
+        "verified_at": "2026-08-30T19:42:04Z",
+        "verification": {
+          "method": "blockscout-api-v2-standard-input",
+          "explorer": "https://explorer.testnet.evm.dusk.network",
+          "fully_verified": true
+        }
+      }
+    },
+    "tnst-token-data": {
+      "layer": "duskds",
+      "id": "b5ad53e73b5055edf647b75715eb2580c5d6ed7636c484c58a5b1707de54ef6a",
+      "version": "0.1.1",
+      "tx": "c55eb232fdba347b68fe1027d75ac0f227da19e8d2443cac8dc177b0aab60931",
+      "at": "2026-09-24T13:12:36Z",
+      "record": {
+        "version": "0.1.1",
+        "contract_id": "b5ad53e73b5055edf647b75715eb2580c5d6ed7636c484c58a5b1707de54ef6a",
+        "tx_id": "c55eb232fdba347b68fe1027d75ac0f227da19e8d2443cac8dc177b0aab60931",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "703a8412bdd8c0f15111839c99eb64a9d2cd099b51576c18c81e7df9d8bfa646",
+        "deploy_nonce": 1790255542,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-09-24T13:12:36Z"
+      }
+    }
+  },
+  "state": {
+    "tnst-token.init_token": {
+      "value": {
+        "name": "Nocturne Standards Test Token",
+        "symbol": "tNST",
+        "decimals": 9,
+        "initial_balances": []
+      },
+      "since": "58b2cdcef86d99f55cafff26e1fc6294fcc2f7d4c684bd3a462aa53671c20f6f",
+      "at": "2026-09-24T13:14:14Z"
+    },
+    "tnst-token.grant_minter": {
+      "value": {
+        "kind": "Contract",
+        "bytes": [
+          130,
+          236,
+          245,
+          115,
+          246,
+          48,
+          134,
+          49,
+          251,
+          0,
+          103,
+          137,
+          93,
+          42,
+          66,
+          85,
+          215,
+          92,
+          238,
+          20,
+          197,
+          245,
+          119,
+          156,
+          158,
+          13,
+          204,
+          215,
+          101,
+          12,
+          195,
+          155
+        ]
+      },
+      "since": "5f7933a0a5bd336136448cd4d439bfdf09ae461a7b589cdd582568411f988a5b",
+      "at": "2026-09-24T13:24:55Z"
+    },
+    "tnst-token.init_data": {
+      "value": "b5ad53e73b5055edf647b75715eb2580c5d6ed7636c484c58a5b1707de54ef6a",
+      "since": "2e1df4e929eb0624568df558f000d859c6e3ca894a8fe97ca869d16dabc94029",
+      "at": "2026-09-24T13:13:35Z"
+    }
+  },
+  "events": 17,
+  "last_event": "012fa55442dcc394b180b09774118a26f0e4a5656189a8b4ce4a46ef6b2b6c0d"
+}

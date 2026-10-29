@@ -1,0 +1,28 @@
+name: pins
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  pins:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+
+      - name: Tool tests
+        run: uv run --project tools/nocturne-pins pytest -q tools/nocturne-pins/tests
+
+      - name: Schema, replay, refs, tiers, legacy files
+        run: uv run --project tools/nocturne-pins nocturne-pins check --root .
+
+      - name: No local paths
+        run: python3 scripts/check-no-local-paths.py
+
+      - name: Rust reader
+        run: cargo test --locked

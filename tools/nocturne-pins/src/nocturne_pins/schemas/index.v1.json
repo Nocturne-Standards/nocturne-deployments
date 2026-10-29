@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "nocturne.index.v1",
+  "title": "Catalog of one pin repo",
+  "type": "object",
+  "required": ["schema", "repo", "visibility", "networks", "entries"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {"const": "nocturne.index.v1"},
+    "repo": {"type": "string", "pattern": "^[A-Za-z0-9-]+/[A-Za-z0-9._-]+$"},
+    "visibility": {"enum": ["public", "private"]},
+    "note": {"type": "string"},
+    "networks": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": {
+          "type": "object",
+          "properties": {
+            "chain_id": {"type": "integer"},
+            "rpc": {"type": "string"},
+            "explorer": {"type": ["string", "null"]}
+          }
+        }
+      }
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["product", "network", "tier", "current", "history"],
+        "additionalProperties": false,
+        "properties": {
+          "product": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+          "network": {"type": "string"},
+          "tier": {"enum": ["own", "public"]},
+          "current": {"type": "string"},
+          "history": {"type": "string"},
+          "shadows": {"type": "string"}
+        }
+      }
+    },
+    "calls": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["product", "network", "tier", "path"],
+        "additionalProperties": false,
+        "properties": {
+          "product": {"type": "string"},
+          "network": {"type": "string"},
+          "tier": {"enum": ["own", "public"]},
+          "path": {"type": "string"}
+        }
+      }
+    },
+    "upstream": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["repo", "url"],
+        "additionalProperties": false,
+        "properties": {
+          "repo": {"type": "string"},
+          "url": {"type": "string"},
+          "sibling": {"type": "string"}
+        }
+      }
+    },
+    "legacy": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "flat": {"type": "string"},
+          "duskds": {"type": "string"},
+          "duskevm": {"type": "string"}
+        }
+      }
+    }
+  }
+}

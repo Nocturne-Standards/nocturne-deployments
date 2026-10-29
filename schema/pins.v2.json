@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "nocturne.pins.v2",
+  "title": "Current file: what is live now for one product, network and tier",
+  "type": "object",
+  "required": ["schema", "product", "network", "tier", "contracts", "state", "events", "last_event"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {"const": "nocturne.pins.v2"},
+    "product": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+    "network": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+    "tier": {"enum": ["own", "public"]},
+    "contracts": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["layer", "id", "at", "record"],
+        "additionalProperties": false,
+        "properties": {
+          "layer": {"enum": ["duskds", "duskevm"]},
+          "id": {"type": "string", "minLength": 1},
+          "version": {"type": ["string", "null"]},
+          "tx": {"type": ["string", "null"]},
+          "at": {"type": "string"},
+          "refs": {"type": "object", "additionalProperties": {"type": "string"}},
+          "record": {"type": "object"}
+        }
+      }
+    },
+    "state": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["value", "since", "at"],
+        "additionalProperties": false,
+        "properties": {
+          "value": {},
+          "since": {"type": ["string", "null"]},
+          "at": {"type": "string"}
+        }
+      }
+    },
+    "events": {"type": "integer", "minimum": 0},
+    "last_event": {"type": ["string", "null"], "pattern": "^[0-9a-f]{64}$"}
+  }
+}

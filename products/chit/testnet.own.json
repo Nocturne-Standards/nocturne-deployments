@@ -1,0 +1,571 @@
+{
+  "schema": "nocturne.pins.v2",
+  "product": "chit",
+  "network": "testnet",
+  "tier": "own",
+  "contracts": {
+    "agent-mandate": {
+      "layer": "duskds",
+      "id": "3707325bb760c21ca6410c4a4b47f549ed87338690b1764f018d9c00f518b94c",
+      "version": "0.2.0",
+      "tx": "07894aab83b0414df63b593ea2dd5c9e27d4e491f38a79aba809106551a5ef64",
+      "at": "2026-09-24T20:54:26Z",
+      "record": {
+        "version": "0.2.0",
+        "contract_id": "3707325bb760c21ca6410c4a4b47f549ed87338690b1764f018d9c00f518b94c",
+        "tx_id": "07894aab83b0414df63b593ea2dd5c9e27d4e491f38a79aba809106551a5ef64",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "f653f730d748833f4638f52fac10d28f4f9c347c8b5d88f8be996fdbe3a0fc2b",
+        "deploy_nonce": 1790283246,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-09-24T20:54:26Z"
+      }
+    },
+    "agent-compliance-gate": {
+      "layer": "duskds",
+      "id": "e0007aa0dceaafea777abbbea86cc48df8af4bd98a5538466fd960c70ca51311",
+      "version": "0.3.0",
+      "tx": "323219cd40713a9d176529497ed7d87b773626c7c1b3b4937d3a941bf3fa3433",
+      "at": "2026-09-29T12:37:18Z",
+      "record": {
+        "version": "0.3.0",
+        "contract_id": "e0007aa0dceaafea777abbbea86cc48df8af4bd98a5538466fd960c70ca51311",
+        "tx_id": "323219cd40713a9d176529497ed7d87b773626c7c1b3b4937d3a941bf3fa3433",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "8c5a7f0687d34869bf1682acb59e61b584541ac639277f13c0f4523dd301b177",
+        "deploy_nonce": 1790685416,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-09-29T12:37:18Z"
+      }
+    },
+    "agent-settlement": {
+      "layer": "duskds",
+      "id": "d7127728b576fd4992e78e0bafd6a2bf779b4d6bfffd651f6be8d1eef1095e4c",
+      "version": "0.2.0",
+      "tx": "9b1a3d48d2a6481c0ca018db00a477e0a218992c4ff5101f8e41eedf6173df1a",
+      "at": "2026-09-29T12:38:18Z",
+      "record": {
+        "version": "0.2.0",
+        "contract_id": "d7127728b576fd4992e78e0bafd6a2bf779b4d6bfffd651f6be8d1eef1095e4c",
+        "tx_id": "9b1a3d48d2a6481c0ca018db00a477e0a218992c4ff5101f8e41eedf6173df1a",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "fbfd5daa89e3fa0aa5fb5d64124b13dfb75f6d1667fc96c86843c3546fb00ae7",
+        "deploy_nonce": 1790685486,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-09-29T12:38:18Z"
+      }
+    },
+    "agent-cash-escrow": {
+      "layer": "duskds",
+      "id": "9add4135138edda6f2460451d0f16bd1232524d1d0779287eb907bddc0e27824",
+      "version": "0.2.0",
+      "tx": "cf17207ed47783024dbc6f04154b6b578169651cd72a256fd373862b407d7566",
+      "at": "2026-09-24T21:13:26Z",
+      "record": {
+        "version": "0.2.0",
+        "contract_id": "9add4135138edda6f2460451d0f16bd1232524d1d0779287eb907bddc0e27824",
+        "tx_id": "cf17207ed47783024dbc6f04154b6b578169651cd72a256fd373862b407d7566",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "22335b9f5b2dadd77f6237fc2fc16b1bebf0384c83fc3079e5ce802f4c4bef86",
+        "deploy_nonce": 1790284389,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-09-24T21:13:26Z"
+      }
+    },
+    "chit-receive-dusk-demo": {
+      "layer": "duskds",
+      "id": "6541ed45a92f290933826e0d7fce1e242f6b262bf686c9081899253b0b343abe",
+      "version": "0.1.0",
+      "tx": "e0df3b79618af5ce1909a780ecde96b7a88b140026e286b0d52222561fbe6859",
+      "at": "2026-08-28T20:45:20Z",
+      "record": {
+        "version": "0.1.0",
+        "contract_id": "6541ed45a92f290933826e0d7fce1e242f6b262bf686c9081899253b0b343abe",
+        "tx_id": "e0df3b79618af5ce1909a780ecde96b7a88b140026e286b0d52222561fbe6859",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "be57d2920db3e532b62544bd3b68502e5af57a6dfe8309180908f0866252fc37",
+        "deploy_nonce": 1787949899,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-08-28T20:45:20Z"
+      }
+    },
+    "chit-mock-stablecoin": {
+      "layer": "duskds",
+      "id": "713f8304ce8e7b57707eab4f6d1a80e8680376b430efcd457eb9c4239c055bc7",
+      "version": "0.1.1",
+      "tx": "97c3c9567032648c7e7a79bb4b3ee0318925fea4e4914fe19b4f95cd2668706a",
+      "at": "2026-08-08T20:08:41Z",
+      "record": {
+        "version": "0.1.1",
+        "contract_id": "713f8304ce8e7b57707eab4f6d1a80e8680376b430efcd457eb9c4239c055bc7",
+        "tx_id": "97c3c9567032648c7e7a79bb4b3ee0318925fea4e4914fe19b4f95cd2668706a",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "b6410f73b674773f83c35385aa3b815bf01ea87e4659a806a7e06bf0193c0c7c",
+        "deploy_nonce": 1786219706,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-08-08T20:08:41Z"
+      }
+    },
+    "agent-session-escrow": {
+      "layer": "duskds",
+      "id": "fea6c295e3ea6268af822d9105f538af7a455afc535ea5350866a0d8c11c1852",
+      "version": "0.2.0",
+      "tx": "cad9a99b044a8573ddc2ebe101bde371c826af1a742b688c64291652e8fe4d39",
+      "at": "2026-10-15T15:07:38Z",
+      "record": {
+        "version": "0.2.0",
+        "contract_id": "fea6c295e3ea6268af822d9105f538af7a455afc535ea5350866a0d8c11c1852",
+        "tx_id": "cad9a99b044a8573ddc2ebe101bde371c826af1a742b688c64291652e8fe4d39",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "24a7e61068c07c6aedae030cee90ba9604ad73d6fb7ea83544a739dca42aa838",
+        "deploy_nonce": 1792076846,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-10-15T15:07:38Z"
+      }
+    },
+    "agent-compliance-gate-tnst": {
+      "layer": "duskds",
+      "id": "8636b7d5ff490b0661a98ce300b8affccad6607fa3e9bc73ba76e771fb2370ec",
+      "version": "0.1.3",
+      "tx": "e42aaa4754ff5b42a2373fc3e450c0221a86c2b1e4ec4c63067f27fc353d422a",
+      "at": "2026-08-26T23:32:22Z",
+      "record": {
+        "version": "0.1.3",
+        "contract_id": "8636b7d5ff490b0661a98ce300b8affccad6607fa3e9bc73ba76e771fb2370ec",
+        "tx_id": "e42aaa4754ff5b42a2373fc3e450c0221a86c2b1e4ec4c63067f27fc353d422a",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "00887964a32e6edaef19f8d192509112a3e35e7a97152b1c167e1914acf5bd09",
+        "deploy_nonce": 1787787119,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-08-26T23:32:22Z"
+      }
+    },
+    "agent-settlement-tnst": {
+      "layer": "duskds",
+      "id": "11c0e3e202e386d3069f194de6746ac9306060a42214fc9547cb904cd66a11ed",
+      "version": "0.1.1",
+      "tx": "f1bc80c7fa2514dd7b92645692704f2bcee67e11ac0bed584c2d3a2b00b66c5b",
+      "at": "2026-08-26T23:32:41Z",
+      "record": {
+        "version": "0.1.1",
+        "contract_id": "11c0e3e202e386d3069f194de6746ac9306060a42214fc9547cb904cd66a11ed",
+        "tx_id": "f1bc80c7fa2514dd7b92645692704f2bcee67e11ac0bed584c2d3a2b00b66c5b",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "695c64ca04f3e09013016af26e2c23b088e4e97aa44e7862c55c571022cc99fc",
+        "deploy_nonce": 1787787144,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-08-26T23:32:41Z"
+      }
+    },
+    "agent-cash-escrow-tnst": {
+      "layer": "duskds",
+      "id": "bf2d7162da00442403770b576a31baeda5d8516dc5da6e72548ae36a7f340c90",
+      "version": "0.1.0",
+      "tx": "7fb859c755cdf6e2235f5f1d2274842cc0bcaa63167a17aabb13e6c2ed42926b",
+      "at": "2026-08-26T23:33:00Z",
+      "record": {
+        "version": "0.1.0",
+        "contract_id": "bf2d7162da00442403770b576a31baeda5d8516dc5da6e72548ae36a7f340c90",
+        "tx_id": "7fb859c755cdf6e2235f5f1d2274842cc0bcaa63167a17aabb13e6c2ed42926b",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "da76eedc87b938e53afdc32cd3a9b7ab681e904ef2b6c184fb22ba83ab26b95c",
+        "deploy_nonce": 1787787162,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-08-26T23:33:00Z"
+      }
+    },
+    "chit-receive-tnst-demo": {
+      "layer": "duskds",
+      "id": "439140ccfa3fc1a1c978a0783052adc3915046d292609141f9d4e9cf94bdbfe5",
+      "version": "0.1.0",
+      "tx": "cd1a7406899e4fa09b1b7842f086d993c338566c4bf6065f340e84e5c32a3061",
+      "at": "2026-08-26T23:33:21Z",
+      "record": {
+        "version": "0.1.0",
+        "contract_id": "439140ccfa3fc1a1c978a0783052adc3915046d292609141f9d4e9cf94bdbfe5",
+        "tx_id": "cd1a7406899e4fa09b1b7842f086d993c338566c4bf6065f340e84e5c32a3061",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "be57d2920db3e532b62544bd3b68502e5af57a6dfe8309180908f0866252fc37",
+        "deploy_nonce": 1787787181,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-08-26T23:33:21Z"
+      }
+    },
+    "chit-session-projector": {
+      "layer": "duskds",
+      "id": "6df0a8fc94ee8305f2fd33c96a6840b691e7f1e32351a98f5b9f023a7dd6412b",
+      "version": "0.1.0",
+      "tx": "5dbac97583f08c2cdb1d6d177942c2d5adb3e6d2508d0d13da6b5c7269d56f1a",
+      "at": "2026-10-07T11:39:11Z",
+      "record": {
+        "version": "0.1.0",
+        "contract_id": "6df0a8fc94ee8305f2fd33c96a6840b691e7f1e32351a98f5b9f023a7dd6412b",
+        "tx_id": "5dbac97583f08c2cdb1d6d177942c2d5adb3e6d2508d0d13da6b5c7269d56f1a",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "355276a5b04c7fa0f592566cf2c3a5edf89779a0f362cf9552a330ba63f2fece",
+        "deploy_nonce": 1791373134,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-10-07T11:39:11Z"
+      }
+    },
+    "agent-mandate-data": {
+      "layer": "duskds",
+      "id": "d1b0bdfee1abf9e79392210d0ecde6a3bcbca4937f400f17845fd6de5dbd3057",
+      "version": "0.1.0",
+      "tx": "492272384440cd608b1f89d62e552825aa322e476426c113b3464e0b1c46b55d",
+      "at": "2026-09-24T20:52:16Z",
+      "record": {
+        "version": "0.1.0",
+        "contract_id": "d1b0bdfee1abf9e79392210d0ecde6a3bcbca4937f400f17845fd6de5dbd3057",
+        "tx_id": "492272384440cd608b1f89d62e552825aa322e476426c113b3464e0b1c46b55d",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "5ba6e9680e2bc31f929e363fea8271f3aebdbf535c83642b8aecd054a3dd1868",
+        "deploy_nonce": 1790283112,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-09-24T20:52:16Z"
+      }
+    },
+    "agent-cash-escrow-data": {
+      "layer": "duskds",
+      "id": "5453fc98695587432a46ea6153156c5982b411a62fa03894ed59e182e00727ef",
+      "version": "0.1.0",
+      "tx": "655828eeada9313411b71363b74d28f575e0c9945aa467959a708fabbf5b1333",
+      "at": "2026-09-24T20:56:06Z",
+      "record": {
+        "version": "0.1.0",
+        "contract_id": "5453fc98695587432a46ea6153156c5982b411a62fa03894ed59e182e00727ef",
+        "tx_id": "655828eeada9313411b71363b74d28f575e0c9945aa467959a708fabbf5b1333",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "a2eb591b2a2ea6ffd697f5906aba5195f903e3a55626b2617c68410c80f850ad",
+        "deploy_nonce": 1790283345,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-09-24T20:56:06Z"
+      }
+    },
+    "agent-session-escrow-data": {
+      "layer": "duskds",
+      "id": "64c1c43a3317ef9cde857ddaa4c4fae5abc0d91743e7ace21175a414b2b6b162",
+      "version": "0.1.0",
+      "tx": "17625df1f0cfd4d9d168aa45cb28fac00135783aab6de43153103accf2227b68",
+      "at": "2026-09-29T12:37:37Z",
+      "record": {
+        "version": "0.1.0",
+        "contract_id": "64c1c43a3317ef9cde857ddaa4c4fae5abc0d91743e7ace21175a414b2b6b162",
+        "tx_id": "17625df1f0cfd4d9d168aa45cb28fac00135783aab6de43153103accf2227b68",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "abbc329ebe81b0e062203285ac29a9848bdb628f16a378dab816bb537c12758b",
+        "deploy_nonce": 1790685445,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-09-29T12:37:37Z"
+      }
+    },
+    "agent-gas-meter-data": {
+      "layer": "duskds",
+      "id": "0513b1890bf646f9e53af92527e455c0f17a60c56972632fc05728c6d0fdfeb6",
+      "version": "0.1.0",
+      "tx": "829a0601711a6e27ff8b6e473104a13a1af70eb185bceb16e8e61df9d353c55e",
+      "at": "2026-09-24T21:14:26Z",
+      "record": {
+        "version": "0.1.0",
+        "contract_id": "0513b1890bf646f9e53af92527e455c0f17a60c56972632fc05728c6d0fdfeb6",
+        "tx_id": "829a0601711a6e27ff8b6e473104a13a1af70eb185bceb16e8e61df9d353c55e",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "1638ae5c44cbb1cecccd5354d69427f7b5051dde65777c852fafc34040dd3770",
+        "deploy_nonce": 1790284449,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-09-24T21:14:26Z"
+      }
+    },
+    "agent-gas-meter": {
+      "layer": "duskds",
+      "id": "399781079a1819dfa8c03fcd7e5ab12c308516c0f2495b3d581ddc6a03488a96",
+      "version": "0.2.0",
+      "tx": "ea980edd1ecc98198329c0851259bdcc881eb9be618fcf278f07dce688b52a1f",
+      "at": "2026-09-24T21:14:46Z",
+      "record": {
+        "version": "0.2.0",
+        "contract_id": "399781079a1819dfa8c03fcd7e5ab12c308516c0f2495b3d581ddc6a03488a96",
+        "tx_id": "ea980edd1ecc98198329c0851259bdcc881eb9be618fcf278f07dce688b52a1f",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "9f65c7f5ea96bd7bfdd0635abae8d3723c13fca9f2249ad6be8199c023976543",
+        "deploy_nonce": 1790284468,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-09-24T21:14:46Z"
+      }
+    },
+    "agent-compliance-gate-data": {
+      "layer": "duskds",
+      "id": "ec09de8b3f6d41908f014f6a9f8f7374bf71bafe98276aa999a773bd15db3930",
+      "version": "0.2.0",
+      "tx": "1fdcacf783aaa64a70a681506a5840aebaf89448c94f7e74e24d95c0dbeb452e",
+      "at": "2026-09-29T12:36:48Z",
+      "record": {
+        "version": "0.2.0",
+        "contract_id": "ec09de8b3f6d41908f014f6a9f8f7374bf71bafe98276aa999a773bd15db3930",
+        "tx_id": "1fdcacf783aaa64a70a681506a5840aebaf89448c94f7e74e24d95c0dbeb452e",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "6f412a069e22796cc9da0a924201c3d5a18ee2b91455f2d9d8cc65ec1ea3ac91",
+        "deploy_nonce": 1790685388,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-09-29T12:36:48Z"
+      }
+    }
+  },
+  "state": {
+    "agent-compliance-gate.init_mandate_contract": {
+      "value": "3707325bb760c21ca6410c4a4b47f549ed87338690b1764f018d9c00f518b94c",
+      "since": "1246acfc581a31694e8453989f4f9cbe80883cca0b96f401e72faa5aea1c0613",
+      "at": "2026-09-24T21:32:25Z"
+    },
+    "agent-compliance-gate.add_settlement_contract": {
+      "value": "458a96303a048c4a6ecdc36ffef7ef0296f74a745662f6c303a0c1931ba4cccc",
+      "since": "e7d3965dbe0490b19f640d47130edd0dddeddfc4851e9a4f30f316c86da8ed10",
+      "at": "2026-09-29T07:57:02Z"
+    },
+    "agent-compliance-gate.init_cash_escrow": {
+      "value": "9add4135138edda6f2460451d0f16bd1232524d1d0779287eb907bddc0e27824",
+      "since": "d9e5ba1ec9a37b04245aca6c8174a42c81f46423ca57824fe91f4e94bf807740",
+      "at": "2026-09-24T21:33:05Z"
+    },
+    "agent-settlement.init_gate": {
+      "value": "e0007aa0dceaafea777abbbea86cc48df8af4bd98a5538466fd960c70ca51311",
+      "since": "f19d84f1f7b82934ca5300830e532a6c671deaced5e3f48ca8cca0d5c288d724",
+      "at": "2026-09-29T12:48:28Z"
+    },
+    "agent-settlement.init_cash_escrow": {
+      "value": "9add4135138edda6f2460451d0f16bd1232524d1d0779287eb907bddc0e27824",
+      "since": "68a8210d61c86f0c247be899429998add61062805130a5927a51297078bb1d4c",
+      "at": "2026-09-24T21:35:58Z"
+    },
+    "agent-settlement.init_token": {
+      "value": "713f8304ce8e7b57707eab4f6d1a80e8680376b430efcd457eb9c4239c055bc7",
+      "since": "ebbf800202d905aafb70e42f6f4cd9b94454cbfda4234926083ee675df28ac65",
+      "at": "2026-08-28T20:50:20Z"
+    },
+    "agent-cash-escrow.init_gate": {
+      "value": "804db8fdbee87dbabecbf6da2bc81fc28effa7c5c7f9384259b8bc89d818ee69",
+      "since": "51b90be87aa1e3376f84d7d19e9f8e2741dee4561305ca00a0403a96889d7031",
+      "at": "2026-09-24T21:30:46Z"
+    },
+    "agent-cash-escrow.init_token": {
+      "value": "713f8304ce8e7b57707eab4f6d1a80e8680376b430efcd457eb9c4239c055bc7",
+      "since": "7b9890f50580d41c688dbbb98f7aeffcd21d94c72561e8e5c5d478d9431cc041",
+      "at": "2026-09-24T21:31:05Z"
+    },
+    "agent-cash-escrow.add_settlement_drawer": {
+      "value": "2ed2605ad85c07911e6978285126d256c0d0a3aef78a1fdc39f5790cc85e8b58",
+      "since": "365a6e7f6b9ff6f21f68c63f5ba2cc85e745d9b30ce9fd3fbeeb3a9344fd7e26",
+      "at": "2026-09-24T21:34:25Z"
+    },
+    "agent-settlement.init_chain_id": {
+      "value": 2,
+      "since": "d513c32c13d924044a0f15d078bd4653626e07d54b8b5c496d510c5cccaefc5a",
+      "at": "2026-09-29T12:49:08Z"
+    },
+    "agent-compliance-gate.init_revocation_contract": {
+      "value": "7515426fe6c48c29d0d6d7cc08eaf30bda195cefca9dbf40da1e99604cc27fc6",
+      "since": "651cd29ffc4f88d5ed9e7c514593eebd21cf85af0ef55958e3dc4d05b96c4613",
+      "at": "2026-09-24T21:32:45Z"
+    },
+    "agent-compliance-gate.init_session_escrow": {
+      "value": "d723eb50eb0d6377d7eac45c12103fcd3e05b73f22abc4cd541a7117b57ff635",
+      "since": "af5cf7d6aa662eecbfe8b91be4160442f6cf32c829eac7f1596c6cc8ab69842d",
+      "at": "2026-10-08T17:55:20Z"
+    },
+    "agent-session-escrow.init_gate": {
+      "value": "e0007aa0dceaafea777abbbea86cc48df8af4bd98a5538466fd960c70ca51311",
+      "since": "11cec4db9340bb4692fc03c3c551ec3c29c6ed11297429f5eb684bc44b210d42",
+      "at": "2026-10-13T16:07:40Z"
+    },
+    "agent-session-escrow.add_settlement_settler": {
+      "value": "d7127728b576fd4992e78e0bafd6a2bf779b4d6bfffd651f6be8d1eef1095e4c",
+      "since": "d416b6d0e49dba7c7add5b7c5ca7ca94bd050e03ecdf30b5eff0ef0cd30bd748",
+      "at": "2026-10-13T16:08:19Z"
+    },
+    "agent-session-escrow.init_token": {
+      "value": "713f8304ce8e7b57707eab4f6d1a80e8680376b430efcd457eb9c4239c055bc7",
+      "since": "abb0fd401bb61901d12d708ba7456b64df3760673962380f7eb0d86848a7ec71",
+      "at": "2026-10-13T16:08:01Z"
+    },
+    "agent-settlement.init_session_escrow": {
+      "value": "d723eb50eb0d6377d7eac45c12103fcd3e05b73f22abc4cd541a7117b57ff635",
+      "since": "56c84492e57ee9e7fe7e5417f529801950ddfd1da6f5692a26c7c5046f56ca31",
+      "at": "2026-10-08T17:55:41Z"
+    },
+    "agent-compliance-gate-tnst.init_mandate_contract": {
+      "value": "b592983fd7ab9ec51483ca7f3bedbba08ae1531c19a4d065bf82be497bf36475",
+      "since": "c6ec81beed346ff9e5d9d5f2750f49efc1bae2717b34115db5efbf5de91d3344",
+      "at": "2026-08-26T23:33:41Z"
+    },
+    "agent-compliance-gate-tnst.init_revocation_contract": {
+      "value": "5e83f7be75b08e37b5f314aa1cd9b8b49ee95216bc21066603dadf1eb3b03cd6",
+      "since": "e1d4662d91f9100d7aacacddffb4924e6ed6dd2f04d4d87cd3eabf92263c3e39",
+      "at": "2026-08-26T23:34:00Z"
+    },
+    "agent-compliance-gate-tnst.add_settlement_contract": {
+      "value": "11c0e3e202e386d3069f194de6746ac9306060a42214fc9547cb904cd66a11ed",
+      "since": "0246bdea3af4186a4e0dd5e0acb01d411a96cea341136789eb00e2d66284124c",
+      "at": "2026-08-26T23:34:20Z"
+    },
+    "agent-compliance-gate-tnst.init_cash_escrow": {
+      "value": "bf2d7162da00442403770b576a31baeda5d8516dc5da6e72548ae36a7f340c90",
+      "since": "ee28db26dc67a57844e10b68333045f9411c7c6812ea4938785578240767a317",
+      "at": "2026-08-26T23:34:40Z"
+    },
+    "agent-settlement-tnst.init_gate": {
+      "value": "8636b7d5ff490b0661a98ce300b8affccad6607fa3e9bc73ba76e771fb2370ec",
+      "since": "ddbce6b81065509bdff70584d639619e5c6b652f3a0fc5f2fd2530afea8de35c",
+      "at": "2026-08-26T23:35:00Z"
+    },
+    "agent-settlement-tnst.init_cash_escrow": {
+      "value": "bf2d7162da00442403770b576a31baeda5d8516dc5da6e72548ae36a7f340c90",
+      "since": "8251619cdddbaca288375c8e1a2809cdd52a85240ae16e9dab4ad3812dca9230",
+      "at": "2026-08-26T23:35:22Z"
+    },
+    "agent-settlement-tnst.init_chain_id": {
+      "value": 2,
+      "since": "099179dba1f33cb7edefc8f8d3c72ddb89e11effd87e4b7c9741a744b9f49c30",
+      "at": "2026-08-26T23:35:40Z"
+    },
+    "agent-settlement-tnst.init_token": {
+      "value": "dd6b5098d71a590d65006431e0306068b16630b2a4693478c325a9dee42a903a",
+      "since": "26e521d08b20f3f99950286a8117b9ace953e34d5f1c76e58c26e3bd7d6ac20a",
+      "at": "2026-08-28T08:47:20Z"
+    },
+    "agent-cash-escrow-tnst.init_gate": {
+      "value": "8636b7d5ff490b0661a98ce300b8affccad6607fa3e9bc73ba76e771fb2370ec",
+      "since": "007cbec1289d5fb8aca82f84b9330cf2ea825b908cd260c03003406edc38494f",
+      "at": "2026-08-26T23:36:20Z"
+    },
+    "agent-cash-escrow-tnst.init_token": {
+      "value": "dd6b5098d71a590d65006431e0306068b16630b2a4693478c325a9dee42a903a",
+      "since": "0eca0a73a663edf1138c3b4a09c787d8f77db1a7c834301c320dd720a3b8df15",
+      "at": "2026-08-28T08:47:40Z"
+    },
+    "agent-cash-escrow-tnst.add_settlement_drawer": {
+      "value": "11c0e3e202e386d3069f194de6746ac9306060a42214fc9547cb904cd66a11ed",
+      "since": "efbc199d9203c7272969c0d05701a887eb3259256e43db1333fa8df15252746d",
+      "at": "2026-08-26T23:37:00Z"
+    },
+    "chit-session-projector.init_gate": {
+      "value": "e0007aa0dceaafea777abbbea86cc48df8af4bd98a5538466fd960c70ca51311",
+      "since": "7a8facf9b929c5d8438a91612330e38ba96ca4d68b2e556f089d07135d926971",
+      "at": "2026-10-07T11:39:30Z"
+    },
+    "chit-session-projector.init_messenger": {
+      "value": "63cd2c93016296b2ec357e31fd44b716cf2cda3b31217d45087f17ccc6440530",
+      "since": "fea41a161d1d1c3d844ab47403bccb088fa4de7fc233289f7c478fd5ce87140e",
+      "at": "2026-10-07T11:39:50Z"
+    },
+    "chit-session-projector.init_min_gas_limit": {
+      "value": 250000,
+      "since": "9b8dc106a2a21027534baafa9d6d806884e87ed8722fd1a3e9afbc89ba188342",
+      "at": "2026-10-07T11:40:10Z"
+    },
+    "chit-session-projector.init_session_gate_evm": {
+      "value": [
+        17,
+        100,
+        210,
+        253,
+        28,
+        168,
+        212,
+        73,
+        125,
+        102,
+        229,
+        21,
+        249,
+        63,
+        241,
+        175,
+        229,
+        130,
+        41,
+        100
+      ],
+      "since": "0bda9354700320bba85b6642336dca858ca2c7a5146aa54f7fcedcec360acd65",
+      "at": "2026-10-07T11:41:30Z"
+    },
+    "agent-mandate.init_data": {
+      "value": "d1b0bdfee1abf9e79392210d0ecde6a3bcbca4937f400f17845fd6de5dbd3057",
+      "since": "8dc6edbc3616c697b601361414a9e160f186e320c0042fc608a12fc35a105957",
+      "at": "2026-09-24T21:29:06Z"
+    },
+    "agent-cash-escrow.init_data": {
+      "value": "5453fc98695587432a46ea6153156c5982b411a62fa03894ed59e182e00727ef",
+      "since": "cc2b40ef49f348bcfff03a3b3e153710b96fa610502e01436fa581ebc47a206e",
+      "at": "2026-09-24T21:29:24Z"
+    },
+    "agent-session-escrow.init_data": {
+      "value": "64c1c43a3317ef9cde857ddaa4c4fae5abc0d91743e7ace21175a414b2b6b162",
+      "since": "2505bead37a25c65d84f4960f841a74e1ce4f348628f5ecf39acc20115499554",
+      "at": "2026-10-13T16:07:21Z"
+    },
+    "agent-gas-meter.init_data": {
+      "value": "0513b1890bf646f9e53af92527e455c0f17a60c56972632fc05728c6d0fdfeb6",
+      "since": "fec34ec0a784b145ba758631d8418bdfad308f9c1939d782de46fd5b8e3c2833",
+      "at": "2026-09-24T21:30:05Z"
+    },
+    "agent-compliance-gate.init_data": {
+      "value": "cd3d821cec5f4fe51f175960448ab611079dfc9310aa6638dc5530f55d18cc90",
+      "since": "9b34fb58f808f0ad0a52ad928753b2ccaeb036b1ad192e8ea49b976a62fff84e",
+      "at": "2026-09-29T07:54:43Z"
+    },
+    "agent-gas-meter.init_gate": {
+      "value": "804db8fdbee87dbabecbf6da2bc81fc28effa7c5c7f9384259b8bc89d818ee69",
+      "since": "702f029975427f14900983cd479e9313f62412935856a9e1ae975b78a481fe16",
+      "at": "2026-09-24T21:32:05Z"
+    },
+    "agent-compliance-gate.init_gas_escrow": {
+      "value": "399781079a1819dfa8c03fcd7e5ab12c308516c0f2495b3d581ddc6a03488a96",
+      "since": "06bd92e890f5993881a8856bad85f50f47c935567bf9608ef0fac6cd79748c5c",
+      "at": "2026-09-24T21:33:26Z"
+    },
+    "agent-mandate.init_deployment_context": {
+      "value": {
+        "chain_id": "0200000000000000000000000000000000000000000000000000000000000000",
+        "deployment_id": "0000000000000000000000000000000000000000000000000000000000000000",
+        "context_tag": "0000000000000000000000000000000000000000000000000000000000000000",
+        "contract_id": "3707325bb760c21ca6410c4a4b47f549ed87338690b1764f018d9c00f518b94c"
+      },
+      "since": "c7a2d30cf6554389cef40dd2d81223159b096aac98bb19a1a4d34164925ac421",
+      "at": "2026-09-24T21:54:14Z"
+    },
+    "legacy.duskds.gas_policy": {
+      "value": {
+        "pay_gas_limit": 207574310,
+        "pay_stipend_lux": 207574310,
+        "gas_price_ceiling_lux_per_gas": 1,
+        "cleanup_bounty_lux": 10000000,
+        "published": true,
+        "sample_count": 32,
+        "observed_max_gas_spent": 180499400,
+        "note": "Published 2026-08-20 from live indexer (session_debited+settled). min_samples=30. pay_gas_limit=ceil(observed_max*1.15). stipend>=limit*ceiling."
+      },
+      "since": null,
+      "at": "2026-10-15T15:07:38Z"
+    }
+  },
+  "events": 274,
+  "last_event": "2e844daff36d5a9f18bc055b17ef51754d504c502cd39fda270dd3a569dba678"
+}

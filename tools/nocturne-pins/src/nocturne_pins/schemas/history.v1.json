@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "nocturne.history.v1",
+  "title": "One history event (one line of history/<product>/<network>.<tier>.jsonl)",
+  "type": "object",
+  "required": ["at", "event"],
+  "additionalProperties": false,
+  "properties": {
+    "at": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$"},
+    "at_source": {"enum": ["record", "chain", "inferred"]},
+    "event": {"enum": ["deployed", "wired", "admin", "proposal", "superseded", "retired", "note", "call"]},
+    "name": {"type": "string", "minLength": 1},
+    "layer": {"enum": ["duskds", "duskevm"]},
+    "id": {"type": "string", "minLength": 1},
+    "by": {"type": "string", "minLength": 1},
+    "version": {"type": ["string", "null"]},
+    "key": {"type": "string", "minLength": 1},
+    "fn": {"type": "string", "minLength": 1},
+    "tx": {"type": ["string", "null"]},
+    "block": {"type": ["integer", "null"]},
+    "refs": {"type": "object", "additionalProperties": {"type": "string"}},
+    "resolved": {"type": "object", "additionalProperties": {"type": "string"}},
+    "sets": {"type": "object"},
+    "text": {"type": "string"},
+    "record": {"type": "object"}
+  },
+  "allOf": [
+    {"if": {"properties": {"event": {"const": "deployed"}}}, "then": {"required": ["name", "layer", "id", "record"]}},
+    {"if": {"properties": {"event": {"enum": ["wired", "admin", "proposal", "call"]}}}, "then": {"required": ["name", "layer", "key", "fn", "record"]}},
+    {"if": {"properties": {"event": {"const": "superseded"}}}, "then": {"required": ["name", "id", "by"]}},
+    {"if": {"properties": {"event": {"const": "retired"}}}, "then": {"required": ["name", "id"]}},
+    {"if": {"properties": {"event": {"const": "note"}}}, "then": {"required": ["text"]}}
+  ]
+}

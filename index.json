@@ -1,0 +1,57 @@
+{
+  "schema": "nocturne.index.v1",
+  "repo": "Nocturne-Standards/nocturne-deployments",
+  "visibility": "public",
+  "note": "Our own testnet instances (tier own) and contracts we invite people to use (tier public). Deploy your own; own entries may change or disappear.",
+  "networks": {
+    "testnet": {
+      "duskds": {
+        "chain_id": 2,
+        "rpc": "https://testnet.nodes.dusk.network",
+        "explorer": null
+      },
+      "duskevm": {
+        "chain_id": 745,
+        "rpc": "https://rpc.testnet.evm.dusk.network",
+        "explorer": "https://explorer.testnet.evm.dusk.network"
+      }
+    }
+  },
+  "entries": [
+    {
+      "product": "atlas",
+      "network": "testnet",
+      "tier": "own",
+      "current": "products/atlas/testnet.own.json",
+      "history": "history/atlas/testnet.own.jsonl"
+    },
+    {
+      "product": "knot",
+      "network": "testnet",
+      "tier": "own",
+      "current": "products/knot/testnet.own.json",
+      "history": "history/knot/testnet.own.jsonl"
+    },
+    {
+      "product": "vigil",
+      "network": "testnet",
+      "tier": "own",
+      "current": "products/vigil/testnet.own.json",
+      "history": "history/vigil/testnet.own.jsonl"
+    },
+    {
+      "product": "chit",
+      "network": "testnet",
+      "tier": "own",
+      "current": "products/chit/testnet.own.json",
+      "history": "history/chit/testnet.own.jsonl"
+    },
+    {
+      "product": "tnst",
+      "network": "testnet",
+      "tier": "public",
+      "current": "products/tnst/testnet.public.json",
+      "history": "history/tnst/testnet.public.jsonl"
+    }
+  ]
+}

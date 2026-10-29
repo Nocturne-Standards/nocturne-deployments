@@ -1,0 +1,13 @@
+/target/
+**/*.rs.bk
+.DS_Store
+
+.superpowers/
+.env
+.env.*
+
+# Local kit pin. Not part of the public tree.
+.cursor/
+FIELD_GUIDE/
+AGENTS.md
+.nocturne-pins.lock

@@ -1,0 +1,16 @@
+[package]
+name = "nocturne-deployments"
+version = "0.2.0"
+edition = "2024"
+rust-version = "1.85"
+license = "Apache-2.0"
+description = "Load nocturne pin files: pins-v2 repos (full names, tiers, private first) and the old monolith layouts."
+publish = false
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"
+
+[dev-dependencies]
+tempfile = "3"

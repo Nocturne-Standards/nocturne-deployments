@@ -1,0 +1,7 @@
+# Substrings that neutralize a leak-gate hit (line contains any of these → ignored).
+
+# This repo is the public pin home. The resolver path is the product contract.
+deployments/testnet.json
+
+# Adoption marker filename contains the kit repo name.
+.nocturne-agent-kit-adopted
