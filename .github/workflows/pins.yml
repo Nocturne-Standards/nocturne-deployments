@@ -12,14 +12,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - uses: astral-sh/setup-uv@v6
 
       - name: Tool tests
         run: uv run --project tools/nocturne-pins pytest -q tools/nocturne-pins/tests
 
-      - name: Schema, replay, refs, tiers, legacy files
-        run: uv run --project tools/nocturne-pins nocturne-pins check --root .
+      - name: Schema, replay, refs, tiers; logs only appended
+        env:
+          BEFORE: ${{ github.event.before }}
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          base=""
+          if [ -n "$BASE_REF" ]; then
+            base="origin/$BASE_REF"
+          elif [ -n "$BEFORE" ] && [ "$BEFORE" != 0000000000000000000000000000000000000000 ] \
+               && git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
+            base="$BEFORE"
+          fi
+          uv run --project tools/nocturne-pins nocturne-pins check --root . ${base:+--base "$base"}
 
       - name: No local paths
         run: python3 scripts/check-no-local-paths.py
