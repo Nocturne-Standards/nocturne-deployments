@@ -1,0 +1,64 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "nocturne.upstream-lock.v1",
+  "title": "Lock of one vendored upstream snapshot (upstream/<name>.lock.json), written by nocturne-pins upstream sync",
+  "type": "object",
+  "required": ["schema", "upstream", "package", "registry", "version", "tag", "commit", "tarball", "files",
+               "provenance", "verified_at", "verified", "not_verified"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {"const": "nocturne.upstream-lock.v1"},
+    "upstream": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+    "package": {"type": "string", "minLength": 1},
+    "registry": {"type": "string", "pattern": "^https://"},
+    "version": {"type": "string", "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$"},
+    "tag": {"type": "string", "minLength": 1},
+    "commit": {"$ref": "#/$defs/commit"},
+    "tarball": {
+      "type": "object",
+      "required": ["url", "integrity", "sha256"],
+      "additionalProperties": false,
+      "properties": {
+        "url": {"type": "string", "pattern": "^https://"},
+        "integrity": {"type": "string", "pattern": "^sha512-[A-Za-z0-9+/]{86}==$"},
+        "sha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "files": {
+      "type": "object",
+      "propertyNames": {"pattern": "^upstream/[a-z0-9][a-z0-9-]*/[A-Za-z0-9._/-]+$"},
+      "additionalProperties": {
+        "type": "object",
+        "required": ["source", "sha256"],
+        "additionalProperties": false,
+        "properties": {
+          "source": {"type": "string", "minLength": 1},
+          "sha256": {"$ref": "#/$defs/sha256"}
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["predicate_type", "repository", "workflow", "ref", "commit", "builder"],
+      "additionalProperties": false,
+      "properties": {
+        "predicate_type": {"type": "string", "minLength": 1},
+        "repository": {"type": "string", "pattern": "^https://github\\.com/[A-Za-z0-9-]+/[A-Za-z0-9._-]+$"},
+        "workflow": {"type": "string", "minLength": 1},
+        "ref": {"type": "string", "pattern": "^refs/tags/"},
+        "commit": {"$ref": "#/$defs/commit"},
+        "builder": {"type": "string", "minLength": 1},
+        "invocation": {"type": ["string", "null"]},
+        "rekor_log_index": {"type": "integer", "minimum": 0},
+        "rekor_integrated_time": {"type": "integer", "minimum": 0}
+      }
+    },
+    "verified_at": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}Z$"},
+    "verified": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "not_verified": {"type": "array", "items": {"type": "string", "minLength": 1}}
+  },
+  "$defs": {
+    "commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+    "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+  }
+}

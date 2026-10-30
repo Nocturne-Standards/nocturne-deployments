@@ -19,6 +19,14 @@ class NotFound(UpstreamError):
     pass
 
 
+class Unreachable(UpstreamError):
+    """The registry or host did not answer usefully (network error, timeout, 429, 5xx).
+
+    Separate from a wrong answer, so a CI check can warn on an outage and still
+    fail on a mismatch.
+    """
+
+
 class Http(Protocol):
     def get(self, url: str) -> bytes:
         """Body of an HTTPS GET; ``NotFound`` on 404."""
@@ -42,9 +50,11 @@ class UrllibHttp:
         except urllib.error.HTTPError as exc:
             if exc.code == 404:
                 raise NotFound(f"{url}: 404") from exc
+            if exc.code == 429 or exc.code >= 500:
+                raise Unreachable(f"{url}: HTTP {exc.code}") from exc
             raise UpstreamError(f"{url}: HTTP {exc.code}") from exc
-        except urllib.error.URLError as exc:
-            raise UpstreamError(f"{url}: {exc.reason}") from exc
+        except (urllib.error.URLError, TimeoutError) as exc:
+            raise Unreachable(f"{url}: {getattr(exc, 'reason', exc)}") from exc
         if len(body) > MAX_BYTES:
             raise UpstreamError(f"{url}: larger than {MAX_BYTES} bytes")
         return body

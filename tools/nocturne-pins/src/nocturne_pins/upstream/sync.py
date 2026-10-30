@@ -84,15 +84,15 @@ def _same_content(old: dict[str, Any] | None, new: dict[str, Any]) -> bool:
 
 
 def with_base(index: dict[str, Any], key: str, entry: dict[str, str]) -> dict[str, Any]:
-    """``index`` with ``base.<key>`` set, ``base`` placed right after ``networks``."""
+    """``index`` with ``base.<key>`` set; ``base`` keeps its place, else goes before ``entries``."""
     base = {**index.get("base", {}), key: entry}
+    if "base" in index:
+        return {name: (base if name == "base" else value) for name, value in index.items()}
     out: dict[str, Any] = {}
     for name, value in index.items():
-        if name == "base":
-            continue
-        out[name] = value
-        if name == "networks":
+        if name == "entries":
             out["base"] = base
+        out[name] = value
     out.setdefault("base", base)
     return out
 
@@ -121,6 +121,9 @@ def sync(root: Path, spec: UpstreamSpec, version: str, http: Http, git: Git,
     snapshot = {rel: artifact.files[src] for rel, src in spec.files.items()}
     classification = spec.classifier().classify(_read_snapshot(root, spec), snapshot)
     lock = build_lock(spec, evidence, release, artifact.tarball, snapshot, clock())
+    lock_errors = validate(lock, LOCK_SCHEMA, spec.lock_path)
+    if lock_errors:
+        raise UpstreamError("lock would not validate: " + "; ".join(lock_errors))
     base_entry = {"version": version, "lock": spec.lock_path}
 
     with locked(root):
