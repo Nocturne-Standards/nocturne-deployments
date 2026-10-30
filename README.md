@@ -27,7 +27,8 @@ Today: `tnst` is `public`; `atlas`, `knot`, `vigil` and `chit` are `own`.
 | `upstream/dusk-networks.lock.json` | Version, tag, commit, tarball hashes, per-file sha256 and provenance of that snapshot |
 | `schema/` | JSON schemas of the three formats |
 | `tools/nocturne-pins` | Resolver and writer (CLI and Python library) |
-| `crates/nocturne-deployments` | Rust reader |
+| `crates/nocturne-deployments` | Rust reader of our pins |
+| `crates/dusk-networks` | Rust reader of the Dusk snapshot: typed `Network`, embedded at build time |
 
 The current file is exactly what its history log replays to. CI rebuilds it and fails on any difference,
 so nobody edits a current file by hand.
@@ -46,7 +47,36 @@ nocturne-pins state atlas/testnet/own
 ```
 
 Without a checkout, the resolver reads this repo's `index.json` from GitHub.
-Rust: `nocturne_deployments::Catalog` (see `crates/nocturne-deployments`).
+Rust: `nocturne_deployments::Catalog` (see `crates/nocturne-deployments`). Dusk network data
+(chain IDs, endpoints, Dusk contract IDs, DuskEVM, labels, blocklist) comes from
+`dusk_networks::by_chain_id` / `by_name`, also reachable as `Catalog::network` /
+`Catalog::network_by_chain_id`. A `networks` section in `index.json` is ignored by the Rust reader.
+Sozu contract IDs in that data are fallbacks: read the live ones from the Sozu hub.
+
+### Rust crates and tags
+
+Both crates are consumed by git tag, never from crates.io (`publish = false`: `dusk-networks`
+embeds `upstream/dusk-networks/` from outside its own directory, which a git dependency
+checks out but `cargo package` would not include).
+
+```toml
+nocturne-deployments = { git = "https://github.com/Nocturne-Standards/nocturne-deployments", tag = "nocturne-deployments-v0.3.0" }
+dusk-networks = { git = "https://github.com/Nocturne-Standards/nocturne-deployments", tag = "nocturne-deployments-v0.3.0" }
+```
+
+One repo tag, `nocturne-deployments-vX.Y.Z`, covers every crate in the workspace; `X.Y.Z` is the
+`nocturne-deployments` crate version. The Dusk snapshot version a tag embeds is
+`dusk_networks::DUSK_NETWORKS_VERSION` (equal to the lock's `version`, checked by test) and is
+named in the tag's release notes. A new Dusk snapshot bumps `dusk-networks` and is released under
+the next `nocturne-deployments` tag.
+
+| Tag | `nocturne-deployments` | `dusk-networks` | Dusk snapshot |
+|-----|------------------------|-----------------|---------------|
+| `nocturne-deployments-v0.2.0` | 0.2.0 | none | none |
+| `nocturne-deployments-v0.3.0` (next) | 0.3.0 | 0.1.0 | 0.3.0 |
+
+`nocturne-deployments` 0.3.0 drops the untyped `Index.networks` field; read networks through
+`Catalog::network` instead.
 
 ## Write
 

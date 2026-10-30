@@ -1,0 +1,16 @@
+[package]
+name = "dusk-networks"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+license = "Apache-2.0 AND MPL-2.0"
+description = "Typed Dusk network data (chain IDs, endpoints, contract IDs, labels, blocklist), embedded from the vendored @dusk-network/networks snapshot."
+# The data is embedded from `upstream/dusk-networks/` at the repo root, outside this
+# crate's directory. A git dependency checks out the whole repo, so that works;
+# `cargo package` would not include it. Consume by git tag, never from crates.io.
+publish = false
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "2"

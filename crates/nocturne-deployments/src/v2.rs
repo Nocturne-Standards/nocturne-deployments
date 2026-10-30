@@ -82,8 +82,8 @@ pub struct Index {
     pub schema: String,
     pub repo: String,
     pub visibility: String,
-    #[serde(default)]
-    pub networks: HashMap<String, HashMap<String, serde_json::Value>>,
+    // An index may still carry a `networks` section; it is ignored. Dusk network data
+    // comes from the vendored base: `Catalog::network`, `Catalog::network_by_chain_id`.
     pub entries: Vec<IndexEntry>,
 }
 
@@ -282,6 +282,17 @@ impl Catalog {
             key: name.to_string(),
             path: self.repos[0].root.clone(),
         })
+    }
+
+    /// A Dusk network from the vendored base (`upstream/dusk-networks/`, embedded in the
+    /// `dusk-networks` crate), by name: `mainnet`, `testnet`, `devnet`.
+    pub fn network(&self, name: &str) -> Option<&'static dusk_networks::Network> {
+        dusk_networks::by_name(name)
+    }
+
+    /// A Dusk network from the vendored base by chain ID: 1 mainnet, 2 testnet, 3 devnet.
+    pub fn network_by_chain_id(&self, chain_id: u64) -> Option<&'static dusk_networks::Network> {
+        dusk_networks::by_chain_id(chain_id)
     }
 
     pub fn resolve(&self, name: &FullName, reader: Reader) -> Result<String> {
