@@ -1,0 +1,183 @@
+"""``upstream sync`` and ``upstream status``: fetch, verify, write the snapshot and its lock.
+
+The tool is the only writer of ``upstream/``. Nothing is written unless every
+verifier passed, and a re-sync of the locked version with identical bytes writes nothing.
+"""
+
+from __future__ import annotations
+
+import hashlib
+import json
+from dataclasses import dataclass
+from pathlib import Path
+from typing import Any, Callable
+
+from .. import jsonio
+from ..schema import validate
+from ..write import locked, now as utc_now
+from .model import Classification, Evidence, Release, UpstreamError
+from .net import Git, Http
+from .npm import VERSION, check_version, version_key
+from .specs import UpstreamSpec
+
+LOCK_SCHEMA = "nocturne.upstream-lock.v1"
+
+
+@dataclass(frozen=True)
+class SyncResult:
+    version: str
+    commit: str
+    changed: bool
+    written: tuple[str, ...]
+    lock: dict[str, Any]
+    classification: Classification
+
+
+def sha256(data: bytes) -> str:
+    return hashlib.sha256(data).hexdigest()
+
+
+def read_lock(root: Path, spec: UpstreamSpec) -> dict[str, Any] | None:
+    path = root / spec.lock_path
+    return jsonio.load(path) if path.exists() else None
+
+
+def _read_snapshot(root: Path, spec: UpstreamSpec) -> dict[str, bytes] | None:
+    base = root / spec.snapshot_dir
+    if not base.exists():
+        return None
+    return {rel: (base / rel).read_bytes() for rel in spec.files if (base / rel).exists()}
+
+
+def build_lock(spec: UpstreamSpec, evidence: Evidence, release: Release, tarball: bytes,
+               snapshot: dict[str, bytes], verified_at: str) -> dict[str, Any]:
+    files = {
+        f"{spec.snapshot_dir}/{rel}": {"source": spec.files[rel], "sha256": sha256(snapshot[rel])}
+        for rel in spec.files
+    }
+    return {
+        "schema": LOCK_SCHEMA,
+        "upstream": spec.name,
+        "package": release.package,
+        "registry": release.registry,
+        "version": release.version,
+        "tag": release.tag,
+        "commit": evidence.commit,
+        "tarball": {
+            "url": release.tarball_url,
+            "integrity": release.integrity,
+            "sha256": sha256(tarball),
+        },
+        "files": files,
+        "provenance": evidence.provenance,
+        "verified_at": verified_at,
+        "verified": evidence.verified,
+        "not_verified": evidence.not_verified,
+    }
+
+
+def _same_content(old: dict[str, Any] | None, new: dict[str, Any]) -> bool:
+    """Equal apart from the verification time."""
+    if old is None:
+        return False
+    return {k: v for k, v in old.items() if k != "verified_at"} == {k: v for k, v in new.items() if k != "verified_at"}
+
+
+def with_base(index: dict[str, Any], key: str, entry: dict[str, str]) -> dict[str, Any]:
+    """``index`` with ``base.<key>`` set, ``base`` placed right after ``networks``."""
+    base = {**index.get("base", {}), key: entry}
+    out: dict[str, Any] = {}
+    for name, value in index.items():
+        if name == "base":
+            continue
+        out[name] = value
+        if name == "networks":
+            out["base"] = base
+    out.setdefault("base", base)
+    return out
+
+
+def sync(root: Path, spec: UpstreamSpec, version: str, http: Http, git: Git,
+         allow_downgrade: bool = False, clock: Callable[[], str] = utc_now) -> SyncResult:
+    check_version(version)
+    index_path = root / "index.json"
+    if not index_path.exists():
+        raise UpstreamError(f"no index.json in {root}")
+    old_lock = read_lock(root, spec)
+    if old_lock is not None and not allow_downgrade:
+        if version_key(version) < version_key(old_lock["version"]):
+            raise UpstreamError(f"{version} is older than the locked {old_lock['version']}; pass --allow-downgrade")
+
+    source = spec.source(spec, http)
+    release = source.release(version)
+    evidence = Evidence()
+    artifact = source.fetch(release, evidence)
+    for verifier in spec.verifiers(spec, http, git):
+        verifier.verify(artifact, evidence)
+    if evidence.commit is None:
+        raise UpstreamError("no verifier established the commit; refusing to write")
+    evidence.not_verified.extend(spec.unchecked)
+
+    snapshot = {rel: artifact.files[src] for rel, src in spec.files.items()}
+    classification = spec.classifier().classify(_read_snapshot(root, spec), snapshot)
+    lock = build_lock(spec, evidence, release, artifact.tarball, snapshot, clock())
+    base_entry = {"version": version, "lock": spec.lock_path}
+
+    with locked(root):
+        index = jsonio.load(index_path)
+        new_index = with_base(index, spec.base_key, base_entry)
+        errors = validate(new_index, "nocturne.index.v1", "index.json")
+        if errors:
+            raise UpstreamError("index.json would not validate: " + "; ".join(errors))
+        on_disk = _read_snapshot(root, spec)
+        if old_lock is not None and _same_content(old_lock, lock) and on_disk == snapshot and new_index == index:
+            return SyncResult(version, evidence.commit, False, (), old_lock, classification)
+        written: list[str] = []
+        base = root / spec.snapshot_dir
+        for rel, data in snapshot.items():
+            jsonio.write_atomic_bytes(base / rel, data)
+            written.append(f"{spec.snapshot_dir}/{rel}")
+        jsonio.write_atomic(root / spec.lock_path, jsonio.dump_file(lock))
+        written.append(spec.lock_path)
+        if new_index != index:
+            jsonio.write_atomic(index_path, jsonio.dump_file(new_index))
+            written.append("index.json")
+    return SyncResult(version, evidence.commit, True, tuple(written), lock, classification)
+
+
+@dataclass(frozen=True)
+class Status:
+    code: int  # 0 ok, 1 broken, 2 newer version available
+    lines: tuple[str, ...]
+
+
+def status(root: Path, spec: UpstreamSpec, http: Http | None) -> Status:
+    lock = read_lock(root, spec)
+    if lock is None:
+        return Status(1, (f"{spec.name}: no lock at {spec.lock_path} (run upstream sync --version X)",))
+    lines = [f"{spec.name}: locked {lock['version']} ({lock['tag']}, commit {lock['commit']}), verified {lock['verified_at']}"]
+    code = 0
+    for path, item in lock["files"].items():
+        file = root / path
+        if not file.exists():
+            lines.append(f"error: {path}: missing")
+            code = 1
+        elif sha256(file.read_bytes()) != item["sha256"]:
+            lines.append(f"error: {path}: sha256 differs from the lock")
+            code = 1
+    index = jsonio.load(root / "index.json")
+    base = index.get("base", {}).get(spec.base_key)
+    if base != {"version": lock["version"], "lock": spec.lock_path}:
+        lines.append(f"error: index.json base.{spec.base_key} is {json.dumps(base)}, lock is {lock['version']}")
+        code = 1
+    if http is None:
+        return Status(code, tuple(lines))
+    latest = spec.source(spec, http).latest()
+    if not VERSION.match(latest):
+        lines.append(f"latest: {spec.package} dist-tags.latest is {latest!r}, not a plain release")
+    elif version_key(latest) > version_key(lock["version"]):
+        lines.append(f"newer: {spec.package} {latest} is published (locked {lock['version']})")
+        code = code or 2
+    else:
+        lines.append(f"latest: {spec.package} {latest}")
+    return Status(code, tuple(lines))

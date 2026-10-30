@@ -1,0 +1,67 @@
+{
+  "schema": "nocturne.upstream-lock.v1",
+  "upstream": "dusk-networks",
+  "package": "@dusk-network/networks",
+  "registry": "https://registry.npmjs.org",
+  "version": "0.3.0",
+  "tag": "v0.3.0",
+  "commit": "0bebc7799b99bba1f32e9dc6c24b4e4994bc864a",
+  "tarball": {
+    "url": "https://registry.npmjs.org/@dusk-network/networks/-/networks-0.3.0.tgz",
+    "integrity": "sha512-WIBSUVQ3fxpnVIs+ZKCFjsmZucG2AViLRttyexpBTaEYQ4ikTumtjnVKNXLxkAeyGbmotYJR0e1Ai6rPUrK2+w==",
+    "sha256": "90892ba4073457ff4a816ff981dbcb1a533527535f5391086ba3ec2c47350e47"
+  },
+  "files": {
+    "upstream/dusk-networks/mainnet.json": {
+      "source": "networks/mainnet.json",
+      "sha256": "eb1f5516715989b656be38b626b0a7367f4d4c3fbcf797d7b18e1f45b2af47fc"
+    },
+    "upstream/dusk-networks/testnet.json": {
+      "source": "networks/testnet.json",
+      "sha256": "885c9fe623484649d285bd7e015a7c8b0ef4d3353a6780aba544118ba13a9076"
+    },
+    "upstream/dusk-networks/devnet.json": {
+      "source": "networks/devnet.json",
+      "sha256": "1a329c3fe6e74870532e98e4e91e26f5bf41baa32c898625aed87d87466ef6a0"
+    },
+    "upstream/dusk-networks/schema.json": {
+      "source": "schema.json",
+      "sha256": "4bc7cdb717c5a3f5156705c1c0d78e175997c7bb69ab41a2ed8dc49f9b3a9d89"
+    },
+    "upstream/dusk-networks/fixtures/sozu-vectors.json": {
+      "source": "fixtures/sozu-vectors.json",
+      "sha256": "1095a80ec8e65de79015e2e4094aa9fb60e28d1075a4c6072c651769d79d872c"
+    },
+    "upstream/dusk-networks/LICENSE": {
+      "source": "LICENSE",
+      "sha256": "1f256ecad192880510e84ad60474eab7589218784b9a50bc7ceee34c2b91f1d5"
+    }
+  },
+  "provenance": {
+    "predicate_type": "https://slsa.dev/provenance/v1",
+    "repository": "https://github.com/dusk-network/networks",
+    "workflow": ".github/workflows/publish.yml",
+    "ref": "refs/tags/v0.3.0",
+    "commit": "0bebc7799b99bba1f32e9dc6c24b4e4994bc864a",
+    "builder": "https://github.com/actions/runner/github-hosted",
+    "invocation": "https://github.com/dusk-network/networks/actions/runs/40963661249/attempts/1",
+    "rekor_log_index": 3577556434,
+    "rekor_integrated_time": 1793311799
+  },
+  "verified_at": "2026-10-30T16:11:02Z",
+  "verified": [
+    "tarball sha512 equals npm dist.integrity",
+    "package.json name and version match",
+    "SLSA provenance subject is this tarball (sha512) and package@version",
+    "npm publish attestation subject is this tarball (sha512)",
+    "provenance binds https://github.com/dusk-network/networks, .github/workflows/publish.yml, refs/tags/v0.3.0, commit 0bebc7799b99bba1f32e9dc6c24b4e4994bc864a, GitHub-hosted runner",
+    "signing certificate names the same workflow identity (byte search, not parsed)",
+    "git ls-remote refs/tags/v0.3.0 equals the provenance commit",
+    "byte-equal to GitHub at the commit: networks/mainnet.json, networks/testnet.json, networks/devnet.json, schema.json, fixtures/sozu-vectors.json, LICENSE, package.json"
+  ],
+  "not_verified": [
+    "Sigstore bundle: DSSE signature, Fulcio certificate chain and Rekor inclusion proof (needs X.509 and ECDSA; the tool is standard library only)",
+    "npm registry signatures (npm audit signatures)",
+    "JSR files equal npm (JSR is not read)"
+  ]
+}
