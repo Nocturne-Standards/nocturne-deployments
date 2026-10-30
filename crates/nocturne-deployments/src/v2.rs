@@ -53,7 +53,9 @@ impl FullName {
     pub fn parse(text: &str) -> std::result::Result<Self, String> {
         let parts: Vec<&str> = text.trim().split('/').collect();
         if parts.len() < 2 || parts.len() > 4 || parts.iter().any(|p| p.is_empty()) {
-            return Err(format!("not a full name: {text:?} (want product/name/network/tier)"));
+            return Err(format!(
+                "not a full name: {text:?} (want product/name/network/tier)"
+            ));
         }
         let tier = parts.get(3).map(|t| t.to_string()).filter(|t| t != "*");
         if let Some(t) = &tier {
@@ -73,7 +75,11 @@ impl FullName {
 impl fmt::Display for FullName {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         let tier = self.tier.as_deref().unwrap_or("*");
-        write!(f, "{}/{}/{}/{}", self.product, self.name, self.network, tier)
+        write!(
+            f,
+            "{}/{}/{}/{}",
+            self.product, self.name, self.network, tier
+        )
     }
 }
 
@@ -159,7 +165,11 @@ pub fn is_v2_root(dir: &Path) -> bool {
     };
     serde_json::from_str::<serde_json::Value>(&raw)
         .ok()
-        .and_then(|v| v.get("schema").and_then(|s| s.as_str()).map(|s| s == INDEX_SCHEMA))
+        .and_then(|v| {
+            v.get("schema")
+                .and_then(|s| s.as_str())
+                .map(|s| s == INDEX_SCHEMA)
+        })
         .unwrap_or(false)
 }
 
@@ -226,7 +236,9 @@ impl Catalog {
     /// (the first directory level holding `nocturne-deployments-internal` / `nocturne-deployments`).
     pub fn discover(start: &Path) -> Result<Self> {
         if let Ok(raw) = env::var(ENV_INDEXES) {
-            let roots: Vec<PathBuf> = env::split_paths(&raw).filter(|p| !p.as_os_str().is_empty()).collect();
+            let roots: Vec<PathBuf> = env::split_paths(&raw)
+                .filter(|p| !p.as_os_str().is_empty())
+                .collect();
             return Self::open(&roots);
         }
         let mut found: Vec<PathBuf> = Vec::new();
@@ -294,7 +306,12 @@ impl Catalog {
         for tier in reader.tiers() {
             let mut seen: Vec<(String, String)> = Vec::new();
             for repo in &self.repos {
-                for entry in repo.index.entries.iter().filter(|e| e.network == network && e.tier == *tier) {
+                for entry in repo
+                    .index
+                    .entries
+                    .iter()
+                    .filter(|e| e.network == network && e.tier == *tier)
+                {
                     let ident = (entry.product.clone(), entry.tier.clone());
                     if seen.contains(&ident) {
                         continue;
@@ -342,7 +359,11 @@ mod tests {
                                      "at": "2026-01-01T00:00:00Z", "record": {"contract_id": id}}},
             "state": {}, "events": 1, "last_event": null
         });
-        fs::write(dir.join(format!("products/{product}/testnet.{tier}.json")), current.to_string()).unwrap();
+        fs::write(
+            dir.join(format!("products/{product}/testnet.{tier}.json")),
+            current.to_string(),
+        )
+        .unwrap();
     }
 
     #[test]
@@ -357,8 +378,22 @@ mod tests {
     #[test]
     fn private_shadows_public_and_public_reader_sees_public_only() {
         let ws = tempfile::tempdir().unwrap();
-        checkout(&ws.path().join("nocturne-deployments"), "o/pub", "public", "atlas", "own", "old");
-        checkout(&ws.path().join("nocturne-deployments-internal"), "o/priv", "private", "atlas", "own", "new");
+        checkout(
+            &ws.path().join("nocturne-deployments"),
+            "o/pub",
+            "public",
+            "atlas",
+            "own",
+            "old",
+        );
+        checkout(
+            &ws.path().join("nocturne-deployments-internal"),
+            "o/priv",
+            "private",
+            "atlas",
+            "own",
+            "new",
+        );
         let product = ws.path().join("knot").join("crates");
         fs::create_dir_all(&product).unwrap();
         // SAFETY: test-only; no other test in this module reads the variable.
@@ -369,6 +404,12 @@ mod tests {
         assert!(cat.resolve(&name, Reader::Public).is_err());
         let public_only = Catalog::open(&[ws.path().join("nocturne-deployments")]).unwrap();
         assert_eq!(public_only.resolve(&name, Reader::Own).unwrap(), "old");
-        assert_eq!(cat.find_key("atlas", "testnet", Reader::Own).unwrap().full_name.product, "atlas");
+        assert_eq!(
+            cat.find_key("atlas", "testnet", Reader::Own)
+                .unwrap()
+                .full_name
+                .product,
+            "atlas"
+        );
     }
 }

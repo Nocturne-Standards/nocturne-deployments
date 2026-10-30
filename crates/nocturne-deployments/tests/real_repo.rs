@@ -12,11 +12,23 @@ fn repo_root() -> PathBuf {
 fn resolves_from_this_repo() {
     let cat = Catalog::open(&[repo_root()]).unwrap();
     let id = cat
-        .resolve(&FullName::parse("knot/knot-registry/testnet/own").unwrap(), Reader::Own)
+        .resolve(
+            &FullName::parse("knot/knot-registry/testnet/own").unwrap(),
+            Reader::Own,
+        )
         .unwrap();
     assert_eq!(id.len(), 64);
-    assert!(cat.resolve(&FullName::parse("tnst/tnst-token").unwrap(), Reader::Public).is_ok());
-    assert!(cat.resolve(&FullName::parse("knot/knot-registry").unwrap(), Reader::Public).is_err());
+    assert!(
+        cat.resolve(&FullName::parse("tnst/tnst-token").unwrap(), Reader::Public)
+            .is_ok()
+    );
+    assert!(
+        cat.resolve(
+            &FullName::parse("knot/knot-registry").unwrap(),
+            Reader::Public
+        )
+        .is_err()
+    );
 }
 
 #[test]
