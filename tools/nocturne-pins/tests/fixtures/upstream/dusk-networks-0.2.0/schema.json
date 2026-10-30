@@ -1,0 +1,325 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "A Dusk network",
+  "description": "What the Dusk apps need to know about one network. Dusk contract IDs are lower-case hex without 0x; EVM addresses carry their EIP-55 checksum; amounts are lux, as decimal strings; times are seconds.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["chainId", "name", "label", "urls", "apps", "contracts", "sozu", "duskDomains", "duskEvm", "routes", "operator", "display"],
+  "properties": {
+    "chainId": {
+      "description": "The chain ID the node gives in /on/node/info: 0 local, 1 mainnet, 2 testnet, 3 devnet. Apps key the network by it, never by hostname.",
+      "enum": [0, 1, 2, 3]
+    },
+    "name": { "enum": ["local", "mainnet", "testnet", "devnet"] },
+    "label": { "description": "The network's name in the apps.", "type": "string", "minLength": 1 },
+    "urls": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["node", "archive", "prover"],
+      "properties": {
+        "node": { "$ref": "#/$defs/url" },
+        "archive": { "$ref": "#/$defs/url" },
+        "prover": { "$ref": "#/$defs/url" }
+      }
+    },
+    "apps": {
+      "description": "Where each app is published for this network; null where it isn't yet.",
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["wallet", "explorer", "bridge"],
+      "properties": {
+        "wallet": { "$ref": "#/$defs/urlOrNull" },
+        "explorer": { "$ref": "#/$defs/urlOrNull" },
+        "bridge": { "$ref": "#/$defs/urlOrNull" }
+      }
+    },
+    "contracts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["transfer", "stake", "multicall"],
+      "properties": {
+        "transfer": { "$ref": "#/$defs/contractId" },
+        "stake": { "$ref": "#/$defs/contractId" },
+        "multicall": {
+          "description": "Multicall for Dusk, or null where it isn't deployed.",
+          "anyOf": [{ "type": "null" }, { "$ref": "#/$defs/contractId" }]
+        }
+      }
+    },
+    "sozu": {
+      "description": "Sozu's hub, and the contracts it named when this was written. The hub's guardian can name others at any time: read them from the hub, and use these only until it answers.",
+      "anyOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["hub", "fallbacks"],
+          "properties": {
+            "hub": { "$ref": "#/$defs/contractId" },
+            "fallbacks": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["pool", "relayer", "stDusk", "substrate", "vault"],
+              "properties": {
+                "pool": { "$ref": "#/$defs/contractId" },
+                "relayer": { "$ref": "#/$defs/contractId" },
+                "stDusk": { "$ref": "#/$defs/contractId" },
+                "substrate": { "$ref": "#/$defs/contractId" },
+                "vault": { "$ref": "#/$defs/contractId" }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "duskDomains": {
+      "description": "Where Dusk Domains' release manifest for this network is published. Its contracts are read from the manifest, not copied here.",
+      "anyOf": [
+        { "type": "null" },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["site", "manifest"],
+          "properties": {
+            "site": { "$ref": "#/$defs/url" },
+            "manifest": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["version", "url", "sha256"],
+              "properties": {
+                "version": { "description": "The release's source commit, as the manifest gives it.", "type": "string", "pattern": "^[0-9a-f]{40}$" },
+                "url": { "$ref": "#/$defs/url" },
+                "sha256": { "$ref": "#/$defs/sha256" }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "duskEvm": {
+      "description": "DuskEVM, the EVM chain that settles on this network, or null where it isn't live. chainId, currency, contracts and source are generated from dusk-network/duskevm-genesis (scripts/gen-duskevm.mjs).",
+      "anyOf": [{ "type": "null" }, { "$ref": "#/$defs/duskEvm" }]
+    },
+    "routes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["chains", "migrations", "services", "duskEvm", "retired"],
+      "properties": {
+        "chains": {
+          "description": "The EVM chains the routes reach, by ID.",
+          "type": "object",
+          "propertyNames": { "pattern": "^[a-z][a-z0-9-]*$" },
+          "additionalProperties": { "$ref": "#/$defs/evmChain" }
+        },
+        "migrations": {
+          "description": "DUSK moved from an EVM chain into Dusk: a call of the chain's migration contract, paid out on Dusk.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "chain", "contract", "payoutAccount", "typicalSeconds", "running"],
+            "properties": {
+              "id": { "type": "string", "pattern": "^[a-z][a-z0-9-]*-to-dusk$" },
+              "chain": { "type": "string" },
+              "contract": { "$ref": "#/$defs/evmAddress" },
+              "payoutAccount": { "description": "The Dusk account that pays this route out, where it's known.", "anyOf": [{ "type": "null" }, { "$ref": "#/$defs/account" }] },
+              "typicalSeconds": { "$ref": "#/$defs/secondsOrNull" },
+              "running": { "type": "boolean" }
+            }
+          }
+        },
+        "services": {
+          "description": "DUSK sent from Dusk to an EVM chain: a public transfer to the bridge account, with the EVM address as its memo, paid out on that chain less the fee.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "chain", "account", "feeLux", "typicalSeconds", "running"],
+            "properties": {
+              "id": { "type": "string", "pattern": "^dusk-to-[a-z][a-z0-9-]*$" },
+              "chain": { "type": "string" },
+              "account": { "$ref": "#/$defs/account" },
+              "feeLux": { "$ref": "#/$defs/lux" },
+              "typicalSeconds": { "$ref": "#/$defs/secondsOrNull" },
+              "running": { "type": "boolean" }
+            }
+          }
+        },
+        "duskEvm": {
+          "description": "Deposits to DuskEVM and withdrawals from it. A withdrawal's claim date is read from the chain.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["id", "direction", "typicalSeconds", "running"],
+            "properties": {
+              "id": { "enum": ["dusk-to-dusk-evm", "dusk-evm-to-dusk"] },
+              "direction": { "enum": ["deposit", "withdrawal"] },
+              "typicalSeconds": { "$ref": "#/$defs/secondsOrNull" },
+              "running": { "type": "boolean" }
+            }
+          }
+        },
+        "retired": {
+          "description": "Migration contracts no longer offered, kept so their old transactions can be named.",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["chain", "contract", "token"],
+            "properties": {
+              "chain": { "type": "string" },
+              "contract": { "$ref": "#/$defs/evmAddress" },
+              "token": { "$ref": "#/$defs/evmAddress" }
+            }
+          }
+        }
+      }
+    },
+    "operator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "termsUrl", "privacyUrl"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "termsUrl": { "$ref": "#/$defs/url" },
+        "privacyUrl": { "$ref": "#/$defs/url" }
+      }
+    },
+    "display": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["labels", "blocklist"],
+      "properties": {
+        "labels": {
+          "description": "The name the explorer and Activity give a contract (by ID) or an account (by its base58 key).",
+          "type": "object",
+          "propertyNames": { "anyOf": [{ "$ref": "#/$defs/contractId" }, { "$ref": "#/$defs/account" }] },
+          "additionalProperties": { "type": "string", "minLength": 1 }
+        },
+        "blocklist": {
+          "description": "Accounts the apps don't send to: reported as compromised, or used for scams.",
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["account", "reason"],
+            "properties": {
+              "account": { "$ref": "#/$defs/account" },
+              "reason": { "enum": ["compromised", "scam"] }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "contractId": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "account": { "description": "A Dusk public account, base58.", "type": "string", "pattern": "^[1-9A-HJ-NP-Za-km-z]{100,140}$" },
+    "evmAddress": { "description": "0x and 40 hex digits, with the EIP-55 checksum.", "type": "string", "pattern": "^0x[0-9a-fA-F]{40}$" },
+    "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+    "lux": { "type": "string", "pattern": "^(0|[1-9][0-9]*)$" },
+    "url": { "description": "http(s), without a trailing slash.", "type": "string", "pattern": "^https?://[^\\s]*[^/\\s]$" },
+    "urlOrNull": { "anyOf": [{ "type": "null" }, { "$ref": "#/$defs/url" }] },
+    "secondsOrNull": { "anyOf": [{ "type": "null" }, { "type": "integer", "minimum": 1 }] },
+    "currency": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "symbol", "decimals"],
+      "properties": {
+        "name": { "type": "string", "minLength": 1 },
+        "symbol": { "type": "string", "minLength": 1 },
+        "decimals": { "type": "integer", "minimum": 0, "maximum": 36 }
+      }
+    },
+    "evmChain": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["chainId", "name", "currency", "rpcUrl", "explorerUrl", "token", "tokenLabel"],
+      "properties": {
+        "chainId": { "type": "integer", "minimum": 1 },
+        "name": { "type": "string", "minLength": 1 },
+        "currency": { "$ref": "#/$defs/currency" },
+        "rpcUrl": { "$ref": "#/$defs/url" },
+        "explorerUrl": { "$ref": "#/$defs/url" },
+        "token": { "description": "The DUSK token on this chain.", "$ref": "#/$defs/evmAddress" },
+        "tokenLabel": { "type": "string", "minLength": 1 }
+      }
+    },
+    "duskEvm": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "chainId", "currency", "rpcUrl", "l1AdapterUrl", "explorerUrl", "blockscoutApiUrl", "predeploys", "drivers", "contracts", "source"],
+      "properties": {
+        "name": { "description": "The chain's name as wallets list it.", "type": "string", "minLength": 1 },
+        "chainId": { "type": "integer", "minimum": 1 },
+        "currency": { "$ref": "#/$defs/currency" },
+        "rpcUrl": { "$ref": "#/$defs/url" },
+        "l1AdapterUrl": {
+          "description": "The DuskEVM adapter's RPC beside the chain's own. It answers for DuskEVM (its chain ID); the bridge asks it which DuskEVM deposit a Dusk transaction made.",
+          "$ref": "#/$defs/url"
+        },
+        "explorerUrl": { "$ref": "#/$defs/url" },
+        "blockscoutApiUrl": { "$ref": "#/$defs/url" },
+        "predeploys": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["l1Block", "l2CrossDomainMessenger", "l2StandardBridge", "l2ToL1MessagePasser"],
+          "properties": {
+            "l1Block": { "$ref": "#/$defs/evmAddress" },
+            "l2CrossDomainMessenger": { "$ref": "#/$defs/evmAddress" },
+            "l2StandardBridge": { "$ref": "#/$defs/evmAddress" },
+            "l2ToL1MessagePasser": { "$ref": "#/$defs/evmAddress" }
+          }
+        },
+        "drivers": {
+          "description": "The data drivers the apps bundle for these contracts, pinned by the sha256 of their bytes.",
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["disputeGameFactory", "optimismPortal"],
+          "properties": {
+            "disputeGameFactory": { "$ref": "#/$defs/driver" },
+            "optimismPortal": { "$ref": "#/$defs/driver" }
+          }
+        },
+        "contracts": {
+          "description": "Every DuskEVM contract on Dusk, by its name in duskevm-genesis.",
+          "type": "object",
+          "propertyNames": { "pattern": "^[a-z][a-z0-9_]*$" },
+          "additionalProperties": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["contractId", "evmAddress"],
+            "properties": {
+              "contractId": { "$ref": "#/$defs/contractId" },
+              "evmAddress": { "$ref": "#/$defs/evmAddress" }
+            }
+          }
+        },
+        "source": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["files", "repository"],
+          "properties": {
+            "files": {
+              "description": "The sha256 of each duskevm-genesis file the part was generated from.",
+              "type": "object",
+              "additionalProperties": { "$ref": "#/$defs/sha256" }
+            },
+            "repository": { "$ref": "#/$defs/url" }
+          }
+        }
+      }
+    },
+    "driver": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["file", "sha256"],
+      "properties": {
+        "file": { "type": "string", "pattern": "^[a-z0-9_.-]+\\.wasm$" },
+        "sha256": { "$ref": "#/$defs/sha256" }
+      }
+    }
+  }
+}

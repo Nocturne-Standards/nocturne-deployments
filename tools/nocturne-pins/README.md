@@ -99,8 +99,77 @@ Network data (chain ID, RPC, explorer per layer) comes from the snapshot: DuskDS
 `check` fails on a key that gives another value than Dusk. Legacy files read the merged view.
 
 Code: `nocturne_pins.upstream`, split into a source (`npm`), verifiers (`provenance`,
-`content`) and a classifier (`classify`, a placeholder for now), declared per upstream
-in `specs`.
+`content`) and a classifier (`classify`), declared per upstream in `specs`; `release`
+(check-release) and `notes` (PR and issue bodies) sit on top.
+
+### New releases: `upstream check-release`
+
+```bash
+nocturne-pins upstream check-release --root .                       # summary; exit 0, 1 or 2
+nocturne-pins upstream check-release --root . --json                # the JSON report instead
+nocturne-pins upstream check-release --root . --report-out r.json   # also write the report
+nocturne-pins upstream check-release --root . --from 0.2.0          # dry run against a registry version
+nocturne-pins upstream release-notes --report r.json --kind issue   # or pr, title, summary
+```
+
+It reads three release signals: npm `dist-tags.latest`, JSR `latest`
+(`https://jsr.io/@dusk/networks/meta.json`) and the repository's `v*` tags (`git ls-remote`).
+Only npm is the source; JSR or a tag ahead of npm is a warning. When npm has a newer plain
+release, it is fetched and verified exactly as `sync` does (steps 1-6 above), the locked
+tarball is fetched again and must match the lock, and the two are classified. Nothing is
+written.
+
+| Exit | Meaning |
+|------|---------|
+| 0 | up to date (or, with `--warn-unreachable`, a registry, JSR or GitHub outage: warning) |
+| 2 | a newer release, verified and classified; the report says what changed |
+| 1 | verification failed, the locked tarball no longer matches the lock, npm `latest` went back below the lock, or an outage without `--warn-unreachable` |
+
+`--from X` compares with version X from the registry instead of the lock (checked against
+the registry's `dist.integrity` only): a dry run, for example 0.2.0 against 0.3.0.
+
+### Change classes
+
+The classifier compares the network files, `schema.json`, `package.json` and the `.d.ts`
+files of both tarballs, read in memory. The upstream CHANGELOG is quoted, never used to
+classify; JavaScript implementation files are not compared (the report says so).
+
+| Class | What changed | Consumers |
+|-------|--------------|-----------|
+| S safety | `chainId`, `urls.*`, `contracts.*`, `sozu.hub`, `display.blocklist`, `duskDomains.manifest`, DuskEVM chain ID, endpoints, currency, L1/bridge contracts, predeploys and drivers, `routes.*` except estimates and display names (accounts, payout addresses, fees, contracts, running) | update within 48 h, before any deploy |
+| D data | `label`, `display.labels`, `apps.*`, `operator`, `sozu.fallbacks` (the hub decides), estimates (`typicalSeconds`), DuskEVM name, explorer and genesis source hashes, route chain names and explorers | next release; at most 30 days or one minor version behind |
+| A API or schema | anything in `schema.json` (required keys, enums, `additionalProperties`, new keys), package `exports` and other manifest fields, `.d.ts` files, a 0.x minor or any major version bump | opt in; never forced |
+
+A path the table does not name is S, and the change says "not in the class table, treated as
+safety". A whole object added or removed takes the worst class of the values in it. Output
+is sorted by file and path; array items are named by `id` (or `account`, `contract`), e.g.
+`routes.services[dusk-to-bsc].payoutAddress`. Each change also has a `ref` with items as `[]`
+and a scope prefix outside the network files (`schema:`, `package:`, `types:`, `file:`).
+
+### Consumers
+
+`release-notes` lists, in the issue's checklist, only consumers whose `uses` overlap the
+change. They come from `upstream/dusk-networks.consumers.json` when it exists: a JSON list
+(or `{"consumers": [...]}`) of `{repo, path, kind: npm|jsr|rust-crate|vendored, policy:
+immediate|next-release, uses}`. Each `uses` entry is a class (`S`, `D`, `A`), `*`, or a
+prefix of a change's `ref` (`routes.services`, `package:exports`, `schema:`). Without the
+file the checklist says the registry is not set up yet.
+
+### Workflow `.github/workflows/dusk-networks.yml`
+
+- **detect**, daily 06:23 UTC and on `workflow_dispatch`: `check-release --warn-unreachable`.
+  Exit 2 on the default branch: `upstream sync --version X` on `chore/dusk-networks-vX.Y.Z`,
+  the pins CI checks, a commit as `github-actions[bot]`, one tracking issue and one PR whose bodies come
+  from `release-notes`. Idempotent: a PR for the branch in any state (a closed one included)
+  ends the run; an existing branch or an issue with the same title is reused. Exit 1 fails
+  the job. The JSON report is kept as a run artifact. Permissions: `contents`,
+  `pull-requests` and `issues` write for this job only.
+- **sweep**, Mondays 07:00 UTC: `upstream verify --warn-unreachable` and `upstream status
+  --offline`.
+
+A PR opened with the workflow's `GITHUB_TOKEN` starts no other workflow, so `pins` does not
+run on it by itself; the job runs the same checks before pushing (tool tests, `check`,
+`upstream verify`, `cargo test --locked`). A PR closed without merging is not reopened.
 
 ## Check (CI)
 

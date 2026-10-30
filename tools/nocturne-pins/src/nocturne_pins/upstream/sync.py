@@ -119,7 +119,11 @@ def sync(root: Path, spec: UpstreamSpec, version: str, http: Http, git: Git,
     evidence.not_verified.extend(spec.unchecked)
 
     snapshot = {rel: artifact.files[src] for rel, src in spec.files.items()}
-    classification = spec.classifier().classify(_read_snapshot(root, spec), snapshot)
+    # The classifier sees package paths. The old side is the snapshot only, so the manifest
+    # and declarations are not compared here; ``upstream check-release`` compares both tarballs.
+    on_disk_before = _read_snapshot(root, spec)
+    old_view = None if on_disk_before is None else {spec.files[rel]: data for rel, data in on_disk_before.items()}
+    classification = spec.classifier().classify(old_view, dict(artifact.files))
     lock = build_lock(spec, evidence, release, artifact.tarball, snapshot, clock())
     lock_errors = validate(lock, LOCK_SCHEMA, spec.lock_path)
     if lock_errors:

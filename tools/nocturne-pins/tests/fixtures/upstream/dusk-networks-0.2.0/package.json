@@ -1,0 +1,59 @@
+{
+  "name": "@dusk-network/networks",
+  "version": "0.2.0",
+  "description": "Dusk's networks for the Dusk apps: endpoints, contracts, routes and labels, with Sozu's rules, reward estimates and shared formats.",
+  "license": "MPL-2.0",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dusk-network/networks.git"
+  },
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./sozu": {
+      "types": "./src/sozu.d.ts",
+      "default": "./src/sozu.js"
+    },
+    "./rates": {
+      "types": "./src/rates.d.ts",
+      "default": "./src/rates.js"
+    },
+    "./format": {
+      "types": "./src/format.d.ts",
+      "default": "./src/format.js"
+    },
+    "./duskevm": {
+      "types": "./src/duskevm.d.ts",
+      "default": "./src/duskevm.js"
+    },
+    "./networks/*.json": {
+      "types": "./src/network-file.d.ts",
+      "default": "./networks/*.json"
+    },
+    "./schema.json": "./schema.json",
+    "./fixtures/sozu-vectors.json": "./fixtures/sozu-vectors.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src/",
+    "networks/",
+    "fixtures/",
+    "schema.json",
+    "CHANGELOG.md"
+  ],
+  "engines": {
+    "node": ">=20.10"
+  },
+  "scripts": {
+    "test": "node --test",
+    "validate": "node scripts/validate.mjs",
+    "typecheck": "npx --yes --package=typescript@5.9.3 -- tsc -p test-types",
+    "check:versions": "node scripts/check-versions.js",
+    "check:jsr": "npx --yes jsr@0.14.3 publish --dry-run --allow-dirty",
+    "gen:duskevm": "node scripts/gen-duskevm.mjs",
+    "check:chain": "node scripts/check-chain.mjs"
+  }
+}
