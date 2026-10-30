@@ -1,8 +1,22 @@
 title = "nocturne-deployments"
 
+# Without this, a config with only an allowlist has zero rules and detects nothing.
+[extend]
+useDefault = true
+
+# Single [allowlist] table so the CI-pinned gitleaks parses it. No paths: a
+# global path allowlist skips the whole file, not just the matched value.
 [allowlist]
-description = "Published on-chain contract id (tNST). Not a credential."
-regexTarget = "secret"
+description = "Public on-chain identifiers. Not credentials."
+regexTarget = "match"
 regexes = [
+  # Published on-chain contract id (tNST).
   '''f090528946990f3f2d3291d903327dfd700af6d912388c5f3c64c9bbc2a4edda''',
+  # History rows record wiring calls such as init_token / init_data. The
+  # argument is a Dusk contract id (64 hex), and the same value appears as
+  # contract_id in products/. generic-api-key trips on the key name.
+  '''\.init_[a-z_]+":\s*"[0-9a-f]{64}"''',
+  # upstream/dusk-networks/*.json list EVM token contract addresses. 0x + 40
+  # hex is an address, never a key (EVM private keys are 64 hex).
+  '''^token":\s*"0x[0-9a-fA-F]{40}"''',
 ]
