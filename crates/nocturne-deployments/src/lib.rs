@@ -12,13 +12,15 @@ use std::env;
 use std::fs;
 use std::path::{Path, PathBuf};
 
-use serde::de::Error as _;
 use serde::Deserialize;
+use serde::de::Error as _;
 
 /// Errors loading or querying a deployments pin file.
 #[derive(Debug, thiserror::Error)]
 pub enum Error {
-    #[error("deployments file not found (set NOCTURNE_DEPLOYMENTS or place deployments/testnet.json)")]
+    #[error(
+        "deployments file not found (set NOCTURNE_DEPLOYMENTS or place deployments/testnet.json)"
+    )]
     NotFound,
     #[error("reading {path}: {source}")]
     Io {
@@ -109,23 +111,31 @@ pub struct DeploymentsFile {
 }
 
 const ENVELOPE_KEYS: &[&str] = &[
-    "schema", "layer", "network", "rpc", "explorer", "aliases", "wiring", "chain_id", "contracts",
+    "schema",
+    "layer",
+    "network",
+    "rpc",
+    "explorer",
+    "aliases",
+    "wiring",
+    "chain_id",
+    "contracts",
 ];
 
 fn is_envelope_key(key: &str) -> bool {
     ENVELOPE_KEYS.contains(&key)
 }
 
+/// Parsed pin file parts: contracts, aliases, wiring.
+type ParsedDeployments = (
+    HashMap<String, ContractRecord>,
+    HashMap<String, String>,
+    Option<serde_json::Value>,
+);
+
 fn parse_deployments_value(
     value: serde_json::Value,
-) -> std::result::Result<
-    (
-        HashMap<String, ContractRecord>,
-        HashMap<String, String>,
-        Option<serde_json::Value>,
-    ),
-    serde_json::Error,
-> {
+) -> std::result::Result<ParsedDeployments, serde_json::Error> {
     let obj = value
         .as_object()
         .ok_or_else(|| serde_json::Error::custom("expected JSON object"))?;
@@ -283,11 +293,7 @@ pub fn load_index(root: impl AsRef<Path>) -> Result<PinIndex> {
 }
 
 /// Load pin file for `layer`/`network` under `root`.
-pub fn load_layer(
-    root: impl AsRef<Path>,
-    layer: &str,
-    network: &str,
-) -> Result<DeploymentsFile> {
+pub fn load_layer(root: impl AsRef<Path>, layer: &str, network: &str) -> Result<DeploymentsFile> {
     load(resolve_layer_path(root.as_ref(), layer, network)?)
 }
 
@@ -377,7 +383,10 @@ mod tests {
 
         let resolved = resolve_path(&product).unwrap();
         assert_eq!(resolved, pins.join("testnet.json"));
-        assert_eq!(load_from(&product).unwrap().contract_id("k").unwrap(), "id1");
+        assert_eq!(
+            load_from(&product).unwrap().contract_id("k").unwrap(),
+            "id1"
+        );
     }
 
     #[test]
@@ -398,7 +407,10 @@ mod tests {
 
         let resolved = resolve_path(&product).unwrap();
         assert_eq!(resolved, pins.join("testnet.json"));
-        assert_eq!(load_from(&product).unwrap().contract_id("k").unwrap(), "id2");
+        assert_eq!(
+            load_from(&product).unwrap().contract_id("k").unwrap(),
+            "id2"
+        );
     }
 
     #[test]
@@ -406,11 +418,7 @@ mod tests {
         let _g = ENV_LOCK.lock().unwrap();
         let dir = tempfile::tempdir().unwrap();
         let path = dir.path().join("pins.json");
-        fs::write(
-            &path,
-            r#"{"x":{"current":{"contract_id":"from-env"}}}"#,
-        )
-        .unwrap();
+        fs::write(&path, r#"{"x":{"current":{"contract_id":"from-env"}}}"#).unwrap();
         // SAFETY: serialized by ENV_LOCK; test-only
         unsafe { env::set_var("NOCTURNE_DEPLOYMENTS", &path) };
         let got = load_default().unwrap();

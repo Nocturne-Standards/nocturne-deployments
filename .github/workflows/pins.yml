@@ -37,5 +37,11 @@ jobs:
       - name: No local paths
         run: python3 scripts/check-no-local-paths.py
 
+      - name: Rust format
+        run: cargo fmt --all --check
+
+      - name: Rust lint
+        run: cargo clippy --all-targets --locked -- -D warnings
+
       - name: Rust reader
         run: cargo test --locked
