@@ -217,6 +217,13 @@ class Catalog:
         return out
 
     def find(self, name: FullName, reader: str = "own") -> tuple[Repo, EntryKey, dict[str, Any]]:
+        if name.product == "dusk":
+            # Reserved: Dusk's own contracts, read from the base layer, readable by every reader.
+            from . import dusk_names
+
+            reader_tiers(reader)
+            repo, contract = dusk_names.find(self, name, reader)
+            return repo, EntryKey(dusk_names.PRODUCT, name.network, dusk_names.TIER), contract
         tiers = (name.tier,) if name.tier is not None else reader_tiers(reader)
         if name.tier is not None and name.tier not in reader_tiers(reader):
             raise RepoError(f"{name}: a {reader} reader does not read tier {name.tier}")

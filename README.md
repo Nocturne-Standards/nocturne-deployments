@@ -8,13 +8,19 @@ which ones we run and what they are wired to.
 
 | Tier | Meaning | Who reads it |
 |------|---------|--------------|
-| `public` | Contracts we invite people to use. Changes are announced. | docs, website, everyone |
+| `public` | Contracts we invite people to use. Changes are announced. For product `dusk`, Dusk announces changes (their releases), not us. | docs, website, everyone |
 | `own` | Our own instances, for our products and demos. Not for building on: they may change or disappear without notice. Deploy your own instead. | our tools and CI |
 | `experiment` | Never pinned. | nobody |
 
 A `public` entry may only reference `public` entries.
 
 Today: `tnst` is `public`; `atlas`, `knot`, `vigil` and `chit` are `own`.
+
+Product `dusk` is reserved for Dusk's own contracts and accounts: `dusk/<name>/<network>/public`,
+for example `dusk/sozu-hub/testnet/public`. Its entries come only from the Dusk snapshot under
+`upstream/`, through a fixed name table in `nocturne-pins` (`nocturne-pins labels` lists it); no
+index entry, current file or history log may use it. Values Dusk says to read live (Sozu's
+contracts behind its hub, DuskEVM's dispute game hubs) are marked `fallback`, and a ref to one fails.
 
 ## Layout
 
@@ -43,6 +49,8 @@ uv tool install ./tools/nocturne-pins
 nocturne-pins resolve knot/knot-registry/testnet/own
 nocturne-pins resolve --reader public tnst/tnst-token
 nocturne-pins state atlas/testnet/own
+nocturne-pins resolve dusk/sozu-hub/testnet/public
+nocturne-pins network --chain-id 1 --field urls.node
 ```
 
 Without a checkout, the resolver reads this repo's `index.json` from GitHub.

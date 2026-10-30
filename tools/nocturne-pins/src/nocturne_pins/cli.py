@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 from typing import Any
 
-from . import __version__, base_check, check, jsonio, legacy, write
+from . import __version__, base_check, check, cli_base, jsonio, legacy, write
 from .names import NameError_, parse, parse_entry
 from .replay import ReplayError, replay
 from .repo import Catalog, Repo, RepoError
@@ -262,6 +262,8 @@ def parser() -> argparse.ArgumentParser:
     sp = sub.add_parser("list", help="list live contracts")
     readers(sp)
     sp.set_defaults(func=cmd_list)
+
+    cli_base.add_parsers(sub, readers)
 
     sp = sub.add_parser("check", help="CI: schema, replay, refs, tiers, legacy files")
     sp.add_argument("--base", help="git ref; logs must only have grown since (append-only)")

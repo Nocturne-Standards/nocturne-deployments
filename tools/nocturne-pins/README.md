@@ -35,6 +35,43 @@ Set `NOCTURNE_PINS_TOKEN` to read a private repo over HTTPS.
 Tiers: `own` readers (our tools, CI) read `own`, then `public`. `public` readers (docs, website) read `public` only.
 `experiment` is never pinned.
 
+## Dusk's networks
+
+Product `dusk` is reserved: `dusk/<name>/<network>/public` resolves from the base layer
+(Dusk's files under `upstream/dusk-networks/`, declared by `index.json` `base.dusk`), never from
+catalog entries. `own` and `public` readers both read it. For `dusk`, tier `public` means Dusk
+announces changes in their releases. Remote reads take the files from the same base URL as
+`index.json`.
+
+```bash
+nocturne-pins resolve dusk/evm-l1-cross-domain-messenger/testnet/public
+nocturne-pins get dusk/sozu-pool/testnet/public     # layer, id, kind, path, label, fallback
+nocturne-pins network testnet                       # Dusk's whole file
+nocturne-pins network testnet --layer duskevm --field rpcUrl
+nocturne-pins network --chain-id 1 --field urls.node
+nocturne-pins labels testnet                        # name, layer, id, label, fallback
+```
+
+Names come from a fixed table (`nocturne_pins.dusk_names.TABLE`), one row per JSON path:
+
+| Names | Path | Layer |
+|-------|------|-------|
+| `transfer`, `stake`, `multicall` | `contracts.*` | duskds |
+| `sozu-hub` | `sozu.hub` | duskds |
+| `sozu-pool`, `sozu-relayer`, `sozu-stdusk`, `sozu-substrate`, `sozu-vault` (fallback) | `sozu.fallbacks.*` | duskds |
+| `evm-<key>` with `_` as `-`, e.g. `evm-l1-cross-domain-messenger`, `evm-optimism-portal`, `evm-tx-router` | `duskEvm.contracts.<key>` (DuskEVM's L1 contracts; `evm_address` alongside) | duskds |
+| `evm-dispute-game-factory`; `evm-fault-dispute-game-hub`, `evm-permissioned-dispute-game-hub` (fallback) | `duskEvm.contracts.*` | duskds |
+| `evm-predeploy-l1-block`, `evm-predeploy-l2-cross-domain-messenger`, `evm-predeploy-l2-standard-bridge`, `evm-predeploy-l2-to-l1-message-passer` | `duskEvm.predeploys.*` | duskevm |
+| `<route>-contract`, `<route>-payout-account` | `routes.migrations[id=<route>]` | external, duskds |
+| `<route>-account`, `<route>-payout-address` | `routes.services[id=<route>]` | duskds, external |
+| `bsc-token`, `ethereum-token` | `routes.chains.<chain>.token` | external |
+
+`external` is the route's other chain (`chain`, `chain_id` alongside). `label` comes from Dusk's
+`display.labels`. A network without a value for a row has no such name. Dusk Domains has no ids in
+the files (its manifest is read live), so it has no names. `check` fails on a value of the snapshot
+no row names, on a ref to a `fallback` value, and on any use of product `dusk` in an index entry,
+current file or history log.
+
 ## Write
 
 Only through the tool. It appends to the history log first, then rewrites the current file
@@ -109,7 +146,8 @@ nocturne-pins check --root .
 ```
 
 Schema of index, current files and history lines; replay equals the committed current file;
-refs resolve, public entries reference public entries only, baked ids (`atlas_pin`) match;
+refs resolve, public entries reference public entries only (`dusk/...` refs are public), baked ids (`atlas_pin`) match;
+product `dusk` reserved, no ref to a Dusk `fallback`, every Dusk id named;
 contract names unique per network; generated legacy files up to date. Base layer
 (`base_check`): the lock validates (`nocturne.upstream-lock.v1`) and matches `base`, every
 snapshot file has its locked sha256 and no other file is there, the network files validate

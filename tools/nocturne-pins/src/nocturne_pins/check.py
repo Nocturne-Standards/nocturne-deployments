@@ -6,7 +6,7 @@ import json
 import subprocess
 from typing import Any
 
-from . import base_check, jsonio, legacy
+from . import base_check, dusk_names, jsonio, legacy
 from .names import NameError_, parse
 from .repo import Catalog, Repo, RepoError, entry_key
 from .schema import SCHEMA_FILES, schema_text, validate
@@ -25,6 +25,7 @@ def check_repo(catalog: Catalog, home: Repo) -> list[str]:
     errors += _check_refs(catalog, home)
     errors += _check_aliases(catalog, home)
     errors += base_check.check_base(catalog, home)
+    errors += dusk_names.check(catalog, home)
     if home.index.get("legacy"):
         errors += [f"{path}: out of date (run nocturne-pins legacy --write)" for path in legacy.stale(catalog, home)]
     return errors
@@ -198,6 +199,10 @@ def _check_ref(
         return [f"{where}: ref {alias} does not resolve: {exc}"]
     if home.is_public and not target_repo.is_public:
         return [f"{where}: ref {alias} points into private repo {target_repo.name}"]
+    if target.product == dusk_names.PRODUCT:
+        problem = dusk_names.ref_problem(target_contract, ref)
+        if problem is not None:
+            return [f"{where}: ref {alias}: {problem}"]
     errors: list[str] = []
     for field, (product, name) in BAKED_REFS.items():
         if product == target.product and name == target.name and field in contract["record"]:
