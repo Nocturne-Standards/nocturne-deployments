@@ -3,7 +3,7 @@
   "$id": "nocturne.index.v1",
   "title": "Catalog of one pin repo",
   "type": "object",
-  "required": ["schema", "repo", "visibility", "networks", "entries"],
+  "required": ["schema", "repo", "visibility", "entries"],
   "additionalProperties": false,
   "properties": {
     "schema": {"const": "nocturne.index.v1"},

@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 from typing import Any
 
-from . import __version__, check, jsonio, legacy, write
+from . import __version__, base_check, check, jsonio, legacy, write
 from .names import NameError_, parse, parse_entry
 from .replay import ReplayError, replay
 from .repo import Catalog, Repo, RepoError
@@ -332,6 +332,7 @@ def parser() -> argparse.ArgumentParser:
     sp.add_argument("--root", default=".", help="pin repo checkout to read")
     sp.add_argument("--offline", action="store_true", help="skip the registry query")
     sp.set_defaults(func=cmd_upstream_status)
+    base_check.add_cli(up_sub)
 
     sp = sub.add_parser("schema", help="print a bundled schema")
     sp.add_argument("schema_id", choices=sorted(SCHEMA_FILES))

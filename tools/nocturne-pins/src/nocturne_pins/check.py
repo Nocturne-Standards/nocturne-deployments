@@ -6,7 +6,7 @@ import json
 import subprocess
 from typing import Any
 
-from . import jsonio, legacy
+from . import base_check, jsonio, legacy
 from .names import NameError_, parse
 from .repo import Catalog, Repo, RepoError, entry_key
 from .schema import SCHEMA_FILES, schema_text, validate
@@ -24,6 +24,7 @@ def check_repo(catalog: Catalog, home: Repo) -> list[str]:
     errors += _check_unique_names(catalog)
     errors += _check_refs(catalog, home)
     errors += _check_aliases(catalog, home)
+    errors += base_check.check_base(catalog, home)
     if home.index.get("legacy"):
         errors += [f"{path}: out of date (run nocturne-pins legacy --write)" for path in legacy.stale(catalog, home)]
     return errors

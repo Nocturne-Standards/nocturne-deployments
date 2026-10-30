@@ -34,6 +34,9 @@ jobs:
           fi
           uv run --project tools/nocturne-pins nocturne-pins check --root . ${base:+--base "$base"}
 
+      - name: Dusk snapshot equals the locked npm tarball (network)
+        run: uv run --project tools/nocturne-pins nocturne-pins upstream verify --root . --warn-unreachable
+
       - name: No local paths
         run: python3 scripts/check-no-local-paths.py
 

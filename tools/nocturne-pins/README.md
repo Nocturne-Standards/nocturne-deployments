@@ -88,6 +88,16 @@ Outputs: `upstream/dusk-networks/{mainnet,testnet,devnet}.json`, `schema.json`,
 `index.json` `base.dusk = {version, lock}`. A re-sync of the locked version with the same
 bytes changes nothing. A version older than the lock needs `--allow-downgrade`.
 
+`nocturne-pins upstream verify --root .` (CI, on every push and PR) fetches the locked tarball
+again and checks it against the registry record, the lock and every snapshot file, comparing bytes.
+With `--warn-unreachable` (as CI runs it) a registry outage (network error, timeout, 429, 5xx)
+is a warning; a wrong answer still fails.
+
+Network data (chain ID, RPC, explorer per layer) comes from the snapshot: DuskDS `chainId`,
+`urls.node`, `apps.explorer`; DuskEVM `duskEvm.chainId`, `rpcUrl`, `explorerUrl`. `index.json`
+`networks` is optional and may only add keys (an RPC mirror, a network Dusk does not list);
+`check` fails on a key that gives another value than Dusk. Legacy files read the merged view.
+
 Code: `nocturne_pins.upstream`, split into a source (`npm`), verifiers (`provenance`,
 `content`) and a classifier (`classify`, a placeholder for now), declared per upstream
 in `specs`.
@@ -100,4 +110,8 @@ nocturne-pins check --root .
 
 Schema of index, current files and history lines; replay equals the committed current file;
 refs resolve, public entries reference public entries only, baked ids (`atlas_pin`) match;
-contract names unique per network; generated legacy files up to date.
+contract names unique per network; generated legacy files up to date. Base layer
+(`base_check`): the lock validates (`nocturne.upstream-lock.v1`) and matches `base`, every
+snapshot file has its locked sha256 and no other file is there, the network files validate
+against the vendored `schema.json` (a keyword the validator does not support fails the check),
+and `networks` overrides no Dusk fact.

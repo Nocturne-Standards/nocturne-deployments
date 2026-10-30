@@ -11,7 +11,7 @@ import json
 from pathlib import Path
 from typing import Any, Iterator
 
-from . import jsonio
+from . import base_check, jsonio
 from .names import EntryKey
 from .repo import Catalog, Repo
 
@@ -118,13 +118,8 @@ def render(catalog: Catalog, home: Repo) -> dict[Path, str]:
 
 
 def _networks(catalog: Catalog) -> dict[str, Any]:
-    # Earlier repos win, so the private index can add network data the public one lacks.
-    merged: dict[str, Any] = {}
-    for repo in reversed(catalog.repos):
-        for network, layers in repo.index.get("networks", {}).items():
-            for layer, data in layers.items():
-                merged.setdefault(network, {}).setdefault(layer, {}).update(data)
-    return merged
+    # Index overlays (earlier repos win) under Dusk's facts from the base layer.
+    return base_check.networks(catalog)
 
 
 def write(catalog: Catalog, home: Repo) -> list[Path]:
