@@ -1,0 +1,129 @@
+{
+  "chainId": 1,
+  "name": "mainnet",
+  "label": "Mainnet",
+  "urls": {
+    "node": "https://nodes.dusk.network",
+    "archive": "https://nodes.dusk.network",
+    "prover": "https://provers.dusk.network"
+  },
+  "apps": {
+    "wallet": "https://apps.dusk.network/wallet",
+    "explorer": "https://apps.dusk.network/explorer",
+    "bridge": "https://bridge.dusk.network"
+  },
+  "contracts": {
+    "transfer": "0100000000000000000000000000000000000000000000000000000000000000",
+    "stake": "0200000000000000000000000000000000000000000000000000000000000000",
+    "multicall": "93de287b7d349d678a0038fe7772e8960e1a84a1b5da2d0b1f62f532616ce1d4"
+  },
+  "sozu": {
+    "hub": "b32c917e76abc6fcf2edbee0fa70231d8e19c405b18421794a11badfc66d2f26",
+    "fallbacks": {
+      "pool": "6fdfdc713a18fc6ca2ad20eb2b4a3305a935ef47d6a872d9a4df8bc9fd9d169e",
+      "relayer": "1cc415d05b1cfbf2583bf2e8a0e39b2c768d263ef92d6a21a4787f76c6afa924",
+      "stDusk": "eb158fceeae76e59b28c1e6857eb50cf6a7a69532817fc455458096aab527980",
+      "substrate": "bc6f50f7404d098cdd1117b15dddab6f6f3dad01c5ce3c5ce9b68a8b60bc4c1d",
+      "vault": "6fdd85cd55501ca88342825cefcb34b5a8353824afaed0707f7157f1c0a26143"
+    }
+  },
+  "duskDomains": {
+    "site": "https://dusk.domains",
+    "manifest": {
+      "version": "5d5eca506323d18979157cb88858e81ea0157b7e",
+      "url": "https://dusk.domains/manifest.json",
+      "sha256": "092fbda51bfb48aba504a3f89313446efa1b072de9063322b20d0d866dc945de"
+    }
+  },
+  "duskEvm": null,
+  "routes": {
+    "chains": {
+      "bsc": {
+        "chainId": 56,
+        "name": "BNB Smart Chain",
+        "currency": {
+          "name": "BNB",
+          "symbol": "BNB",
+          "decimals": 18
+        },
+        "rpcUrl": "https://bsc-rpc.publicnode.com",
+        "explorerUrl": "https://bscscan.com",
+        "token": "0xB2BD0749DBE21f623d9BABa856D3B0f0e1BFEc9C",
+        "tokenLabel": "BEP20 DUSK"
+      },
+      "ethereum": {
+        "chainId": 1,
+        "name": "Ethereum",
+        "currency": {
+          "name": "Ether",
+          "symbol": "ETH",
+          "decimals": 18
+        },
+        "rpcUrl": "https://ethereum-rpc.publicnode.com",
+        "explorerUrl": "https://etherscan.io",
+        "token": "0x940a2dB1B7008B6C776d4faaCa729d6d4A4AA551",
+        "tokenLabel": "ERC20 DUSK"
+      }
+    },
+    "migrations": [
+      {
+        "id": "bsc-to-dusk",
+        "chain": "bsc",
+        "contract": "0x32979f040fEb67a5223acB0716Fe4c7a5956488c",
+        "payoutAccount": "24jFms4JqYdWb19jFn3CUjNUQz1AeRozYnwsHuUkLbXAj2gRBq598aLAJmqmsaPcsCNJTgTaJTaUZCXpT3s9UeWBsHTmd5hQx95JymZSUsmtwoibiB8AMp4bZjAiLMjmAH3x",
+        "typicalSeconds": 3600,
+        "running": true
+      },
+      {
+        "id": "ethereum-to-dusk",
+        "chain": "ethereum",
+        "contract": "0x36B8e0B938c0172c20e14cc32E7f0e51dCf1084F",
+        "payoutAccount": "2427XSRsdBpgBp3TtcYbFXc8NoGXX4pRZNurE1uRcSgsyGTo4yFJz3or2id85xZdGimEREB8ufEuW9UTPoX53r9ns4EsfSuLkzNMyqt4ha34A6T3DbjBKYNowih6YLGW1Zvi",
+        "typicalSeconds": 4000,
+        "running": true
+      }
+    ],
+    "services": [
+      {
+        "id": "dusk-to-bsc",
+        "chain": "bsc",
+        "account": "24jFms4JqYdWb19jFn3CUjNUQz1AeRozYnwsHuUkLbXAj2gRBq598aLAJmqmsaPcsCNJTgTaJTaUZCXpT3s9UeWBsHTmd5hQx95JymZSUsmtwoibiB8AMp4bZjAiLMjmAH3x",
+        "feeLux": "1000000000",
+        "typicalSeconds": 36000,
+        "running": true
+      }
+    ],
+    "duskEvm": [],
+    "retired": []
+  },
+  "operator": {
+    "name": "Dusk",
+    "termsUrl": "https://dusk.network/terms-of-use",
+    "privacyUrl": "https://dusk.network/privacy-policy"
+  },
+  "display": {
+    "labels": {
+      "0100000000000000000000000000000000000000000000000000000000000000": "Transfer contract",
+      "0200000000000000000000000000000000000000000000000000000000000000": "Stake contract",
+      "93de287b7d349d678a0038fe7772e8960e1a84a1b5da2d0b1f62f532616ce1d4": "Multicall for Dusk",
+      "b32c917e76abc6fcf2edbee0fa70231d8e19c405b18421794a11badfc66d2f26": "Sozu hub",
+      "6fdfdc713a18fc6ca2ad20eb2b4a3305a935ef47d6a872d9a4df8bc9fd9d169e": "Sozu pool",
+      "1cc415d05b1cfbf2583bf2e8a0e39b2c768d263ef92d6a21a4787f76c6afa924": "Sozu relayer",
+      "eb158fceeae76e59b28c1e6857eb50cf6a7a69532817fc455458096aab527980": "Sozu stDUSK",
+      "bc6f50f7404d098cdd1117b15dddab6f6f3dad01c5ce3c5ce9b68a8b60bc4c1d": "Sozu substrate",
+      "6fdd85cd55501ca88342825cefcb34b5a8353824afaed0707f7157f1c0a26143": "Sozu vault",
+      "24jFms4JqYdWb19jFn3CUjNUQz1AeRozYnwsHuUkLbXAj2gRBq598aLAJmqmsaPcsCNJTgTaJTaUZCXpT3s9UeWBsHTmd5hQx95JymZSUsmtwoibiB8AMp4bZjAiLMjmAH3x": "BSC bridge",
+      "2427XSRsdBpgBp3TtcYbFXc8NoGXX4pRZNurE1uRcSgsyGTo4yFJz3or2id85xZdGimEREB8ufEuW9UTPoX53r9ns4EsfSuLkzNMyqt4ha34A6T3DbjBKYNowih6YLGW1Zvi": "Ethereum migration payouts"
+    },
+    "blocklist": [
+      {
+        "account": "mFqH6RVxCoWQfjQ23H9YVr8JhQ697M5DD4ob76kcuoEYqqYA6H9cxHrxjvnZ6z4PQKsBd3PBpRYLN9M3FgkQQVywREzkzgeme4ersJgLaxYaQzZSAzkd1QBJ4ByTe9NrhXp",
+        "reason": "compromised"
+      },
+      {
+        "account": "25kt7vYP5JNJ1vborhco4dJBFfdHsFrS8oBsPZ6Q2wWmE6FYwahaE1heg8HSgc8C6KwHxpm19WxrgCuCtBDBfTJD6WNLi8jMqC2nkz6dEE3oepoMLsEYQnopTi5oPzfr7wGk",
+        "reason": "scam"
+      }
+    ]
+  }
+}

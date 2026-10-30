@@ -10,7 +10,7 @@ import posixpath
 import re
 import tarfile
 import urllib.parse
-from typing import Any
+from typing import Any, Callable
 
 from .model import Artifact, Evidence, Release, UpstreamError, VerificationError
 from .net import Http
@@ -44,13 +44,12 @@ def check_integrity(tarball: bytes, integrity: str) -> str:
     return actual
 
 
-def read_members(tarball: bytes, wanted: list[str], prefix: str = "package/") -> dict[str, bytes]:
-    """Read regular files named in ``wanted`` from an npm tarball, in memory.
+def read_selected(tarball: bytes, select: Callable[[str], bool], prefix: str = "package/") -> dict[str, bytes]:
+    """Read the regular files under ``prefix`` that ``select`` picks from an npm tarball, in memory.
 
-    Nothing is written to disk and nothing from the tarball is run. Links, device files,
-    paths escaping ``prefix`` and a name present twice are refused.
+    Nothing is written to disk and nothing from the tarball is run. Every member path is
+    checked; a picked member that is a link or device file, or a name present twice, is refused.
     """
-    want = set(wanted)
     out: dict[str, bytes] = {}
     total = 0
     try:
@@ -69,7 +68,7 @@ def read_members(tarball: bytes, wanted: list[str], prefix: str = "package/") ->
             rel = name[len(prefix):]
             if posixpath.normpath(rel) != rel or rel.startswith("/") or rel.startswith(".."):
                 raise UpstreamError(f"tarball member {name!r} has an unsafe path")
-            if rel not in want:
+            if not select(rel):
                 continue
             if not member.isreg():
                 raise UpstreamError(f"tarball member {name!r} is not a regular file")
@@ -82,6 +81,13 @@ def read_members(tarball: bytes, wanted: list[str], prefix: str = "package/") ->
             if handle is None:
                 raise UpstreamError(f"tarball member {name!r} has no data")
             out[rel] = handle.read()
+    return out
+
+
+def read_members(tarball: bytes, wanted: list[str], prefix: str = "package/") -> dict[str, bytes]:
+    """Read exactly the regular files named in ``wanted`` (see ``read_selected``); all must be there."""
+    want = set(wanted)
+    out = read_selected(tarball, want.__contains__, prefix)
     missing = sorted(want - out.keys())
     if missing:
         raise UpstreamError(f"tarball lacks {', '.join(missing)}")

@@ -14,6 +14,8 @@ from .replay import ReplayError, replay
 from .repo import Catalog, Repo, RepoError
 from .schema import SCHEMA_FILES, schema_text
 from .upstream import UpstreamError, net, specs
+from .upstream import notes as upstream_notes
+from .upstream import release as upstream_release
 from .upstream import sync as upstream_sync
 
 
@@ -223,6 +225,32 @@ def cmd_upstream_status(args: argparse.Namespace) -> int:
     return report.code
 
 
+def cmd_upstream_check_release(args: argparse.Namespace) -> int:
+    spec = specs.get(args.upstream)
+    code, report = upstream_release.check_release(
+        Path(args.root), spec, net.UrllibHttp(), net.SubprocessGit(), args.warn_unreachable, args.base_version,
+    )
+    if args.report_out:
+        Path(args.report_out).write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    if args.json:
+        sys.stdout.write(json.dumps(report, indent=2, ensure_ascii=False) + "\n")
+    else:
+        sys.stdout.write(upstream_notes.summary_text(report))
+    return code
+
+
+def cmd_upstream_release_notes(args: argparse.Namespace) -> int:
+    spec = specs.get(args.upstream)
+    try:
+        report = json.loads(Path(args.report).read_text(encoding="utf-8"))
+    except (OSError, ValueError) as exc:
+        raise UpstreamError(f"report {args.report}: {exc}") from exc
+    if not isinstance(report, dict) or report.get("schema") != upstream_release.REPORT_SCHEMA:
+        raise UpstreamError(f"{args.report} is not a {upstream_release.REPORT_SCHEMA} report")
+    sys.stdout.write(upstream_notes.render(args.kind, report, Path(args.root), spec, args.issue_url))
+    return 0
+
+
 def cmd_schema(args: argparse.Namespace) -> int:
     sys.stdout.write(schema_text(args.schema_id))
     return 0
@@ -333,6 +361,32 @@ def parser() -> argparse.ArgumentParser:
     sp.add_argument("--offline", action="store_true", help="skip the registry query")
     sp.set_defaults(func=cmd_upstream_status)
     base_check.add_cli(up_sub)
+
+    sp = up_sub.add_parser(
+        "check-release",
+        help="compare npm, JSR and git tags with the lock; verify and classify a newer release (exit 2)",
+    )
+    sp.add_argument("--upstream", default="dusk-networks", choices=sorted(specs.UPSTREAMS))
+    sp.add_argument("--root", default=".", help="pin repo checkout to read")
+    sp.add_argument("--json", action="store_true", help="print the JSON report instead of the summary")
+    sp.add_argument("--report-out", help="also write the JSON report to this file")
+    sp.add_argument(
+        "--warn-unreachable", action="store_true",
+        help="exit 0 with a warning when a registry or GitHub cannot be reached; mismatches still fail",
+    )
+    sp.add_argument(
+        "--from", dest="base_version", metavar="VERSION",
+        help="dry run: compare with this registry version instead of the lock (checked against the registry only)",
+    )
+    sp.set_defaults(func=cmd_upstream_check_release)
+
+    sp = up_sub.add_parser("release-notes", help="PR body, issue body or title from a check-release report")
+    sp.add_argument("--report", required=True, help="JSON report from check-release --report-out")
+    sp.add_argument("--kind", choices=["pr", "issue", "title", "summary"], default="issue")
+    sp.add_argument("--upstream", default="dusk-networks", choices=sorted(specs.UPSTREAMS))
+    sp.add_argument("--root", default=".", help="pin repo checkout (reads the consumer registry)")
+    sp.add_argument("--issue-url", help="tracking issue to link from the PR body")
+    sp.set_defaults(func=cmd_upstream_release_notes)
 
     sp = sub.add_parser("schema", help="print a bundled schema")
     sp.add_argument("schema_id", choices=sorted(SCHEMA_FILES))

@@ -5,7 +5,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Callable
 
-from .classify import UnclassifiedClassifier
+from .classify import dusk_networks_classifier
 from .content import GitHubContentVerifier, PackageJsonVerifier
 from .model import Classifier, Source, UpstreamError, Verifier
 from .net import Git, Http
@@ -30,6 +30,11 @@ class UpstreamSpec:
     classifier: Callable[[], Classifier]
     # Checks the design asks for that this tool does not do yet; recorded in the lock.
     unchecked: tuple[str, ...] = ()
+    # Release signals besides the source: JSR package metadata (``latest``); git tags come from ``repository``.
+    jsr_meta: str | None = None
+    # Extra package paths, and suffixes, the classifier reads besides ``files`` (never run).
+    classify_paths: tuple[str, ...] = ("package.json", "CHANGELOG.md")
+    classify_suffixes: tuple[str, ...] = (".d.ts",)
 
     @property
     def owner_repo(self) -> str:
@@ -42,6 +47,15 @@ class UpstreamSpec:
     @property
     def lock_path(self) -> str:
         return f"upstream/{self.name}.lock.json"
+
+    @property
+    def consumers_path(self) -> str:
+        return f"upstream/{self.name}.consumers.json"
+
+    def in_view(self, path: str) -> bool:
+        """Package paths the classifier compares between two releases."""
+        return (path in self.files.values() or path in self.classify_paths
+                or any(path.endswith(suffix) for suffix in self.classify_suffixes))
 
 
 def _npm_source(spec: UpstreamSpec, http: Http) -> Source:
@@ -84,8 +98,9 @@ DUSK_NETWORKS = UpstreamSpec(
     ),
     source=_npm_source,
     verifiers=_npm_verifiers,
-    classifier=UnclassifiedClassifier,
+    classifier=dusk_networks_classifier,
     unchecked=("JSR files equal npm (JSR is not read)",),
+    jsr_meta="https://jsr.io/@dusk/networks/meta.json",
 )
 
 UPSTREAMS: dict[str, UpstreamSpec] = {DUSK_NETWORKS.name: DUSK_NETWORKS}

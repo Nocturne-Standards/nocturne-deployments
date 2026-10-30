@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import os
+import re
 import subprocess
 import urllib.error
 import urllib.parse
@@ -60,14 +61,25 @@ class UrllibHttp:
         return body
 
 
+# git's words for "the host did not answer", as opposed to a wrong answer.
+GIT_OUTAGE = re.compile(
+    r"Could not resolve host|unable to access|Failed to connect|Connection (timed out|refused|reset)"
+    r"|Operation timed out|early EOF|returned error: (429|5\d\d)",
+)
+
+
 class SubprocessGit:
     def ls_remote(self, url: str, refs: list[str]) -> dict[str, str]:
         env = {**os.environ, "GIT_TERMINAL_PROMPT": "0"}
-        result = subprocess.run(
-            ["git", "ls-remote", url, *refs], capture_output=True, text=True, env=env, timeout=TIMEOUT,
-        )
+        try:
+            result = subprocess.run(
+                ["git", "ls-remote", url, *refs], capture_output=True, text=True, env=env, timeout=TIMEOUT,
+            )
+        except subprocess.TimeoutExpired as exc:
+            raise Unreachable(f"git ls-remote {url}: timed out") from exc
         if result.returncode != 0:
-            raise UpstreamError(f"git ls-remote {url}: {result.stderr.strip()}")
+            message = f"git ls-remote {url}: {result.stderr.strip()}"
+            raise Unreachable(message) if GIT_OUTAGE.search(result.stderr) else UpstreamError(message)
         out: dict[str, str] = {}
         for line in result.stdout.splitlines():
             if not line.strip():

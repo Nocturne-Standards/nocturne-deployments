@@ -28,7 +28,7 @@ import re
 from typing import Any
 
 from .model import Artifact, Evidence, VerificationError
-from .net import Git, Http, NotFound
+from .net import Git, Http, NotFound, Unreachable
 
 SLSA_V1 = "https://slsa.dev/provenance/v1"
 NPM_PUBLISH = "https://github.com/npm/attestation/tree/main/specs/publish/v0.1"
@@ -111,6 +111,9 @@ class NpmProvenanceVerifier:
             listing = json.loads(self.http.get(url))
         except NotFound as exc:
             raise VerificationError("no provenance attestation on the registry; refusing this version") from exc
+        except Unreachable:
+            # An outage is not a bad attestation (UpstreamError is a ValueError, so say it first).
+            raise
         except ValueError as exc:
             raise VerificationError(f"attestations do not parse: {exc}") from exc
         by_type: dict[str, dict[str, Any]] = {}

@@ -53,6 +53,9 @@ Rust: `nocturne_deployments::Catalog` (see `crates/nocturne-deployments`).
 Only through `nocturne-pins` (our deploy engine calls it). See `tools/nocturne-pins/README.md`.
 The Dusk snapshot under `upstream/` is written only by `nocturne-pins upstream sync --version X`,
 never by hand.
+A daily workflow (`.github/workflows/dusk-networks.yml`) looks for a newer Dusk release,
+verifies and classifies it (S safety, D data, A API/schema) and opens one PR and one tracking
+issue; see `tools/nocturne-pins/README.md`.
 
 ## Check
 

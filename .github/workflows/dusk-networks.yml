@@ -1,0 +1,139 @@
+# Watches Dusk's @dusk-network/networks package (the base layer under upstream/dusk-networks).
+#
+# detect (daily): compare npm, JSR and git tags with the lock. A newer release is verified
+# and classified (S safety, D data, A API/schema); then one PR on chore/dusk-networks-vX.Y.Z
+# (written by `upstream sync`) and one tracking issue. Both are idempotent: an existing PR
+# (open or closed) for the branch stops the run; an existing branch or issue is reused.
+# A verification failure or a mismatch fails the job; a registry outage only warns.
+#
+# sweep (weekly, Monday): the locked snapshot still equals the registry's tarball (an outage
+# warns), and the lock, snapshot hashes and index.json agree.
+name: dusk-networks
+
+on:
+  schedule:
+    - cron: "23 6 * * *"
+    - cron: "0 7 * * 1"
+  workflow_dispatch:
+    inputs:
+      job:
+        description: Which job to run
+        type: choice
+        options: [detect, sweep]
+        default: detect
+
+permissions:
+  contents: read
+
+concurrency:
+  group: dusk-networks
+  cancel-in-progress: false
+
+jobs:
+  detect:
+    if: github.event.schedule == '23 6 * * *' || (github.event_name == 'workflow_dispatch' && inputs.job == 'detect')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+
+      - name: Compare npm, JSR and git tags with the lock; verify and classify a newer release
+        id: check
+        run: |
+          set +e
+          uv run --project tools/nocturne-pins nocturne-pins upstream check-release --root . \
+            --warn-unreachable --report-out "$RUNNER_TEMP/report.json"
+          code=$?
+          set -e
+          echo "code=$code" >> "$GITHUB_OUTPUT"
+          case "$code" in
+            0|2) ;;
+            *) echo "::error::check-release failed (exit $code): verification failure or mismatch"; exit 1 ;;
+          esac
+
+      - name: Keep the report
+        if: always() && steps.check.outputs.code != ''
+        uses: actions/upload-artifact@v4
+        with:
+          name: dusk-networks-report
+          path: ${{ runner.temp }}/report.json
+          if-no-files-found: ignore
+
+      - name: Open the update PR and the tracking issue
+        if: steps.check.outputs.code == '2'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+          REPORT: ${{ runner.temp }}/report.json
+        run: |
+          set -euo pipefail
+          if [ "$GITHUB_REF" != "refs/heads/$DEFAULT_BRANCH" ]; then
+            echo "Not on $DEFAULT_BRANCH: report only, no branch, PR or issue."
+            exit 0
+          fi
+          pins() { uv run --project tools/nocturne-pins nocturne-pins "$@"; }
+          version=$(jq -r '.candidate.version' "$REPORT")
+          if ! [[ "$version" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "::error::report gives no plain version: $version"
+            exit 1
+          fi
+          branch="chore/dusk-networks-v$version"
+          title=$(pins upstream release-notes --report "$REPORT" --kind title)
+
+          existing=$(gh pr list --head "$branch" --state all --json url --jq '.[0].url // ""')
+          if [ -n "$existing" ]; then
+            echo "PR for $branch exists ($existing); nothing to do."
+            exit 0
+          fi
+
+          if git ls-remote --exit-code --heads origin "$branch" >/dev/null; then
+            echo "Branch $branch exists without a PR; reusing it."
+          else
+            git switch -c "$branch"
+            pins upstream sync --version "$version" --root .
+            # PRs opened with GITHUB_TOKEN start no workflows, so run the pins CI here
+            # before pushing: tool tests, repo check, the new tarball against npm, Rust reader.
+            uv run --project tools/nocturne-pins pytest -q tools/nocturne-pins/tests
+            pins check --root .
+            pins upstream verify --root .
+            cargo test --locked
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add upstream index.json
+            if git diff --cached --quiet; then
+              echo "::error::upstream sync wrote nothing for a newer release"
+              exit 1
+            fi
+            git commit -m "chore(upstream): dusk-networks v$version"
+            git push origin "HEAD:refs/heads/$branch"
+          fi
+
+          issue=$(gh issue list --state all --search "\"$title\" in:title" --json title,url \
+            | jq -r --arg t "$title" '[.[] | select(.title == $t)][0].url // ""')
+          if [ -z "$issue" ]; then
+            pins upstream release-notes --report "$REPORT" --kind issue --root . > "$RUNNER_TEMP/issue.md"
+            issue=$(gh issue create --title "$title" --body-file "$RUNNER_TEMP/issue.md")
+          fi
+
+          pins upstream release-notes --report "$REPORT" --kind pr --root . --issue-url "$issue" \
+            > "$RUNNER_TEMP/pr.md"
+          gh pr create --head "$branch" --base "$DEFAULT_BRANCH" --title "$title" --body-file "$RUNNER_TEMP/pr.md"
+
+  sweep:
+    if: github.event.schedule == '0 7 * * 1' || (github.event_name == 'workflow_dispatch' && inputs.job == 'sweep')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+
+      - name: Locked snapshot equals the registry's tarball
+        run: uv run --project tools/nocturne-pins nocturne-pins upstream verify --root . --warn-unreachable
+
+      - name: Lock and snapshot hashes agree with index.json
+        run: uv run --project tools/nocturne-pins nocturne-pins upstream status --root . --offline
