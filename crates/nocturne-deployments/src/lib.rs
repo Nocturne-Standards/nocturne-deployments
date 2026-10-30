@@ -7,6 +7,9 @@
 
 pub mod v2;
 
+/// Typed Dusk network data (the vendored base layer), re-exported.
+pub use dusk_networks;
+
 use std::collections::HashMap;
 use std::env;
 use std::fs;
