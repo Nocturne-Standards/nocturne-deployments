@@ -65,12 +65,41 @@ Names come from a fixed table (`nocturne_pins.dusk_names.TABLE`), one row per JS
 | `<route>-contract`, `<route>-payout-account` | `routes.migrations[id=<route>]` | external, duskds |
 | `<route>-account`, `<route>-payout-address` | `routes.services[id=<route>]` | duskds, external |
 | `bsc-token`, `ethereum-token` | `routes.chains.<chain>.token` | external |
+| `chain-id`, `evm-chain-id` | `chainId`, `duskEvm.chainId` (the id is the number as text) | duskds, duskevm |
 
 `external` is the route's other chain (`chain`, `chain_id` alongside). `label` comes from Dusk's
 `display.labels`. A network without a value for a row has no such name. Dusk Domains has no ids in
 the files (its manifest is read live), so it has no names. `check` fails on a value of the snapshot
 no row names, on a ref to a `fallback` value, and on any use of product `dusk` in an index entry,
 current file or history log.
+
+`nocturne-pins name-table --write` writes the table as JSON to `crates/dusk-networks/dusk-names.json`,
+which the Rust crate embeds; `check` fails when that file differs from the table.
+
+### Refs to Dusk's values in wiring and records
+
+Most of what we take from Dusk are values, not deploy refs. Writers add `refs` and `resolved` when
+the value is Dusk's current one:
+
+| Where | Key | Ref |
+|-------|-----|-----|
+| `record-call`, wiring key | `*.init_l1_messenger_contract`, `*.init_messenger` | `dusk/evm-l1-cross-domain-messenger/<network>/public` |
+| `record-contract`, record field | `messenger` | `dusk/evm-predeploy-l2-cross-domain-messenger/...` (the `0x4200…0007` predeploy) or `dusk/evm-l1-cross-domain-messenger/...` |
+| `record-contract`, record field | `dusk_chain_id` | `dusk/chain-id/<network>/public` |
+
+On a `wired` event the ref key is the wiring key; on a `deployed` event, the record field (the
+current file's contract carries the same `refs`). A value that is not Dusk's is recorded as it
+is, without a ref; for a wiring key and for `dusk_chain_id` the writer prints a warning. Tables:
+`nocturne_pins.dusk_refs.WIRING_REFS` and `RECORD_REFS`.
+
+Logs are append-only, so rows written before this carry no refs. `annotate-refs` appends one
+`note` per such row; the note's `refs` keys are paths into the current file
+(`state.<wiring key>`, `contracts.<name>.record.<field>`) and its text names the row:
+
+```bash
+nocturne-pins annotate-refs --root .           # print the notes
+nocturne-pins annotate-refs --root . --write   # append them (idempotent)
+```
 
 ## Write
 
@@ -153,3 +182,15 @@ contract names unique per network; generated legacy files up to date. Base layer
 snapshot file has its locked sha256 and no other file is there, the network files validate
 against the vendored `schema.json` (a keyword the validator does not support fails the check),
 and `networks` overrides no Dusk fact.
+
+Warnings (printed, exit 0; `--warn-exit 2` for the kit's advisory code):
+
+- a `dusk/...` ref in a log does not resolve, or the id a live ref resolved to is no longer Dusk's
+  ("Dusk changed X in Y; re-wire, or note the new id");
+- a value in a current file (state, contract records; 32-byte hex with or without `0x`, or a
+  20-byte EVM address) equals one of Dusk's ids and no ref covers it.
+
+Copies kept on purpose go in `dusk-refs.allow.json` (`nocturne.dusk-refs-allow.v1`): `check`
+(`known-id` or `stale-ref`), `entry`, `where` (the path above), `value`, `reason`. An entry
+that matches nothing is a warning. A ref from a log to a `fallback` value fails, as for
+contract refs.

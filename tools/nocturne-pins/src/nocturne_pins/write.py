@@ -14,7 +14,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Iterator
 
-from . import jsonio, legacy
+from . import dusk_refs, jsonio, legacy
 from .names import EntryKey, FullName, reader_tiers
 from .replay import ReplayError, replay
 from .repo import Catalog, Repo, RepoError
@@ -30,6 +30,8 @@ ADMIN_FN = re.compile(
     r"^(schedule_service|execute_service|schedule_admin|execute_admin|set_scheduler|set_guardian|service)$"
 )
 # Contract ids a record may carry that were baked in at build time: field -> (product, name).
+# Record fields holding Dusk's values (``messenger``, ``dusk_chain_id``) are in
+# ``dusk_refs.RECORD_REFS``, wiring keys in ``dusk_refs.WIRING_REFS``.
 BAKED_REFS: dict[str, tuple[str, str]] = {"atlas_pin": ("atlas", "atlas")}
 
 
@@ -273,6 +275,7 @@ def record_contract(
     product: str | None = None,
     tier: str | None = None,
     allow_public_home: bool = False,
+    warnings: list[str] | None = None,
 ) -> list[str]:
     home, key = find_home(catalog, name, network, product, tier, allow_public_home)
     new_id = contract_id(layer, record)
@@ -290,6 +293,11 @@ def record_contract(
     if record.get("deployed_block") is not None:
         event["block"] = record["deployed_block"]
     refs, resolved = _refs(catalog, home, key, record)
+    dusk, dusk_resolved, notes = dusk_refs.for_record(_dusk_base(catalog, home), network, record)
+    refs.update(dusk)
+    resolved.update(dusk_resolved)
+    if warnings is not None:
+        warnings += [f"{name}: {n}" for n in notes]
     if refs:
         event["refs"] = refs
         event["resolved"] = resolved
@@ -300,7 +308,18 @@ def record_contract(
     return append(catalog, home, key, events)
 
 
-def call_event(wiring_key: str, layer: str, record: dict[str, Any], kind: str) -> dict[str, Any]:
+def _dusk_base(catalog: Catalog, home: Repo) -> dusk_refs.Base:
+    return dusk_refs.Base(visible_to(catalog, home))
+
+
+def call_event(
+    wiring_key: str,
+    layer: str,
+    record: dict[str, Any],
+    kind: str,
+    refs: dict[str, str] | None = None,
+    resolved: dict[str, str] | None = None,
+) -> dict[str, Any]:
     name, fn = wiring_key.split(".")[0], wiring_key.split(".")[1]
     at = record_time(record)
     event: dict[str, Any] = {"at": at or now()}
@@ -313,6 +332,9 @@ def call_event(wiring_key: str, layer: str, record: dict[str, Any], kind: str) -
         event["block"] = record["resolved_at_block"]
     if kind != "call":
         event["sets"] = {wiring_key: wiring_value(layer, record)}
+    if refs:
+        event["refs"] = refs
+        event["resolved"] = resolved or {}
     event["record"] = record
     return event
 
@@ -326,14 +348,24 @@ def record_call(
     product: str | None = None,
     tier: str | None = None,
     allow_public_home: bool = False,
+    warnings: list[str] | None = None,
 ) -> tuple[str, list[str]]:
-    """Record one contract call. Config calls go to history; demo calls to the calls log (or nowhere)."""
+    """Record one contract call. Config calls go to history; demo calls to the calls log (or nowhere).
+
+    A config call whose key is in ``dusk_refs.WIRING_REFS`` and whose value is Dusk's current
+    id carries ``refs`` and ``resolved``; any other value is recorded as is, with a warning.
+    """
     name = wiring_key.split(".")[0]
     home, key = find_home(catalog, name, network, product, tier, allow_public_home)
     kind = classify(wiring_key)
     if kind == "demo":
         return "demo", append_calls(catalog, key, [call_event(wiring_key, layer, record, "call")])
-    return kind, append(catalog, home, key, [call_event(wiring_key, layer, record, kind)])
+    refs, resolved, notes = dusk_refs.for_call(
+        _dusk_base(catalog, home), network, wiring_key, wiring_value(layer, record)
+    )
+    if warnings is not None:
+        warnings += notes
+    return kind, append(catalog, home, key, [call_event(wiring_key, layer, record, kind, refs, resolved)])
 
 
 def note(catalog: Catalog, home: Repo, key: EntryKey, text: str, sets: dict[str, Any] | None = None) -> list[str]:

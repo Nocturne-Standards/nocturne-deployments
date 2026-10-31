@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "nocturne.dusk-refs-allow.v1",
+  "title": "Known copies of Dusk's values that carry no ref, kept on purpose (dusk-refs.allow.json)",
+  "type": "object",
+  "required": ["schema", "allow"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {"const": "nocturne.dusk-refs-allow.v1"},
+    "allow": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["check", "entry", "where", "value", "reason"],
+        "additionalProperties": false,
+        "properties": {
+          "check": {"enum": ["known-id", "stale-ref"]},
+          "entry": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*/[a-z0-9][a-z0-9-]*/(own|public)$"},
+          "where": {"type": "string", "pattern": "^(state\\..+|contracts\\.[^.]+\\.record\\..+)$"},
+          "value": {"type": "string", "minLength": 1},
+          "reason": {"type": "string", "minLength": 20}
+        }
+      }
+    }
+  }
+}

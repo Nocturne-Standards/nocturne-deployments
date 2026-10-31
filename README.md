@@ -31,6 +31,7 @@ contracts behind its hub, DuskEVM's dispute game hubs) are marked `fallback`, an
 | `history/<product>/<network>.<tier>.jsonl` | Append-only history (`nocturne.history.v1`), one event per line |
 | `upstream/dusk-networks/` | Snapshot of Dusk's [`@dusk-network/networks`](https://github.com/dusk-network/networks) package (network files, schema, Sozu vectors), MPL-2.0, see its `LICENSE` |
 | `upstream/dusk-networks.lock.json` | Version, tag, commit, tarball hashes, per-file sha256 and provenance of that snapshot |
+| `dusk-refs.allow.json` | Copies of Dusk's ids kept without a ref, each with a reason (`check` warns on any other) |
 | `schema/` | JSON schemas of the formats (index, current file, history line, upstream lock) |
 | `tools/nocturne-pins` | Resolver and writer (CLI and Python library) |
 | `crates/nocturne-deployments` | Rust reader |
@@ -40,7 +41,8 @@ so nobody edits a current file by hand.
 
 Full name of a contract: `<product>/<name>/<network>/<tier>`, for example `knot/knot-registry/testnet/own`.
 Links between products are references by full name (`refs`), checked by CI, including ids baked into
-contracts at build time (`atlas_pin`).
+contracts at build time (`atlas_pin`). Values taken from Dusk (a messenger id passed to an `init_*`
+call, the L2 messenger predeploy, the chain id) carry refs to `dusk/...` names too.
 
 ## Read
 

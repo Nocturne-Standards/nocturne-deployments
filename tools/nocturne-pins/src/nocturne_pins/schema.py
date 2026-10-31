@@ -21,6 +21,7 @@ SCHEMA_FILES: dict[str, str] = {
     "nocturne.history.v1": "history.v1.json",
     "nocturne.index.v1": "index.v1.json",
     "nocturne.upstream-lock.v1": "upstream-lock.v1.json",
+    "nocturne.dusk-refs-allow.v1": "dusk-refs-allow.v1.json",
 }
 
 _TYPES: dict[str, tuple[type, ...]] = {
