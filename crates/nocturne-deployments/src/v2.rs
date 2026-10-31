@@ -253,6 +253,9 @@ impl Catalog {
 
     /// Find a contract by full name; a missing tier follows the reader's order.
     pub fn find(&self, name: &FullName, reader: Reader) -> Result<Found> {
+        if name.product == dusk_networks::names::PRODUCT {
+            return self.find_dusk(name);
+        }
         let tiers: Vec<&str> = match &name.tier {
             Some(t) if reader.tiers().contains(&t.as_str()) => vec![t.as_str()],
             Some(_) => vec![],

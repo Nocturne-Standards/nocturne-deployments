@@ -1,0 +1,13 @@
+{
+  "schema": "nocturne.dusk-names.v1",
+  "note": "Test fixture: one row of each shape.",
+  "product": "dusk",
+  "tier": "public",
+  "names": [
+    {"name": "transfer", "path": "contracts.transfer", "layer": "duskds", "kind": "contract", "fallback": false, "chain": null},
+    {"name": "hub-pool", "path": "sozu.fallbacks.pool", "layer": "duskds", "kind": "contract", "fallback": true, "chain": null},
+    {"name": "evm-portal", "path": "duskEvm.contracts.optimism_portal", "layer": "duskds", "kind": "contract", "fallback": false, "chain": null},
+    {"name": "bsc-to-dusk-contract", "path": "routes.migrations[id=bsc-to-dusk].contract", "layer": "external", "kind": "address", "fallback": false, "chain": "bsc"},
+    {"name": "chain-id", "path": "chainId", "layer": "duskds", "kind": "chain-id", "fallback": false, "chain": null}
+  ]
+}

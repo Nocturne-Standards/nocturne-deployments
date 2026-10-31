@@ -5,6 +5,7 @@
 //! - The rest of this module: the old monolith files (flat `testnet.json` and enveloped
 //!   layouts), which pins-v2 repos still generate during the move.
 
+mod dusk;
 pub mod v2;
 
 /// Typed Dusk network data (the vendored base layer), re-exported.
