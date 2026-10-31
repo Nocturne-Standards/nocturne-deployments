@@ -21,6 +21,7 @@ from nocturne_pins.upstream.specs import DUSK_NETWORKS as SPEC
 REPO_ROOT = Path(__file__).resolve().parents[3]
 SNAPSHOT = REPO_ROOT / "upstream" / "dusk-networks"
 LOCK = REPO_ROOT / "upstream" / "dusk-networks.lock.json"
+HISTORY = REPO_ROOT / "history" / "dusk-networks.jsonl"
 DUSK_EXPLORER = "https://apps.testnet.dusk.network/explorer"
 
 
@@ -96,6 +97,8 @@ def make_base_repo(root: Path, **extra: Any) -> Path:
         (root / "schema" / file_name).write_text(schema_text(schema_id))
     shutil.copytree(SNAPSHOT, root / "upstream" / "dusk-networks")
     shutil.copy(LOCK, root / "upstream" / "dusk-networks.lock.json")
+    (root / "history").mkdir()
+    shutil.copy(HISTORY, root / "history" / "dusk-networks.jsonl")
     version = json.loads(LOCK.read_text())["version"]
     index: dict[str, Any] = {
         "schema": "nocturne.index.v1",

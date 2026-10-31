@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "nocturne.upstream-consumers.v1",
+  "title": "Consumers of one upstream (upstream/<name>.consumers.json): where each pin lives, how it is pinned, what it uses",
+  "type": "object",
+  "required": ["schema", "upstream", "consumers"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {"const": "nocturne.upstream-consumers.v1"},
+    "upstream": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+    "about": {"type": "string"},
+    "consumers": {"type": "array", "items": {"$ref": "#/$defs/consumer"}}
+  },
+  "$defs": {
+    "consumer": {
+      "type": "object",
+      "required": ["repo", "path", "kind", "policy", "uses", "status", "visibility"],
+      "additionalProperties": false,
+      "properties": {
+        "repo": {"type": "string", "pattern": "^[A-Za-z0-9-]+/[A-Za-z0-9._-]+$", "description": "owner/name on GitHub"},
+        "path": {"type": "string", "pattern": "^(?!.*(^|/)\\.\\.(/|$))[A-Za-z0-9._-][A-Za-z0-9._/-]*$", "description": "pin file (package.json, deno.json, Cargo.toml) or vendored directory holding VERSION"},
+        "kind": {"enum": ["npm", "jsr", "rust-crate", "vendored"]},
+        "policy": {"enum": ["immediate", "next-release"], "description": "immediate: moves value, S changes within the grace; next-release: everything else"},
+        "uses": {"type": "array", "items": {"type": "string", "minLength": 1}, "uniqueItems": true, "description": "classes (S, D, A), * or change ref prefixes"},
+        "status": {"enum": ["active", "planned"], "description": "planned: does not pin the upstream yet; the sweep does not read it"},
+        "visibility": {"enum": ["public", "private"], "description": "private repos need a sweep token with read access"},
+        "note": {"type": "string"}
+      }
+    }
+  }
+}

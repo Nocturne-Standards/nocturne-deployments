@@ -48,7 +48,7 @@
     "rekor_log_index": 3577556434,
     "rekor_integrated_time": 1793311799
   },
-  "verified_at": "2026-10-30T16:11:02Z",
+  "verified_at": "2026-10-30T19:51:12Z",
   "verified": [
     "tarball sha512 equals npm dist.integrity",
     "package.json name and version match",
@@ -63,5 +63,14 @@
     "Sigstore bundle: DSSE signature, Fulcio certificate chain and Rekor inclusion proof (needs X.509 and ECDSA; the tool is standard library only)",
     "npm registry signatures (npm audit signatures)",
     "JSR files equal npm (JSR is not read)"
-  ]
+  ],
+  "latest": "0.3.0",
+  "latest_at": "2026-10-30T16:11:02Z",
+  "floor": "0.3.0",
+  "grace_until": "2026-11-01T16:11:02Z",
+  "policy": {
+    "s_grace_hours": 48,
+    "max_lag_days": 30,
+    "max_lag_minors": 1
+  }
 }

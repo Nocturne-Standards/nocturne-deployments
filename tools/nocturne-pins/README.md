@@ -84,9 +84,37 @@ The tag binding and the byte comparison with GitHub are the independent checks. 
 read. The lock lists what was and was not verified, with `verified_at`.
 
 Outputs: `upstream/dusk-networks/{mainnet,testnet,devnet}.json`, `schema.json`,
-`fixtures/sozu-vectors.json`, `LICENSE`; `upstream/dusk-networks.lock.json`; and
-`index.json` `base.dusk = {version, lock}`. A re-sync of the locked version with the same
-bytes changes nothing. A version older than the lock needs `--allow-downgrade`.
+`fixtures/sozu-vectors.json`, `LICENSE`; `upstream/dusk-networks.lock.json`;
+`index.json` `base.dusk = {version, lock}`; and one `synced` event appended to
+`history/dusk-networks.jsonl`. A re-sync of the locked version with the same bytes changes
+nothing. A version older than the lock needs `--allow-downgrade`.
+
+### Floor, grace and lag
+
+The lock also publishes what consumers are measured against (consumer CI fetches it):
+
+| Field | Meaning | Set by `sync` |
+|---|---|---|
+| `latest` | newest verified release, the one to be on | always the locked version |
+| `latest_at` | when `latest` was first locked; the lag clock starts here | on a version change |
+| `floor` | lowest version with no outstanding S (safety) change | moves to the synced version when its diff has an S change; D and A never move it. The first lock (or a lock from before these fields) starts at its own version |
+| `grace_until` | `policy: immediate` consumers below `floor` fail after this | `floor` move time + 48 h |
+| `policy` | `s_grace_hours` 48, `max_lag_days` 30, `max_lag_minors` 1 | constant |
+
+A consumer below `latest` warns. Past `max_lag` (more than 30 days after `latest_at`, or more
+than one minor behind) it fails, whatever its policy. Below `floor` it warns until
+`grace_until`; after that it fails if its policy is `immediate` and warns if it is
+`next-release`. Nothing waives a failure.
+
+The format stays `nocturne.upstream-lock.v1`: the fields are optional in the schema (a lock
+written before them still validates, and readers that ignore unknown keys are unaffected),
+must appear together, and `check` requires them in this repo.
+
+`history/dusk-networks.jsonl` (`nocturne.upstream-history.v1`, append-only like the product
+logs) gets one line per release that entered the lock: `at`, `event: synced`, `version`,
+`from`, `tag`, `commit`, `integrity`, the diff `classes`, and the `latest`, `floor` and
+`grace_until` it set. `check` validates every line, keeps them in time order and requires the
+last one to match the lock.
 
 `nocturne-pins upstream verify --root .` (CI, on every push and PR) fetches the locked tarball
 again and checks it against the registry record, the lock and every snapshot file, comparing bytes.
@@ -148,12 +176,43 @@ and a scope prefix outside the network files (`schema:`, `package:`, `types:`, `
 
 ### Consumers
 
+Which products consume the package is not published: the registry and the generated
+`upstream/CONSUMERS.md` live in a private companion repo, which runs the sweep below with
+this tool. This repo has no registry; `check` validates one only where it exists.
+
+`upstream/dusk-networks.consumers.json` (`nocturne.upstream-consumers.v1`) lists every
+product that consumes the package: `{repo, path, kind: npm|jsr|rust-crate|vendored, policy:
+immediate|next-release, uses, status: active|planned, visibility: public|private, note}`.
+`path` is the pin file, or for `vendored` the directory holding `VERSION`. Each `uses` entry
+is a class (`S`, `D`, `A`), `*`, or a prefix of a change's `ref` (`routes.services`,
+`package:exports`, `schema:`). Pinned versions are never copied into the registry.
+
 `release-notes` lists, in the issue's checklist, only consumers whose `uses` overlap the
-change. They come from `upstream/dusk-networks.consumers.json` when it exists: a JSON list
-(or `{"consumers": [...]}`) of `{repo, path, kind: npm|jsr|rust-crate|vendored, policy:
-immediate|next-release, uses}`. Each `uses` entry is a class (`S`, `D`, `A`), `*`, or a
-prefix of a change's `ref` (`routes.services`, `package:exports`, `schema:`). Without the
-file the checklist says the registry is not set up yet.
+change (planned ones marked). Without the file (as here) the issue and PR say that consumer
+impact is tracked internally.
+
+```bash
+# --root: checkout with the registry; --lock-root: this repo (lock, history, tags)
+nocturne-pins upstream consumers --root <private> --lock-root .            # GitHub API (gh), exit 0/1/2
+nocturne-pins upstream consumers --root <private> --lock-root . --offline --source-root ..
+nocturne-pins upstream consumers --root <private> --lock-root . --write    # regenerate <private>/upstream/CONSUMERS.md
+```
+
+Pin forms read: npm exact `"@dusk-network/networks": "X.Y.Z"` in any dependency section;
+Deno `jsr:@dusk/networks@X.Y.Z` in `imports`; Rust a git dependency (`dusk-networks` or
+`nocturne-deployments`) on this repo with `tag = "nocturne-deployments-vX.Y.Z"`, mapped to the
+Dusk version through the lock at that tag; vendored `VERSION`. Status per consumer: `ok`,
+`lag-warn`, `lag-past-max` and `below-floor-past-grace` (the failures, exit 1), `not-exact-pin` (a range, a
+git `rev` or `branch`), `ahead` (newer than the lock), `no-pin`, `unreadable` (403, or 404 on
+a private repo), `planned`. Planned consumers are read too; one found pinning is measured
+like any other. Warnings exit 2.
+
+Offline, `<source-root>/<repo name>` is read as it is on disk (whatever branch is checked
+out) and Rust tags are resolved with `git show <tag>:upstream/dusk-networks.lock.json` in
+`--lock-root` (fetch tags first). `--new-issue-body FILE --issue-title T` writes a tracking
+issue body with every consumer as a checklist item; `--issue-body FILE --issue-title T`
+ticks the checklist of an existing one for every consumer pinning that issue's version or
+newer, and replaces a sweep table between `<!-- consumers-sweep -->` markers.
 
 ### Workflow `.github/workflows/dusk-networks.yml`
 
@@ -165,7 +224,7 @@ file the checklist says the registry is not set up yet.
   the job. The JSON report is kept as a run artifact. Permissions: `contents`,
   `pull-requests` and `issues` write for this job only.
 - **sweep**, Mondays 07:00 UTC: `upstream verify --warn-unreachable` and `upstream status
-  --offline`.
+  --offline`. Consumer pins are swept by the private companion repo, not here.
 
 A PR opened with the workflow's `GITHUB_TOKEN` starts no other workflow, so `pins` does not
 run on it by itself; the job runs the same checks before pushing (tool tests, `check`,
@@ -183,4 +242,6 @@ contract names unique per network; generated legacy files up to date. Base layer
 (`base_check`): the lock validates (`nocturne.upstream-lock.v1`) and matches `base`, every
 snapshot file has its locked sha256 and no other file is there, the network files validate
 against the vendored `schema.json` (a keyword the validator does not support fails the check),
-and `networks` overrides no Dusk fact.
+and `networks` overrides no Dusk fact. The lock carries `latest`, `floor` and `grace_until`;
+`history/dusk-networks.jsonl` is valid and ends at the lock; a consumer registry, where one
+exists, validates and lists each pin once.

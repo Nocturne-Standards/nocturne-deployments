@@ -10,9 +10,11 @@ from . import base_check, jsonio, legacy
 from .names import NameError_, parse
 from .repo import Catalog, Repo, RepoError, entry_key
 from .schema import SCHEMA_FILES, schema_text, validate
+from .upstream.specs import UPSTREAMS
 from .write import BAKED_REFS, verify_entry
 
 REPO_SCHEMA_DIR = "schema"
+UPSTREAM_LOGS = {f"{name}.jsonl" for name in UPSTREAMS}
 
 
 def check_repo(catalog: Catalog, home: Repo) -> list[str]:
@@ -104,6 +106,8 @@ def _check_strays(home: Repo, listed: set[tuple[str, str, str]]) -> list[str]:
         for path in sorted(base.rglob(f"*{suffix}")):
             rel = path.relative_to(home.root)
             parts = rel.parts
+            if folder == "history" and len(parts) == 2 and parts[1] in UPSTREAM_LOGS:
+                continue  # history/<upstream>.jsonl, checked by base_check
             if len(parts) != 3:
                 errors.append(f"{rel}: not in {folder}/<product>/<network>.<tier>{suffix}")
                 continue

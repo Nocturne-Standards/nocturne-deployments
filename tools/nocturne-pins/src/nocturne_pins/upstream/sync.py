@@ -18,9 +18,11 @@ from ..write import locked, now as utc_now
 from .model import Classification, Evidence, Release, UpstreamError
 from .net import Git, Http
 from .npm import VERSION, check_version, version_key
+from .policy import floor_fields
 from .specs import UpstreamSpec
 
 LOCK_SCHEMA = "nocturne.upstream-lock.v1"
+HISTORY_SCHEMA = "nocturne.upstream-history.v1"
 
 
 @dataclass(frozen=True)
@@ -50,7 +52,8 @@ def _read_snapshot(root: Path, spec: UpstreamSpec) -> dict[str, bytes] | None:
 
 
 def build_lock(spec: UpstreamSpec, evidence: Evidence, release: Release, tarball: bytes,
-               snapshot: dict[str, bytes], verified_at: str) -> dict[str, Any]:
+               snapshot: dict[str, bytes], verified_at: str,
+               floor: dict[str, Any] | None = None) -> dict[str, Any]:
     files = {
         f"{spec.snapshot_dir}/{rel}": {"source": spec.files[rel], "sha256": sha256(snapshot[rel])}
         for rel in spec.files
@@ -73,7 +76,42 @@ def build_lock(spec: UpstreamSpec, evidence: Evidence, release: Release, tarball
         "verified_at": verified_at,
         "verified": evidence.verified,
         "not_verified": evidence.not_verified,
+        **(floor or {}),
     }
+
+
+def history_event(spec: UpstreamSpec, old_lock: dict[str, Any] | None, lock: dict[str, Any],
+                  classes: tuple[str, ...], at: str) -> dict[str, Any]:
+    """The ``synced`` event for a release that entered the lock."""
+    return {
+        "at": at,
+        "event": "synced",
+        "upstream": spec.name,
+        "package": lock["package"],
+        "version": lock["version"],
+        "from": None if old_lock is None else old_lock["version"],
+        "tag": lock["tag"],
+        "commit": lock["commit"],
+        "integrity": lock["tarball"]["integrity"],
+        "classes": list(classes),
+        "latest": lock["latest"],
+        "floor": lock["floor"],
+        "grace_until": lock["grace_until"],
+        **({"note": "same release as before; the log starts here or the floor changed"}
+           if old_lock is not None and old_lock["version"] == lock["version"] else {}),
+    }
+
+
+def last_synced(root: Path, spec: UpstreamSpec) -> dict[str, Any] | None:
+    lines = jsonio.read_lines(root / spec.history_path)
+    return json.loads(lines[-1]) if lines else None
+
+
+def _needs_event(last: dict[str, Any] | None, lock: dict[str, Any]) -> bool:
+    """A new event when the locked release or its floor differs from the last one logged."""
+    if last is None:
+        return True
+    return any(last.get(key) != lock[key] for key in ("version", "commit", "floor", "grace_until"))
 
 
 def _same_content(old: dict[str, Any] | None, new: dict[str, Any]) -> bool:
@@ -124,7 +162,9 @@ def sync(root: Path, spec: UpstreamSpec, version: str, http: Http, git: Git,
     on_disk_before = _read_snapshot(root, spec)
     old_view = None if on_disk_before is None else {spec.files[rel]: data for rel, data in on_disk_before.items()}
     classification = spec.classifier().classify(old_view, dict(artifact.files))
-    lock = build_lock(spec, evidence, release, artifact.tarball, snapshot, clock())
+    at = clock()
+    floor = floor_fields(old_lock, version, classification.classes, at)
+    lock = build_lock(spec, evidence, release, artifact.tarball, snapshot, at, floor)
     lock_errors = validate(lock, LOCK_SCHEMA, spec.lock_path)
     if lock_errors:
         raise UpstreamError("lock would not validate: " + "; ".join(lock_errors))
@@ -137,7 +177,17 @@ def sync(root: Path, spec: UpstreamSpec, version: str, http: Http, git: Git,
         if errors:
             raise UpstreamError("index.json would not validate: " + "; ".join(errors))
         on_disk = _read_snapshot(root, spec)
-        if old_lock is not None and _same_content(old_lock, lock) and on_disk == snapshot and new_index == index:
+        last = last_synced(root, spec)
+        if last is None or (not _same_content(old_lock, lock) and _needs_event(last, lock)):
+            event: dict[str, Any] | None = history_event(spec, old_lock, lock, classification.classes, at)
+        else:
+            event = None
+        if event is not None:
+            event_errors = validate(event, HISTORY_SCHEMA, spec.history_path)
+            if event_errors:
+                raise UpstreamError("history event would not validate: " + "; ".join(event_errors))
+        if (old_lock is not None and _same_content(old_lock, lock) and on_disk == snapshot and new_index == index
+                and event is None):
             return SyncResult(version, evidence.commit, False, (), old_lock, classification)
         written: list[str] = []
         base = root / spec.snapshot_dir
@@ -149,6 +199,9 @@ def sync(root: Path, spec: UpstreamSpec, version: str, http: Http, git: Git,
         if new_index != index:
             jsonio.write_atomic(index_path, jsonio.dump_file(new_index))
             written.append("index.json")
+        if event is not None:
+            jsonio.append_lines(root / spec.history_path, [jsonio.dump_line(event)])
+            written.append(spec.history_path)
     return SyncResult(version, evidence.commit, True, tuple(written), lock, classification)
 
 
@@ -164,6 +217,12 @@ def status(root: Path, spec: UpstreamSpec, http: Http | None) -> Status:
         return Status(1, (f"{spec.name}: no lock at {spec.lock_path} (run upstream sync --version X)",))
     lines = [f"{spec.name}: locked {lock['version']} ({lock['tag']}, commit {lock['commit']}), verified {lock['verified_at']}"]
     code = 0
+    if "floor" in lock:
+        lines.append(f"policy: latest {lock['latest']} (since {lock['latest_at']}), floor {lock['floor']}, "
+                     f"grace until {lock['grace_until']}")
+    else:
+        lines.append(f"error: {spec.lock_path}: no latest/floor/grace_until (run upstream sync --version {lock['version']})")
+        code = 1
     for path, item in lock["files"].items():
         file = root / path
         if not file.exists():

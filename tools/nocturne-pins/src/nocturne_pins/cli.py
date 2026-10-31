@@ -14,7 +14,9 @@ from .replay import ReplayError, replay
 from .repo import Catalog, Repo, RepoError
 from .schema import SCHEMA_FILES, schema_text
 from .upstream import UpstreamError, net, specs
+from .upstream import consumers as upstream_consumers
 from .upstream import notes as upstream_notes
+from .upstream import policy as upstream_policy
 from .upstream import release as upstream_release
 from .upstream import sync as upstream_sync
 
@@ -251,6 +253,67 @@ def cmd_upstream_release_notes(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_upstream_consumers(args: argparse.Namespace) -> int:
+    spec = specs.get(args.upstream)
+    root = Path(args.root).resolve()
+    registry = upstream_notes.load_consumers(root, spec)
+    if registry is None:
+        raise UpstreamError(f"no consumer registry at {spec.consumers_path}")
+    # The lock, its history and the release tags live in the public repo; the registry may
+    # live elsewhere (a private companion repo), so they can come from two checkouts.
+    lock_root = Path(args.lock_root).resolve() if args.lock_root else root
+    lock = upstream_sync.read_lock(lock_root, spec)
+    if lock is None:
+        raise UpstreamError(f"no lock at {lock_root / spec.lock_path}")
+    source: upstream_consumers.PinSource
+    if args.offline:
+        source_root = Path(args.source_root).resolve() if args.source_root else root.parent
+        source = upstream_consumers.LocalSource(source_root, lock_root, spec.lock_path)
+    else:
+        home_repo = jsonio.load(lock_root / "index.json")["repo"]
+        source = upstream_consumers.GhApiSource(home_repo, spec.lock_path)
+    now = args.now or write.now()
+    try:
+        upstream_policy.parse_time(now)
+    except ValueError as exc:
+        raise UpstreamError(f"--now {now!r}: want YYYY-MM-DDTHH:MM:SSZ") from exc
+    rows = upstream_consumers.sweep(registry, lock, source, now)
+    if args.write:
+        text = upstream_consumers.markdown(spec, lock, rows, source.label)
+        target = root / spec.consumers_md_path
+        if not target.exists() or target.read_text(encoding="utf-8") != text:
+            jsonio.write_atomic(target, text)
+            print(f"wrote {spec.consumers_md_path}", file=sys.stderr)
+    if args.new_issue_body:
+        version = upstream_consumers.issue_version(args.issue_title or "")
+        if version is None:
+            raise UpstreamError(f"issue title {args.issue_title!r} names no vX.Y.Z")
+        event = upstream_sync.last_synced(lock_root, spec)
+        Path(args.new_issue_body).write_text(
+            upstream_consumers.new_issue(args.issue_title, version, rows, lock, event), encoding="utf-8")
+    if args.issue_body:
+        version = upstream_consumers.issue_version(args.issue_title or "")
+        if version is None:
+            raise UpstreamError(f"issue title {args.issue_title!r} names no vX.Y.Z")
+        body = Path(args.issue_body).read_text(encoding="utf-8")
+        updated = upstream_consumers.update_issue(body, rows, version, lock)
+        Path(args.issue_out or args.issue_body).write_text(updated, encoding="utf-8")
+    if args.json:
+        out = {"upstream": spec.name, "lock": {k: lock.get(k) for k in ("version", "latest", "latest_at", "floor",
+                                                                          "grace_until", "policy")},
+               "source": source.label, "now": now, "consumers": [r.to_json() for r in rows]}
+        sys.stdout.write(json.dumps(out, indent=2, ensure_ascii=False) + "\n")
+    elif args.markdown:
+        sys.stdout.write(upstream_consumers.markdown(spec, lock, rows, source.label))
+    else:
+        sys.stdout.write(upstream_consumers.text_report(rows))
+    code = upstream_consumers.exit_code(rows)
+    if code == 1:
+        print("error: a consumer is past max_lag, or (policy immediate) below the safety floor after the grace",
+              file=sys.stderr)
+    return code
+
+
 def cmd_schema(args: argparse.Namespace) -> int:
     sys.stdout.write(schema_text(args.schema_id))
     return 0
@@ -387,6 +450,26 @@ def parser() -> argparse.ArgumentParser:
     sp.add_argument("--root", default=".", help="pin repo checkout (reads the consumer registry)")
     sp.add_argument("--issue-url", help="tracking issue to link from the PR body")
     sp.set_defaults(func=cmd_upstream_release_notes)
+
+    sp = up_sub.add_parser(
+        "consumers",
+        help="read every registered consumer's pin and compare it with the lock (exit 1: past max_lag or floor)",
+    )
+    sp.add_argument("--upstream", default="dusk-networks", choices=sorted(specs.UPSTREAMS))
+    sp.add_argument("--root", default=".", help="checkout holding the consumer registry (and CONSUMERS.md)")
+    sp.add_argument("--lock-root", help="public pin repo checkout with the lock, history and tags (default: --root)")
+    sp.add_argument("--offline", action="store_true",
+                    help="read sibling checkouts under --source-root instead of the GitHub API")
+    sp.add_argument("--source-root", help="directory holding the consumer checkouts (default: parent of --root)")
+    sp.add_argument("--write", action="store_true", help="regenerate upstream/CONSUMERS.md")
+    sp.add_argument("--json", action="store_true", help="print the rows as JSON")
+    sp.add_argument("--markdown", action="store_true", help="print the CONSUMERS.md text")
+    sp.add_argument("--now", help="evaluate at this UTC time (YYYY-MM-DDTHH:MM:SSZ) instead of the clock")
+    sp.add_argument("--issue-body", help="tracking issue body file: tick done consumers, refresh the sweep table")
+    sp.add_argument("--issue-title", help="title of that issue (names the version, vX.Y.Z)")
+    sp.add_argument("--issue-out", help="write the updated body here (default: in place)")
+    sp.add_argument("--new-issue-body", help="write a fresh tracking issue body (checklist of every consumer) here")
+    sp.set_defaults(func=cmd_upstream_consumers)
 
     sp = sub.add_parser("schema", help="print a bundled schema")
     sp.add_argument("schema_id", choices=sorted(SCHEMA_FILES))
