@@ -70,7 +70,7 @@ def test_table_names_are_kebab_and_unique() -> None:
     for row in TABLE:
         assert re.fullmatch(r"[a-z0-9]+(-[a-z0-9]+)*", row.name), row.name
         assert row.layer in ("duskds", "duskevm", "external")
-        assert row.kind in ("contract", "account", "address")
+        assert row.kind in ("contract", "account", "address", "chain-id")
 
 
 def test_table_names_every_value_of_the_snapshot() -> None:
@@ -123,7 +123,7 @@ def test_mainnet_routes_and_devnet_gaps() -> None:
     assert main["dusk-to-bsc-payout-address"]["chain_id"] == 56
     assert main["ethereum-to-dusk-payout-account"]["label"] == "Ethereum migration payouts"
     assert not any(n.startswith("evm-") for n in main)
-    assert list(entries(network("devnet"))) == ["transfer", "stake"]
+    assert list(entries(network("devnet"))) == ["transfer", "stake", "chain-id"]
 
 
 # --- resolve -----------------------------------------------------------------

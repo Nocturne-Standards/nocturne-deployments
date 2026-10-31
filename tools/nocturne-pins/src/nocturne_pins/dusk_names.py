@@ -29,7 +29,7 @@ class DuskName:
     name: str
     path: str  # JSON path in the network file; ``[id=X]`` picks a route by its id
     layer: str  # duskds, duskevm, or external (a route's other chain)
-    kind: str  # contract, account (Dusk account) or address (EVM address)
+    kind: str  # contract, account (Dusk account), address (EVM address) or chain-id
     fallback: bool = False
     # For external values: the key under routes.chains.
     chain: str | None = None
@@ -109,6 +109,9 @@ TABLE: tuple[DuskName, ...] = (
     _ext("dusk-to-bsc-payout-address", "routes.services[id=dusk-to-bsc].payoutAddress", "bsc", "address"),
     _ext("dusk-to-ethereum-account", "routes.services[id=dusk-to-ethereum].account", "ethereum", "account"),
     _ext("dusk-to-ethereum-payout-address", "routes.services[id=dusk-to-ethereum].payoutAddress", "ethereum", "address"),
+    # Chain ids are values records copy too (``dusk_chain_id``); the id is the number as text.
+    DuskName("chain-id", "chainId", "duskds", "chain-id"),
+    DuskName("evm-chain-id", "duskEvm.chainId", "duskevm", "chain-id"),
 )
 BY_NAME: dict[str, DuskName] = {row.name: row for row in TABLE}
 if len(BY_NAME) != len(TABLE):  # pragma: no cover - guards edits to the table
@@ -137,6 +140,8 @@ def entry(doc: dict[str, Any], row: DuskName) -> dict[str, Any] | None:
     evm_address = None
     if isinstance(raw, dict):
         ident, evm_address = raw.get("contractId"), raw.get("evmAddress")
+    elif row.kind == "chain-id" and isinstance(raw, int) and not isinstance(raw, bool):
+        ident = str(raw)
     else:
         ident = raw
     if not isinstance(ident, str):
@@ -219,7 +224,7 @@ def unnamed(doc: dict[str, Any]) -> list[str]:
 
 def check(catalog: "Catalog", home: "Repo") -> list[str]:
     """Reserved product, refs to live-read values, and table coverage of the base layer."""
-    errors = _check_reserved(catalog, home)
+    errors = _check_reserved(catalog, home) + check_table_file(home)
     layer = None
     try:
         layer = of_catalog(catalog)
@@ -256,6 +261,39 @@ def _check_reserved(catalog: "Catalog", home: "Repo") -> list[str]:
             if product == PRODUCT:
                 errors.append(f"{item['current']}: product {PRODUCT} is reserved for Dusk's base layer")
     return errors
+
+
+# Generated copy of TABLE for the Rust crate, which embeds it (one table, two readers).
+TABLE_FILE = "crates/dusk-networks/dusk-names.json"
+TABLE_SCHEMA = "nocturne.dusk-names.v1"
+
+
+def table_json() -> str:
+    """TABLE as JSON, the format ``crates/dusk-networks`` reads."""
+    rows = [
+        {"name": r.name, "path": r.path, "layer": r.layer, "kind": r.kind, "fallback": r.fallback, "chain": r.chain}
+        for r in TABLE
+    ]
+    doc = {
+        "schema": TABLE_SCHEMA,
+        "note": "Generated from nocturne_pins.dusk_names.TABLE by nocturne-pins name-table --write. Do not edit.",
+        "product": PRODUCT,
+        "tier": TIER,
+        "names": rows,
+    }
+    return json.dumps(doc, indent=2) + "\n"
+
+
+def check_table_file(home: "Repo") -> list[str]:
+    """The crate's copy of the table, where the repo has the crate, equals TABLE."""
+    if home.root is None:
+        return []
+    path = home.root / TABLE_FILE
+    if not path.exists():
+        return []
+    if path.read_text(encoding="utf-8") != table_json():
+        return [f"{TABLE_FILE}: differs from dusk_names.TABLE (run nocturne-pins name-table --write)"]
+    return []
 
 
 def ref_problem(target: dict[str, Any], ref: str) -> str | None:

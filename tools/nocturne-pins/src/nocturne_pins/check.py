@@ -6,7 +6,7 @@ import json
 import subprocess
 from typing import Any
 
-from . import base_check, dusk_names, jsonio, legacy
+from . import base_check, dusk_names, dusk_refs, jsonio, legacy
 from .names import NameError_, parse
 from .repo import Catalog, Repo, RepoError, entry_key
 from .schema import SCHEMA_FILES, schema_text, validate
@@ -15,7 +15,8 @@ from .write import BAKED_REFS, verify_entry
 REPO_SCHEMA_DIR = "schema"
 
 
-def check_repo(catalog: Catalog, home: Repo) -> list[str]:
+def check_repo(catalog: Catalog, home: Repo, warnings: list[str] | None = None) -> list[str]:
+    """Errors; advisory findings (Dusk refs, D7 checks 3 and 4) go to ``warnings``."""
     errors: list[str] = []
     errors += home.index_errors()
     errors += _check_schema_copies(home)
@@ -26,6 +27,10 @@ def check_repo(catalog: Catalog, home: Repo) -> list[str]:
     errors += _check_aliases(catalog, home)
     errors += base_check.check_base(catalog, home)
     errors += dusk_names.check(catalog, home)
+    ref_errors, ref_warnings = dusk_refs.check(catalog, home)
+    errors += ref_errors
+    if warnings is not None:
+        warnings += ref_warnings
     if home.index.get("legacy"):
         errors += [f"{path}: out of date (run nocturne-pins legacy --write)" for path in legacy.stale(catalog, home)]
     return errors
@@ -239,4 +244,8 @@ def check_append_only(home: Repo, base: str) -> list[str]:
 
 def describe(errors: list[str]) -> str:
     return "\n".join(f"error: {e}" for e in errors)
+
+
+def describe_warnings(warnings: list[str]) -> str:
+    return "\n".join(f"warning: {w}" for w in warnings)
 

@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 from typing import Any
 
-from . import __version__, base_check, check, cli_base, jsonio, legacy, write
+from . import __version__, base_check, check, cli_base, dusk_names, dusk_refs, jsonio, legacy, write
 from .names import NameError_, parse, parse_entry
 from .replay import ReplayError, replay
 from .repo import Catalog, Repo, RepoError
@@ -91,15 +91,19 @@ def cmd_list(args: argparse.Namespace) -> int:
 
 def cmd_check(args: argparse.Namespace) -> int:
     catalog, home = home_catalog(args.root, args.with_)
-    errors = check.check_repo(catalog, home)
+    warnings: list[str] = []
+    errors = check.check_repo(catalog, home, warnings)
     if args.base:
         errors += check.check_append_only(home, args.base)
+    if warnings:
+        print(check.describe_warnings(warnings), file=sys.stderr)
     if errors:
         print(check.describe(errors), file=sys.stderr)
         print(f"{len(errors)} problem(s) in {home.where}", file=sys.stderr)
         return 1
-    print(f"ok: {home.name} ({len(home.entries())} entries; repos read: {', '.join(r.name for r in catalog.repos)})")
-    return 0
+    advisory = f"; {len(warnings)} warning(s)" if warnings else ""
+    print(f"ok: {home.name} ({len(home.entries())} entries; repos read: {', '.join(r.name for r in catalog.repos)}{advisory})")
+    return args.warn_exit if warnings else 0
 
 
 def cmd_replay(args: argparse.Namespace) -> int:
@@ -145,22 +149,31 @@ def cmd_legacy(args: argparse.Namespace) -> int:
     return 1 if stale else 0
 
 
+def _print_warnings(warnings: list[str]) -> None:
+    for line in warnings:
+        print(f"warning: {line}", file=sys.stderr)
+
+
 def cmd_record_contract(args: argparse.Namespace) -> int:
     catalog, _ = home_catalog(args.root, args.with_)
+    warnings: list[str] = []
     lines = write.record_contract(
         catalog, args.name, args.layer, _read_record(args.entry_json), args.network, args.product, args.tier,
-        args.allow_public_home,
+        args.allow_public_home, warnings,
     )
+    _print_warnings(warnings)
     print(f"{len(lines)} event(s) appended" if lines else "unchanged")
     return 0
 
 
 def cmd_record_call(args: argparse.Namespace) -> int:
     catalog, _ = home_catalog(args.root, args.with_)
+    warnings: list[str] = []
     kind, lines = write.record_call(
         catalog, args.key, args.layer, _read_record(args.entry_json), args.network, args.product, args.tier,
-        args.allow_public_home,
+        args.allow_public_home, warnings,
     )
+    _print_warnings(warnings)
     if kind == "demo" and not lines:
         print("demo call: not pinned (no calls log for this entry)")
     elif kind == "demo":
@@ -175,6 +188,41 @@ def cmd_note(args: argparse.Namespace) -> int:
     sets = json.loads(args.sets) if args.sets else None
     write.note(catalog, home, parse_entry(args.entry), args.text, sets)
     print("note appended")
+    return 0
+
+
+def cmd_annotate_refs(args: argparse.Namespace) -> int:
+    """Past rows: one note each with the Dusk refs the row would carry if written today."""
+    catalog, home = home_catalog(args.root, args.with_)
+    planned = dusk_refs.plan(catalog, home, write.now())
+    by_entry: dict[str, list[dusk_refs.Annotation]] = {}
+    for item in planned:
+        by_entry.setdefault(str(item.key), []).append(item)
+    for entry, items in by_entry.items():
+        for item in items:
+            print(f"{entry} line {item.line}: {jsonio.dump_line(item.event)}")
+    if not planned:
+        print("nothing to annotate")
+        return 0
+    if not args.write:
+        print(f"dry run: {len(planned)} note(s) for {len(by_entry)} entr{'y' if len(by_entry) == 1 else 'ies'}; pass --write to append")
+        return 0
+    for entry, items in by_entry.items():
+        write.append(catalog, home, items[0].key, [i.event for i in items])
+        print(f"{entry}: {len(items)} note(s) appended")
+    return 0
+
+
+def cmd_name_table(args: argparse.Namespace) -> int:
+    text = dusk_names.table_json()
+    if not args.write:
+        sys.stdout.write(text)
+        return 0
+    path = Path(args.root) / dusk_names.TABLE_FILE
+    if not path.parent.exists():
+        raise RepoError(f"{path.parent}: no such directory (the dusk-networks crate lives in the public repo)")
+    jsonio.write_atomic(path, text)
+    print(f"wrote {dusk_names.TABLE_FILE}")
     return 0
 
 
@@ -267,6 +315,8 @@ def parser() -> argparse.ArgumentParser:
 
     sp = sub.add_parser("check", help="CI: schema, replay, refs, tiers, legacy files")
     sp.add_argument("--base", help="git ref; logs must only have grown since (append-only)")
+    sp.add_argument("--warn-exit", type=int, choices=[0, 2], default=0,
+                    help="exit code when there are warnings and no errors (2: the kit's advisory code)")
     writers(sp)
     sp.set_defaults(func=cmd_check)
 
@@ -307,6 +357,16 @@ def parser() -> argparse.ArgumentParser:
     sp.add_argument("--sets", help="JSON object of state keys")
     writers(sp)
     sp.set_defaults(func=cmd_note)
+
+    sp = sub.add_parser("annotate-refs", help="one note per past row that copies a Dusk value without a ref")
+    sp.add_argument("--write", action="store_true", help="append the notes (default: print them)")
+    writers(sp)
+    sp.set_defaults(func=cmd_annotate_refs)
+
+    sp = sub.add_parser("name-table", help="Dusk name table as JSON (the Rust crate embeds it)")
+    sp.add_argument("--write", action="store_true", help=f"write {dusk_names.TABLE_FILE} under --root")
+    sp.add_argument("--root", default=".", help="public repo checkout")
+    sp.set_defaults(func=cmd_name_table)
 
     sp = sub.add_parser("current-record", help="latest v1-shaped row of a contract or wiring key (deploy engine reads)")
     sp.add_argument("--key", required=True)
