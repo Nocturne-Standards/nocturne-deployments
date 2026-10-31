@@ -24,8 +24,9 @@ Today: `tnst` is `public`; `atlas`, `knot`, `vigil` and `chit` are `own`.
 | `products/<product>/<network>.<tier>.json` | Current file (`nocturne.pins.v2`): live contracts and configuration only |
 | `history/<product>/<network>.<tier>.jsonl` | Append-only history (`nocturne.history.v1`), one event per line |
 | `upstream/dusk-networks/` | Snapshot of Dusk's [`@dusk-network/networks`](https://github.com/dusk-network/networks) package (network files, schema, Sozu vectors), MPL-2.0, see its `LICENSE` |
-| `upstream/dusk-networks.lock.json` | Version, tag, commit, tarball hashes, per-file sha256 and provenance of that snapshot |
-| `schema/` | JSON schemas of the formats (index, current file, history line, upstream lock) |
+| `upstream/dusk-networks.lock.json` | Version, tag, commit, tarball hashes, per-file sha256 and provenance of that snapshot; `latest`, `floor` and `grace_until` consumers are measured against |
+| `history/dusk-networks.jsonl` | Append-only log of releases that entered the lock |
+| `schema/` | JSON schemas of the formats (index, current file, history line, upstream lock, upstream history, consumer registry) |
 | `tools/nocturne-pins` | Resolver and writer (CLI and Python library) |
 | `crates/nocturne-deployments` | Rust reader |
 
@@ -55,7 +56,9 @@ The Dusk snapshot under `upstream/` is written only by `nocturne-pins upstream s
 never by hand.
 A daily workflow (`.github/workflows/dusk-networks.yml`) looks for a newer Dusk release,
 verifies and classifies it (S safety, D data, A API/schema) and opens one PR and one tracking
-issue; see `tools/nocturne-pins/README.md`.
+issue; a weekly job rechecks the locked tarball. Which products use the package, and how
+far behind they are, is tracked internally (`nocturne-pins upstream consumers`); see
+`tools/nocturne-pins/README.md`.
 
 ## Check
 

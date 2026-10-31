@@ -5,7 +5,8 @@ crafted value cannot add links, mentions or markup. The CHANGELOG is quoted as d
 fenced block; the classes come from the diff.
 
 Consumers come from ``upstream/<name>.consumers.json`` when it exists: a JSON list (or an
-object with a ``consumers`` list) of ``{repo, path, kind, policy, uses}``. ``uses`` holds
+object with a ``consumers`` list, ``nocturne.upstream-consumers.v1``) of ``{repo, path, kind,
+policy, uses}``, optionally ``status`` (``planned``: no pin yet), ``visibility`` and ``note``. ``uses`` holds
 classes (``S``, ``D``, ``A``), ``*``, or path prefixes matched against a change's ``ref``
 (``routes.services``, ``package:exports``, ``schema:``, ``types:src/gas.d.ts``). Only
 consumers whose ``uses`` overlap the change are listed.
@@ -32,7 +33,11 @@ WHEN = {
 }
 CLASS_NAMES = {"S": "safety", "D": "data", "A": "API or schema"}
 MAX_ROWS = 150
-NO_REGISTRY = "Consumer registry not set up yet: no consumers listed."
+NO_REGISTRY = "Consumer impact is tracked internally, not in this repository."
+
+
+STATUSES = ("active", "planned")
+VISIBILITIES = ("public", "private")
 
 
 @dataclass(frozen=True)
@@ -42,6 +47,10 @@ class Consumer:
     kind: str
     policy: str
     uses: tuple[str, ...]
+    # planned: does not pin the upstream yet; listed so release issues still name it.
+    status: str = "active"
+    visibility: str = "private"
+    note: str = ""
 
 
 def load_consumers(root: Path, spec: UpstreamSpec) -> list[Consumer] | None:
@@ -71,7 +80,14 @@ def load_consumers(root: Path, spec: UpstreamSpec) -> list[Consumer] | None:
         uses = item.get("uses")
         if not isinstance(uses, list) or not uses or not all(isinstance(u, str) and u for u in uses):
             raise UpstreamError(f"{where}: uses must be a non-empty list of strings")
-        out.append(Consumer(item["repo"], item["path"], item["kind"], item["policy"], tuple(uses)))
+        status = item.get("status", "active")
+        if status not in STATUSES:
+            raise UpstreamError(f"{where}: status must be one of {', '.join(STATUSES)}")
+        visibility = item.get("visibility", "private")
+        if visibility not in VISIBILITIES:
+            raise UpstreamError(f"{where}: visibility must be one of {', '.join(VISIBILITIES)}")
+        out.append(Consumer(item["repo"], item["path"], item["kind"], item["policy"], tuple(uses), status,
+                            visibility, item.get("note", "") if isinstance(item.get("note"), str) else ""))
     return sorted(out, key=lambda c: (c.repo, c.path))
 
 
@@ -204,8 +220,9 @@ def _checklist(report: dict[str, Any], consumers: list[Consumer] | None) -> list
         classes = [c for c in CLASS_ORDER if any(ch["class"] == c for ch in changes)]
         refs = sorted({ch["ref"] for ch in changes})
         shown = ", ".join(code(r, 60) for r in refs[:5]) + (f" and {len(refs) - 5} more" if len(refs) > 5 else "")
+        planned = ", planned: no pin yet" if consumer.status == "planned" else ""
         lines.append(
-            f"- [ ] {code(consumer.repo)} {code(consumer.path)} ({consumer.kind}, {consumer.policy}): "
+            f"- [ ] {code(consumer.repo)} {code(consumer.path)} ({consumer.kind}, {consumer.policy}{planned}): "
             f"{', '.join(classes)}; {WHEN[classes[0]]}. Uses {shown}"
         )
     return lines
@@ -222,7 +239,8 @@ def pr_body(report: dict[str, Any], consumers: list[Consumer] | None, issue_url:
     _require_candidate(report)
     lines = _header(report) + [""]
     lines += [
-        "Written by `nocturne-pins upstream sync`: snapshot under `upstream/`, lock and `index.json` `base`.",
+        "Written by `nocturne-pins upstream sync`: snapshot under `upstream/`, lock (with `latest`, `floor`, "
+        "`grace_until`), `index.json` `base` and one event in `history/dusk-networks.jsonl`.",
     ]
     if issue_url:
         lines.append(f"Tracking issue: {issue_url}")

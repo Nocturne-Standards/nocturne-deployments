@@ -27,9 +27,11 @@ from .repo import Catalog, Repo
 from .schema import unsupported, validate, validate_with
 from .upstream import UpstreamError, specs
 from .upstream.net import Http, Unreachable, UrllibHttp
-from .upstream.npm import check_integrity, read_members
+from .upstream.npm import check_integrity, read_members, version_key
 
 LOCK_SCHEMA = "nocturne.upstream-lock.v1"
+HISTORY_SCHEMA = "nocturne.upstream-history.v1"
+CONSUMERS_SCHEMA = "nocturne.upstream-consumers.v1"
 DUSK = specs.DUSK_NETWORKS
 
 # Per upstream: the vendored schema file and the snapshot files it describes.
@@ -134,8 +136,91 @@ def check_base(catalog: Catalog, home: Repo) -> list[str]:
     errors: list[str] = []
     for spec in specs.UPSTREAMS.values():
         if spec.base_key in home.index.get("base", {}):
-            errors += check_snapshot(home, spec)
+            snapshot_errors = check_snapshot(home, spec)
+            errors += snapshot_errors
+            if not snapshot_errors:
+                errors += check_floor(home, spec)
+                errors += check_history(home, spec)
+        errors += check_consumers(home, spec)
     errors += check_networks(catalog, home)
+    return errors
+
+
+def check_floor(home: Repo, spec: specs.UpstreamSpec) -> list[str]:
+    """The lock publishes latest, floor and grace_until, and they agree with its version."""
+    assert home.root is not None
+    lock = jsonio.load(home.root / spec.lock_path)
+    if "floor" not in lock:
+        return [f"{spec.lock_path}: no latest/floor/grace_until (written by upstream sync --version {lock['version']})"]
+    errors: list[str] = []
+    if lock["latest"] != lock["version"]:
+        errors.append(f"{spec.lock_path}: latest {lock['latest']} is not the locked version {lock['version']}")
+    if version_key(lock["floor"]) > version_key(lock["latest"]):
+        errors.append(f"{spec.lock_path}: floor {lock['floor']} is above latest {lock['latest']}")
+    return errors
+
+
+def check_history(home: Repo, spec: specs.UpstreamSpec) -> list[str]:
+    """``history/<upstream>.jsonl``: valid canonical events in time order; the last one is the lock."""
+    assert home.root is not None
+    path = spec.history_path
+    lines = jsonio.read_lines(home.root / path)
+    if not lines:
+        return [f"{path}: missing or empty (upstream sync appends a synced event)"]
+    errors: list[str] = []
+    previous_at = ""
+    last: dict[str, Any] | None = None
+    for n, line in enumerate(lines, start=1):
+        try:
+            event = json.loads(line)
+        except ValueError as exc:
+            errors.append(f"{path}:{n}: not JSON: {exc}")
+            continue
+        if jsonio.dump_line(event) != line:
+            errors.append(f"{path}:{n}: line is not in canonical form")
+        line_errors = validate(event, HISTORY_SCHEMA, f"{path}:{n}")
+        errors += line_errors
+        if line_errors:
+            continue
+        if event["upstream"] != spec.name:
+            errors.append(f"{path}:{n}: upstream {event['upstream']!r} is not {spec.name!r}")
+        if event["at"] < previous_at:
+            errors.append(f"{path}:{n}: at {event['at']} is before the line above ({previous_at})")
+        previous_at = event["at"]
+        last = event
+    if last is None or errors:
+        return errors
+    lock = jsonio.load(home.root / spec.lock_path)
+    for key in ("version", "commit", "latest", "floor", "grace_until"):
+        if last[key] != lock.get(key):
+            errors.append(f"{path}: last event {key} {last[key]!r} != {spec.lock_path} {lock.get(key)!r} "
+                          f"(upstream sync writes both)")
+    return errors
+
+
+def check_consumers(home: Repo, spec: specs.UpstreamSpec) -> list[str]:
+    """``upstream/<name>.consumers.json``, when present, validates and lists each pin once."""
+    assert home.root is not None
+    path = home.root / spec.consumers_path
+    if not path.exists():
+        return []
+    try:
+        data = jsonio.load(path)
+    except ValueError as exc:
+        return [f"{spec.consumers_path}: not JSON: {exc}"]
+    errors = validate(data, CONSUMERS_SCHEMA, spec.consumers_path)
+    if errors:
+        return errors
+    if data["upstream"] != spec.name:
+        errors.append(f"{spec.consumers_path}: upstream {data['upstream']!r} is not {spec.name!r}")
+    seen: set[tuple[str, str]] = set()
+    for item in data["consumers"]:
+        ident = (item["repo"], item["path"])
+        if ident in seen:
+            errors.append(f"{spec.consumers_path}: {item['repo']} {item['path']} listed twice")
+        seen.add(ident)
+        if not item["uses"]:
+            errors.append(f"{spec.consumers_path}: {item['repo']} {item['path']}: uses is empty")
     return errors
 
 

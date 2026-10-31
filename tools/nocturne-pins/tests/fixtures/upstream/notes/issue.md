@@ -7,7 +7,7 @@ Package `@dusk-network/networks` `0.3.0` (tag `v0.3.0`, commit `d1d1d1d1d1d1d1d1
 
 ## Consumers
 
-Consumer registry not set up yet: no consumers listed.
+Consumer impact is tracked internally, not in this repository.
 
 ## Changes
 

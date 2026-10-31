@@ -5,7 +5,7 @@ Package `@dusk-network/networks` `0.3.0` (tag `v0.3.0`, commit `d1d1d1d1d1d1d1d1
 | S | safety | 1 | within 48 h, before any deploy |
 | A | API or schema | 6 | opt in; never forced |
 
-Written by `nocturne-pins upstream sync`: snapshot under `upstream/`, lock and `index.json` `base`.
+Written by `nocturne-pins upstream sync`: snapshot under `upstream/`, lock (with `latest`, `floor`, `grace_until`), `index.json` `base` and one event in `history/dusk-networks.jsonl`.
 Tracking issue: https://github.com/o/r/issues/7
 
 ## Verification
@@ -68,4 +68,4 @@ Quoted from the package as data. Classes above come from the diff, not from this
 
 ## Consumers
 
-Consumer registry not set up yet: no consumers listed.
+Consumer impact is tracked internally, not in this repository.

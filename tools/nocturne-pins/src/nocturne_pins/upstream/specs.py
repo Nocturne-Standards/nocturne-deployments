@@ -52,6 +52,15 @@ class UpstreamSpec:
     def consumers_path(self) -> str:
         return f"upstream/{self.name}.consumers.json"
 
+    @property
+    def consumers_md_path(self) -> str:
+        return "upstream/CONSUMERS.md"
+
+    @property
+    def history_path(self) -> str:
+        """Append-only log of releases that entered the lock (``nocturne.upstream-history.v1``)."""
+        return f"history/{self.name}.jsonl"
+
     def in_view(self, path: str) -> bool:
         """Package paths the classifier compares between two releases."""
         return (path in self.files.values() or path in self.classify_paths
