@@ -1,0 +1,12 @@
+{
+  "schema": "nocturne.dusk-refs-allow.v1",
+  "allow": [
+    {
+      "check": "known-id",
+      "entry": "chit/testnet/own",
+      "where": "state.agent-mandate.init_deployment_context",
+      "value": "0200000000000000000000000000000000000000000000000000000000000000",
+      "reason": "chain_id is DuskDS chain id 2 as a 32-byte little-endian word; it equals Dusk's stake contract id by coincidence and is not a copy of it"
+    }
+  ]
+}
