@@ -52,6 +52,10 @@ Rust: `nocturne_deployments::Catalog` (see `crates/nocturne-deployments`). Dusk 
 `dusk_networks::by_chain_id` / `by_name`, also reachable as `Catalog::network` /
 `Catalog::network_by_chain_id`. A `networks` section in `index.json` is ignored by the Rust reader.
 Sozu contract IDs in that data are fallbacks: read the live ones from the Sozu hub.
+`Catalog::resolve` also resolves `dusk/<name>/<network>/public` (for example
+`dusk/evm-l1-cross-domain-messenger/testnet/public`) from that data, through the name table in
+`crates/dusk-networks/dusk-names.json` (`dusk_networks::names`). That file is generated from
+`nocturne-pins`' table (`nocturne-pins name-table --write`), never edited by hand.
 
 ### Rust crates and tags
 

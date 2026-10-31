@@ -30,6 +30,8 @@
 //! Typed fields are required and must have the documented type. Fields this crate does
 //! not type are ignored, so a newer upstream file that only adds keys still parses.
 
+pub mod names;
+
 use std::collections::BTreeMap;
 use std::sync::OnceLock;
 

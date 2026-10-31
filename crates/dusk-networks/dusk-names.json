@@ -1,0 +1,384 @@
+{
+  "schema": "nocturne.dusk-names.v1",
+  "note": "Generated from nocturne_pins.dusk_names.TABLE by nocturne-pins name-table --write. Do not edit.",
+  "product": "dusk",
+  "tier": "public",
+  "names": [
+    {
+      "name": "transfer",
+      "path": "contracts.transfer",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "stake",
+      "path": "contracts.stake",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "multicall",
+      "path": "contracts.multicall",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "sozu-hub",
+      "path": "sozu.hub",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "sozu-pool",
+      "path": "sozu.fallbacks.pool",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": true,
+      "chain": null
+    },
+    {
+      "name": "sozu-relayer",
+      "path": "sozu.fallbacks.relayer",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": true,
+      "chain": null
+    },
+    {
+      "name": "sozu-stdusk",
+      "path": "sozu.fallbacks.stDusk",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": true,
+      "chain": null
+    },
+    {
+      "name": "sozu-substrate",
+      "path": "sozu.fallbacks.substrate",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": true,
+      "chain": null
+    },
+    {
+      "name": "sozu-vault",
+      "path": "sozu.fallbacks.vault",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": true,
+      "chain": null
+    },
+    {
+      "name": "evm-anchor-state-registry",
+      "path": "duskEvm.contracts.anchor_state_registry",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "evm-delayed-weth",
+      "path": "duskEvm.contracts.delayed_weth",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "evm-dispute-game-factory",
+      "path": "duskEvm.contracts.dispute_game_factory",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "evm-tx-router",
+      "path": "duskEvm.contracts.evm_tx_router",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "evm-fault-dispute-game-hub",
+      "path": "duskEvm.contracts.fault_dispute_game_hub",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": true,
+      "chain": null
+    },
+    {
+      "name": "evm-l1-cross-domain-messenger",
+      "path": "duskEvm.contracts.l1_cross_domain_messenger",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "evm-l1-erc721-bridge",
+      "path": "duskEvm.contracts.l1_erc721_bridge",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "evm-l1-standard-bridge",
+      "path": "duskEvm.contracts.l1_standard_bridge",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "evm-mips",
+      "path": "duskEvm.contracts.mips",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "evm-optimism-mintable-erc20-factory",
+      "path": "duskEvm.contracts.optimism_mintable_erc20_factory",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "evm-optimism-mintable-erc721-factory",
+      "path": "duskEvm.contracts.optimism_mintable_erc721_factory",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "evm-optimism-portal",
+      "path": "duskEvm.contracts.optimism_portal",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "evm-permissioned-dispute-game-hub",
+      "path": "duskEvm.contracts.permissioned_dispute_game_hub",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": true,
+      "chain": null
+    },
+    {
+      "name": "evm-preimage-oracle",
+      "path": "duskEvm.contracts.preimage_oracle",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "evm-protocol-versions",
+      "path": "duskEvm.contracts.protocol_versions",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "evm-proxy-admin",
+      "path": "duskEvm.contracts.proxy_admin",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "evm-superchain-config",
+      "path": "duskEvm.contracts.superchain_config",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "evm-system-config",
+      "path": "duskEvm.contracts.system_config",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "evm-system-config-impl",
+      "path": "duskEvm.contracts.system_config_impl",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "evm-system-config-legacy",
+      "path": "duskEvm.contracts.system_config_legacy",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "evm-transparent-proxy",
+      "path": "duskEvm.contracts.transparent_proxy",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "evm-tx-meta-registry",
+      "path": "duskEvm.contracts.tx_meta_registry",
+      "layer": "duskds",
+      "kind": "contract",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "evm-predeploy-l1-block",
+      "path": "duskEvm.predeploys.l1Block",
+      "layer": "duskevm",
+      "kind": "address",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "evm-predeploy-l2-cross-domain-messenger",
+      "path": "duskEvm.predeploys.l2CrossDomainMessenger",
+      "layer": "duskevm",
+      "kind": "address",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "evm-predeploy-l2-standard-bridge",
+      "path": "duskEvm.predeploys.l2StandardBridge",
+      "layer": "duskevm",
+      "kind": "address",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "evm-predeploy-l2-to-l1-message-passer",
+      "path": "duskEvm.predeploys.l2ToL1MessagePasser",
+      "layer": "duskevm",
+      "kind": "address",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "bsc-token",
+      "path": "routes.chains.bsc.token",
+      "layer": "external",
+      "kind": "address",
+      "fallback": false,
+      "chain": "bsc"
+    },
+    {
+      "name": "ethereum-token",
+      "path": "routes.chains.ethereum.token",
+      "layer": "external",
+      "kind": "address",
+      "fallback": false,
+      "chain": "ethereum"
+    },
+    {
+      "name": "bsc-to-dusk-contract",
+      "path": "routes.migrations[id=bsc-to-dusk].contract",
+      "layer": "external",
+      "kind": "address",
+      "fallback": false,
+      "chain": "bsc"
+    },
+    {
+      "name": "bsc-to-dusk-payout-account",
+      "path": "routes.migrations[id=bsc-to-dusk].payoutAccount",
+      "layer": "duskds",
+      "kind": "account",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "ethereum-to-dusk-contract",
+      "path": "routes.migrations[id=ethereum-to-dusk].contract",
+      "layer": "external",
+      "kind": "address",
+      "fallback": false,
+      "chain": "ethereum"
+    },
+    {
+      "name": "ethereum-to-dusk-payout-account",
+      "path": "routes.migrations[id=ethereum-to-dusk].payoutAccount",
+      "layer": "duskds",
+      "kind": "account",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "dusk-to-bsc-account",
+      "path": "routes.services[id=dusk-to-bsc].account",
+      "layer": "duskds",
+      "kind": "account",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "dusk-to-bsc-payout-address",
+      "path": "routes.services[id=dusk-to-bsc].payoutAddress",
+      "layer": "external",
+      "kind": "address",
+      "fallback": false,
+      "chain": "bsc"
+    },
+    {
+      "name": "dusk-to-ethereum-account",
+      "path": "routes.services[id=dusk-to-ethereum].account",
+      "layer": "duskds",
+      "kind": "account",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "dusk-to-ethereum-payout-address",
+      "path": "routes.services[id=dusk-to-ethereum].payoutAddress",
+      "layer": "external",
+      "kind": "address",
+      "fallback": false,
+      "chain": "ethereum"
+    },
+    {
+      "name": "chain-id",
+      "path": "chainId",
+      "layer": "duskds",
+      "kind": "chain-id",
+      "fallback": false,
+      "chain": null
+    },
+    {
+      "name": "evm-chain-id",
+      "path": "duskEvm.chainId",
+      "layer": "duskevm",
+      "kind": "chain-id",
+      "fallback": false,
+      "chain": null
+    }
+  ]
+}
