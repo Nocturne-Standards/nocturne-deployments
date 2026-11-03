@@ -1,0 +1,31 @@
+# Files Claude must not read in this repo. gitignore syntax.
+
+# Secrets and wallet material. *.example files hold no values and stay readable.
+.env
+.env.*
+!*.example
+*.key
+*.pem
+*.sk
+*.seed
+*seed-file*
+*seed*.txt
+*.keystore
+wallet.dat
+wallet.dat.*
+rusk-wallet/
+cache_testnet/
+
+# Dependencies and build output
+node_modules/
+dist/
+target/
+**/target/
+.cache/
+
+# Large or generated. Low value to read in full.
+**/package-lock.json
+**/pnpm-lock.yaml
+**/Cargo.lock
+*.wasm
+*.map
