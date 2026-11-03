@@ -17,6 +17,12 @@
       }
     }
   },
+  "base": {
+    "dusk": {
+      "version": "0.3.0",
+      "lock": "upstream/dusk-networks.lock.json"
+    }
+  },
   "entries": [
     {
       "product": "atlas",

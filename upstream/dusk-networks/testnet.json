@@ -1,0 +1,278 @@
+{
+  "chainId": 2,
+  "name": "testnet",
+  "label": "Testnet",
+  "urls": {
+    "node": "https://testnet.nodes.dusk.network",
+    "archive": "https://testnet.nodes.dusk.network",
+    "prover": "https://testnet.provers.dusk.network"
+  },
+  "apps": {
+    "wallet": "https://apps.testnet.dusk.network/wallet",
+    "explorer": "https://apps.testnet.dusk.network/explorer",
+    "bridge": "https://bridge.testnet.dusk.network"
+  },
+  "contracts": {
+    "transfer": "0100000000000000000000000000000000000000000000000000000000000000",
+    "stake": "0200000000000000000000000000000000000000000000000000000000000000",
+    "multicall": "93de287b7d349d678a0038fe7772e8960e1a84a1b5da2d0b1f62f532616ce1d4"
+  },
+  "sozu": {
+    "hub": "bae85f8c24730a5a19fbe3d3bd58248ac8c302b62fe414a8c640d8c0ed286b9e",
+    "fallbacks": {
+      "pool": "72883945ac1aa032a88543aacc9e358d1dfef07717094c05296ce675f23078f2",
+      "relayer": "51ced4fad52fc590def2736969c9e3e30013275a996c53714b81d8a08774aa37",
+      "stDusk": "fdbf49102e76cf58224003451c6cb9e3403c54ff1d9042f8bc46ec25c6a4337c",
+      "substrate": "0077ecbf88aa20d6d0a6afa20bd26300a2b562fdbac368bf1e3c1325e8555941",
+      "vault": "79635912e56834fa41aa01048cdb54f7b26756d97b3571345a64df7a0641dfce"
+    }
+  },
+  "duskDomains": {
+    "site": "https://testnet.dusk.domains",
+    "manifest": {
+      "version": "5d5eca506323d18979157cb88858e81ea0157b7e",
+      "url": "https://testnet.dusk.domains/manifest.json",
+      "sha256": "9a68ed90cdb586bf09aa60e286564a8426ba49008cff2370bede29b63d5bf5c9"
+    }
+  },
+  "duskEvm": {
+    "name": "DuskEVM Testnet",
+    "chainId": 745,
+    "currency": {
+      "decimals": 18,
+      "name": "DUSK",
+      "symbol": "DUSK"
+    },
+    "rpcUrl": "https://rpc.testnet.evm.dusk.network",
+    "l1AdapterUrl": "https://rpc.testnet.evm.dusk.network/l1",
+    "explorerUrl": "https://explorer.testnet.evm.dusk.network",
+    "blockscoutApiUrl": "https://explorer.testnet.evm.dusk.network/api/v2",
+    "predeploys": {
+      "l1Block": "0x4200000000000000000000000000000000000015",
+      "l2CrossDomainMessenger": "0x4200000000000000000000000000000000000007",
+      "l2StandardBridge": "0x4200000000000000000000000000000000000010",
+      "l2ToL1MessagePasser": "0x4200000000000000000000000000000000000016"
+    },
+    "drivers": {
+      "disputeGameFactory": {
+        "file": "dispute_game_factory_dd_opt.wasm",
+        "sha256": "dd07f5a584779940bf116fb2ea32f455f8afbe3399c8e1f125f99f98d499afca"
+      },
+      "optimismPortal": {
+        "file": "optimism_portal_dd_opt.wasm",
+        "sha256": "9220bf0e96f8d1d20ae8c56459c75d402045bb0fa63851b9413c7db57749b360"
+      }
+    },
+    "contracts": {
+      "anchor_state_registry": {
+        "contractId": "1735498c11978854e390894502850916f4ba619e3f4b88c10ef758c5026619cc",
+        "evmAddress": "0xc5F459729235774AA47BEd7db3BFFcfA8e4B3CE2"
+      },
+      "delayed_weth": {
+        "contractId": "be5771a80c378903801c768de0ea70eaef26cf9a0b46931ae725bfdc5c7b01cc",
+        "evmAddress": "0x40a4904aE2fC89A59cCBD69493b0998A01e8c75b"
+      },
+      "dispute_game_factory": {
+        "contractId": "3b7d562aa0e6b94ce29c5ce2a6f0587ad771afdace86abb0baf66f93e49548cd",
+        "evmAddress": "0x652A152f4043c8D60eaDaB1C6d075C704363d3C9"
+      },
+      "evm_tx_router": {
+        "contractId": "2e4b8b46390c860282b765641fa94037812601bf777164d7b7f801a262206046",
+        "evmAddress": "0xFd95a68111DB8C0aC15bc428b377d57813EB7Ba8"
+      },
+      "fault_dispute_game_hub": {
+        "contractId": "d5ece3d6cfab787d732ff02897254fc211e2d2ef476cb8883b9cd83d979aedae",
+        "evmAddress": "0xEE28E9bb608DbE76f4643Df239Dcff5a9580aab3"
+      },
+      "l1_cross_domain_messenger": {
+        "contractId": "63cd2c93016296b2ec357e31fd44b716cf2cda3b31217d45087f17ccc6440530",
+        "evmAddress": "0x8B6Aa15321d9656c91ad2d5fBc2AE8b750aD6F9a"
+      },
+      "l1_erc721_bridge": {
+        "contractId": "259f7352efa9e5d41dd7f93b00814e7e8dd1c657e57c0a883f095824696f44fa",
+        "evmAddress": "0x99DF5DFFE75b8366e80e77E4A2Ef9cA75fe5a15a"
+      },
+      "l1_standard_bridge": {
+        "contractId": "2257e5f8ff49cf7c9704a14ca35acbf48eb7ade11a079d98d5cd5655eea1b31d",
+        "evmAddress": "0x2D2e08C0E8d64381Db56bF2c942Bc825602E61C3"
+      },
+      "mips": {
+        "contractId": "76d50c0cdcc19b7ad143e20f0a98a1ecd802e9b61ff73bff63a145a9229d9f8b",
+        "evmAddress": "0x8EAF324c0B3177AAe6cDf0Ff0095bed8442dbF2B"
+      },
+      "optimism_mintable_erc20_factory": {
+        "contractId": "8c5cd72c0dbdad30c4f43be41c73bce1a41df17a4a06c78c9086df9cf53c1e35",
+        "evmAddress": "0x64381e85a2DAc086a58231625353035E8549055D"
+      },
+      "optimism_mintable_erc721_factory": {
+        "contractId": "920958dd200a057a538035fed3d8a7e140efc1a91c6090d82f6178cdef9590a6",
+        "evmAddress": "0x4dE2B8689060297BB6Af70249E6d883420C67741"
+      },
+      "optimism_portal": {
+        "contractId": "14eeb3d4021aff09af2c515603a01f8d956a7f6411d11a1b1c0b0561a93fb1b9",
+        "evmAddress": "0x19e05E040E2B35dD705EF031759c1697727CF6dE"
+      },
+      "permissioned_dispute_game_hub": {
+        "contractId": "c82a080d763b331f40453ab08df2cab73faf3dee3849cd21a3508056dd9b38e0",
+        "evmAddress": "0x2D5559f90a01806e045c5fc77377247f52D3F56B"
+      },
+      "preimage_oracle": {
+        "contractId": "99b250afab5f2c077b2f1e5fda25abca7e2caa7219bde9e4a01d3a554da35526",
+        "evmAddress": "0xB3c6c69cF2a946da0A7654Fc0C1Fee4425F3d97F"
+      },
+      "protocol_versions": {
+        "contractId": "234e593c3e00d07c27108d00f441a6c1d33747c1cb05c2f5ddf0861d91d63df4",
+        "evmAddress": "0x055E50336539DE68e04B7043A1c249D9C159F098"
+      },
+      "proxy_admin": {
+        "contractId": "18a06b050de2756582d4c0256fe7bf0f5f6da6ba7a1c72b6d3377bb98e0ad0b4",
+        "evmAddress": "0x3ef32223DAd96E4cA3e99E9DFF4eAa52E235226E"
+      },
+      "superchain_config": {
+        "contractId": "a6b1622f94b35a834929175b6335c1d4ff04be5fc03647fd61f96d1ccff7424d",
+        "evmAddress": "0x3Bce6A94A4322022bBB31666E7fCcCA77e2B8a79"
+      },
+      "system_config": {
+        "contractId": "6ca481270c1386fb93d08e0181cc8af8052f8ee17677c22134a7e6f553238ace",
+        "evmAddress": "0x539BEcbF5d6Fff4a991602d8BC8c1820B5981B0D"
+      },
+      "system_config_impl": {
+        "contractId": "8937cc04b35914326cf034804075f3818e54d400c466b12ccdee3ecd25b4689a",
+        "evmAddress": "0x1656fcB2f0EBC15995B392a28332dfBA69593390"
+      },
+      "system_config_legacy": {
+        "contractId": "9cf7ff2f80e3e556fba4e7da04d694f47bbd77222525d71f6938230fb2d04648",
+        "evmAddress": "0x539BEcbF5d6Fff4a991602d8BC8c1820B5981B0D"
+      },
+      "transparent_proxy": {
+        "contractId": "6ca481270c1386fb93d08e0181cc8af8052f8ee17677c22134a7e6f553238ace",
+        "evmAddress": "0xdc05B5507fB495B6729854BdcDFFBcAE110eF98B"
+      },
+      "tx_meta_registry": {
+        "contractId": "179f68303f0eb935660d52a52c2f104709d8b3b1d6f6525689d4d599695840c9",
+        "evmAddress": "0xFd33DD54cD97CD2037d868ba8DB31836c51311db"
+      }
+    },
+    "source": {
+      "files": {
+        "testnet/l1-addresses.json": "d6b3aa2b5f845deae8d119d610c1e3b8d2f569c23be3f78a4007452f30188491",
+        "testnet/rollup.json": "40b1045fa99b24a54fbdcce08f0ec4e2f2e2e1c47f317435be7641e3f42dad78"
+      },
+      "repository": "https://github.com/dusk-network/duskevm-genesis"
+    }
+  },
+  "routes": {
+    "chains": {
+      "ethereum": {
+        "chainId": 11155111,
+        "name": "Sepolia",
+        "currency": {
+          "name": "Sepolia Ether",
+          "symbol": "ETH",
+          "decimals": 18
+        },
+        "rpcUrl": "https://ethereum-sepolia-rpc.publicnode.com",
+        "explorerUrl": "https://sepolia.etherscan.io",
+        "token": "0xAced3474eA24f5d77464A0F625dEEB6EaDeE25b8",
+        "tokenLabel": "ERC20 DUSK"
+      }
+    },
+    "migrations": [
+      {
+        "id": "ethereum-to-dusk",
+        "chain": "ethereum",
+        "contract": "0x7B1FF96D7edC07D8d83eC2A4da99EF8215a7366B",
+        "payoutAccount": null,
+        "typicalSeconds": null,
+        "running": false
+      }
+    ],
+    "services": [
+      {
+        "id": "dusk-to-ethereum",
+        "chain": "ethereum",
+        "account": "25z9o6qCaVk1ReyHjmB4pyXcE3D1vRu4FVV1rR8ChYcosdTSktkANLDHq9GD6B4985Q1S2KrDZYBRrohWAjrNmACFUb3UMSRyYctJRzh3d28R1ZNC1ZyKm1HwXL4FF5Etftt",
+        "payoutAddress": null,
+        "feeLux": "1000000000",
+        "typicalSeconds": null,
+        "running": false
+      }
+    ],
+    "duskEvm": [
+      {
+        "id": "dusk-to-dusk-evm",
+        "direction": "deposit",
+        "typicalSeconds": 60,
+        "running": true
+      },
+      {
+        "id": "dusk-evm-to-dusk",
+        "direction": "withdrawal",
+        "typicalSeconds": null,
+        "running": true
+      }
+    ],
+    "retired": [
+      {
+        "chain": "ethereum",
+        "contract": "0x81F15Ed1D87A6C840E410D7740D581e36c661640",
+        "token": "0x92DA9BE2039E818bB78223A6BA7C85CC2b17D8D5"
+      },
+      {
+        "chain": "ethereum",
+        "contract": "0x1Bb81fbd735854Ed901aD7Aa1f5F72F64E5841Fc",
+        "token": "0xC416f5d2AE6BAec2a23f412Df11166afC35CAba2"
+      }
+    ]
+  },
+  "operator": {
+    "name": "Dusk",
+    "termsUrl": "https://dusk.network/terms-of-use",
+    "privacyUrl": "https://dusk.network/privacy-policy"
+  },
+  "display": {
+    "labels": {
+      "0100000000000000000000000000000000000000000000000000000000000000": "Transfer contract",
+      "0200000000000000000000000000000000000000000000000000000000000000": "Stake contract",
+      "93de287b7d349d678a0038fe7772e8960e1a84a1b5da2d0b1f62f532616ce1d4": "Multicall for Dusk",
+      "bae85f8c24730a5a19fbe3d3bd58248ac8c302b62fe414a8c640d8c0ed286b9e": "Sozu hub",
+      "72883945ac1aa032a88543aacc9e358d1dfef07717094c05296ce675f23078f2": "Sozu pool",
+      "51ced4fad52fc590def2736969c9e3e30013275a996c53714b81d8a08774aa37": "Sozu relayer",
+      "fdbf49102e76cf58224003451c6cb9e3403c54ff1d9042f8bc46ec25c6a4337c": "Sozu stDUSK",
+      "0077ecbf88aa20d6d0a6afa20bd26300a2b562fdbac368bf1e3c1325e8555941": "Sozu substrate",
+      "79635912e56834fa41aa01048cdb54f7b26756d97b3571345a64df7a0641dfce": "Sozu vault",
+      "25z9o6qCaVk1ReyHjmB4pyXcE3D1vRu4FVV1rR8ChYcosdTSktkANLDHq9GD6B4985Q1S2KrDZYBRrohWAjrNmACFUb3UMSRyYctJRzh3d28R1ZNC1ZyKm1HwXL4FF5Etftt": "Sepolia bridge",
+      "1735498c11978854e390894502850916f4ba619e3f4b88c10ef758c5026619cc": "DuskEVM anchor state registry",
+      "be5771a80c378903801c768de0ea70eaef26cf9a0b46931ae725bfdc5c7b01cc": "DuskEVM delayed WETH",
+      "3b7d562aa0e6b94ce29c5ce2a6f0587ad771afdace86abb0baf66f93e49548cd": "DuskEVM dispute game factory",
+      "2e4b8b46390c860282b765641fa94037812601bf777164d7b7f801a262206046": "DuskEVM transaction router",
+      "d5ece3d6cfab787d732ff02897254fc211e2d2ef476cb8883b9cd83d979aedae": "DuskEVM fault dispute games",
+      "63cd2c93016296b2ec357e31fd44b716cf2cda3b31217d45087f17ccc6440530": "DuskEVM messenger",
+      "259f7352efa9e5d41dd7f93b00814e7e8dd1c657e57c0a883f095824696f44fa": "DuskEVM ERC-721 bridge",
+      "2257e5f8ff49cf7c9704a14ca35acbf48eb7ade11a079d98d5cd5655eea1b31d": "DuskEVM bridge",
+      "76d50c0cdcc19b7ad143e20f0a98a1ecd802e9b61ff73bff63a145a9229d9f8b": "DuskEVM MIPS",
+      "8c5cd72c0dbdad30c4f43be41c73bce1a41df17a4a06c78c9086df9cf53c1e35": "DuskEVM ERC-20 factory",
+      "920958dd200a057a538035fed3d8a7e140efc1a91c6090d82f6178cdef9590a6": "DuskEVM ERC-721 factory",
+      "14eeb3d4021aff09af2c515603a01f8d956a7f6411d11a1b1c0b0561a93fb1b9": "DuskEVM bridge portal",
+      "c82a080d763b331f40453ab08df2cab73faf3dee3849cd21a3508056dd9b38e0": "DuskEVM permissioned dispute games",
+      "99b250afab5f2c077b2f1e5fda25abca7e2caa7219bde9e4a01d3a554da35526": "DuskEVM preimage oracle",
+      "234e593c3e00d07c27108d00f441a6c1d33747c1cb05c2f5ddf0861d91d63df4": "DuskEVM protocol versions",
+      "18a06b050de2756582d4c0256fe7bf0f5f6da6ba7a1c72b6d3377bb98e0ad0b4": "DuskEVM proxy admin",
+      "a6b1622f94b35a834929175b6335c1d4ff04be5fc03647fd61f96d1ccff7424d": "DuskEVM superchain config",
+      "6ca481270c1386fb93d08e0181cc8af8052f8ee17677c22134a7e6f553238ace": "DuskEVM system config",
+      "8937cc04b35914326cf034804075f3818e54d400c466b12ccdee3ecd25b4689a": "DuskEVM system config (implementation)",
+      "9cf7ff2f80e3e556fba4e7da04d694f47bbd77222525d71f6938230fb2d04648": "DuskEVM system config (legacy)",
+      "179f68303f0eb935660d52a52c2f104709d8b3b1d6f6525689d4d599695840c9": "DuskEVM transaction metadata"
+    },
+    "blocklist": [
+      {
+        "account": "mFqH6RVxCoWQfjQ23H9YVr8JhQ697M5DD4ob76kcuoEYqqYA6H9cxHrxjvnZ6z4PQKsBd3PBpRYLN9M3FgkQQVywREzkzgeme4ersJgLaxYaQzZSAzkd1QBJ4ByTe9NrhXp",
+        "reason": "compromised"
+      },
+      {
+        "account": "25kt7vYP5JNJ1vborhco4dJBFfdHsFrS8oBsPZ6Q2wWmE6FYwahaE1heg8HSgc8C6KwHxpm19WxrgCuCtBDBfTJD6WNLi8jMqC2nkz6dEE3oepoMLsEYQnopTi5oPzfr7wGk",
+        "reason": "scam"
+      }
+    ]
+  }
+}

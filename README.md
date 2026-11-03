@@ -20,9 +20,11 @@ Today: `tnst` is `public`; `atlas`, `knot`, `vigil` and `chit` are `own`.
 
 | Path | Role |
 |------|------|
-| `index.json` | Catalog (`nocturne.index.v1`): entries per product, network and tier, network data |
+| `index.json` | Catalog (`nocturne.index.v1`): entries per product, network and tier, network data, base layer version (`base`) |
 | `products/<product>/<network>.<tier>.json` | Current file (`nocturne.pins.v2`): live contracts and configuration only |
 | `history/<product>/<network>.<tier>.jsonl` | Append-only history (`nocturne.history.v1`), one event per line |
+| `upstream/dusk-networks/` | Snapshot of Dusk's [`@dusk-network/networks`](https://github.com/dusk-network/networks) package (network files, schema, Sozu vectors), MPL-2.0, see its `LICENSE` |
+| `upstream/dusk-networks.lock.json` | Version, tag, commit, tarball hashes, per-file sha256 and provenance of that snapshot |
 | `schema/` | JSON schemas of the three formats |
 | `tools/nocturne-pins` | Resolver and writer (CLI and Python library) |
 | `crates/nocturne-deployments` | Rust reader |
@@ -49,6 +51,8 @@ Rust: `nocturne_deployments::Catalog` (see `crates/nocturne-deployments`).
 ## Write
 
 Only through `nocturne-pins` (our deploy engine calls it). See `tools/nocturne-pins/README.md`.
+The Dusk snapshot under `upstream/` is written only by `nocturne-pins upstream sync --version X`,
+never by hand.
 
 ## Check
 

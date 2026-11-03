@@ -13,6 +13,8 @@ from .names import NameError_, parse, parse_entry
 from .replay import ReplayError, replay
 from .repo import Catalog, Repo, RepoError
 from .schema import SCHEMA_FILES, schema_text
+from .upstream import UpstreamError, net, specs
+from .upstream import sync as upstream_sync
 
 
 def home_catalog(root: str, extra: list[str] | None) -> tuple[Catalog, Repo]:
@@ -195,6 +197,32 @@ def cmd_classify(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_upstream_sync(args: argparse.Namespace) -> int:
+    spec = specs.get(args.upstream)
+    result = upstream_sync.sync(
+        Path(args.root), spec, args.version, net.UrllibHttp(), net.SubprocessGit(), args.allow_downgrade,
+    )
+    for line in result.lock["verified"]:
+        print(f"verified: {line}")
+    for line in result.lock["not_verified"]:
+        print(f"not verified: {line}")
+    print(f"classification: {result.classification.note}")
+    if not result.changed:
+        print(f"unchanged: {spec.name} {result.version} (commit {result.commit})")
+        return 0
+    for path in result.written:
+        print(f"wrote {path}")
+    return 0
+
+
+def cmd_upstream_status(args: argparse.Namespace) -> int:
+    spec = specs.get(args.upstream)
+    report = upstream_sync.status(Path(args.root), spec, None if args.offline else net.UrllibHttp())
+    for line in report.lines:
+        print(line, file=sys.stderr if line.startswith("error:") else sys.stdout)
+    return report.code
+
+
 def cmd_schema(args: argparse.Namespace) -> int:
     sys.stdout.write(schema_text(args.schema_id))
     return 0
@@ -289,6 +317,22 @@ def parser() -> argparse.ArgumentParser:
     sp.add_argument("key")
     sp.set_defaults(func=cmd_classify)
 
+    up = sub.add_parser("upstream", help="upstream base layers (Dusk networks package)")
+    up_sub = up.add_subparsers(dest="upstream_command", required=True)
+
+    sp = up_sub.add_parser("sync", help="fetch, verify and write the snapshot and lock of one version")
+    sp.add_argument("--version", required=True, help="plain X.Y.Z release")
+    sp.add_argument("--upstream", default="dusk-networks", choices=sorted(specs.UPSTREAMS))
+    sp.add_argument("--root", default=".", help="pin repo checkout to write")
+    sp.add_argument("--allow-downgrade", action="store_true", help="allow a version older than the lock")
+    sp.set_defaults(func=cmd_upstream_sync)
+
+    sp = up_sub.add_parser("status", help="locked version, file hashes, newer release (exit 2)")
+    sp.add_argument("--upstream", default="dusk-networks", choices=sorted(specs.UPSTREAMS))
+    sp.add_argument("--root", default=".", help="pin repo checkout to read")
+    sp.add_argument("--offline", action="store_true", help="skip the registry query")
+    sp.set_defaults(func=cmd_upstream_status)
+
     sp = sub.add_parser("schema", help="print a bundled schema")
     sp.add_argument("schema_id", choices=sorted(SCHEMA_FILES))
     sp.set_defaults(func=cmd_schema)
@@ -299,7 +343,7 @@ def main(argv: list[str] | None = None) -> int:
     args = parser().parse_args(argv)
     try:
         return args.func(args)
-    except (RepoError, NameError_, ReplayError, write.WriteError) as exc:
+    except (RepoError, NameError_, ReplayError, write.WriteError, UpstreamError) as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 1
 

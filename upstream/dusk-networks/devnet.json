@@ -1,0 +1,51 @@
+{
+  "chainId": 3,
+  "name": "devnet",
+  "label": "Devnet",
+  "urls": {
+    "node": "https://devnet.nodes.dusk.network",
+    "archive": "https://devnet.nodes.dusk.network",
+    "prover": "https://devnet.provers.dusk.network"
+  },
+  "apps": {
+    "wallet": "https://apps.devnet.dusk.network/wallet",
+    "explorer": "https://apps.devnet.dusk.network/explorer",
+    "bridge": null
+  },
+  "contracts": {
+    "transfer": "0100000000000000000000000000000000000000000000000000000000000000",
+    "stake": "0200000000000000000000000000000000000000000000000000000000000000",
+    "multicall": null
+  },
+  "sozu": null,
+  "duskDomains": null,
+  "duskEvm": null,
+  "routes": {
+    "chains": {},
+    "migrations": [],
+    "services": [],
+    "duskEvm": [],
+    "retired": []
+  },
+  "operator": {
+    "name": "Dusk",
+    "termsUrl": "https://dusk.network/terms-of-use",
+    "privacyUrl": "https://dusk.network/privacy-policy"
+  },
+  "display": {
+    "labels": {
+      "0100000000000000000000000000000000000000000000000000000000000000": "Transfer contract",
+      "0200000000000000000000000000000000000000000000000000000000000000": "Stake contract"
+    },
+    "blocklist": [
+      {
+        "account": "mFqH6RVxCoWQfjQ23H9YVr8JhQ697M5DD4ob76kcuoEYqqYA6H9cxHrxjvnZ6z4PQKsBd3PBpRYLN9M3FgkQQVywREzkzgeme4ersJgLaxYaQzZSAzkd1QBJ4ByTe9NrhXp",
+        "reason": "compromised"
+      },
+      {
+        "account": "25kt7vYP5JNJ1vborhco4dJBFfdHsFrS8oBsPZ6Q2wWmE6FYwahaE1heg8HSgc8C6KwHxpm19WxrgCuCtBDBfTJD6WNLi8jMqC2nkz6dEE3oepoMLsEYQnopTi5oPzfr7wGk",
+        "reason": "scam"
+      }
+    ]
+  }
+}

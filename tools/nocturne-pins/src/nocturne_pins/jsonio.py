@@ -39,17 +39,7 @@ def read_lines(path: Path) -> list[str]:
 
 def write_atomic(path: Path, text: str) -> None:
     """Write via a temp file in the same directory; 0644 so git and readers see normal files."""
-    path.parent.mkdir(parents=True, exist_ok=True)
-    fd, tmp = tempfile.mkstemp(dir=path.parent, prefix=f".{path.name}.")
-    try:
-        with os.fdopen(fd, "w", encoding="utf-8") as fh:
-            fh.write(text)
-        os.chmod(tmp, 0o644)
-        os.replace(tmp, path)
-    except BaseException:
-        if os.path.exists(tmp):
-            os.unlink(tmp)
-        raise
+    write_atomic_bytes(path, text.encode("utf-8"))
 
 
 def append_lines(path: Path, lines: list[str]) -> None:
@@ -58,3 +48,18 @@ def append_lines(path: Path, lines: list[str]) -> None:
     if existing and not existing.endswith("\n"):
         existing += "\n"
     write_atomic(path, existing + "".join(line + "\n" for line in lines))
+
+
+def write_atomic_bytes(path: Path, data: bytes) -> None:
+    """Atomic write of exact bytes (also used for vendored upstream snapshots)."""
+    path.parent.mkdir(parents=True, exist_ok=True)
+    fd, tmp = tempfile.mkstemp(dir=path.parent, prefix=f".{path.name}.")
+    try:
+        with os.fdopen(fd, "wb") as fh:
+            fh.write(data)
+        os.chmod(tmp, 0o644)
+        os.replace(tmp, path)
+    except BaseException:
+        if os.path.exists(tmp):
+            os.unlink(tmp)
+        raise

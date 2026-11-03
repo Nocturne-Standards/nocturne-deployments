@@ -51,6 +51,47 @@ Calls that do not change configuration (`pay`, `trade`, `mint`, ...) are demo tr
 they go to the entry's `calls` log when the index gives one (private repo only), otherwise nowhere.
 `nocturne-pins classify <contract.fn>` shows how a key is treated.
 
+## Upstream base layer
+
+Dusk publishes its network facts as the npm package `@dusk-network/networks`. We keep a
+verified snapshot of one version under `upstream/dusk-networks/` and record it in a lock.
+
+```bash
+nocturne-pins upstream sync --version 0.3.0 --root .
+nocturne-pins upstream status --root .            # exit 2 when a newer version is published
+nocturne-pins upstream status --root . --offline  # lock and file hashes only
+```
+
+`sync` writes nothing unless every check passes:
+
+1. registry metadata gives `dist.tarball` (on the registry host) and `dist.integrity`;
+   the tarball's sha512 must equal `dist.integrity` before it is opened;
+2. the tarball is read in memory: only the listed regular files, no links, no paths
+   outside `package/`, no name twice. Nothing from it is run;
+3. `package.json` name and version match;
+4. the registry has an SLSA provenance attestation (none: refused). Its subject is this
+   tarball; it names `github.com/dusk-network/networks`, `.github/workflows/publish.yml`,
+   `refs/tags/vX`, a GitHub-hosted runner and one commit; the signing certificate carries
+   the same workflow identity;
+5. `git ls-remote` of `refs/tags/vX` (peeled if annotated) equals that commit;
+6. the network files, `schema.json`, `fixtures/sozu-vectors.json`, `LICENSE` and
+   `package.json` are byte-equal to the same paths at that commit on GitHub.
+
+Not verified: the Sigstore bundle itself (DSSE signature, Fulcio certificate chain, Rekor
+inclusion proof) and the npm registry signatures. Both need X.509 and ECDSA, which the
+standard library lacks, so the attestation is trusted as served by the registry over HTTPS.
+The tag binding and the byte comparison with GitHub are the independent checks. JSR is not
+read. The lock lists what was and was not verified, with `verified_at`.
+
+Outputs: `upstream/dusk-networks/{mainnet,testnet,devnet}.json`, `schema.json`,
+`fixtures/sozu-vectors.json`, `LICENSE`; `upstream/dusk-networks.lock.json`; and
+`index.json` `base.dusk = {version, lock}`. A re-sync of the locked version with the same
+bytes changes nothing. A version older than the lock needs `--allow-downgrade`.
+
+Code: `nocturne_pins.upstream`, split into a source (`npm`), verifiers (`provenance`,
+`content`) and a classifier (`classify`, a placeholder for now), declared per upstream
+in `specs`.
+
 ## Check (CI)
 
 ```bash
