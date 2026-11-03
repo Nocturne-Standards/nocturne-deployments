@@ -6,20 +6,20 @@
   "contracts": {
     "vigil-policy": {
       "layer": "duskds",
-      "id": "ad8b23e8efc7c5b71acb13e5d67fc756596f71d43a5207b1bfe4e7e1f8d44416",
-      "version": "0.1.0",
-      "tx": "bad73d6152ae39fdbaadb070defc5794799916b7276bef2d30174cdabd23ea1b",
-      "at": "2026-10-15T16:20:09Z",
+      "id": "1ef49f564eec1d3c72f28a8e54318f54a11fcfc2c105eefdd7ae42c80001b6bc",
+      "version": "0.3.0",
+      "tx": "a7bfcc4589163a40ed77285995f67ef1f6ef2682ba4d18bfa920462c3af1e241",
+      "at": "2026-11-02T22:34:42Z",
       "record": {
-        "version": "0.1.0",
-        "contract_id": "ad8b23e8efc7c5b71acb13e5d67fc756596f71d43a5207b1bfe4e7e1f8d44416",
-        "tx_id": "bad73d6152ae39fdbaadb070defc5794799916b7276bef2d30174cdabd23ea1b",
+        "version": "0.3.0",
+        "contract_id": "1ef49f564eec1d3c72f28a8e54318f54a11fcfc2c105eefdd7ae42c80001b6bc",
+        "tx_id": "a7bfcc4589163a40ed77285995f67ef1f6ef2682ba4d18bfa920462c3af1e241",
         "wasm_path": null,
         "dd_wasm_path": null,
-        "wasm_sha256": "e3ce18c1662bf17e181f573906e9dd1c8cc27a6cc108e67c1fa309e360ec50b7",
-        "deploy_nonce": 1792081194,
+        "wasm_sha256": "1e6ccd88dc709d242b3596ee421b4b13496e0791754d8b97157c4292d3c9a935",
+        "deploy_nonce": 1793658868,
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "deployed_at": "2026-10-15T16:20:09Z"
+        "deployed_at": "2026-11-02T22:34:42Z"
       }
     },
     "vigil-vault": {
@@ -42,38 +42,38 @@
     },
     "vigil-sozu-ledger": {
       "layer": "duskds",
-      "id": "68fb863a0b6fd90b37863beec2827c005af5e0facdb7be8a6bdaf710f048b44f",
-      "version": "0.1.0",
-      "tx": "d900627eface3e63dbf65f3321f0380a96279c47a2c50d15647922bc0f90161f",
-      "at": "2026-10-18T17:40:46Z",
+      "id": "4fdb7f6fee4b23bff8b13158eaa4083a5d83fa70fbe62c1ab0422f5f00aad8e4",
+      "version": "0.3.0",
+      "tx": "cdc64f60cba973a03bbbbb526ab40b709a701ec560cca426867febe078993c2f",
+      "at": "2026-11-02T22:35:02Z",
       "record": {
-        "version": "0.1.0",
-        "contract_id": "68fb863a0b6fd90b37863beec2827c005af5e0facdb7be8a6bdaf710f048b44f",
-        "tx_id": "d900627eface3e63dbf65f3321f0380a96279c47a2c50d15647922bc0f90161f",
+        "version": "0.3.0",
+        "contract_id": "4fdb7f6fee4b23bff8b13158eaa4083a5d83fa70fbe62c1ab0422f5f00aad8e4",
+        "tx_id": "cdc64f60cba973a03bbbbb526ab40b709a701ec560cca426867febe078993c2f",
         "wasm_path": null,
         "dd_wasm_path": null,
-        "wasm_sha256": "6e5d4c63a7ea581827a9c1aac725727f4a1aa5ef6f25485cedc473a70f64e550",
-        "deploy_nonce": 1792345229,
+        "wasm_sha256": "ad07a2bf29003d196fb162f3117d38e6a70806417ad857e14bcf9855d8e47de6",
+        "deploy_nonce": 1793658886,
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "deployed_at": "2026-10-18T17:40:46Z"
+        "deployed_at": "2026-11-02T22:35:02Z"
       }
     },
     "vigil-wicket-ledger": {
       "layer": "duskds",
-      "id": "e3d81a3deb21fafce0a1fa61945bb2bb806e0652dbc643b909bef5723e375e83",
-      "version": "0.1.0",
-      "tx": "979c641ab8b7903506d7841bbf9e080e3e32f257273b9162e5bfb594f6cec43d",
-      "at": "2026-10-18T17:41:06Z",
+      "id": "0d9730f9e3dcea6e62f29404b4f92fb2d49d1b664bc7475f0c2c283d341b435f",
+      "version": "0.3.0",
+      "tx": "718a9068ca14d4465388ed1487db74b949e2c15162cfe37c8c808764ed397314",
+      "at": "2026-11-02T22:35:22Z",
       "record": {
-        "version": "0.1.0",
-        "contract_id": "e3d81a3deb21fafce0a1fa61945bb2bb806e0652dbc643b909bef5723e375e83",
-        "tx_id": "979c641ab8b7903506d7841bbf9e080e3e32f257273b9162e5bfb594f6cec43d",
+        "version": "0.3.0",
+        "contract_id": "0d9730f9e3dcea6e62f29404b4f92fb2d49d1b664bc7475f0c2c283d341b435f",
+        "tx_id": "718a9068ca14d4465388ed1487db74b949e2c15162cfe37c8c808764ed397314",
         "wasm_path": null,
         "dd_wasm_path": null,
-        "wasm_sha256": "b4ff9f37135fdf642e5613917e900d0d85324e3cfaf58a4091cd671ca1d64b48",
-        "deploy_nonce": 1792345247,
+        "wasm_sha256": "ac04f665aa239e2c34b4f06260223b0e5325fd6de2d9ed643cf94e04c0e8bac2",
+        "deploy_nonce": 1793658906,
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "deployed_at": "2026-10-18T17:41:06Z"
+        "deployed_at": "2026-11-02T22:35:22Z"
       }
     },
     "vigil-policy-contract": {
@@ -96,38 +96,38 @@
     },
     "vigil-gas-book": {
       "layer": "duskds",
-      "id": "f0b987de224f312e146147b0cc4d2faa291aba86c89f6a6537505f807c6aa1d8",
-      "version": "0.2.0",
-      "tx": "79303abe6f1bf906d2244cc060842c6421930968a0820fb6bd020b6538d35345",
-      "at": "2026-10-27T11:15:50Z",
+      "id": "97107a4cab7443092a4b2b7932720c3443dd7a6865c263e33cf3ddf11040bb7f",
+      "version": "0.3.0",
+      "tx": "4f0a5e219d320e8d5edf0a787126287ed98802bcc843963fb6908fc87245d42c",
+      "at": "2026-11-02T22:34:02Z",
       "record": {
-        "version": "0.2.0",
-        "contract_id": "f0b987de224f312e146147b0cc4d2faa291aba86c89f6a6537505f807c6aa1d8",
-        "tx_id": "79303abe6f1bf906d2244cc060842c6421930968a0820fb6bd020b6538d35345",
+        "version": "0.3.0",
+        "contract_id": "97107a4cab7443092a4b2b7932720c3443dd7a6865c263e33cf3ddf11040bb7f",
+        "tx_id": "4f0a5e219d320e8d5edf0a787126287ed98802bcc843963fb6908fc87245d42c",
         "wasm_path": null,
         "dd_wasm_path": null,
-        "wasm_sha256": "8b6aafe2e3ccc14737c3f10b4996b0527d55aef41d08042b216e0e0d3fd11c4e",
-        "deploy_nonce": 1793099734,
+        "wasm_sha256": "da9ba12c80bd29ef666d4d4d50eb9b3eeb0184b12042a44e8a1fecf35b859816",
+        "deploy_nonce": 1793658827,
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "deployed_at": "2026-10-27T11:15:50Z"
+        "deployed_at": "2026-11-02T22:34:02Z"
       }
     },
     "vigil-gas-logic": {
       "layer": "duskds",
-      "id": "a63a652fe6598ca5b02deeb6935f823cf319c1d30447214f3103ccb053cf110f",
-      "version": "0.3.0",
-      "tx": "36fa2d6ae3e6461c5464e5673cee678e0715e57638df7639951a17504f920a57",
-      "at": "2026-10-28T14:27:40Z",
+      "id": "af506f2c1052dc6be1bc103de49f0981cec8bccb47a7b816c446760c5a68fa2a",
+      "version": "0.4.0",
+      "tx": "3293247783a129fedda50e3a906651a35ea07f7491bca6fc40335c5778067232",
+      "at": "2026-11-02T22:34:23Z",
       "record": {
-        "version": "0.3.0",
-        "contract_id": "a63a652fe6598ca5b02deeb6935f823cf319c1d30447214f3103ccb053cf110f",
-        "tx_id": "36fa2d6ae3e6461c5464e5673cee678e0715e57638df7639951a17504f920a57",
+        "version": "0.4.0",
+        "contract_id": "af506f2c1052dc6be1bc103de49f0981cec8bccb47a7b816c446760c5a68fa2a",
+        "tx_id": "3293247783a129fedda50e3a906651a35ea07f7491bca6fc40335c5778067232",
         "wasm_path": null,
         "dd_wasm_path": null,
-        "wasm_sha256": "fea22b865ff2eb92ab33413f532a5cc61c3f77fd635cec409b0673dc257892df",
-        "deploy_nonce": 1793197648,
+        "wasm_sha256": "cbd84b34dfb8405146ba4363bdf9fe7a3202edadeb4879d5b7a8ea147f837743",
+        "deploy_nonce": 1793658847,
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
-        "deployed_at": "2026-10-28T14:27:40Z"
+        "deployed_at": "2026-11-02T22:34:23Z"
       }
     },
     "vigil-service-treasury-data": {
@@ -165,6 +165,96 @@
         "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
         "deployed_at": "2026-10-20T16:17:16Z"
       }
+    },
+    "vigil-vault-data": {
+      "layer": "duskds",
+      "id": "12b9e0c3c503f1dcba498fcd43a6e45a226ea29d5b2d79255da250e293175044",
+      "version": "0.3.0",
+      "tx": "0be7e9562067714694f79e7ccb3609f15dad8bb4cdd3869e775ce64f8b4cd052",
+      "at": "2026-11-02T22:32:23Z",
+      "record": {
+        "version": "0.3.0",
+        "contract_id": "12b9e0c3c503f1dcba498fcd43a6e45a226ea29d5b2d79255da250e293175044",
+        "tx_id": "0be7e9562067714694f79e7ccb3609f15dad8bb4cdd3869e775ce64f8b4cd052",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "3c2522dfb5e85292cb937414bd057a733c75ff8e16fbd4e6982f71c166b0d457",
+        "deploy_nonce": 1793658720,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-11-02T22:32:23Z"
+      }
+    },
+    "vigil-vault-logic": {
+      "layer": "duskds",
+      "id": "3f5d1b699d1967d1673e53d8d8c7b93e150d857dd6c23fe4d5392f167d233287",
+      "version": "0.3.0",
+      "tx": "b9c297343b87f602ef9a391199bf81c954d06f8f930a92c77a796200f1171908",
+      "at": "2026-11-02T22:32:43Z",
+      "record": {
+        "version": "0.3.0",
+        "contract_id": "3f5d1b699d1967d1673e53d8d8c7b93e150d857dd6c23fe4d5392f167d233287",
+        "tx_id": "b9c297343b87f602ef9a391199bf81c954d06f8f930a92c77a796200f1171908",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "e9836fb0d034fe99797640367361eacefb95a9c82a7146cd8108d5d615f33aa7",
+        "deploy_nonce": 1793658748,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-11-02T22:32:43Z"
+      }
+    },
+    "vigil-quorum-checker": {
+      "layer": "duskds",
+      "id": "ea316240641a789434706befb9867c882939cb40a1deebf8f61a26b7584aba53",
+      "version": "0.3.0",
+      "tx": "670beeb7c10e8b1035cd89f0b1f3bfe31cf9496066fd98b43866f94786b24b0d",
+      "at": "2026-11-02T22:33:03Z",
+      "record": {
+        "version": "0.3.0",
+        "contract_id": "ea316240641a789434706befb9867c882939cb40a1deebf8f61a26b7584aba53",
+        "tx_id": "670beeb7c10e8b1035cd89f0b1f3bfe31cf9496066fd98b43866f94786b24b0d",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "a68c4da0355d72663363ecc1534f470aa5be91e3cd759784415cd2dc7a74402f",
+        "deploy_nonce": 1793658767,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-11-02T22:33:03Z"
+      }
+    },
+    "vigil-bridge-adapter": {
+      "layer": "duskds",
+      "id": "310c25e202ff2ca46780a21ba46d1a9293778becc9b143b78586539ea0f7772d",
+      "version": "0.3.0",
+      "tx": "ebc54ec1a83b5bbbfac29fe2da7b77295885d5123875d4ba8bb51b51ee7a9917",
+      "at": "2026-11-02T22:33:23Z",
+      "record": {
+        "version": "0.3.0",
+        "contract_id": "310c25e202ff2ca46780a21ba46d1a9293778becc9b143b78586539ea0f7772d",
+        "tx_id": "ebc54ec1a83b5bbbfac29fe2da7b77295885d5123875d4ba8bb51b51ee7a9917",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "8b64233cb1bca0a77f0dae33c8181d373cb2568667451bee5a53cb4b379981e4",
+        "deploy_nonce": 1793658787,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-11-02T22:33:23Z"
+      }
+    },
+    "vigil-accounts-book": {
+      "layer": "duskds",
+      "id": "2b99f20d117638434974f8eaf773eafdcb340407fd660041770abc8a062e45a6",
+      "version": "0.3.0",
+      "tx": "bf90eaa259e238560641324a2d3d8e62fa084834f8d5e49b8427c11a4df2295b",
+      "at": "2026-11-02T22:33:43Z",
+      "record": {
+        "version": "0.3.0",
+        "contract_id": "2b99f20d117638434974f8eaf773eafdcb340407fd660041770abc8a062e45a6",
+        "tx_id": "bf90eaa259e238560641324a2d3d8e62fa084834f8d5e49b8427c11a4df2295b",
+        "wasm_path": null,
+        "dd_wasm_path": null,
+        "wasm_sha256": "f0ffab819f6f462b313e2843f7643379502624bf3407001d1d94345574887d37",
+        "deploy_nonce": 1793658808,
+        "address": "zoMdB5Bs5DGrnsALy2NagpHZi7kgzp1dYCcTS43bjBPC2i8zrDaLjKk6Z4WEMjBcDTFr6sZHuLoHKXehkMwVJMhVMWTdGTyvRf3tU4pfwuuePSkRrBQn75v7Lvv9CrmkgYX",
+        "deployed_at": "2026-11-02T22:33:43Z"
+      }
     }
   },
   "state": {
@@ -187,21 +277,34 @@
       "at": "2026-10-28T16:00:39Z"
     },
     "vigil-sozu-ledger.init_vault": {
-      "value": "36eed96074e57ca8c193f7a79161810765a6d9703112dea861ef11f114bd7eeb",
-      "since": "7c26c9decd423b66dff72e678f67053f005ee00c5166b70f65bfed03a0c7dc36",
-      "at": "2026-10-18T17:45:16Z"
+      "value": "12b9e0c3c503f1dcba498fcd43a6e45a226ea29d5b2d79255da250e293175044",
+      "since": "36552c76ec5b827b3101d2a35168886a33a3163a996764aea63f93c67a053f09",
+      "at": "2026-11-02T22:36:02Z"
     },
     "vigil-wicket-ledger.init_vault": {
-      "value": "36eed96074e57ca8c193f7a79161810765a6d9703112dea861ef11f114bd7eeb",
-      "since": "8de96d1a04e2a8568e74087e92f2dcb7ea001bccd2411cd9c741208cfe6b4c34",
-      "at": "2026-10-18T17:45:35Z"
+      "value": "12b9e0c3c503f1dcba498fcd43a6e45a226ea29d5b2d79255da250e293175044",
+      "since": "75e385b3e01a54f87a58e1b9e9a9b2eb06518eda3bb89132b6f0e4c0d11f1005",
+      "at": "2026-11-02T22:36:23Z"
     },
     "vigil-service-treasury-logic.init_data": {
       "value": "841da953c138ad59b6147b5afdfb97095858283da5d591add2d0391031ff46e6",
       "since": "d9b5c881de369fda603842de212e50ca9a7438d7208cdbad40f39dff1d0e2445",
       "at": "2026-10-20T16:17:35Z"
+    },
+    "vigil-vault-data.init_bounds": {
+      "value": {
+        "delay_min": 10,
+        "delay_max": 100000,
+        "settle_window_min": 100,
+        "settle_window_max": 1000000,
+        "queue_cap_max": 8,
+        "recovery_delay_max": 1000001,
+        "open_bond": 1000000000
+      },
+      "since": "7229c5c8660546b77a5c650581977431545f772ae5ac76e4b32e8ff764b04854",
+      "at": "2026-11-02T22:35:42Z"
     }
   },
-  "events": 153,
-  "last_event": "a34e249da42b3c1261bd10b6fdbc0271c7593f509c6b0fce8a9d9d2ff5520d4c"
+  "events": 171,
+  "last_event": "388a92a2c06b985a807a8365fd6b6cc6ad170893eae65b4aa73f49209bb5d0c0"
 }
